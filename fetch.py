@@ -21,6 +21,14 @@ headers1 = {
 # This list will store the extracted data from the table
 parsed_circulars_data = [] 
 f = [
+    "yr=2025-2026",
+    "yr=2024-2025",
+    "yr=2023-2024",
+    "yr=2022-2023",
+    "yr=2021-2022",
+    "yr=2020-2021",
+    "yr=2019-2020",
+    "yr=2018-2019",
     "yr=2017-2018",
     "yr=2016-2017",
     "yr=2015-2016",
