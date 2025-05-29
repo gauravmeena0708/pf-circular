@@ -67,6 +67,29 @@
         .results-table td a:hover {
             text-decoration: underline;
         }
+        /* Column width suggestions */
+        .results-table th:nth-child(1) { width: 8%; } /* Sr.No */
+        .results-table th:nth-child(2) { width: 42%; } /* Title - give more space */
+        .results-table th:nth-child(3) { width: 20%; } /* Circular No */
+        .results-table th:nth-child(4) { width: 15%; } /* Date */
+        .results-table th:nth-child(5) { width: 15%; } /* Links */
+
+        .results-table td a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+            display: inline-block; /* Ensure links can sit side-by-side */
+            margin-right: 0.5rem; /* Space between links if multiple */
+        }
+        .results-table td a:last-child {
+            margin-right: 0;
+        }
+        .results-table td a:hover {
+            text-decoration: underline;
+        }
+        .results-table td:last-child { /* Targeting the links column specifically */
+            white-space: nowrap; /* Prevent text like "Hindi PDF" from wrapping */
+        }
         .no-results {
             text-align: center;
             color: #6b7280;
