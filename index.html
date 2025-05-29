@@ -257,10 +257,10 @@
                 
                 let linksHTML = '';
                 if (item.hindi_pdf_link) {
-                    linksHTML += `<a href="${item.hindi_pdf_link}" target="_blank" class="block mb-1 md:inline md:mr-2">Hindi PDF</a>`;
+                    linksHTML += `<a href="${item.hindi_pdf_link}" target="_blank" class="block mb-1 md:inline md:mr-2">Hindi</a>`;
                 }
                 if (item.english_pdf_link) {
-                    linksHTML += `<a href="${item.english_pdf_link}" target="_blank" class="block md:inline">English PDF</a>`;
+                    linksHTML += `<a href="${item.english_pdf_link}" target="_blank" class="block md:inline">Eng</a>`;
                 }
                 if (!item.hindi_pdf_link && !item.english_pdf_link) {
                     linksHTML = '<span class="text-gray-400">No PDF</span>';
