@@ -1,4 +1,4 @@
-name: Fetch EPF India Contacts
+name: Fetch EPF India circulars
 
 on:
   workflow_dispatch: # Allows manual triggering
@@ -25,7 +25,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add contacts-data.json # Or whatever your output file is named
+          git add circular-data.json # Or whatever your output file is named
           # Commit only if there are changes
           if git diff --staged --quiet; then
             echo "No changes to commit."
