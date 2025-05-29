@@ -137,7 +137,7 @@ for q_param in f:
             
         print(f"Successfully fetched and parsed content for {q_param}")
         # Remove break if you want to process all years, otherwise it processes only the first one
-        break 
+        #break 
 
     except requests.exceptions.HTTPError as errh:
         print(f"Http Error for {q_param}: {errh}")
