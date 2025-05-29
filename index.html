@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPFO Circular Search</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background for the page */
+        }
+        .search-container {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 0.75rem; /* More rounded corners */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            max-width: 900px; /* Increased max-width for better desktop view */
+            margin: 2rem auto;
+        }
+        .search-input {
+            border: 1px solid #d1d5db; /* Tailwind gray-300 */
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem; /* Rounded corners for input */
+            width: 100%;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        .search-input:focus {
+            border-color: #2563eb; /* Tailwind blue-600 */
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3); /* Focus ring */
+            outline: none;
+        }
+        .search-button {
+            background-color: #2563eb; /* Tailwind blue-600 */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        .search-button:hover {
+            background-color: #1d4ed8; /* Tailwind blue-700 */
+        }
+        .result-item {
+            background-color: #f9fafb; /* Tailwind gray-50 */
+            border: 1px solid #e5e7eb; /* Tailwind gray-200 */
+            padding: 1.5rem;
+            margin-top: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        }
+        .result-item h3 {
+            color: #1f2937; /* Tailwind gray-800 */
+            font-weight: 600;
+        }
+        .result-item p {
+            color: #4b5563; /* Tailwind gray-600 */
+            font-size: 0.875rem; /* Smaller text for details */
+        }
+        .result-item a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .result-item a:hover {
+            text-decoration: underline;
+        }
+        .no-results {
+            text-align: center;
+            color: #6b7280; /* Tailwind gray-500 */
+            padding: 2rem;
+            font-style: italic;
+        }
+        .loading-message, .error-message {
+            text-align: center;
+            color: #4b5563; /* Tailwind gray-600 */
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 0.5rem;
+        }
+        .loading-message {
+            background-color: #e0f2fe; /* Tailwind light blue for loading */
+        }
+        .error-message {
+            background-color: #fee2e2; /* Tailwind light red for error */
+            color: #b91c1c; /* Tailwind red-700 */
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .search-container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="search-container">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-gray-800">EPFO Circular Search</h1>
+            <p class="text-gray-600 mt-2">Find circulars by title, serial number, circular number, or date.</p>
+        </header>
+
+        <div class="mb-6">
+            <input type="text" id="searchInput" class="search-input" placeholder="Enter search terms (e.g., 'rate of interest 2024')...">
+        </div>
+        <div class="text-center mb-8">
+            <button id="searchButton" class="search-button">Search</button>
+        </div>
+
+        <div id="resultsCount" class="text-sm text-gray-600 mb-4"></div>
+        <div id="resultsContainer">
+            </div>
+    </div>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const searchButton = document.getElementById('searchButton');
+        const resultsContainer = document.getElementById('resultsContainer');
+        const resultsCount = document.getElementById('resultsCount');
+        let circularData = []; // To store fetched data
+
+        // Function to fetch and load JSON data
+        async function loadCircularData() {
+            resultsContainer.innerHTML = '<p class="loading-message">Loading circular data...</p>';
+            try {
+                // IMPORTANT: Replace 'circular-data.json' with the actual path
+                // if the JSON file is not in the same directory as the HTML file.
+                // For this example, assuming it's in the same directory or accessible via this path.
+                const response = await fetch('circular-data.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                circularData = await response.json();
+                resultsContainer.innerHTML = ''; // Clear loading message
+                displayResults(circularData); // Display all results initially or a prompt
+                resultsCount.textContent = `Showing ${circularData.length} of ${circularData.length} circulars.`;
+            } catch (error) {
+                console.error('Error loading circular data:', error);
+                resultsContainer.innerHTML = `<p class="error-message">Error loading circular data. Please ensure 'circular-data.json' is accessible. Details: ${error.message}</p>`;
+                resultsCount.textContent = '';
+            }
+        }
+
+        // Function to display search results
+        function displayResults(results) {
+            resultsContainer.innerHTML = ''; // Clear previous results
+            if (results.length === 0) {
+                resultsContainer.innerHTML = '<p class="no-results">No circulars found matching your criteria.</p>';
+                return;
+            }
+
+            results.forEach(item => {
+                const resultItem = document.createElement('div');
+                resultItem.className = 'result-item';
+                
+                let linksHTML = '';
+                if (item.hindi_pdf_link) {
+                    linksHTML += `<a href="${item.hindi_pdf_link}" target="_blank" class="mr-4">Hindi PDF</a>`;
+                }
+                if (item.english_pdf_link) {
+                    linksHTML += `<a href="${item.english_pdf_link}" target="_blank">English PDF</a>`;
+                }
+                if (!item.hindi_pdf_link && !item.english_pdf_link) {
+                    linksHTML = '<span class="text-gray-400">No PDF available</span>';
+                }
+
+                resultItem.innerHTML = `
+                    <h3 class="text-lg mb-1">${item.title || 'N/A'}</h3>
+                    <p class="mb-1"><strong>Serial No:</strong> ${item.serial_no || 'N/A'}</p>
+                    <p class="mb-1"><strong>Circular No:</strong> ${item.circular_no || 'N/A'}</p>
+                    <p class="mb-2"><strong>Date:</strong> ${item.date || 'N/A'}</p>
+                    <div>${linksHTML}</div>
+                `;
+                resultsContainer.appendChild(resultItem);
+            });
+        }
+
+        // Function to perform search
+        function performSearch() {
+            const query = searchInput.value.toLowerCase().trim();
+            if (!query) {
+                displayResults(circularData); // Show all if query is empty
+                resultsCount.textContent = `Showing ${circularData.length} of ${circularData.length} circulars.`;
+                return;
+            }
+
+            const searchTerms = query.split(/\s+/).filter(term => term.length > 0); // Split by space and filter empty terms
+
+            const filteredResults = circularData.filter(item => {
+                // Check against each field, ensuring field exists and is a string before calling toLowerCase
+                const title = item.title ? item.title.toLowerCase() : '';
+                const serialNo = item.serial_no ? item.serial_no.toLowerCase() : '';
+                const circularNo = item.circular_no ? item.circular_no.toLowerCase() : '';
+                const date = item.date ? item.date.toLowerCase() : '';
+
+                // Check if all search terms are present in any of the fields
+                return searchTerms.every(term => 
+                    title.includes(term) ||
+                    serialNo.includes(term) ||
+                    circularNo.includes(term) ||
+                    date.includes(term)
+                );
+            });
+
+            displayResults(filteredResults);
+            resultsCount.textContent = `Found ${filteredResults.length} circular(s) matching your search.`;
+        }
+
+        // Event listeners
+        searchButton.addEventListener('click', performSearch);
+        searchInput.addEventListener('keyup', (event) => {
+            if (event.key === 'Enter') {
+                performSearch();
+            }
+        });
+
+        // Load data when the page loads
+        document.addEventListener('DOMContentLoaded', loadCircularData);
+    </script>
+
+</body>
+</html>
