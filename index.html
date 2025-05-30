@@ -59,14 +59,6 @@
             font-weight: 600;
             color: #374151; /* Tailwind gray-700 */
         }
-        .results-table td a {
-            color: #2563eb;
-            text-decoration: none;
-            font-weight: 500;
-        }
-        .results-table td a:hover {
-            text-decoration: underline;
-        }
         /* Column width suggestions */
         .results-table th:nth-child(1) { width: 8%; } /* Sr.No */
         .results-table th:nth-child(2) { width: 42%; } /* Title - give more space */
@@ -145,16 +137,14 @@
             .search-container {
                 margin: 1rem;
                 padding: 1rem;
+                min-width: auto; /* Allow container to shrink on mobile */
             }
             .results-table th, .results-table td {
                 font-size: 0.75rem; /* Even smaller font for mobile */
                 padding: 0.5rem;
             }
-            .results-table th:nth-child(1), .results-table td:nth-child(1) { /* Sr.No */
-                display: none; /* Hide serial number on small screens if needed */
-            }
-             .results-table th:nth-child(3), .results-table td:nth-child(3) { /* Circular No */
-                /* Consider hiding or shortening on very small screens */
+             .results-table th:nth-child(1), .results-table td:nth-child(1) { /* Sr.No */
+                /* display: none; */ /* Keep it for now, but an option */
             }
         }
     </style>
@@ -164,11 +154,11 @@
     <div class="search-container">
         <header class="text-center mb-8">
             <h1 class="text-3xl font-bold text-gray-800">EPFO Circular Search</h1>
-            <p class="text-gray-600 mt-2">Find circulars by title, serial number, circular number, or date.</p>
+            <p class="text-gray-600 mt-2">Find circulars by title, number, date, or content (from indexed PDFs).</p>
         </header>
 
         <div class="mb-6">
-            <input type="text" id="searchInput" class="search-input" placeholder="Enter search terms (e.g., 'rate of interest 2024')...">
+            <input type="text" id="searchInput" class="search-input" placeholder="Enter search terms (e.g., 'rate of interest 2024', 'welfare fund')...">
         </div>
         <div class="text-center mb-8">
             <button id="searchButton" class="search-button">Search</button>
@@ -188,54 +178,70 @@
         const resultsCount = document.getElementById('resultsCount');
         const paginationControlsContainer = document.getElementById('paginationControls');
 
-        let allCircularData = []; // To store all fetched data
+        let allCircularData = []; // To store all circular metadata
+        let allIndexData = {};    // To store all PDF index data (URL -> {ocr_content, ...})
         let currentFilteredData = []; // To store currently filtered data for pagination
         let currentPage = 1;
         const itemsPerPage = 50;
 
-        async function loadCircularData() {
-            resultsContainer.innerHTML = '<p class="loading-message">Loading circular data...</p>';
+        async function loadAllData() {
+            resultsContainer.innerHTML = '<p class="loading-message">Loading data...</p>';
             paginationControlsContainer.innerHTML = '';
             try {
-                const response = await fetch('circular-data.json');
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
+                // Fetch both circular data and index data in parallel
+                const [circularResponse, indexResponse] = await Promise.all([
+                    fetch('circular-data.json'),
+                    fetch('index-data.json').catch(err => {
+                        console.warn('index-data.json not found or failed to load. PDF content search will be unavailable.', err);
+                        return { ok: false, json: () => Promise.resolve({}) }; // Provide a graceful fallback
+                    })
+                ]);
+
+                if (!circularResponse.ok) {
+                    throw new Error(`HTTP error! Status for circular-data.json: ${circularResponse.status}`);
                 }
-                allCircularData = await response.json();
+                allCircularData = await circularResponse.json();
+
+                if (indexResponse.ok) {
+                    allIndexData = await indexResponse.json();
+                    console.log("Index data loaded successfully:", Object.keys(allIndexData).length, "entries");
+                } else {
+                    allIndexData = {}; // Ensure it's an empty object if fetch failed or was caught
+                    // The warning is already logged in the catch block of the fetch itself.
+                }
+                
                 currentFilteredData = [...allCircularData]; // Initially, all data is filtered data
                 currentPage = 1;
                 displayResultsPage();
                 setupPagination();
             } catch (error) {
-                console.error('Error loading circular data:', error);
-                resultsContainer.innerHTML = `<p class="error-message">Error loading circular data. Please ensure 'circular-data.json' is accessible. Details: ${error.message}</p>`;
+                console.error('Error loading data:', error);
+                resultsContainer.innerHTML = `<p class="error-message">Error loading data. Please ensure 'circular-data.json' is accessible. Details: ${error.message}</p>`;
                 resultsCount.textContent = '';
             }
         }
 
         function displayResultsPage() {
-            resultsContainer.innerHTML = ''; // Clear previous results or loading message
+            resultsContainer.innerHTML = '';
             
             const startIndex = (currentPage - 1) * itemsPerPage;
             const endIndex = startIndex + itemsPerPage;
             const paginatedItems = currentFilteredData.slice(startIndex, endIndex);
 
             if (currentFilteredData.length === 0 && searchInput.value.trim() !== '') {
-                 resultsContainer.innerHTML = '<p class="no-results">No circulars found matching your criteria.</p>';
-                 resultsCount.textContent = 'Found 0 circular(s).';
-                 return;
+                resultsContainer.innerHTML = '<p class="no-results">No circulars found matching your criteria.</p>';
+                resultsCount.textContent = 'Found 0 circular(s).';
+                return;
             } else if (paginatedItems.length === 0 && currentFilteredData.length > 0) {
-                // This case might happen if current page is out of bounds after filtering, reset to page 1
                 currentPage = 1;
-                displayResultsPage(); // Recursive call, be careful
+                displayResultsPage(); 
                 setupPagination();
                 return;
             } else if (paginatedItems.length === 0 && currentFilteredData.length === 0 && searchInput.value.trim() === '') {
-                 resultsContainer.innerHTML = '<p class="no-results">No circulars available. Please load data.</p>';
-                 resultsCount.textContent = '0 circulars loaded.';
-                 return;
+                resultsContainer.innerHTML = '<p class="no-results">No circulars available or data not loaded.</p>';
+                resultsCount.textContent = '0 circulars loaded.';
+                return;
             }
-
 
             const table = document.createElement('table');
             table.className = 'results-table w-full';
@@ -276,15 +282,14 @@
             });
             table.appendChild(tbody);
             resultsContainer.appendChild(table);
-            resultsCount.textContent = `Showing ${startIndex + 1}-${Math.min(endIndex, currentFilteredData.length)} of ${currentFilteredData.length} circulars.`;
+            resultsCount.textContent = `Showing ${paginatedItems.length > 0 ? startIndex + 1 : 0}-${Math.min(endIndex, currentFilteredData.length)} of ${currentFilteredData.length} circulars.`;
         }
 
         function setupPagination() {
             paginationControlsContainer.innerHTML = '';
             const pageCount = Math.ceil(currentFilteredData.length / itemsPerPage);
-            if (pageCount <= 1) return; // No pagination needed for 1 or 0 pages
+            if (pageCount <= 1) return;
 
-            // Previous Button
             const prevButton = document.createElement('button');
             prevButton.textContent = 'Previous';
             prevButton.disabled = currentPage === 1;
@@ -292,21 +297,18 @@
                 if (currentPage > 1) {
                     currentPage--;
                     displayResultsPage();
-                    setupPagination(); // Re-render pagination to update active states
+                    setupPagination();
                 }
             });
             paginationControlsContainer.appendChild(prevButton);
 
-            // Page Number Buttons (simplified version)
-            // For a more complex pagination (e.g., with ellipsis):
-            const maxPageButtons = 5; // Max page numbers to show
+            const maxPageButtons = 5; 
             let startPage = Math.max(1, currentPage - Math.floor(maxPageButtons / 2));
             let endPage = Math.min(pageCount, startPage + maxPageButtons - 1);
             
             if (endPage - startPage + 1 < maxPageButtons) {
                 startPage = Math.max(1, endPage - maxPageButtons + 1);
             }
-
 
             if (startPage > 1) {
                 const firstPageButton = document.createElement('button');
@@ -339,7 +341,7 @@
                 paginationControlsContainer.appendChild(pageButton);
             }
 
-             if (endPage < pageCount) {
+            if (endPage < pageCount) {
                 if (endPage < pageCount - 1) {
                     const ellipsis = document.createElement('span');
                     ellipsis.textContent = '...';
@@ -356,8 +358,6 @@
                 paginationControlsContainer.appendChild(lastPageButton);
             }
 
-
-            // Next Button
             const nextButton = document.createElement('button');
             nextButton.textContent = 'Next';
             nextButton.disabled = currentPage === pageCount;
@@ -383,11 +383,22 @@
                     const serialNo = item.serial_no ? item.serial_no.toLowerCase() : '';
                     const circularNo = item.circular_no ? item.circular_no.toLowerCase() : '';
                     const date = item.date ? item.date.toLowerCase() : '';
+                    
+                    let ocrText = '';
+                    // Check if the English PDF link exists and has an entry in allIndexData
+                    if (item.english_pdf_link && allIndexData[item.english_pdf_link]) {
+                        const indexedItemData = allIndexData[item.english_pdf_link];
+                        if (indexedItemData && indexedItemData.ocr_content) {
+                            ocrText = indexedItemData.ocr_content.toLowerCase();
+                        }
+                    }
+
                     return searchTerms.every(term => 
                         title.includes(term) ||
                         serialNo.includes(term) ||
                         circularNo.includes(term) ||
-                        date.includes(term)
+                        date.includes(term) ||
+                        (ocrText && ocrText.includes(term)) // Search in OCR text if available
                     );
                 });
             }
@@ -403,7 +414,7 @@
             }
         });
 
-        document.addEventListener('DOMContentLoaded', loadCircularData);
+        document.addEventListener('DOMContentLoaded', loadAllData); // Changed to loadAllData
     </script>
 
 </body>
