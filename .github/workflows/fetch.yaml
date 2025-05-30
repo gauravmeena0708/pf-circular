@@ -1,81 +1,35 @@
-name: Fetch EPF India circulars and Update Index
+name: Fetch EPF India circulars
 
 on:
   workflow_dispatch: # Allows manual triggering
-  # You can also add a schedule if you want it to run periodically
-  # schedule:
-  #   - cron: '0 0 * * 0' # Runs every Sunday at midnight UTC
 
 jobs:
-  fetch_metadata:
+  fetch_data:
     runs-on: ubuntu-latest
-    outputs: # Define output to indicate if data changed
-      data_changed: ${{ steps.commit_metadata.outputs.data_changed }}
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4 # Updated to v4
+        uses: actions/checkout@v3
 
       - name: Set up Python
-        uses: actions/setup-python@v4 # Updated to v4
+        uses: actions/setup-python@v3
         with:
-          python-version: '3.10' # Specify a version
+          python-version: '3.x'
 
-      - name: Install Python dependencies
+      - name: Install dependencies
         run: pip install requests beautifulsoup4
 
-      - name: Run fetching script for metadata
-        run: python ./fetch.py --action fetch # Assumes fetch.py is in the root
+      - name: Run fetching script
+        run: python ./fetch.py # Store the script in your repo
 
-      - name: Commit and push circular-data.json
-        id: commit_metadata # Give an id to this step to access its output
+      - name: Commit and push if changed
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add circular-data.json
+          git add circular-data.json # Or whatever your output file is named
+          # Commit only if there are changes
           if git diff --staged --quiet; then
-            echo "No changes to circular-data.json."
-            echo "data_changed=false" >> $GITHUB_OUTPUT
+            echo "No changes to commit."
           else
-            git commit -m "Update EPF circulars metadata (circular-data.json)"
+            git commit -m "Update EPF contacts data"
             git push
-            echo "data_changed=true" >> $GITHUB_OUTPUT
-            echo "circular-data.json committed and pushed."
-          fi
-
-  update_search_index:
-    runs-on: ubuntu-latest
-    needs: fetch_metadata # Runs after fetch_metadata job completes
-    # Optionally, run this job only if circular-data.json changed:
-    # if: needs.fetch_metadata.outputs.data_changed == 'true'
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-
-      - name: Install Tesseract OCR
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y tesseract-ocr
-
-      - name: Install Python dependencies for indexing
-        run: pip install requests beautifulsoup4 pymupdf pytesseract Pillow
-
-      - name: Run indexing script
-        run: python ./fetch.py --action index # Assumes fetch.py is in the root
-
-      - name: Commit and push index-data.json
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add index-data.json
-          if git diff --staged --quiet; then
-            echo "No changes to index-data.json."
-          else
-            git commit -m "Update EPF circulars search index (index-data.json)"
-            git push
-            echo "index-data.json committed and pushed."
           fi
