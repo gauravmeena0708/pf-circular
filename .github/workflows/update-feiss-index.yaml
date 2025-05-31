@@ -64,7 +64,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          
+          git pull
           # Add the FAISS index, its metadata, and the indexing status/log file.
           # Adjust file names if your script produces different ones.
           # Using wildcards can be helpful if part of the name is dynamic, but be specific if possible.
