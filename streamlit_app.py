@@ -161,7 +161,7 @@ if st.button("Search 🔍"):
                             container.markdown(f"<small>Relevance Score (distance): {res['distance']:.4f} | Chunk ID: {res['chunk_id']}</small>", unsafe_allow_html=True)
                             
                             with container.expander("Show relevant text", expanded=False):
-                                st.text_area("", value=res['text'], height=200, key=f"text_area_{i}_{res['chunk_id']}") # Ensure unique key
+                                st.text_area(label=f"Relevant text content {i+1}", value=res['text'], height=200, key=f"text_area_{i}_{res['chunk_id']}", label_visibility="collapsed") # Ensure unique key
                             container.markdown("---")
                 else:
                      st.warning("No valid results to display after processing.")
