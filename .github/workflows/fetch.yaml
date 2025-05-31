@@ -25,6 +25,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git pull
           git add circular-data.json # Or whatever your output file is named
           # Commit only if there are changes
           if git diff --staged --quiet; then
