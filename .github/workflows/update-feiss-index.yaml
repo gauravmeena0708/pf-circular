@@ -1,4 +1,4 @@
-name: Update EPF Circulars Search Index
+name: Update EPF Circulars Feiss Search Index
 
 on:
   workflow_dispatch: # Allows manual triggering
