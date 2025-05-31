@@ -125,14 +125,28 @@ def load_english_pdf_links(json_path):
     links_info = []
     try:
         with open(json_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-        for item_id, item_content in data.items():
+            data = json.load(f) # data is a list of dictionaries
+        
+        if not isinstance(data, list):
+            logger.error(f"Error: Expected a list from {json_path}, but got {type(data)}. Please check JSON_FILE_PATH.")
+            return []
+
+        for item_content in data: # Iterate directly over the list
             if not isinstance(item_content, dict):
-                logger.warning(f"Skipping item_id '{item_id}' as its content is not a dictionary.")
+                logger.warning(f"Skipping an item as it's not a dictionary: {item_content}")
                 continue
+
+            # Use 'serial_no' as the base for the ID. Add a fallback if 'serial_no' is missing.
+            item_id_base = item_content.get('serial_no', f"item_{len(links_info)}") 
+            
             eng_link = item_content.get('english_pdf_link')
-            if eng_link:
-                links_info.append({"id": f"{item_id}_en", "url": eng_link, "language": "english"})
+            
+            # Ensure eng_link is not null and not an empty string before processing
+            if eng_link and isinstance(eng_link, str) and eng_link.strip():
+                links_info.append({"id": f"{item_id_base}_en", "url": eng_link, "language": "english"})
+            # You can add similar handling for 'hindi_pdf_link' if needed in the future,
+            # just ensure to create a distinct 'id' (e.g., f"{item_id_base}_hi")
+            
         logger.info(f"Loaded {len(links_info)} English PDF links to process from {json_path}")
     except FileNotFoundError:
         logger.error(f"Error: {json_path} not found.")
