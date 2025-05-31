@@ -738,5 +738,2606 @@
             289,
             1265
         ]
+    },
+    {
+        "chunk_id": "46_en_pg0_text_txt0",
+        "text_to_embed": "afari &faez flfe rutoat",
+        "source_pdf_id": "46_en",
+        "source_page_num": 0,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            633,
+            115,
+            977,
+            115,
+            977,
+            154,
+            633,
+            154
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg0_text_txt1",
+        "text_to_embed": "Employees' Provident Fund Organisation (HA Qa rTTJIR HFTT4, HRT HTT)",
+        "source_pdf_id": "46_en",
+        "source_page_num": 0,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            529,
+            158,
+            1079,
+            158,
+            1079,
+            239,
+            529,
+            239
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg0_text_txt2",
+        "text_to_embed": "(MINISTRY OF LABOUR & EMPLOYMENT, GOVERNMENT OF INDIA) Te4 #rcr4/Head Office Tn 7ui vadixitxt Her, ecich-2,J113g-4th Wall, 372 fehaas TTJR, Ts fccit-110023 NBCC Centre, Block-2, Ground-4th Floor, East Kidwai Nagar; New Delhi-110023 website: WWw.epfindiagov.in, WWW.epfindia nicin File No. A-12034/5/2025-EPFO-HQ/RC 422 Date: 22.05.2025 To,",
+        "source_pdf_id": "46_en",
+        "source_page_num": 0,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            211,
+            241,
+            1384,
+            241,
+            1384,
+            554,
+            211,
+            554
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg0_text_txt3",
+        "text_to_embed": "AlL Addl: CPFC (HQ)/ACC (Zones)",
+        "source_pdf_id": "46_en",
+        "source_page_num": 0,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            309,
+            576,
+            723,
+            576,
+            723,
+            615,
+            309,
+            615
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg0_text_txt4",
+        "text_to_embed": "nt",
+        "source_pdf_id": "46_en",
+        "source_page_num": 0,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            1370,
+            860,
+            1402,
+            860,
+            1402,
+            884,
+            1370,
+            884
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg0_text_txt5",
+        "text_to_embed": "Ie, to",
+        "source_pdf_id": "46_en",
+        "source_page_num": 0,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            1368,
+            952,
+            1402,
+            952,
+            1402,
+            1012,
+            1368,
+            1012
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg0_text_txt6",
+        "text_to_embed": "ly,",
+        "source_pdf_id": "46_en",
+        "source_page_num": 0,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            1367,
+            1133,
+            1405,
+            1133,
+            1405,
+            1171,
+            1367,
+            1171
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg0_text_txt7",
+        "text_to_embed": "b)",
+        "source_pdf_id": "46_en",
+        "source_page_num": 0,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            1369,
+            1245,
+            1405,
+            1245,
+            1405,
+            1319,
+            1369,
+            1319
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg1_text_txt8",
+        "text_to_embed": "EMPLOYEES' PROVIDENT FUND PERSONAL ASSISTANT (PROBATIONERS) EXAMINATION SCHEME_2025",
+        "source_pdf_id": "46_en",
+        "source_page_num": 1,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            258,
+            205,
+            1437,
+            205,
+            1437,
+            276,
+            258,
+            276
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg1_text_txt9",
+        "text_to_embed": "1. Short Title_Application Commencement:",
+        "source_pdf_id": "46_en",
+        "source_page_num": 1,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            272,
+            362,
+            896,
+            362,
+            896,
+            403,
+            272,
+            403
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg1_text_txt10",
+        "text_to_embed": "This Scheme may be called the Employees' Provident Fund Personal Assistant (Probationers) Examination Scheme, 2025.",
+        "source_pdf_id": "46_en",
+        "source_page_num": 1,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            405,
+            439,
+            1444,
+            439,
+            1444,
+            511,
+            405,
+            511
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg1_text_txt11",
+        "text_to_embed": "It shall come into force from such date as may be published on the official website of EPFO.",
+        "source_pdf_id": "46_en",
+        "source_page_num": 1,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            405,
+            537,
+            1441,
+            537,
+            1441,
+            612,
+            405,
+            612
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg1_text_txt12",
+        "text_to_embed": "ii.",
+        "source_pdf_id": "46_en",
+        "source_page_num": 1,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            334,
+            548,
+            362,
+            548,
+            362,
+            574,
+            334,
+            574
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg1_text_txt13",
+        "text_to_embed": "2 Definition:",
+        "source_pdf_id": "46_en",
+        "source_page_num": 1,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            275,
+            638,
+            470,
+            638,
+            470,
+            670,
+            275,
+            670
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg1_text_txt14",
+        "text_to_embed": "'Examination' means Personal Assistant (Probationers) Examination conducted under the Scheme: ii. 'Employee' means person   appointed against sanctioned  post  in the Organisation. 94TC Taf& iii. Organisation' means Employees' Provident Fund Organisation. iv_ 'Probationer' means an employee appointed to post in the Organisation by direct recruitment and is required to be on probation for a period specified in the relevant Recruitment Rules or appointment order: 'Paper' means any paper of the examination specified in the schedule to the Scheme: vi. 'Schedule' means a schedule annexed to this Scheme and; vii. 'Syllabus' means the syllabus prescribed for the examination. 4 NOI 3. Eligibility for_Appearing_in_the _Examination:",
+        "source_pdf_id": "46_en",
+        "source_page_num": 1,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            272,
+            707,
+            1444,
+            707,
+            1444,
+            1315,
+            272,
+            1315
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg1_text_txt15",
+        "text_to_embed": "Examination is open to all Employees appointed in the Organisation against direct recruitment quota   vacancies in the cadre of Personal Assistant and placed on probation on appointment: Qualifying the probationary examination is a pre-condition for direct recruits for successful completion of the period of probation:",
+        "source_pdf_id": "46_en",
+        "source_page_num": 1,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            441,
+            1339,
+            1446,
+            1339,
+            1446,
+            1547,
+            441,
+            1547
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg1_text_txt16",
+        "text_to_embed": "Qualifying the Examination under the Scheme within the prescribed period is one of the conditions for satisfactory completion of the period of probation prescribed in the relevant Recruitment Rules or appointment order: In case probationer fails to qualify the Examination under the Scheme within the prescribed period he/ she may be given chance(s) to appear in the Examination during the extended period of probation, if any:",
+        "source_pdf_id": "46_en",
+        "source_page_num": 1,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            441,
+            1587,
+            1445,
+            1587,
+            1445,
+            1837,
+            441,
+            1837
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg1_text_txt17",
+        "text_to_embed": "ii",
+        "source_pdf_id": "46_en",
+        "source_page_num": 1,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            372,
+            1594,
+            398,
+            1594,
+            398,
+            1620,
+            372,
+            1620
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg2_text_txt18",
+        "text_to_embed": "Syllabus: The examination shall consist following four papers.",
+        "source_pdf_id": "46_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            349,
+            185,
+            1149,
+            185,
+            1149,
+            230,
+            349,
+            230
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg2_text_txt19",
+        "text_to_embed": "4",
+        "source_pdf_id": "46_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            305,
+            195,
+            325,
+            195,
+            325,
+            217,
+            305,
+            217
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg2_text_txt20",
+        "text_to_embed": "OND 4 8 4 13 The syllabus of the examination may be as detailed in the schedule annexed. ii. The guidelines issued by the Ministry of Social Justice & Empowerment  for conducting written examination for persons with Benchmark Disabilities shall be followed: 5. Medium of Examination: 8 The medium of examination shall be Hindi/ English: The probationer may write the examination either in Hindi or English except language paper: 94Tal 6_ Venue and frequency of Examination:",
+        "source_pdf_id": "46_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            258,
+            887,
+            1444,
+            887,
+            1444,
+            1424,
+            258,
+            1424
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg2_text_txt21",
+        "text_to_embed": "NOTE:",
+        "source_pdf_id": "46_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            274,
+            938,
+            372,
+            938,
+            372,
+            970,
+            274,
+            970
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg2_text_txt22",
+        "text_to_embed": "The examination may be conducted two times in a calendar year preferably as per the Examination Calendar at such time and place(s) as may be decided and specified. Every probationer who has not yet qualified in the Examination shall appear in the examination according to the  program of  examination approved by Competent Authority:",
+        "source_pdf_id": "46_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            348,
+            1454,
+            1445,
+            1454,
+            1445,
+            1639,
+            348,
+            1639
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg2_text_txt23",
+        "text_to_embed": "ii.",
+        "source_pdf_id": "46_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            280,
+            1528,
+            306,
+            1528,
+            306,
+            1556,
+            280,
+            1556
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg2_text_txt24",
+        "text_to_embed": "Number of_chances and time_limit for qualifying _the _Examination:",
+        "source_pdf_id": "46_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            306,
+            1668,
+            1183,
+            1668,
+            1183,
+            1711,
+            306,
+            1711
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg2_text_txt25",
+        "text_to_embed": "7",
+        "source_pdf_id": "46_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            259,
+            1675,
+            279,
+            1675,
+            279,
+            1699,
+            259,
+            1699
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg2_text_txt26",
+        "text_to_embed": "A probationer has to appear and qualify the Personal Assistant (Probationers) Examination(s) conducted within the normal period of probation as per Para 7 of the Employees' Provident Fund (Staff and Conditions of Service) Regulations, 2025. If the candidate fails to qualify the examination, the Competent Authority, keeping in view all the relevant facts and circumstances of the case will examine the question of further extension of his/her probation or termination of his/her services_ In case the probation is extended, the probationer  will be   given",
+        "source_pdf_id": "46_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            404,
+            1738,
+            1445,
+            1738,
+            1445,
+            1997,
+            404,
+            1997
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg2_text_txt27",
+        "text_to_embed": "Page 2 of 8",
+        "source_pdf_id": "46_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            779,
+            2037,
+            917,
+            2037,
+            917,
+            2074,
+            779,
+            2074
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg3_text_txt28",
+        "text_to_embed": "additional chances within the extended period of probation. If the candidate fails to qualify in the examination during the extended period of probation, he/ she will be discharged from the services as per terms and conditions of appointment:",
+        "source_pdf_id": "46_en",
+        "source_page_num": 3,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            405,
+            186,
+            1443,
+            186,
+            1443,
+            305,
+            405,
+            305
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg3_text_txt29",
+        "text_to_embed": "probationer shall not be entitled to his/her annual increment until he/ she qualifies the examination.",
+        "source_pdf_id": "46_en",
+        "source_page_num": 3,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            403,
+            364,
+            1442,
+            364,
+            1442,
+            444,
+            403,
+            444
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg3_text_txt30",
+        "text_to_embed": "ii.",
+        "source_pdf_id": "46_en",
+        "source_page_num": 3,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            334,
+            372,
+            364,
+            372,
+            364,
+            398,
+            334,
+            398
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg3_text_txt31",
+        "text_to_embed": "Qualifying Marks:",
+        "source_pdf_id": "46_en",
+        "source_page_num": 3,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            312,
+            478,
+            567,
+            478,
+            567,
+            519,
+            312,
+            519
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg3_text_txt32",
+        "text_to_embed": "8_",
+        "source_pdf_id": "46_en",
+        "source_page_num": 3,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            257,
+            483,
+            277,
+            483,
+            277,
+            509,
+            257,
+            509
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg3_text_txt33",
+        "text_to_embed": "A candidate will be declared qualified in the examination only if he/she secures 45%or more marks in each paper for general category. For SC/ST / PwBD candidates the qualifying marks is 40% in each paper: 9_ Grant of Exemption:",
+        "source_pdf_id": "46_en",
+        "source_page_num": 3,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            257,
+            546,
+            1439,
+            546,
+            1439,
+            719,
+            257,
+            719
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg3_text_txt34",
+        "text_to_embed": "A candidate who appears in the examination and is not able to qualify in the same but secures qualifying marks in any one of the papers will be granted exemption in that paper and will not have to reappear in that paper in the next examination: 10. Use_of_unfair _means: OVIDENT FUND 4 13 Any candidate, who is found to be copying from the answer paper of another candidate(s) or from any written paper or document brought by him/her, or in any other way obtaining help or giving help to other candidate(s) by irregular means, or found to be in possession of a book, mobile phones, Bluetooth devices and other electronic or other devices specifically banned which is not authorized to be used or any written paper or document; or found guilty of any other malpractices or misconduct or misbehavior will immediately be expelled from the examination hall and summarily debarred from the examination in addition to being liable for disciplinary action INDIA",
+        "source_pdf_id": "46_en",
+        "source_page_num": 3,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            270,
+            759,
+            1425,
+            759,
+            1425,
+            1325,
+            270,
+            1325
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg3_text_txt35",
+        "text_to_embed": "Even at the time of evaluation, if it is found that some copying malpractice was adopted by a candidate or candidates, the result of the candidate / candidates will be liable to be cancelled. In case of mass copying or recourse to unfair means at one or more centre(s) of the examination, the examination of the concerned examination centre(s)  will be liable to be cancelled: Any complaint of malpractice by the candidate(s) should be submitted to the Invigilator of the examination before leaving the examination hall: Any' complaint received after the candidates leave the examination will not be entertained under any circumstance",
+        "source_pdf_id": "46_en",
+        "source_page_num": 3,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            364,
+            1349,
+            1425,
+            1349,
+            1425,
+            1637,
+            364,
+            1637
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg3_text_txt36",
+        "text_to_embed": "ii.",
+        "source_pdf_id": "46_en",
+        "source_page_num": 3,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            310,
+            1352,
+            340,
+            1352,
+            340,
+            1378,
+            310,
+            1378
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg3_text_txt37",
+        "text_to_embed": "11. Procedure for supply of Marks List:",
+        "source_pdf_id": "46_en",
+        "source_page_num": 3,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            271,
+            1721,
+            797,
+            1721,
+            797,
+            1759,
+            271,
+            1759
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg3_text_txt38",
+        "text_to_embed": "The result of the examination and the marks of all the candidates appearing in the examination will be uploaded on EPFOs website.",
+        "source_pdf_id": "46_en",
+        "source_page_num": 3,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            272,
+            1797,
+            1443,
+            1797,
+            1443,
+            1876,
+            272,
+            1876
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg4_text_txt39",
+        "text_to_embed": "12. Re-totaling and verification of_marks:",
+        "source_pdf_id": "46_en",
+        "source_page_num": 4,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            272,
+            183,
+            831,
+            183,
+            831,
+            227,
+            272,
+            227
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg4_text_txt40",
+        "text_to_embed": "If a candidate desires re-totaling of his/her marks and verification of the facts that all answers written by him /her have been dully assessed by the examiner, he/ she should submit an application to the Examination Conducting Authority through the Officer in Charge of the office with a fee of Rs.500 per paper: The application must be supported with confirmation from the Officer in charge of the Office that for re-",
+        "source_pdf_id": "46_en",
+        "source_page_num": 4,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            404,
+            253,
+            1444,
+            253,
+            1444,
+            468,
+            404,
+            468
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg4_text_txt41",
+        "text_to_embed": "by the",
+        "source_pdf_id": "46_en",
+        "source_page_num": 4,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            1355,
+            547,
+            1443,
+            547,
+            1443,
+            585,
+            1355,
+            585
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg4_text_txt42",
+        "text_to_embed": "upon 2SS will",
+        "source_pdf_id": "46_en",
+        "source_page_num": 4,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            1344,
+            656,
+            1440,
+            656,
+            1440,
+            714,
+            1344,
+            714
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg4_text_txt43",
+        "text_to_embed": "TS from imitted",
+        "source_pdf_id": "46_en",
+        "source_page_num": 4,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            1344,
+            788,
+            1442,
+            788,
+            1442,
+            854,
+            1344,
+            854
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg4_text_txt44",
+        "text_to_embed": "tances_",
+        "source_pdf_id": "46_en",
+        "source_page_num": 4,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            1348,
+            934,
+            1434,
+            934,
+            1434,
+            960,
+            1348,
+            960
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg4_text_txt45",
+        "text_to_embed": "ler this been",
+        "source_pdf_id": "46_en",
+        "source_page_num": 4,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            1344,
+            1004,
+            1442,
+            1004,
+            1442,
+            1070,
+            1344,
+            1070
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg4_text_txt46",
+        "text_to_embed": "inder",
+        "source_pdf_id": "46_en",
+        "source_page_num": 4,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            1346,
+            1148,
+            1422,
+            1148,
+            1422,
+            1176,
+            1346,
+            1176
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg4_text_txt47",
+        "text_to_embed": "and jional",
+        "source_pdf_id": "46_en",
+        "source_page_num": 4,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            1343,
+            1244,
+            1425,
+            1244,
+            1425,
+            1317,
+            1343,
+            1317
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg5_text_txt48",
+        "text_to_embed": "SCHEDULE",
+        "source_pdf_id": "46_en",
+        "source_page_num": 5,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            734,
+            188,
+            948,
+            188,
+            948,
+            230,
+            734,
+            230
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg5_text_txt49",
+        "text_to_embed": "SYLLABUS FOR PERSONAL ASSISTANT (PROBATIONERS) EXAMINATION SCHEME, 2025",
+        "source_pdf_id": "46_en",
+        "source_page_num": 5,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            291,
+            258,
+            1358,
+            258,
+            1358,
+            327,
+            291,
+            327
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg5_text_txt50",
+        "text_to_embed": "PAPER-I",
+        "source_pdf_id": "46_en",
+        "source_page_num": 5,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            782,
+            418,
+            916,
+            418,
+            916,
+            450,
+            782,
+            450
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg5_text_txt51",
+        "text_to_embed": "Marks 50 (MCQ)",
+        "source_pdf_id": "46_en",
+        "source_page_num": 5,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            1051,
+            493,
+            1271,
+            493,
+            1271,
+            533,
+            1051,
+            533
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg5_text_txt52",
+        "text_to_embed": "TIME 2 Hours",
+        "source_pdf_id": "46_en",
+        "source_page_num": 5,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            378,
+            496,
+            579,
+            496,
+            579,
+            529,
+            378,
+            529
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg5_text_txt53",
+        "text_to_embed": "PAPER-I",
+        "source_pdf_id": "46_en",
+        "source_page_num": 5,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            740,
+            496,
+            862,
+            496,
+            862,
+            526,
+            740,
+            526
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg5_text_txt54",
+        "text_to_embed": "Employees' Provident Fund & Miscellaneous Provisions Act; 1952 and Schemes framed thereunder:",
+        "source_pdf_id": "46_en",
+        "source_page_num": 5,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            350,
+            599,
+            1399,
+            599,
+            1399,
+            672,
+            350,
+            672
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg5_text_txt55",
+        "text_to_embed": "Employees' Provident Fund & Miscellaneous Provisions Act, 1952 Employees' Provident Fund Scheme,1952 Employees' Pension Scheme, 1995 Employees' Deposit Linked Insurance Scheme,1976 Social Security Code 2020 14 IDENT FUND II Services Provided by EPFO 9 Q UAN & EPF Accounts 8 ii. Process of settlement of PF, Pension & EDLI claims of members claimants including transfer claims iii. Correction in member s profile iv Right to Information Act, 2005. V Functions of PRO and various help desks. 0 vi. Grievance handling mechanism in EPFO III Various portals of EPFO, etc:: INDIA EPFiGMS Portal 9TTT4 13 ii. CPGRAM Portal iii. MIS portal, iv UMANG App Compliance e-proceedings portal vi. CAIU Portal vii. LIMBS viii. Employer Login Portal ix Employee Login Portal Account Section Login Portal xi. Report making and E-mail handling xii: Basic Knowledge of Office Equipment like Printer, Scanner, Projector, etc:",
+        "source_pdf_id": "46_en",
+        "source_page_num": 5,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            264,
+            716,
+            1350,
+            716,
+            1350,
+            1823,
+            264,
+            1823
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg5_text_txt56",
+        "text_to_embed": "13 ii. iii. iv",
+        "source_pdf_id": "46_en",
+        "source_page_num": 5,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            318,
+            725,
+            358,
+            725,
+            358,
+            854,
+            318,
+            854
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg5_text_txt57",
+        "text_to_embed": "Page 5 of 8",
+        "source_pdf_id": "46_en",
+        "source_page_num": 5,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            777,
+            2037,
+            917,
+            2037,
+            917,
+            2074,
+            777,
+            2074
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg6_text_txt58",
+        "text_to_embed": "PAPER-II",
+        "source_pdf_id": "46_en",
+        "source_page_num": 6,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            782,
+            224,
+            916,
+            224,
+            916,
+            254,
+            782,
+            254
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg6_text_txt59",
+        "text_to_embed": "TIME 2 Hours",
+        "source_pdf_id": "46_en",
+        "source_page_num": 6,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            376,
+            302,
+            576,
+            302,
+            576,
+            332,
+            376,
+            332
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg6_text_txt60",
+        "text_to_embed": "PAPER-II",
+        "source_pdf_id": "46_en",
+        "source_page_num": 6,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            738,
+            302,
+            866,
+            302,
+            866,
+            332,
+            738,
+            332
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg6_text_txt61",
+        "text_to_embed": "Marks 100",
+        "source_pdf_id": "46_en",
+        "source_page_num": 6,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            1056,
+            302,
+            1194,
+            302,
+            1194,
+            332,
+            1056,
+            332
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg6_text_txt62",
+        "text_to_embed": "Noting / Drafting in Government Correspondence and Administrative and Service Rules",
+        "source_pdf_id": "46_en",
+        "source_page_num": 6,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            254,
+            407,
+            1428,
+            407,
+            1428,
+            456,
+            254,
+            456
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg6_text_txt63",
+        "text_to_embed": "Noting & Drafting in Government Correspondence (50 Marks- Descriptive) 13 Definition, Purpose, and Importance of Noting Drafting in Government Offices ii. Principles of Effective Noting Drafting iii. Differences between Noting Drafting, and Official Correspondence iv Types of Official Communication: Letters, Circulars, Notifications, Office Memoranda, DO, etc ZDI_ Use of Official Language (Hindi & English) in Government Correspondence (Official Language Rules, 1976) T Fi vi Legal Aspects of Government Noting Drafting (RTI, Record-Keeping Confidentiality) 0 vii. Noting and Drafting in case based scenarios viii. Drafting Responses to RTI on behalf of CPIO and Appellate Authority and drafting replies to Parliament Questions_ ix. Drafting of Speaking Orders 0 d II: Administrative and Service Rules (50 Marks- MCQ) 1_ Employees' Provident Fund (Officers Employees' Condition of Ser vice) Regulations, 2008 ii. EPF. Staff (Classification, Control & Appeal) Rules, 1971. iii. Central Civil Service (Conduct) Rules, 1964. iv Central Civil Service (Leave) Rules, 1972. V Central Civil Service (Pension) Rules, 1972. vi_ Leave Travel Concession Rules. vii. Traveling Allowance Rules viii. Central Services (Medical Attendance) Rules, 1944 ix Fundamental Rules & Supplementary Rules X General Financial Rules, 2017 xi. Government e-Marketplace (GeM)",
+        "source_pdf_id": "46_en",
+        "source_page_num": 6,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            276,
+            539,
+            1444,
+            539,
+            1444,
+            1837,
+            276,
+            1837
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg6_text_txt64",
+        "text_to_embed": "Page 6 of 8",
+        "source_pdf_id": "46_en",
+        "source_page_num": 6,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            777,
+            2037,
+            917,
+            2037,
+            917,
+            2074,
+            777,
+            2074
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg7_text_txt65",
+        "text_to_embed": "PAPER-III",
+        "source_pdf_id": "46_en",
+        "source_page_num": 7,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            776,
+            190,
+            922,
+            190,
+            922,
+            220,
+            776,
+            220
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg7_text_txt66",
+        "text_to_embed": "TIME 2 Hours",
+        "source_pdf_id": "46_en",
+        "source_page_num": 7,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            374,
+            268,
+            574,
+            268,
+            574,
+            298,
+            374,
+            298
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg7_text_txt67",
+        "text_to_embed": "PAPER-III",
+        "source_pdf_id": "46_en",
+        "source_page_num": 7,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            734,
+            268,
+            874,
+            268,
+            874,
+            298,
+            734,
+            298
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg7_text_txt68",
+        "text_to_embed": "Marks 100",
+        "source_pdf_id": "46_en",
+        "source_page_num": 7,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            1060,
+            268,
+            1198,
+            268,
+            1198,
+            298,
+            1060,
+            298
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg7_text_txt69",
+        "text_to_embed": "English Language and Comprehension",
+        "source_pdf_id": "46_en",
+        "source_page_num": 7,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            351,
+            366,
+            869,
+            366,
+            869,
+            409,
+            351,
+            409
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg7_text_txt70",
+        "text_to_embed": "Reading Comprehension ii. Letter Writing iii. Essay Writing iv_ Precis Writing V_ Narrative Writing vi. Rearrangement of sentence vii. Fill in the Blanks viii. English Grammar (Synonym, Antonym, Active/ Passive Voice, idioms, phrases, etc) ix Figures of Speech: Metaphor, Simile, Personification, Oxymoron, etc: X_ Sentence Structure: Subject-verb agreement; sentence types (simple, compound, complex) DENT Fu xi. Adjectives and Adverbs: Degree, comparison, and usage xii: Prepositions and Conjunctions: Usage and function in sentences_ 0 8 PAPER-IV 8 TIME 2 Hours PAPER-IV Marks 100",
+        "source_pdf_id": "46_en",
+        "source_page_num": 7,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            296,
+            432,
+            1423,
+            432,
+            1423,
+            1168,
+            296,
+            1168
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg7_text_txt71",
+        "text_to_embed": "1.",
+        "source_pdf_id": "46_en",
+        "source_page_num": 7,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            333,
+            445,
+            351,
+            445,
+            351,
+            467,
+            333,
+            467
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg7_text_txt72",
+        "text_to_embed": "Digital Governance and Computer Proficiency Test NO  IDIA (1) Digital Governance (MCQ) (50 Marks, 45 minutes) 1_ Digital India Initiative  (T ii. National E Governance Plan iii. National Cyber Security Policy iv Data Protection Bill Aadhaar Data Security Framework vi. IT-Enabled Public Services (Digilocker, Umang, E-Shram, e-KYC & Aadhaar Authentication, Smart Cities Mission, Cyber Hygiene, CERT-In Guidelines, e- Office & File Management Systems, etc)",
+        "source_pdf_id": "46_en",
+        "source_page_num": 7,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            257,
+            1195,
+            1385,
+            1195,
+            1385,
+            1700,
+            257,
+            1700
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg7_text_txt73",
+        "text_to_embed": "(2) Computer Proficiency Test (50 Marks) (75 minutes)",
+        "source_pdf_id": "46_en",
+        "source_page_num": 7,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            257,
+            1731,
+            971,
+            1731,
+            971,
+            1775,
+            257,
+            1775
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg7_text_txt74",
+        "text_to_embed": "Preparing a letter / order in MS Word File through mail merge function. Rewriting of Paragraph in MS Word format using Track change, Comment remove, table creation, spelling check and other functions. iii. Preparing power point presentation on given   subject   including adding animation.",
+        "source_pdf_id": "46_en",
+        "source_page_num": 7,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            312,
+            1801,
+            1429,
+            1801,
+            1429,
+            1982,
+            312,
+            1982
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg7_text_txt75",
+        "text_to_embed": "1. ii.",
+        "source_pdf_id": "46_en",
+        "source_page_num": 7,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            320,
+            1807,
+            352,
+            1807,
+            352,
+            1868,
+            320,
+            1868
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg7_text_txt76",
+        "text_to_embed": "Page 7 of 8",
+        "source_pdf_id": "46_en",
+        "source_page_num": 7,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            779,
+            2037,
+            917,
+            2037,
+            917,
+            2074,
+            779,
+            2074
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg8_text_txt77",
+        "text_to_embed": "Preparing a MS Excel spreadsheet; formatting cells, enter formula for calculation in cells, inserting built in functions in cells and answering arithmetic problems. Preparing pie chart; 'bar graphs / diagrams in MS ~Excel based on the data provided & VLOOKUP. Use of Pivot\" in MS Excel to generate data  analysis report from the given spreadsheet: Use of MS Access in Creation and manipulation of Data bases.",
+        "source_pdf_id": "46_en",
+        "source_page_num": 8,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            391,
+            188,
+            1443,
+            188,
+            1443,
+            457,
+            391,
+            457
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg8_text_txt78",
+        "text_to_embed": "iv.",
+        "source_pdf_id": "46_en",
+        "source_page_num": 8,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            312,
+            192,
+            350,
+            192,
+            350,
+            224,
+            312,
+            224
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg8_text_txt79",
+        "text_to_embed": "vi.",
+        "source_pdf_id": "46_en",
+        "source_page_num": 8,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            314,
+            342,
+            352,
+            342,
+            352,
+            370,
+            314,
+            370
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg8_text_txt80",
+        "text_to_embed": "vii.",
+        "source_pdf_id": "46_en",
+        "source_page_num": 8,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            304,
+            416,
+            352,
+            416,
+            352,
+            442,
+            304,
+            442
+        ]
+    },
+    {
+        "chunk_id": "46_en_pg8_text_txt81",
+        "text_to_embed": "***t*t**ttt**",
+        "source_pdf_id": "46_en",
+        "source_page_num": 8,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            775,
+            491,
+            925,
+            491,
+            925,
+            505,
+            775,
+            505
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg0_text_txt0",
+        "text_to_embed": "#fari &ez ffe #utoat",
+        "source_pdf_id": "45_en",
+        "source_page_num": 0,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            643,
+            115,
+            987,
+            115,
+            987,
+            153,
+            643,
+            153
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg0_text_txt1",
+        "text_to_embed": "Employees' Provident Fund Organisation (MA Qa rTTJR #7d4, HRG HGT)",
+        "source_pdf_id": "45_en",
+        "source_page_num": 0,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            541,
+            161,
+            1089,
+            161,
+            1089,
+            239,
+            541,
+            239
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg0_text_txt2",
+        "text_to_embed": "(MINISTRY OF LABOUR & EMPLOYMENT; GOVERNMENT OF [NDIA) 3ev #rc4/Head Office Tm  \" vaaitixi Hez, ecia-2, 713g-4th Talk, #F<fancasTTJR;,T far-it-110023 NBCC Centre, Block-2, Ground-4th Floor, East Kidwai Nagar, New Delhi-110023 website: Www.epfindia-gov.in, WWW.epfindia nicin File",
+        "source_pdf_id": "45_en",
+        "source_page_num": 0,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            224,
+            239,
+            1302,
+            239,
+            1302,
+            496,
+            224,
+            496
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg0_text_txt3",
+        "text_to_embed": "To,",
+        "source_pdf_id": "45_en",
+        "source_page_num": 0,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            219,
+            518,
+            271,
+            518,
+            271,
+            555,
+            219,
+            555
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg0_text_txt4",
+        "text_to_embed": "Sub",
+        "source_pdf_id": "45_en",
+        "source_page_num": 0,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            222,
+            708,
+            280,
+            708,
+            280,
+            738,
+            222,
+            738
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg0_text_txt5",
+        "text_to_embed": "Mad",
+        "source_pdf_id": "45_en",
+        "source_page_num": 0,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            224,
+            800,
+            282,
+            800,
+            282,
+            830,
+            224,
+            830
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg0_text_txt6",
+        "text_to_embed": "Offit",
+        "source_pdf_id": "45_en",
+        "source_page_num": 0,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            224,
+            894,
+            282,
+            894,
+            282,
+            924,
+            224,
+            924
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg0_text_txt7",
+        "text_to_embed": "Sche circi",
+        "source_pdf_id": "45_en",
+        "source_page_num": 0,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            224,
+            988,
+            284,
+            988,
+            284,
+            1052,
+            224,
+            1052
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg1_text_txt8",
+        "text_to_embed": "EMPLOYEES' PROVIDENT FUND JUNIOR TRANSLATION OFFICER PROBATIONERS_ EXAMINATION SCHEME_ 2025",
+        "source_pdf_id": "45_en",
+        "source_page_num": 1,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            328,
+            203,
+            1369,
+            203,
+            1369,
+            279,
+            328,
+            279
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg1_text_txt9",
+        "text_to_embed": "13 Short Title_Application & Commencement:",
+        "source_pdf_id": "45_en",
+        "source_page_num": 1,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            275,
+            315,
+            897,
+            315,
+            897,
+            353,
+            275,
+            353
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg1_text_txt10",
+        "text_to_embed": "This Scheme may be called the Employees' Provident Fund Junior Translation Officer (Probationers) Examination Scheme, 2025. ii. It shall come into force from such date as may be published on the official website of EPFO.",
+        "source_pdf_id": "45_en",
+        "source_page_num": 1,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            374,
+            385,
+            1443,
+            385,
+            1443,
+            529,
+            374,
+            529
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg1_text_txt11",
+        "text_to_embed": "2 Definition:",
+        "source_pdf_id": "45_en",
+        "source_page_num": 1,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            275,
+            552,
+            470,
+            552,
+            470,
+            584,
+            275,
+            584
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg1_text_txt12",
+        "text_to_embed": "'Examination' means Junior Translation Officer (Probationers) Examination conducted under the Scheme: ii_ 'Employee' means person appointed against sanctioned   post in the Organisation. iii_ 'Organisation' means Employees' Provident Fund Organisation. iv 'Probationer' means an employee appointed to post in the Organisation by direct recruitment and is required to be on probation for a period specified in the relevant Recruitment Rules or appointment order: 'Paper' means any paper of the examination specified in the schedule to the Scheme: vi. 'Schedule' means a schedule annexed to this Scheme and; vii: 'Syllabus' means the syllabus prescribed for the examination. 3_ Eligibility for_Appearing_in the Examination: 2 1_ Examination is open to all Employees appointed in the Organization against direct recruitment quota vacancies in the cadre of Junior Translation Officer and   placed on probation on appointment:   Qualifying the   probationary examination is a pre-condition for direct recruits for successful completion of the period of probation. INDIA QTTTC ji Qualifying the Examination under the Scheme within the prescribed period is one of the conditions for satisfactory completion of the period of probation prescribed in the relevant Recruitment Rules or Letter of Appointment: In case probationer fails to qualify the Examination under the Scheme within the prescribed period he/ she may be given chance(s) to appear in the Examination during the extended period of probation, if any.",
+        "source_pdf_id": "45_en",
+        "source_page_num": 1,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            275,
+            620,
+            1445,
+            620,
+            1445,
+            1594,
+            275,
+            1594
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg1_text_txt13",
+        "text_to_embed": "Syllabus: The examination shall consist following four papers",
+        "source_pdf_id": "45_en",
+        "source_page_num": 1,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            350,
+            1622,
+            1147,
+            1622,
+            1147,
+            1665,
+            350,
+            1665
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg1_text_txt14",
+        "text_to_embed": "Page 1 of 7",
+        "source_pdf_id": "45_en",
+        "source_page_num": 1,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            779,
+            2037,
+            917,
+            2037,
+            917,
+            2074,
+            779,
+            2074
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg2_text_txt15",
+        "text_to_embed": "a) Employees' Provident Fund & MP Act, 1952 and Schemes framed under the Act b) Staff Service Regulation and other Servicel IV Matters",
+        "source_pdf_id": "45_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            398,
+            189,
+            1044,
+            189,
+            1044,
+            339,
+            398,
+            339
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg2_text_txt16",
+        "text_to_embed": "MCQs",
+        "source_pdf_id": "45_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            1109,
+            265,
+            1199,
+            265,
+            1199,
+            301,
+            1109,
+            301
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg2_text_txt17",
+        "text_to_embed": "2 Hrs",
+        "source_pdf_id": "45_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            1258,
+            266,
+            1336,
+            266,
+            1336,
+            296,
+            1258,
+            296
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg2_text_txt18",
+        "text_to_embed": "100",
+        "source_pdf_id": "45_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            1382,
+            266,
+            1432,
+            266,
+            1432,
+            296,
+            1382,
+            296
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg2_text_txt19",
+        "text_to_embed": "NOTE:",
+        "source_pdf_id": "45_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            274,
+            452,
+            372,
+            452,
+            372,
+            482,
+            274,
+            482
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg2_text_txt20",
+        "text_to_embed": "The syllabus of the examination may be as detailed in the schedule annexed: ii. The guidelines issued by the Ministry of Social Justice & Empowerment   for conducting written examination for persons with Benchmark Disabilities shall be followed:",
+        "source_pdf_id": "45_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            314,
+            514,
+            1445,
+            514,
+            1445,
+            672,
+            314,
+            672
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg2_text_txt21",
+        "text_to_embed": "5. Medium of Examination:",
+        "source_pdf_id": "45_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            272,
+            708,
+            658,
+            708,
+            658,
+            740,
+            272,
+            740
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg2_text_txt22",
+        "text_to_embed": "The medium of examination shall be Hindi/ English: The probationer may write the examination either in Hindi or English except language paper: 4 6 Yenueand frequency of Examination: T FUND The examination may be conducted two times in a calendar year preferably as per the Examination Calendar at such time and place(s) as may be decided and specified. ii. Every probationer who has not yet qualified in the Examination shall appear in the examination according to the program of examination approved by Competent Authority. 6 7 Number of_chances and time limit for qualifying_the Examination:",
+        "source_pdf_id": "45_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            271,
+            779,
+            1445,
+            779,
+            1445,
+            1225,
+            271,
+            1225
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg2_text_txt23",
+        "text_to_embed": "A probationer has to appear and qualify the Junior Translation Officer (Probationers) Examination(s) conducted within the normal period of probation as per Para 7 of the Employees' Provident Fund (Staff and Conditions of Service) Regulations, 2025. If the candidate fails to qualify the examination, the Competent Authority, keeping in view all the relevant facts and circumstances of the case will examine the question of further extension of his/her probation Or termination of his/her services In case the probation is extended, the probationer will be given additional chances within the extended period of probation. If the candidate fails to qualify in the examination during the extended period of probation, he/she will be discharged from the services as per terms and conditions of appointment.",
+        "source_pdf_id": "45_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            347,
+            1251,
+            1445,
+            1251,
+            1445,
+            1623,
+            347,
+            1623
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg2_text_txt24",
+        "text_to_embed": "probationer shall not be entitled to his/her annual increment until he/she qualifies the examination.",
+        "source_pdf_id": "45_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            350,
+            1643,
+            1445,
+            1643,
+            1445,
+            1718,
+            350,
+            1718
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg2_text_txt25",
+        "text_to_embed": "ii.",
+        "source_pdf_id": "45_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            280,
+            1654,
+            306,
+            1654,
+            306,
+            1680,
+            280,
+            1680
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg2_text_txt26",
+        "text_to_embed": "Qualifying Marks:",
+        "source_pdf_id": "45_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            337,
+            1761,
+            589,
+            1761,
+            589,
+            1799,
+            337,
+            1799
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg2_text_txt27",
+        "text_to_embed": "8",
+        "source_pdf_id": "45_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            273,
+            1765,
+            293,
+            1765,
+            293,
+            1789,
+            273,
+            1789
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg2_text_txt28",
+        "text_to_embed": "A candidate will be declared qualified in the examination only if he/ she secures 45%0r more marks in each paper for general category. For SC/ST / PwBD candidates the qualifying marks is 40% in each paper:",
+        "source_pdf_id": "45_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            275,
+            1827,
+            1445,
+            1827,
+            1445,
+            1943,
+            275,
+            1943
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg2_text_txt29",
+        "text_to_embed": "Page 2 of 7",
+        "source_pdf_id": "45_en",
+        "source_page_num": 2,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            779,
+            2037,
+            917,
+            2037,
+            917,
+            2074,
+            779,
+            2074
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg3_text_txt30",
+        "text_to_embed": "Grant of Exemption;",
+        "source_pdf_id": "45_en",
+        "source_page_num": 3,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            323,
+            189,
+            599,
+            189,
+            599,
+            225,
+            323,
+            225
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg3_text_txt31",
+        "text_to_embed": "9_",
+        "source_pdf_id": "45_en",
+        "source_page_num": 3,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            273,
+            191,
+            293,
+            191,
+            293,
+            217,
+            273,
+            217
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg3_text_txt32",
+        "text_to_embed": "A candidate who appears in the examination and is not able to qualify in the same but secures qualifying marks in any one of the papers will be granted exemption in that paper and will not have to reappear in that paper in the next examination:",
+        "source_pdf_id": "45_en",
+        "source_page_num": 3,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            271,
+            263,
+            1425,
+            263,
+            1425,
+            379,
+            271,
+            379
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg3_text_txt33",
+        "text_to_embed": "10. Use of unfair means:",
+        "source_pdf_id": "45_en",
+        "source_page_num": 3,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            272,
+            408,
+            600,
+            408,
+            600,
+            440,
+            272,
+            440
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg3_text_txt34",
+        "text_to_embed": "Any candidate, who is found to be copying from the answer paper of another candidate(s) or from any written paper O document brought by him/her, or in any other way obtaining help or giving help to other candidate(s) by irregular means, or found to be in possession of a book, mobile phones, Bluetooth devices and other electronic or other devices specifically banned which is not authorized to be used or any written paper or document; or found guilty of any other malpractices or misconduct or misbehavior will immediately be expelled from the examination hall and summarily debarred from the examination, in addition to being liable for disciplinary action:",
+        "source_pdf_id": "45_en",
+        "source_page_num": 3,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            273,
+            480,
+            1425,
+            480,
+            1425,
+            775,
+            273,
+            775
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg3_text_txt35",
+        "text_to_embed": "ii. Even at the time of evaluation, if it is found that some copying / malpractice was adopted by a candidate or candidates, the result of the candidate / candidates will be liable to be cancelled. In case of mass copying or recourse to unfair means at one or more centre(s) of the examination, the examination of the concerned examination centre(s) will be liable to be cancelled Any complaint of malpractice by the candidate(s) should be submitted to the Invigilator of the examination before leaving the examination hall. Any complaint received after the candidates leave the examination will not be entertained under any circumstance 11. Procedure for supply of Marks List: E The result of the examination and the marks of all the candidates appearing in the examination will be uploaded on EPFOs website: NC INDIA 12. Re-totaling and verification of marks:",
+        "source_pdf_id": "45_en",
+        "source_page_num": 3,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            271,
+            804,
+            1443,
+            804,
+            1443,
+            1373,
+            271,
+            1373
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg3_text_txt36",
+        "text_to_embed": "If a candidate desires re-totaling of his/her marks and verification of the facts that all answers written by him /herhave been dully assessed by the examiner, he/ she should submit an application to the Examination Conducting Authority through the Officer in Charge of the office with fee of Rs.500 per paper: The application must be supported with confirmation from the Officer in charge of the Office that a fee of Rs. 500/ - per paper has been deposited by the candidates applying for re-totaling verification of marks within the prescribed time_",
+        "source_pdf_id": "45_en",
+        "source_page_num": 3,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            348,
+            1401,
+            1446,
+            1401,
+            1446,
+            1658,
+            348,
+            1658
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg3_text_txt37",
+        "text_to_embed": "Retotaling will not be restricted to only the portion sought to be retotaled by the candidate but shall include the entire paper: iii. The retotaled marks may decrease, remain unchanged, or increase upon completion of the retotaling process  The marks finalized through this process will be conclusive, and no further retotaling will be allowed.",
+        "source_pdf_id": "45_en",
+        "source_page_num": 3,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            270,
+            1683,
+            1445,
+            1683,
+            1445,
+            1907,
+            270,
+            1907
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg3_text_txt38",
+        "text_to_embed": "ii.",
+        "source_pdf_id": "45_en",
+        "source_page_num": 3,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            280,
+            1694,
+            306,
+            1694,
+            306,
+            1720,
+            280,
+            1720
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg4_text_txt39",
+        "text_to_embed": "Such applications must be send to the Competent Authority within 15 days from the date of communication of the respective results. Any application submitted thereafter shall not be entertained.",
+        "source_pdf_id": "45_en",
+        "source_page_num": 4,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            348,
+            184,
+            1444,
+            184,
+            1444,
+            292,
+            348,
+            292
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg4_text_txt40",
+        "text_to_embed": "iv",
+        "source_pdf_id": "45_en",
+        "source_page_num": 4,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            272,
+            192,
+            304,
+            192,
+            304,
+            220,
+            272,
+            220
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg4_text_txt41",
+        "text_to_embed": "Fee paid for re-totaling of marks will not be refundable under any circumstances_",
+        "source_pdf_id": "45_en",
+        "source_page_num": 4,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            350,
+            364,
+            1381,
+            364,
+            1381,
+            408,
+            350,
+            408
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg4_text_txt42",
+        "text_to_embed": "Note I: It must be clearly understood that the only scrutiny intended under this provision is whether  all the answers written by the candidates have been assessed and there is no mistake in the re-totaling of the marks.",
+        "source_pdf_id": "45_en",
+        "source_page_num": 4,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            421,
+            438,
+            1443,
+            438,
+            1443,
+            551,
+            421,
+            551
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg4_text_txt43",
+        "text_to_embed": "any circumstances. Note II: Revaluation of answer script is not permissible in any case or under verification of marks shall be credited by the Officer In-charge of the Regional Note III: All fee  received in response to the requests for re-totaling and Office /Zonal Office to the Employees Provident Fund Account No.2. H #*********** Eaf& 0 QROVIDENT FUND 9 ( ) INDIA YTTTT",
+        "source_pdf_id": "45_en",
+        "source_page_num": 4,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            419,
+            581,
+            1425,
+            581,
+            1425,
+            1394,
+            419,
+            1394
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg5_text_txt44",
+        "text_to_embed": "SCHEDULE",
+        "source_pdf_id": "45_en",
+        "source_page_num": 5,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            767,
+            188,
+            981,
+            188,
+            981,
+            230,
+            767,
+            230
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg5_text_txt45",
+        "text_to_embed": "SYLLABUS FOR JUNIOR TRANSLATION OFFICER (PROBATIONERS) EXAMINATION SCHEME, 2025",
+        "source_pdf_id": "45_en",
+        "source_page_num": 5,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            361,
+            259,
+            1335,
+            259,
+            1335,
+            327,
+            361,
+            327
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg5_text_txt46",
+        "text_to_embed": "PAPER-I",
+        "source_pdf_id": "45_en",
+        "source_page_num": 5,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            788,
+            356,
+            910,
+            356,
+            910,
+            384,
+            788,
+            384
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg5_text_txt47",
+        "text_to_embed": "Marks 100 (Descriptive)",
+        "source_pdf_id": "45_en",
+        "source_page_num": 5,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            1051,
+            431,
+            1369,
+            431,
+            1369,
+            471,
+            1051,
+            471
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg5_text_txt48",
+        "text_to_embed": "TIME 3 Hours",
+        "source_pdf_id": "45_en",
+        "source_page_num": 5,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            378,
+            432,
+            579,
+            432,
+            579,
+            465,
+            378,
+            465
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg5_text_txt49",
+        "text_to_embed": "PAPER-I",
+        "source_pdf_id": "45_en",
+        "source_page_num": 5,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            739,
+            432,
+            859,
+            432,
+            859,
+            462,
+            739,
+            462
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg5_text_txt50",
+        "text_to_embed": "Hindi Language R&f a1ru ii. YRIRfd5 gociaai iii. rilalfaa (ajdoff aik fdh) iv. a dau V_ TTaj? vi: a1a4 qufa &k rT7 vii: fa&H R1oc 9xfa1 viii. THFff r6 faf& ix Hela? aik drayirt a1a OVIDENT FUND Ady & 9 xi. 3rs 3di/ Raladitf [RTocdlr1 & &qy1T dqq xii. 3qf8a &y xiii. RTTa5 &7 8 xiv_ if #f4} 4 35a1 ] 8 PAPER-II TIME 3 Hours PAPER-II Marks 50 (Descriptive)",
+        "source_pdf_id": "45_en",
+        "source_page_num": 5,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            256,
+            503,
+            1357,
+            503,
+            1357,
+            1297,
+            256,
+            1297
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg5_text_txt51",
+        "text_to_embed": "English Language and Comprehension",
+        "source_pdf_id": "45_en",
+        "source_page_num": 5,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            351,
+            1337,
+            869,
+            1337,
+            869,
+            1379,
+            351,
+            1379
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg5_text_txt52",
+        "text_to_embed": "Reading Comprehension Letter Writing Essay Writing Precis Writing Narrative Writing vi. Rearrangement of sentence vii: Fill in the Blanks viii. English Grammar (Synonym, Antonym, Active/ Passive Voice, idioms, phrases, etc) ix _ Figures of Speech: Metaphor, Simile, Personification, Oxymoron, etc. X_ Sentence Structure: Subject-verb agreement, sentence types (simple, compound, complex) xi. Adjectives and Adverbs: Degree, comparison, and usage xii. Prepositions and Conjunctions: Usage and function in sentences xiii. Hindi to English Translation",
+        "source_pdf_id": "45_en",
+        "source_page_num": 5,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            296,
+            1403,
+            1423,
+            1403,
+            1423,
+            1999,
+            296,
+            1999
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg5_text_txt53",
+        "text_to_embed": "1. ii. iii. iv_",
+        "source_pdf_id": "45_en",
+        "source_page_num": 5,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            312,
+            1417,
+            354,
+            1417,
+            354,
+            1554,
+            312,
+            1554
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg5_text_txt54",
+        "text_to_embed": "Page 5 of 7",
+        "source_pdf_id": "45_en",
+        "source_page_num": 5,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            779,
+            2037,
+            917,
+            2037,
+            917,
+            2074,
+            779,
+            2074
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg6_text_txt55",
+        "text_to_embed": "PAPER-III",
+        "source_pdf_id": "45_en",
+        "source_page_num": 6,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            776,
+            256,
+            922,
+            256,
+            922,
+            288,
+            776,
+            288
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg6_text_txt56",
+        "text_to_embed": "PAPER-III",
+        "source_pdf_id": "45_en",
+        "source_page_num": 6,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            733,
+            375,
+            873,
+            375,
+            873,
+            405,
+            733,
+            405
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg6_text_txt57",
+        "text_to_embed": "TIME 2 Hours",
+        "source_pdf_id": "45_en",
+        "source_page_num": 6,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            374,
+            376,
+            574,
+            376,
+            574,
+            406,
+            374,
+            406
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg6_text_txt58",
+        "text_to_embed": "Marks 100",
+        "source_pdf_id": "45_en",
+        "source_page_num": 6,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            1060,
+            376,
+            1198,
+            376,
+            1198,
+            406,
+            1060,
+            406
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg6_text_txt59",
+        "text_to_embed": "Provisions related to official language (MCQ) (50 Marks)",
+        "source_pdf_id": "45_en",
+        "source_page_num": 6,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            256,
+            487,
+            1009,
+            487,
+            1009,
+            531,
+            256,
+            531
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg6_text_txt60",
+        "text_to_embed": "Constitutional Provisions related to languages Official Language Act, 1963 Official Language Rules, 1976 as amended from time to time Inspections, Reports related to Official Language Current affairs related to Hindi literature and Rajbhasa vi General awareness about the basic Hindi Literature and English Literature vii: Initiatives taken by Government to promote use of Hindi Language viii. Preparation of Reports & returns on Official Language/ Preparation of Annual OL Programme dTTT OVIDENT FUND 9 Computer Proficiency Test (50 Marks) 8 Preparing a letter / order in Word File through mail merge function. ii. Error check and spelling correction is given in Word Documents and other functions like Comment remove, spelling check and Bold-underline-remove (Rewriting of Paragraph) etc iii. Preparing a power point presentation on given subject: iv Preparing an excel spreadsheet and answering an arithmetic problem: Preparing pie chart/bar graphs / diagrams in MS ~Excel based on data provided. 91d",
+        "source_pdf_id": "45_en",
+        "source_page_num": 6,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            255,
+            560,
+            1425,
+            560,
+            1425,
+            1391,
+            255,
+            1391
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg6_text_txt61",
+        "text_to_embed": "13 ii. iii. iv",
+        "source_pdf_id": "45_en",
+        "source_page_num": 6,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            270,
+            567,
+            310,
+            567,
+            310,
+            698,
+            270,
+            698
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg6_text_txt62",
+        "text_to_embed": "PAPER-IV",
+        "source_pdf_id": "45_en",
+        "source_page_num": 6,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            776,
+            1442,
+            922,
+            1442,
+            922,
+            1472,
+            776,
+            1472
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg6_text_txt63",
+        "text_to_embed": "Marks 100 (MCQ)",
+        "source_pdf_id": "45_en",
+        "source_page_num": 6,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            1058,
+            1558,
+            1301,
+            1558,
+            1301,
+            1597,
+            1058,
+            1597
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg6_text_txt64",
+        "text_to_embed": "PAPER-IV",
+        "source_pdf_id": "45_en",
+        "source_page_num": 6,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            733,
+            1559,
+            872,
+            1559,
+            872,
+            1592,
+            733,
+            1592
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg6_text_txt65",
+        "text_to_embed": "TIME 2 Hours",
+        "source_pdf_id": "45_en",
+        "source_page_num": 6,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            374,
+            1560,
+            575,
+            1560,
+            575,
+            1593,
+            374,
+            1593
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg6_text_txt66",
+        "text_to_embed": "Employees' Provident Fund & MP Act, 1952 and Schemes framed under the Act (50 marks)",
+        "source_pdf_id": "45_en",
+        "source_page_num": 6,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            257,
+            1673,
+            1441,
+            1673,
+            1441,
+            1713,
+            257,
+            1713
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg6_text_txt67",
+        "text_to_embed": "Employees' Provident Fund & Miscellaneous Provisions Act, 1952 Employees' Provident Fund Scheme,1952 Employees' Pension Scheme, 1995 Employees' Deposit Linked Insurance Scheme,1976 Social Security Code, 2020",
+        "source_pdf_id": "45_en",
+        "source_page_num": 6,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            348,
+            1745,
+            1195,
+            1745,
+            1195,
+            1928,
+            348,
+            1928
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg6_text_txt68",
+        "text_to_embed": "13 ii. iii. iv",
+        "source_pdf_id": "45_en",
+        "source_page_num": 6,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            270,
+            1753,
+            308,
+            1753,
+            308,
+            1882,
+            270,
+            1882
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg6_text_txt69",
+        "text_to_embed": "Page 6 of 7",
+        "source_pdf_id": "45_en",
+        "source_page_num": 6,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            778,
+            2037,
+            917,
+            2037,
+            917,
+            2074,
+            778,
+            2074
+        ]
+    },
+    {
+        "chunk_id": "45_en_pg7_text_txt70",
+        "text_to_embed": "Staff Service Regulation and other Service Matter (50 marks)",
+        "source_pdf_id": "45_en",
+        "source_page_num": 7,
+        "source_block_type": "text",
+        "source_bbox_pil": [
+            257,
+            259,
+            1027,
+            259,
+            1027,
+            299,
+            257,
+            299
+        ]
     }
 ]
