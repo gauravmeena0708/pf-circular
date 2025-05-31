@@ -1,0 +1,62 @@
+name: Update EPF Circulars Search Index
+
+on:
+  workflow_dispatch: # Allows manual triggering
+  schedule:
+    - cron: '0 4 * * 1' # Runs every Monday at 4 AM UTC
+  # workflow_run: # Alternative trigger if you want to run after another workflow
+  #   workflows: ["Fetch EPF Circulars Metadata"]
+  #   types:
+  #     - completed
+  #   branches:
+  #     - main # Or your default branch
+
+jobs:
+  update_index:
+    runs-on: ubuntu-latest
+    # if: ${{ github.event.workflow_run.conclusion == 'success' }} # Uncomment if using workflow_run
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        # with: # Uncomment if using workflow_run and need specific ref
+        #   ref: ${{ github.event.workflow_run.head_branch }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10' # Or your preferred Python version
+
+      - name: Install Tesseract OCR and Poppler (for OCR and PDF handling if needed by fetch.py)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr poppler-utils
+
+      - name: Install Python dependencies for indexing
+        run: |
+          pip install --upgrade pip
+          # Assuming fetch.py uses these. Add any other specific dependencies your script needs.
+          pip install requests beautifulsoup4 pymupdf pytesseract Pillow 
+          # If your fetch.py needs libraries from my previous OCR script (like sentence-transformers, faiss), add them here.
+          # Example: pip install sentence-transformers faiss-cpu easyocr transformers torch torchvision pdf2image
+
+      - name: Run indexing script (modified to handle batches and state)
+        run: python ./fetch.py --action index # This script should now process only one batch (e.g., 50 new PDFs)
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # Add the main index file and the new state file
+          # Ensure your fetch.py script creates/updates 'indexing_status.json' (or your chosen state file name)
+          git add index-data.json indexing_status.json 
+          
+          if git diff --staged --quiet; then
+            echo "No changes to index-data.json or indexing_status.json."
+          else
+            # Commit message can indicate a batch update
+            git commit -m "Update EPF circulars search index (processed batch)"
+            git push
+            echo "index-data.json and/or indexing_status.json committed and pushed."
+          fi
