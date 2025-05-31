@@ -9,7 +9,10 @@ import os
 FAISS_INDEX_PATH = 'circulars_faiss_ocr.index'
 METADATA_PATH = 'circulars_faiss_ocr.index.meta.json'
 CIRCULAR_DATA_PATH = 'circular-data.json' # Source of PDF titles and links
-SENTENCE_EMBEDDING_MODEL = 'sentence-transformers/paraphrase-multilingual-mpnet-base-v2'
+# SENTENCE_EMBEDDING_MODEL = 'sentence-transformers/paraphrase-multilingual-mpnet-base-v2' # Current
+# SENTENCE_EMBEDDING_MODEL = 'sentence-transformers/all-mpnet-base-v2' # Example: Strong English model
+SENTENCE_EMBEDDING_MODEL = 'sentence-transformers/multi-qa-mpnet-base-dot-v1' # Example: Multilingual QA model
+# ...
 TOP_K = 5 # Number of results to display
 
 # --- Load Models and Data ---
