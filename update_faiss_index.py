@@ -38,7 +38,7 @@ SENTENCE_EMBEDDING_MODEL = 'sentence-transformers/paraphrase-multilingual-mpnet-
 MODEL_DEVICE = "cpu" # "cuda" if GPU is available
 
 MAX_TEXT_BLOCK_LENGTH_FOR_EMBEDDING = 500
-BATCH_SIZE = 1 # Number of new PDFs to process per run
+BATCH_SIZE = 10 # Number of new PDFs to process per run
 
 logging.basicConfig(
     level=logging.INFO,
