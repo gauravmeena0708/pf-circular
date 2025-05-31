@@ -1,0 +1,28 @@
+[
+    {
+        "chunk_id": "49_en_pg0_table_0",
+        "text_to_embed": "0_ Ai Regionai T Uoimnsbiunicis 6. AII DD (Vigilance)IZAPs AII PPS, PA and SO in Head Office 7 8. RPFC, IS Division for web circulation 9. Secretary General, EPF Officers' Association 10. Secretary General, AIEPF Staff Federation 11. Secretary General, AIEPF SCIST Federation 12. Secretary General, AIEPF Employees' Sangh 13. Hindi Section for Hindi Version 14. Guard file (SaurabhTrip Reqional P F. Commissioner-I(HF",
+        "source_pdf_id": "49_en",
+        "source_page_num": 0,
+        "source_block_type": "table",
+        "source_bbox_pil": [
+            240,
+            1646,
+            1407,
+            2110
+        ]
+    },
+    {
+        "chunk_id": "49_en_pg2_table_0",
+        "text_to_embed": "Tel: No: 20340489 Ministries/Departments of Government of India. All",
+        "source_pdf_id": "49_en",
+        "source_page_num": 2,
+        "source_block_type": "table",
+        "source_bbox_pil": [
+            307,
+            1756,
+            1470,
+            2089
+        ]
+    }
+]
