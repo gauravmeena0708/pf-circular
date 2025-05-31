@@ -111,14 +111,46 @@ def save_combined_metadata(metadata_list, metadata_path):
 # --- For the purpose of this response, I will paste them directly ---
 
 def convert_pdf_page_to_image(pdf_path, page_num, dpi=PDF_TO_IMAGE_DPI, output_folder=TEMP_IMAGE_DIR):
+    """Converts a single page of a PDF to a PIL Image, saves it, and returns the path."""
     ensure_dir(output_folder)
+    pdf_basename = os.path.splitext(os.path.basename(pdf_path))[0] # e.g., "49_en"
+    page_prefix = f"{pdf_basename}_page_{page_num + 1}" # e.g., "49_en_page_1"
+
     try:
-        images = convert_from_path(pdf_path, dpi=dpi, first_page=page_num + 1, last_page=page_num + 1, output_folder=output_folder, fmt='png', thread_count=1)
+        # convert_from_path will save images in output_folder.
+        # It will use `page_prefix` as the base for the filename.
+        # It returns a list of PIL.Image objects.
+        images = convert_from_path(
+            pdf_path,
+            dpi=dpi,
+            first_page=page_num + 1, # pdf2image uses 1-based indexing for pages
+            last_page=page_num + 1,
+            output_folder=output_folder,
+            fmt='png', # Save as PNG
+            thread_count=1, # Better for predictable filenames with output_file
+            output_file=page_prefix, # This will be the prefix of the saved file(s)
+            paths_only=False # We will get PIL objects, but files are saved
+        )
+
         if images:
-            logger.debug(f"Converted page {page_num} of PDF '{os.path.basename(pdf_path)}' to image.")
-            return images[0]
+            created_image_files = [f for f in os.listdir(output_folder) if f.startswith(page_prefix) and f.endswith(".png")]
+            
+            if created_image_files:
+                actual_image_path = os.path.join(output_folder, created_image_files[0])
+                logger.debug(f"Page {page_num + 1} of PDF '{os.path.basename(pdf_path)}' converted to image: {actual_image_path}")
+                return actual_image_path # Return the actual string path of the saved image
+            else:
+                explicit_image_path = os.path.join(output_folder, f"{page_prefix}_explicit.png")
+                images[0].save(explicit_image_path, 'PNG')
+                logger.warning(f"Could not find image via listdir for prefix {page_prefix}. Saved explicitly to: {explicit_image_path}")
+                return explicit_image_path
+        else:
+            logger.warning(f"pdf2image returned no images for page {page_num + 1} of PDF '{os.path.basename(pdf_path)}'.")
+            return None
+
     except Exception as e:
-        logger.error(f"Error converting page {page_num} of PDF '{os.path.basename(pdf_path)}' to image: {e}")
+        # Log the full traceback for PDF conversion errors
+        logger.error(f"Error converting page {page_num + 1} of PDF '{os.path.basename(pdf_path)}' to image: {e}", exc_info=True)
     return None
 
 def load_english_pdf_links(json_path):
