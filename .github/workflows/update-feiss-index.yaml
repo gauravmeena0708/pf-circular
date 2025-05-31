@@ -68,7 +68,8 @@ jobs:
           # Add the FAISS index, its metadata, and the indexing status/log file.
           # Adjust file names if your script produces different ones.
           # Using wildcards can be helpful if part of the name is dynamic, but be specific if possible.
-          git add circulars_faiss_ocr.index circulars_faiss_ocr.index.meta.json faiss_indexing_status.json
+          #git add circulars_faiss_ocr.index circulars_faiss_ocr.index.meta.json faiss_indexing_status.json
+          git add circulars_faiss_ocr.index circulars_faiss_ocr.index.meta.json processed_pdfs_log.json
           
           if git diff --staged --quiet; then
             echo "No changes to FAISS index files or status."
