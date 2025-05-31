@@ -38,7 +38,7 @@ SENTENCE_EMBEDDING_MODEL = 'sentence-transformers/paraphrase-multilingual-mpnet-
 MODEL_DEVICE = "cpu" # "cuda" if GPU is available
 
 MAX_TEXT_BLOCK_LENGTH_FOR_EMBEDDING = 500
-BATCH_SIZE = 10 # Number of new PDFs to process per run
+BATCH_SIZE = 1 # Number of new PDFs to process per run
 
 logging.basicConfig(
     level=logging.INFO,
@@ -235,21 +235,46 @@ def extract_structured_content_from_pdf_page(image_path, page_num, pdf_id, table
     non_table_img_for_ocr_np = img_np_rgb.copy()
     non_table_img_for_ocr_np[non_table_mask == 0] = [255, 255, 255]
     try:
+        if non_table_img_for_ocr_np.dtype != np.uint8:
+            logger.debug("Converting non_table_img_for_ocr_np to uint8 for EasyOCR.")
+            if non_table_img_for_ocr_np.max() <= 1.0: # Common for float images
+                 non_table_img_for_ocr_np = (non_table_img_for_ocr_np * 255).astype(np.uint8)
+            else:
+                 non_table_img_for_ocr_np = non_table_img_for_ocr_np.astype(np.uint8)
+
+
         non_table_ocr_results = ocr_reader.readtext(non_table_img_for_ocr_np, paragraph=True, detail=1)
-        for (bbox, text, conf) in non_table_ocr_results:
-            page_content_blocks.append({"type": "text", "text": text, "bbox_pil": [int(c) for pt in bbox for c in pt], "y_start": int(bbox[0][1]), "page_num": page_num, "pdf_id": pdf_id})
+        for result_item in non_table_ocr_results:
+            if len(result_item) == 3:
+                bbox, text, conf = result_item
+                # Process as before
+                page_content_blocks.append({
+                    "type": "text", 
+                    "text": text, 
+                    "bbox_pil": [int(c) for pt in bbox for c in pt], 
+                    "y_start": int(bbox[0][1]), 
+                    "page_num": page_num, 
+                    "pdf_id": pdf_id,
+                    "confidence": conf # Optionally store confidence
+                })
+            elif len(result_item) == 2:
+                bbox, text = result_item
+                # Handle case with no confidence score, e.g., assign a default or log it
+                logger.warning(f"Non-table OCR for page {page_num} of {pdf_id} returned a result with no confidence score. Text: '{text[:50]}...'")
+                page_content_blocks.append({
+                    "type": "text", 
+                    "text": text, 
+                    "bbox_pil": [int(c) for pt in bbox for c in pt], 
+                    "y_start": int(bbox[0][1]), 
+                    "page_num": page_num, 
+                    "pdf_id": pdf_id,
+                    "confidence": None # Or some other placeholder
+                })
+            else:
+                logger.warning(f"Non-table OCR for page {page_num} of {pdf_id} returned an unexpected item format: {result_item}")
+                
     except Exception as e:
-        logger.error(f"Non-table OCR error page {page_num} of {pdf_id}: {e}")
-    for i, (x0_tbl, y0_tbl, x1_tbl, y1_tbl) in enumerate(table_boxes_pil):
-        try:
-            table_pil_image_crop = pil_image.crop((x0_tbl, y0_tbl, x1_tbl, y1_tbl))
-            table_ocr_results = ocr_reader.readtext(np.array(table_pil_image_crop), paragraph=False, detail=1)
-            cell_data = sorted([{'text': tc, 'y': int(bc[0][1]), 'x': int(bc[0][0])} for (bc, tc, cc) in table_ocr_results], key=lambda c: (c['y'], c['x']))
-            linearized_table_text = " ".join([cell['text'] for cell in cell_data])
-            if linearized_table_text.strip():
-                page_content_blocks.append({"type": "table", "text": linearized_table_text, "bbox_pil": [x0_tbl, y0_tbl, x1_tbl, y1_tbl], "y_start": y0_tbl, "page_num": page_num, "pdf_id": pdf_id, "table_id_on_page": i})
-        except Exception as e:
-            logger.error(f"Table OCR error, table {i} page {page_num} of {pdf_id}: {e}")
+        logger.error(f"Non-table OCR error processing page {page_num} of {pdf_id}: {e}", exc_info=True) # Added exc_info=True for full traceback
     page_content_blocks.sort(key=lambda x: x['y_start'])
     return page_content_blocks
 
