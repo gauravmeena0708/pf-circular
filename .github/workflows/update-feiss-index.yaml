@@ -12,7 +12,7 @@ on:
   #     - main # Or your default branch
 
 jobs:
-  update_index:
+  update_faiss_index_job: # Renamed job for clarity
     runs-on: ubuntu-latest
     # if: ${{ github.event.workflow_run.conclusion == 'success' }} # Uncomment if using workflow_run
 
@@ -27,36 +27,54 @@ jobs:
         with:
           python-version: '3.10' # Or your preferred Python version
 
-      - name: Install Tesseract OCR and Poppler (for OCR and PDF handling if needed by fetch.py)
+      - name: Install system dependencies for PDF processing and OCR
         run: |
           sudo apt-get update
-          sudo apt-get install -y tesseract-ocr poppler-utils
+          sudo apt-get install -y tesseract-ocr poppler-utils  # poppler-utils for pdf2image
 
-      - name: Install Python dependencies for indexing
+      - name: Install Python dependencies for FAISS indexing with OCR
         run: |
           pip install --upgrade pip
-          # Assuming fetch.py uses these. Add any other specific dependencies your script needs.
-          pip install requests beautifulsoup4 pymupdf pytesseract Pillow 
-          # If your fetch.py needs libraries from my previous OCR script (like sentence-transformers, faiss), add them here.
-          # Example: pip install sentence-transformers faiss-cpu easyocr transformers torch torchvision pdf2image
+          # Dependencies for an OCR-based FAISS indexing script:
+          pip install \
+            requests \
+            Pillow \
+            pymupdf \
+            pdf2image \
+            opencv-python \
+            easyocr \
+            "transformers[torch]" \
+            sentence-transformers \
+            faiss-cpu \
+            torch torchvision torchaudio \
+            timm
+          # Add any other specific dependencies your update_faiss_index.py script requires.
 
-      - name: Run indexing script (modified to handle batches and state)
-        run: python ./fetch.py --action index # This script should now process only one batch (e.g., 50 new PDFs)
+      - name: Run FAISS indexing script
+        env: # Environment variables can be useful for script configuration
+          PYTHONIOENCODING: "UTF-8"
+        run: |
+          # Ensure your update_faiss_index.py script handles batching and state internally,
+          # and accepts arguments like --action if you intend to use them.
+          # The script should aim to process one batch (e.g., 50 new PDFs) per run.
+          python ./update_faiss_index.py # Removed --action index, assuming the script's main purpose is this.
+                                         # Add it back if your script uses it: python ./update_faiss_index.py --action index
 
-      - name: Commit and push changes
+      - name: Commit and push FAISS index files and status
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
-          # Add the main index file and the new state file
-          # Ensure your fetch.py script creates/updates 'indexing_status.json' (or your chosen state file name)
-          git add index-data.json indexing_status.json 
+          # Add the FAISS index, its metadata, and the indexing status/log file.
+          # Adjust file names if your script produces different ones.
+          # Using wildcards can be helpful if part of the name is dynamic, but be specific if possible.
+          git add circulars_faiss_ocr.index circulars_faiss_ocr.index.meta.json faiss_indexing_status.json
           
           if git diff --staged --quiet; then
-            echo "No changes to index-data.json or indexing_status.json."
+            echo "No changes to FAISS index files or status."
           else
-            # Commit message can indicate a batch update
-            git commit -m "Update EPF circulars search index (processed batch)"
+            # Commit message reflecting FAISS index update
+            git commit -m "Update FAISS index and processing status (batch processed)"
             git push
-            echo "index-data.json and/or indexing_status.json committed and pushed."
+            echo "FAISS index files and/or status committed and pushed."
           fi
