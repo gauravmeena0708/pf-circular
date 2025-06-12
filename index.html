@@ -388,6 +388,7 @@
             if (!query) {
                 currentFilteredData = [...allCircularData];
             } else {
+                window.history.pushState({ query: query }, "Search", "?query=" + encodeURIComponent(query));
                 const searchTerms = query.split(/\s+/).filter(term => term.length > 0);
                 currentFilteredData = allCircularData.filter(item => {
                     const title = item.title ? item.title.toLowerCase() : '';
