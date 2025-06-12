@@ -209,11 +209,22 @@
                     allIndexData = {}; // Ensure it's an empty object if fetch failed or was caught
                     // The warning is already logged in the catch block of the fetch itself.
                 }
-                
-                currentFilteredData = [...allCircularData]; // Initially, all data is filtered data
-                currentPage = 1;
-                displayResultsPage();
-                setupPagination();
+
+                // Handle URL query parameter for initial search
+                const urlParams = new URLSearchParams(window.location.search);
+                const queryFromUrl = urlParams.get('query');
+
+                if (queryFromUrl) {
+                    const decodedQuery = decodeURIComponent(queryFromUrl);
+                    searchInput.value = decodedQuery;
+                    performSearch(); // This will filter and then display results and pagination
+                } else {
+                    // If no query in URL, load all data as before
+                    currentFilteredData = [...allCircularData];
+                    currentPage = 1;
+                    displayResultsPage();
+                    setupPagination();
+                }
             } catch (error) {
                 console.error('Error loading data:', error);
                 resultsContainer.innerHTML = `<p class="error-message">Error loading data. Please ensure 'circular-data.json' is accessible. Details: ${error.message}</p>`;
