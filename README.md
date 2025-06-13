@@ -109,6 +109,4 @@ Contributions to this project are welcome! If you have suggestions for improveme
 
 Please ensure your code follows the existing style and that you provide clear commit messages and a description of your changes in the pull request.
 
-## License
 
-This project is currently not licensed. You may want to add a license file (e.g., MIT, Apache 2.0) to define how others can use, modify, and distribute the code.
