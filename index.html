@@ -389,6 +389,8 @@
                 currentFilteredData = [...allCircularData];
             } else {
                 window.history.pushState({ query: query }, "Search", "?query=" + encodeURIComponent(query));
+                gtag('event', 'search', { 'search_term': query });
+
 
                 // 1. Extract phrases in quotes (e.g., "rate of interest")
                 const phrases = [];
