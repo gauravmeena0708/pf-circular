@@ -158,7 +158,7 @@
         </header>
 
         <div class="mb-6">
-            <input type="text" id="searchInput" class="search-input" placeholder="Enter search terms (e.g., 'rate of interest 2024', 'welfare fund')...">
+            <input type="text" id="searchInput" class="search-input" placeholder="Use quotes for phrases (&quot;exact phrase&quot;), +/- for inclusion/exclusion (e.g., edli -scheme)...">
         </div>
         <div class="text-center mb-8">
             <button id="searchButton" class="search-button">Search</button>
@@ -389,15 +389,33 @@
                 currentFilteredData = [...allCircularData];
             } else {
                 window.history.pushState({ query: query }, "Search", "?query=" + encodeURIComponent(query));
-                const searchTerms = query.split(/\s+/).filter(term => term.length > 0);
+
+                // 1. Extract phrases in quotes (e.g., "rate of interest")
+                const phrases = [];
+                let tempQuery = query.replace(/"([^"]+)"/g, (match, phrase) => {
+                    if (phrase) phrases.push(phrase);
+                    return ""; // Remove phrase from query
+                });
+
+                // 2. Extract excluded words (e.g., -welfare)
+                const excludedWords = [];
+                tempQuery = tempQuery.replace(/-(\S+)/g, (match, word) => {
+                    if (word) excludedWords.push(word);
+                    return ""; // Remove excluded word from query
+                });
+
+                // 3. The rest are required terms (e.g., edli +scheme)
+                // The '+' is optional, all remaining words are treated as required.
+                const requiredTerms = tempQuery.replace(/\+/g, '').split(/\s+/).filter(term => term.length > 0);
+
                 currentFilteredData = allCircularData.filter(item => {
+                    // Combine all searchable text into one string for easier searching
                     const title = item.title ? item.title.toLowerCase() : '';
                     const serialNo = item.serial_no ? item.serial_no.toLowerCase() : '';
                     const circularNo = item.circular_no ? item.circular_no.toLowerCase() : '';
                     const date = item.date ? item.date.toLowerCase() : '';
                     
                     let ocrText = '';
-                    // Check if the English PDF link exists and has an entry in allIndexData
                     if (item.english_pdf_link && allIndexData[item.english_pdf_link]) {
                         const indexedItemData = allIndexData[item.english_pdf_link];
                         if (indexedItemData && indexedItemData.ocr_content) {
@@ -405,13 +423,23 @@
                         }
                     }
 
-                    return searchTerms.every(term => 
-                        title.includes(term) ||
-                        serialNo.includes(term) ||
-                        circularNo.includes(term) ||
-                        date.includes(term) ||
-                        (ocrText && ocrText.includes(term)) // Search in OCR text if available
-                    );
+                    const searchableText = `${title} ${serialNo} ${circularNo} ${date} ${ocrText}`;
+
+                    // --- Apply all search conditions ---
+
+                    // a. Check for excluded words first. If any are found, reject immediately.
+                    if (excludedWords.some(term => searchableText.includes(term))) {
+                        return false;
+                    }
+
+                    // b. Check for all required terms.
+                    const hasRequiredTerms = requiredTerms.every(term => searchableText.includes(term));
+                    
+                    // c. Check for all exact phrases.
+                    const hasPhrases = phrases.every(phrase => searchableText.includes(phrase));
+
+                    // The item is a match if it contains all required terms AND all phrases.
+                    return hasRequiredTerms && hasPhrases;
                 });
             }
             currentPage = 1; // Reset to first page after search
