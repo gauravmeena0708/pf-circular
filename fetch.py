@@ -17,7 +17,7 @@ import argparse # For command-line arguments
 
 CIRCULAR_DATA_FILE = "circular-data.json"
 INDEX_DATA_FILE = "index-data.json"
-MAX_URLS_TO_INDEX_PER_RUN = 500
+MAX_URLS_TO_INDEX_PER_RUN = 50
 
 HEADERS = {
     'Host': 'www.epfindia.gov.in',
