@@ -32,13 +32,27 @@ HEADERS = {
     'Upgrade-Insecure-Requests': '1'
 }
 
-YEAR_PARAMS = [
-    "yr=2025-2026", "yr=2024-2025", "yr=2023-2024", "yr=2022-2023",
-    "yr=2021-2022", "yr=2020-2021", "yr=2019-2020", "yr=2018-2019",
-    "yr=2017-2018", "yr=2016-2017", "yr=2015-2016", "yr=2014-2015",
-    "yr=2013-2014", "yr=2012-2013", "yr=2011-2012", "yr=2010-2011",
-    "yr=2009-2010", "yr=Old+Circulars",
-]
+def generate_year_params():
+    """Dynamically generates financial year parameters up to the current date."""
+    current_date = datetime.now(timezone.utc)
+    current_year = current_date.year
+    current_month = current_date.month
+    
+    # Financial year in India starts in April
+    if current_month >= 4:
+        latest_start_year = current_year
+    else:
+        latest_start_year = current_year - 1
+        
+    params = []
+    # Oldest explicitly listed year before 'Old Circulars' is 2009-2010
+    for year in range(latest_start_year, 2008, -1):
+        params.append(f"yr={year}-{year+1}")
+        
+    params.append("yr=Old+Circulars")
+    return params
+
+YEAR_PARAMS = generate_year_params()
 
 # --- Utility Functions ---
 def load_json_file(filepath):
