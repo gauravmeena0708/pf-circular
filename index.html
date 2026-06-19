@@ -1,186 +1,652 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EPFO Circular Search</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Search EPFO circulars by title, number, date, or full text from indexed PDFs.">
+    <title>Circular Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f0f2f5;
+        :root {
+            --bg: #f0f2f5;
+            --surface: #ffffff;
+            --ink: #1f2937;
+            --ink-2: #374151;
+            --muted: #6b7280;
+            --line: #e5e7eb;
+            --line-strong: #d1d5db;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+            --accent-soft: #eff5ff;
+            --focus-ring: rgba(59, 130, 246, 0.3);
+            --tag-bg: #eef2f7;
+            --tag-ink: #3b4658;
+            --sans: "Inter", system-ui, sans-serif;
         }
-        .search-container {
-            background-color: #ffffff;
-            padding: 2rem;
-            border-radius: 0.75rem;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            max-width: 95%; /* Increased for table view */
-            min-width: 1000px;
-            margin: 2rem auto;
-        }
-        .search-input {
-            border: 1px solid #d1d5db;
-            padding: 0.75rem 1rem;
-            border-radius: 0.5rem;
-            width: 100%;
-            transition: border-color 0.3s, box-shadow 0.3s;
-        }
-        .search-input:focus {
-            border-color: #2563eb;
-            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
-            outline: none;
-        }
-        .search-button {
-            background-color: #2563eb;
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem;
-            font-weight: 500;
-            transition: background-color 0.3s;
-        }
-        .search-button:hover {
-            background-color: #1d4ed8;
-        }
-        .results-table {
-            width: 100%;
-            margin-top: 1.5rem;
-            border-collapse: collapse;
-        }
-        .results-table th, .results-table td {
-            border: 1px solid #e5e7eb; /* Tailwind gray-200 */
-            padding: 0.75rem; /* Reduced padding for compactness */
-            text-align: left;
-            font-size: 0.875rem; /* Smaller font for table content */
-        }
-        .results-table th {
-            background-color: #f9fafb; /* Tailwind gray-50 */
-            font-weight: 600;
-            color: #374151; /* Tailwind gray-700 */
-        }
-        /* Column width suggestions */
-        .results-table th:nth-child(1) { width: 8%; } /* Sr.No */
-        .results-table th:nth-child(2) { width: 42%; } /* Title - give more space */
-        .results-table th:nth-child(3) { width: 20%; } /* Circular No */
-        .results-table th:nth-child(4) { width: 15%; } /* Date */
-        .results-table th:nth-child(5) { width: 15%; } /* Links */
 
-        .results-table td a {
-            color: #2563eb;
-            text-decoration: none;
-            font-weight: 500;
-            display: inline-block; /* Ensure links can sit side-by-side */
-            margin-right: 0.5rem; /* Space between links if multiple */
+        * { box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            margin: 0;
+            color: var(--ink);
+            background: var(--bg);
+            font-family: var(--sans);
+            font-size: 15px;
+            line-height: 1.5;
+            min-height: 100vh;
         }
-        .results-table td a:last-child {
-            margin-right: 0;
+
+        a { color: var(--accent); }
+
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+            border-radius: 4px;
         }
-        .results-table td a:hover {
-            text-decoration: underline;
+
+        button, input { font: inherit; color: inherit; }
+
+        .wrap {
+            width: min(1200px, calc(100% - 40px));
+            margin: 0 auto;
         }
-        .results-table td:last-child { /* Targeting the links column specifically */
-            white-space: nowrap; /* Prevent text like "Hindi PDF" from wrapping */
+
+        /* Top bar */
+        .topbar {
+            border-top: 3px solid var(--accent);
+            border-bottom: 1px solid var(--line);
+            background: var(--surface);
         }
-        .no-results {
-            text-align: center;
-            color: #6b7280;
-            padding: 2rem;
-            font-style: italic;
-        }
-        .loading-message, .error-message {
-            text-align: center;
-            color: #4b5563;
-            padding: 1rem;
-            margin-top: 1rem;
-            border-radius: 0.5rem;
-        }
-        .loading-message {
-            background-color: #e0f2fe;
-        }
-        .error-message {
-            background-color: #fee2e2;
-            color: #b91c1c;
-        }
-        .pagination-controls {
-            margin-top: 1.5rem;
+
+        .topbar-inner {
             display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 14px 0;
+        }
+
+        .wordmark {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--ink);
+        }
+
+        .seal {
+            display: grid;
+            width: 38px;
+            height: 38px;
+            place-items: center;
+            border: 1.5px solid var(--accent);
+            border-radius: 6px;
+            color: var(--accent);
+            font: 600 13px/1 var(--sans);
+            letter-spacing: 0.04em;
+        }
+
+        .wordmark-text strong {
+            display: block;
+            font-size: 15px;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+        }
+
+        .wordmark-text span {
+            display: block;
+            margin-top: 1px;
+            color: var(--muted);
+            font: 500 10px/1 var(--sans);
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .source-link {
+            color: var(--ink-2);
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .source-link:hover { color: var(--accent); }
+
+        /* Hero stats */
+        .hero { padding: 22px 0; }
+
+        .ledger-stats {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 28px;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .ledger-stats b {
+            color: var(--ink);
+            font-family: var(--sans);
+            font-weight: 500;
+            font-size: 15px;
+            letter-spacing: -0.01em;
+        }
+
+        /* Sticky toolbar */
+        .toolbar {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            border-top: 1px solid var(--line);
+            border-bottom: 1px solid var(--line);
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(8px);
+        }
+
+        .toolbar-inner { padding: 16px 0; }
+
+        .search-controls {
+            display: grid;
+            grid-template-columns: minmax(220px, 2fr) auto minmax(150px, 1fr) minmax(150px, 1fr);
+            gap: 12px;
+            align-items: end;
+        }
+
+        .search-wrap {
+            position: relative;
+        }
+
+        .search-wrap svg {
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            width: 17px;
+            transform: translateY(-50%);
+            color: var(--muted);
+            pointer-events: none;
+        }
+
+        .search-input {
+            width: 100%;
+            height: 44px;
+            padding: 0 14px 0 38px;
+            border: 1px solid var(--line-strong);
+            border-radius: 6px;
+            outline: none;
+            background: var(--surface);
+            color: var(--ink);
+            transition: border-color 140ms ease, box-shadow 140ms ease;
+        }
+
+        .search-input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--focus-ring);
+        }
+
+        .search-button {
+            flex: 0 0 auto;
+            padding: 0 22px;
+            height: 44px;
+            border: 1px solid var(--accent);
+            border-radius: 6px;
+            background: var(--accent);
+            color: #fff;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background 130ms ease, border-color 130ms ease;
+        }
+
+        .search-button:hover {
+            background: var(--accent-hover);
+            border-color: var(--accent-hover);
+        }
+
+        .field {
+            display: grid;
+            gap: 6px;
+        }
+
+        .field label {
+            color: var(--muted);
+            font: 600 10px/1 var(--sans);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .filter-select {
+            width: 100%;
+            height: 44px;
+            padding: 0 30px 0 12px;
+            border: 1px solid var(--line-strong);
+            border-radius: 6px;
+            background: var(--surface);
+            color: var(--ink);
+            font: 500 14px/1 var(--sans);
+            cursor: pointer;
+            transition: border-color 140ms ease, box-shadow 140ms ease;
+        }
+
+        .filter-select:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--focus-ring);
+        }
+
+        .search-hint {
+            margin: 10px 0 0;
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        .search-hint code {
+            padding: 1px 6px;
+            border-radius: 4px;
+            background: var(--tag-bg);
+            color: var(--tag-ink);
+            font: 500 12px/1.6 var(--sans);
+        }
+		.wordmark-text strong {
+      display: block;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    .wordmark-text span {
+      display: block;
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: 11.5px;
+    }
+        .badge-unofficial {
+      display: inline-block;
+      margin-left: 7px;
+      padding: 2px 7px;
+      border-radius: 999px;
+      background: #fef3c7;
+      color: #92400e;
+      font: 600 9.5px/1.5 var(--sans);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      vertical-align: middle;
+    }
+        .search-hint .sep { margin: 0 8px; opacity: 0.5; }
+
+        /* Results */
+        .results { padding: 22px 0 60px; }
+
+        .results-head {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 14px;
+            min-height: 20px;
+        }
+
+        .results-count {
+            margin: 0;
+            color: var(--ink-2);
+            font-size: 14px;
+        }
+
+        .results-count b {
+            color: var(--ink);
+            font-family: var(--sans);
+            font-weight: 500;
+        }
+
+        .table-card {
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            background: var(--surface);
+            overflow: hidden;
+        }
+
+        .ledger {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        .ledger thead th {
+            padding: 13px 18px;
+            border-bottom: 1px solid var(--line-strong);
+            background: #f7f8fa;
+            color: var(--muted);
+            font: 600 10px/1 var(--sans);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            text-align: left;
+        }
+
+        .ledger col.col-sr { width: 74px; }
+        .ledger col.col-no { width: 230px; }
+        .ledger col.col-date { width: 116px; }
+        .ledger col.col-docs { width: 116px; }
+
+        .ledger tbody td {
+            padding: 15px 18px;
+            border-bottom: 1px solid var(--line);
+            vertical-align: top;
+        }
+
+        .ledger tbody tr:last-child td { border-bottom: 0; }
+
+        .ledger tbody tr:hover td { background: var(--accent-soft); }
+
+        .ledger tbody tr:hover td:first-child {
+            box-shadow: inset 3px 0 0 var(--accent);
+        }
+
+        .mono {
+            font-family: var(--sans);
+            font-variant-numeric: tabular-nums;
+        }
+
+        .cell-sr .mono { color: var(--muted); }
+
+        .cell-date .mono {
+            color: var(--ink);
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .cell-no .mono {
+            color: var(--ink-2);
+            font-size: 12.5px;
+            word-break: break-word;
+        }
+
+        .subject-title {
+            margin: 0;
+            color: var(--ink);
+            font-size: 14.5px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .badge {
+            display: inline-block;
+            margin-top: 6px;
+            padding: 3px 8px;
+            border-radius: 5px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font: 500 10px/1.2 var(--sans);
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+
+        .docs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .doc {
+            display: inline-flex;
+            padding: 5px 11px;
+            border: 1px solid var(--line-strong);
+            border-radius: 6px;
+            color: var(--ink-2);
+            background: var(--surface);
+            font: 600 12px/1 var(--sans);
+            text-decoration: none;
+            transition: border-color 130ms ease, color 130ms ease, background 130ms ease;
+        }
+
+        .doc:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: var(--accent-soft);
+        }
+
+        .no-doc {
+            color: var(--muted);
+            font-family: var(--sans);
+        }
+
+        /* States */
+        .state { padding: 70px 24px; text-align: center; }
+
+        .state strong {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .state p { margin: 0; color: var(--muted); font-size: 14px; }
+
+        .state.error strong { color: #b3261e; }
+
+        /* Pagination */
+        .pagination-controls {
+            display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            gap: 0.5rem; /* Space between buttons */
-        }
-        .pagination-controls button, .pagination-controls span {
-            padding: 0.5rem 0.75rem;
-            border: 1px solid #d1d5db;
-            background-color: white;
-            color: #374151;
-            border-radius: 0.375rem;
-            cursor: pointer;
-            font-size: 0.875rem;
-        }
-        .pagination-controls button:disabled {
-            background-color: #f3f4f6; /* Tailwind gray-100 */
-            color: #9ca3af; /* Tailwind gray-400 */
-            cursor: not-allowed;
-        }
-        .pagination-controls button.active {
-            background-color: #2563eb;
-            color: white;
-            border-color: #2563eb;
-        }
-        .pagination-controls span.ellipsis {
-            border: none;
-            background-color: transparent;
+            gap: 6px;
+            padding: 28px 0 0;
         }
 
-        @media (max-width: 768px) {
-            .search-container {
-                margin: 1rem;
-                padding: 1rem;
-                min-width: auto; /* Allow container to shrink on mobile */
+        .pagination-controls button {
+            min-width: 38px;
+            height: 38px;
+            padding: 0 12px;
+            border: 1px solid var(--line-strong);
+            border-radius: 7px;
+            background: var(--surface);
+            color: var(--ink-2);
+            cursor: pointer;
+            font: 500 13px/1 var(--sans);
+            transition: border-color 120ms ease, color 120ms ease, background 120ms ease;
+        }
+
+        .pagination-controls button:hover:not(:disabled):not(.active) {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .pagination-controls button:disabled {
+            color: #b6bcc6;
+            cursor: not-allowed;
+        }
+
+        .pagination-controls button.active {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: #fff;
+        }
+
+        .pagination-controls .ellipsis {
+            padding: 0 4px;
+            color: var(--muted);
+            font-family: var(--sans);
+        }
+
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--line);
+            background: var(--surface);
+        }
+
+        .footer-inner {
+            padding: 26px 0;
+            color: var(--muted);
+            font-size: 12.5px;
+            line-height: 1.7;
+        }
+
+        @media (max-width: 720px) {
+            .toolbar {
+                position: static;
+                backdrop-filter: none;
             }
-            .results-table th, .results-table td {
-                font-size: 0.75rem; /* Even smaller font for mobile */
-                padding: 0.5rem;
+
+            .search-controls { grid-template-columns: 1fr; }
+
+            .ledger col { width: auto; }
+
+            .ledger thead { display: none; }
+
+            .ledger, .ledger tbody, .ledger tr, .ledger td {
+                display: block;
+                width: 100%;
             }
-             .results-table th:nth-child(1), .results-table td:nth-child(1) { /* Sr.No */
-                /* display: none; */ /* Keep it for now, but an option */
+
+            .ledger tbody tr {
+                padding: 16px 16px 18px;
+                border-bottom: 1px solid var(--line);
             }
+
+            .ledger tbody tr:hover td,
+            .ledger tbody tr:hover td:first-child {
+                background: transparent;
+                box-shadow: none;
+            }
+
+            .ledger tbody td {
+                padding: 0;
+                border-bottom: 0;
+            }
+
+            .ledger tbody td + td { margin-top: 10px; }
+
+            .ledger td::before {
+                content: attr(data-label);
+                display: block;
+                margin-bottom: 4px;
+                color: var(--muted);
+                font: 600 10px/1 var(--sans);
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+            }
+
+            .cell-subject::before { display: none; }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            * { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
         }
     </style>
 </head>
-<body class="antialiased">
-
-    <div class="search-container">
-        <header class="text-center mb-8">
-            <h1 class="text-3xl font-bold text-gray-800">EPFO Circular Search</h1>
-            <p class="text-gray-600 mt-2">Find circulars by title, number, date, or content (from indexed PDFs).</p>
-        </header>
-
-        <div class="mb-6">
-            <input type="text" id="searchInput" class="search-input" placeholder="Use quotes for phrases (&quot;exact phrase&quot;), +/- for inclusion/exclusion (e.g., edli -scheme)...">
+<body>
+    <header class="topbar">
+        <div class="wrap topbar-inner">
+            <a class="wordmark" href="./">
+                <span class="seal" aria-hidden="true">PF</span>
+                <span class="wordmark-text">
+                    <strong>Circular Archive <span class="badge-unofficial">Unofficial</span></strong>
+                    <span>Independent index of public EPFO circulars</span>
+                </span>
+            </a>
+            <a
+                class="source-link"
+                href="https://www.epfindia.gov.in"
+                target="_blank"
+                rel="noopener noreferrer"
+            >Official source ↗</a>
         </div>
-        <div class="text-center mb-8">
-            <button id="searchButton" class="search-button">Search</button>
-        </div>
+    </header>
 
-        <div id="resultsCount" class="text-sm text-gray-600 mb-4"></div>
-        <div id="resultsContainer">
+    <section class="hero">
+        <div class="wrap">
+            <div class="ledger-stats" aria-label="Dataset summary">
+                <span><b id="stat-total">—</b> circulars indexed</span>
+                <span><b id="stat-fulltext">—</b> with full-text search</span>
+                <span>latest <b id="stat-latest">—</b></span>
             </div>
-        <div id="paginationControls" class="pagination-controls">
+        </div>
+    </section>
+
+    <div class="toolbar">
+        <div class="wrap toolbar-inner">
+            <div class="search-controls">
+                <div class="field">
+                    <label for="searchInput">Search circulars</label>
+                    <div class="search-wrap">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+                        </svg>
+                        <input
+                            type="search"
+                            id="searchInput"
+                            class="search-input"
+                            autocomplete="off"
+                            placeholder="Title, circular number, date, or PDF text"
+                        >
+                    </div>
+                </div>
+                <button id="searchButton" class="search-button" type="button">Search</button>
+                <div class="field">
+                    <label for="yearFilter">Financial year</label>
+                    <select id="yearFilter" class="filter-select">
+                        <option value="">All years</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="langFilter">Document language</label>
+                    <select id="langFilter" class="filter-select">
+                        <option value="">Any language</option>
+                        <option value="english">English available</option>
+                        <option value="hindi">Hindi available</option>
+                        <option value="bilingual">Both available</option>
+                    </select>
+                </div>
             </div>
+            <p class="search-hint">
+                <code>"exact phrase"</code><span class="sep">·</span>
+                <code>+include</code><span class="sep">·</span>
+                <code>-exclude</code><span class="sep">·</span>
+                full text searched across indexed PDFs
+            </p>
+        </div>
     </div>
-    <footer class="p-6 md:p-10 mt-12 text-center text-gray-500 text-sm border-t">
-             <p>This is an unofficial, community-driven project and is not affiliated with EPFO. For official information, please visit the <a href="https://www.epfindia.gov.in" target="_blank" class="text-blue-600 hover:underline">EPFO official website</a>. <a href="./privacy_policy.html" class="text-blue-600 hover:underline">Privacy Policy</a></p>
+
+    <main class="results">
+        <div class="wrap">
+            <p class="trust-note">Document links open the original PDFs on <strong>epfindia.gov.in</strong> — always verify against the official source.</p>
+            <div class="results-head">
+                <p class="results-count" id="resultsCount" role="status" aria-live="polite"></p>
+            </div>
+
+            <div class="table-card" id="resultsContainer">
+                <div class="state">
+                    <strong>Loading the circular index</strong>
+                    <p>Fetching circulars and full-text data…</p>
+                </div>
+            </div>
+
+            <div class="pagination-controls" id="paginationControls"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrap footer-inner">
+            This is an unofficial, community-driven project and is not affiliated with EPFO.
+            For official information, please visit the
+            <a href="https://www.epfindia.gov.in" target="_blank" rel="noopener noreferrer">EPFO official website</a>.
+            <a href="./privacy_policy.html">Privacy Policy</a>.
+        </div>
     </footer>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHNCW79FZT"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-JHNCW79FZT', {
-              'cookie_domain': 'none'
-          });
+      gtag('js', new Date());
+      gtag('config', 'G-JHNCW79FZT', { 'cookie_domain': 'none' });
     </script>
     <script>
         const searchInput = document.getElementById('searchInput');
@@ -188,123 +654,262 @@
         const resultsContainer = document.getElementById('resultsContainer');
         const resultsCount = document.getElementById('resultsCount');
         const paginationControlsContainer = document.getElementById('paginationControls');
+        const yearFilter = document.getElementById('yearFilter');
+        const langFilter = document.getElementById('langFilter');
 
-        let allCircularData = []; // To store all circular metadata
-        let allIndexData = {};    // To store all PDF index data (URL -> {ocr_content, ...})
-        let currentFilteredData = []; // To store currently filtered data for pagination
+        let allCircularData = [];
+        let allIndexData = {};
+        let textMatched = [];
+        let currentFilteredData = [];
         let currentPage = 1;
+        let currentTerms = [];
         const itemsPerPage = 50;
+        const ocrLowerCache = Object.create(null);
+
+        function ocrLower(link) {
+            if (!link || !allIndexData[link]) return '';
+            if (ocrLowerCache[link] === undefined) {
+                ocrLowerCache[link] = (allIndexData[link].ocr_content || '').toLowerCase();
+            }
+            return ocrLowerCache[link];
+        }
+
+        const escapeHtml = (value = "") =>
+            String(value).replace(/[&<>"']/g, character => ({
+                "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;",
+            })[character]);
+
+        function highlightText(escaped, terms) {
+            if (!terms || !terms.length) return escaped;
+            const pattern = terms
+                .map(term => term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"))
+                .filter(Boolean)
+                .join("|");
+            if (!pattern) return escaped;
+            return escaped.replace(new RegExp(`(${pattern})`, "gi"), '<mark class="hl">$1</mark>');
+        }
+
+        function ocrSnippet(item, terms) {
+            if (!terms || !terms.length) return "";
+            const link = item.english_pdf_link;
+            if (!link || !allIndexData[link]) return "";
+            const text = allIndexData[link].ocr_content || "";
+            if (!text) return "";
+            const lower = text.toLowerCase();
+            let pos = -1, hitLen = 0;
+            terms.forEach(term => {
+                const p = lower.indexOf(term);
+                if (p >= 0 && (pos < 0 || p < pos)) { pos = p; hitLen = term.length; }
+            });
+            if (pos < 0) return "";
+            const start = Math.max(0, pos - 70);
+            const end = Math.min(text.length, pos + hitLen + 110);
+            let frag = text.slice(start, end);
+            let matchStartRel = pos - start;
+            let matchEndRel = pos + hitLen - start;
+
+            // Drop a partial word at the start, but never trim past the match itself.
+            if (start > 0) {
+                const lead = frag.match(/^\S+\s+/);
+                if (lead && lead[0].length <= matchStartRel) {
+                    frag = frag.slice(lead[0].length);
+                    matchStartRel -= lead[0].length;
+                    matchEndRel -= lead[0].length;
+                }
+            }
+            // Drop a partial word at the end, but never before the match.
+            if (end < text.length) {
+                const tail = frag.match(/\s+\S+$/);
+                if (tail && (frag.length - tail[0].length) >= matchEndRel) {
+                    frag = frag.slice(0, frag.length - tail[0].length);
+                }
+            }
+
+            frag = frag.replace(/\s+/g, " ").trim();
+            if (start > 0) frag = "… " + frag;
+            if (end < text.length) frag = frag + " …";
+            return `<p class="snippet">${highlightText(escapeHtml(frag), terms)}</p>`;
+        }
+
+        function parseDate(value) {
+            if (!value) return null;
+            const [day, month, year] = String(value).split("/").map(Number);
+            if (!day || !month || !year) return null;
+            return new Date(Date.UTC(year, month - 1, day));
+        }
+
+        function displayDate(value) {
+            const date = parseDate(value);
+            if (!date) return escapeHtml(value || "—");
+            return date.toLocaleDateString("en-GB", {
+                day: "2-digit", month: "short", year: "numeric", timeZone: "UTC",
+            });
+        }
+
+        function updateStats() {
+            const latest = allCircularData.map(item => parseDate(item.date)).filter(Boolean)
+                .sort((a, b) => b - a)[0];
+            document.getElementById('stat-total').textContent =
+                allCircularData.length.toLocaleString("en-IN");
+            document.getElementById('stat-fulltext').textContent =
+                Object.keys(allIndexData).length.toLocaleString("en-IN");
+            document.getElementById('stat-latest').textContent = latest
+                ? latest.toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric", timeZone: "UTC" })
+                : "—";
+        }
 
         async function loadAllData() {
-            resultsContainer.innerHTML = '<p class="loading-message">Loading data...</p>';
-            paginationControlsContainer.innerHTML = '';
             try {
-                // Fetch both circular data and index data in parallel
                 const [circularResponse, indexResponse] = await Promise.all([
                     fetch('circular-data.json'),
                     fetch('index-data.json').catch(err => {
-                        console.warn('index-data.json not found or failed to load. PDF content search will be unavailable.', err);
-                        return { ok: false, json: () => Promise.resolve({}) }; // Provide a graceful fallback
+                        console.warn('index-data.json unavailable; full-text search disabled.', err);
+                        return { ok: false, json: () => Promise.resolve({}) };
                     })
                 ]);
 
                 if (!circularResponse.ok) {
-                    throw new Error(`HTTP error! Status for circular-data.json: ${circularResponse.status}`);
+                    throw new Error(`HTTP ${circularResponse.status} for circular-data.json`);
                 }
                 allCircularData = await circularResponse.json();
+                allIndexData = indexResponse.ok ? await indexResponse.json() : {};
 
-                if (indexResponse.ok) {
-                    allIndexData = await indexResponse.json();
-                    console.log("Index data loaded successfully:", Object.keys(allIndexData).length, "entries");
-                } else {
-                    allIndexData = {}; // Ensure it's an empty object if fetch failed or was caught
-                    // The warning is already logged in the catch block of the fetch itself.
-                }
+                updateStats();
+                populateFilters();
 
-                // Handle URL query parameter for initial search
-                const urlParams = new URLSearchParams(window.location.search);
-                const queryFromUrl = urlParams.get('query');
-
+                const queryFromUrl = new URLSearchParams(window.location.search).get('query');
                 if (queryFromUrl) {
-                    const decodedQuery = decodeURIComponent(queryFromUrl);
-                    searchInput.value = decodedQuery;
-                    performSearch(); // This will filter and then display results and pagination
-                } else {
-                    // If no query in URL, load all data as before
-                    currentFilteredData = [...allCircularData];
-                    currentPage = 1;
-                    displayResultsPage();
-                    setupPagination();
+                    searchInput.value = decodeURIComponent(queryFromUrl);
                 }
+                performSearch();
             } catch (error) {
                 console.error('Error loading data:', error);
-                resultsContainer.innerHTML = `<p class="error-message">Error loading data. Please ensure 'circular-data.json' is accessible. Details: ${error.message}</p>`;
+                resultsContainer.innerHTML = `
+                    <div class="state error">
+                        <strong>Unable to load circulars</strong>
+                        <p>${escapeHtml(error.message)}. Serve this directory over HTTP and try again.</p>
+                    </div>`;
                 resultsCount.textContent = '';
             }
         }
 
+        function fyFromUrl(item) {
+            const url = item.english_pdf_link || item.hindi_pdf_link || '';
+            const match = url.match(/\/Y(\d{4}-\d{4})\//);
+            return match ? match[1] : '';
+        }
+
+        function populateFilters() {
+            const years = new Set();
+            allCircularData.forEach(item => {
+                const fy = fyFromUrl(item);
+                if (fy) years.add(fy);
+            });
+            [...years].sort().reverse().forEach(year => {
+                const option = document.createElement('option');
+                option.value = year;
+                option.textContent = year;
+                yearFilter.appendChild(option);
+            });
+        }
+
+        function hasActiveFilters() {
+            return searchInput.value.trim() !== '' || yearFilter.value !== '' || langFilter.value !== '';
+        }
+
+        function applyFilters() {
+            const fy = yearFilter.value;
+            const lang = langFilter.value;
+            currentFilteredData = textMatched.filter(item => {
+                if (fy && fyFromUrl(item) !== fy) return false;
+                if (lang === 'english' && !item.english_pdf_link) return false;
+                if (lang === 'hindi' && !item.hindi_pdf_link) return false;
+                if (lang === 'bilingual' && !(item.english_pdf_link && item.hindi_pdf_link)) return false;
+                return true;
+            });
+            currentPage = 1;
+            displayResultsPage();
+            setupPagination();
+        }
+
+        function documentPill(url, code, label) {
+            if (!url) return "";
+            return `<a class="doc" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(label)} PDF">${code}</a>`;
+        }
+
+        function renderRow(item) {
+            const hasFullText = item.english_pdf_link && allIndexData[item.english_pdf_link];
+            const docs =
+                documentPill(item.english_pdf_link, "EN", "English") +
+                documentPill(item.hindi_pdf_link, "HI", "Hindi");
+
+            const snippet = ocrSnippet(item, currentTerms);
+            const titleHtml = highlightText(escapeHtml(item.title || "Untitled circular"), currentTerms);
+            const circularHtml = highlightText(escapeHtml(item.circular_no || "—"), currentTerms);
+            const subjectExtra = snippet || (hasFullText ? `<span class="badge">Full text</span>` : "");
+
+            return `
+                <tr>
+                    <td class="cell-sr" data-label="Sr. No"><span class="mono">${escapeHtml(item.serial_no || "—")}</span></td>
+                    <td class="cell-subject" data-label="Title">
+                        <p class="subject-title">${titleHtml}</p>
+                        ${subjectExtra}
+                    </td>
+                    <td class="cell-no" data-label="Circular No"><span class="mono">${circularHtml}</span></td>
+                    <td class="cell-date" data-label="Date"><span class="mono">${displayDate(item.date)}</span></td>
+                    <td class="cell-docs" data-label="Documents">
+                        ${docs ? `<div class="docs">${docs}</div>` : `<span class="no-doc">—</span>`}
+                    </td>
+                </tr>`;
+        }
+
         function displayResultsPage() {
-            resultsContainer.innerHTML = '';
-            
             const startIndex = (currentPage - 1) * itemsPerPage;
             const endIndex = startIndex + itemsPerPage;
             const paginatedItems = currentFilteredData.slice(startIndex, endIndex);
 
-            if (currentFilteredData.length === 0 && searchInput.value.trim() !== '') {
-                resultsContainer.innerHTML = '<p class="no-results">No circulars found matching your criteria.</p>';
-                resultsCount.textContent = 'Found 0 circular(s).';
-                return;
-            } else if (paginatedItems.length === 0 && currentFilteredData.length > 0) {
-                currentPage = 1;
-                displayResultsPage(); 
-                setupPagination();
-                return;
-            } else if (paginatedItems.length === 0 && currentFilteredData.length === 0 && searchInput.value.trim() === '') {
-                resultsContainer.innerHTML = '<p class="no-results">No circulars available or data not loaded.</p>';
-                resultsCount.textContent = '0 circulars loaded.';
+            if (currentFilteredData.length === 0) {
+                const filtering = hasActiveFilters();
+                resultsContainer.innerHTML = `
+                    <div class="state">
+                        <strong>${filtering ? 'No matching circulars' : 'No circulars available'}</strong>
+                        <p>${filtering ? 'Try a broader term, a different year, or clear the language filter.' : 'The dataset could not be loaded.'}</p>
+                    </div>`;
+                resultsCount.innerHTML = filtering ? 'Found <b>0</b> circulars.' : '';
                 return;
             }
 
-            const table = document.createElement('table');
-            table.className = 'results-table w-full';
-            const thead = document.createElement('thead');
-            thead.innerHTML = `
-                <tr>
-                    <th class="px-2 py-2 text-xs">Sr.No</th>
-                    <th class="px-2 py-2 text-xs">Title</th>
-                    <th class="px-2 py-2 text-xs">Circular No</th>
-                    <th class="px-2 py-2 text-xs">Date</th>
-                    <th class="px-2 py-2 text-xs">Links</th>
-                </tr>
-            `;
-            table.appendChild(thead);
-            const tbody = document.createElement('tbody');
+            const rows = paginatedItems.map(renderRow).join("");
+            resultsContainer.innerHTML = `
+                <table class="ledger">
+                    <colgroup>
+                        <col class="col-sr">
+                        <col class="col-title">
+                        <col class="col-no">
+                        <col class="col-date">
+                        <col class="col-docs">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">Sr. No</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Circular No</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Documents</th>
+                        </tr>
+                    </thead>
+                    <tbody>${rows}</tbody>
+                </table>`;
 
-            paginatedItems.forEach(item => {
-                const row = tbody.insertRow();
-                
-                let linksHTML = '';
-                if (item.hindi_pdf_link) {
-                    linksHTML += `<a href="${item.hindi_pdf_link}" target="_blank" class="block mb-1 md:inline md:mr-2">Hindi</a>`;
-                }
-                if (item.english_pdf_link) {
-                    linksHTML += `<a href="${item.english_pdf_link}" target="_blank" class="block md:inline">English</a>`;
-                }
-                if (!item.hindi_pdf_link && !item.english_pdf_link) {
-                    linksHTML = '<span class="text-gray-400">No PDF</span>';
-                }
+            resultsCount.innerHTML =
+                `Showing <b>${(startIndex + 1).toLocaleString("en-IN")}–${Math.min(endIndex, currentFilteredData.length).toLocaleString("en-IN")}</b> of <b>${currentFilteredData.length.toLocaleString("en-IN")}</b> circulars`;
+        }
 
-                row.innerHTML = `
-                    <td class="px-2 py-2 align-top">${item.serial_no || 'N/A'}</td>
-                    <td class="px-2 py-2 align-top">${item.title || 'N/A'}</td>
-                    <td class="px-2 py-2 align-top whitespace-nowrap">${item.circular_no || 'N/A'}</td>
-                    <td class="px-2 py-2 align-top whitespace-nowrap">${item.date || 'N/A'}</td>
-                    <td class="px-2 py-2 align-top">${linksHTML}</td>
-                `;
-            });
-            table.appendChild(tbody);
-            resultsContainer.appendChild(table);
-            resultsCount.textContent = `Showing ${paginatedItems.length > 0 ? startIndex + 1 : 0}-${Math.min(endIndex, currentFilteredData.length)} of ${currentFilteredData.length} circulars.`;
+        function gotoPage(page) {
+            currentPage = page;
+            displayResultsPage();
+            setupPagination();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function setupPagination() {
@@ -312,162 +917,108 @@
             const pageCount = Math.ceil(currentFilteredData.length / itemsPerPage);
             if (pageCount <= 1) return;
 
-            const prevButton = document.createElement('button');
-            prevButton.textContent = 'Previous';
-            prevButton.disabled = currentPage === 1;
-            prevButton.addEventListener('click', () => {
-                if (currentPage > 1) {
-                    currentPage--;
-                    displayResultsPage();
-                    setupPagination();
+            const makeButton = (label, page, { disabled = false, active = false, ellipsis = false } = {}) => {
+                if (ellipsis) {
+                    const span = document.createElement('span');
+                    span.className = 'ellipsis';
+                    span.textContent = '…';
+                    paginationControlsContainer.appendChild(span);
+                    return;
                 }
-            });
-            paginationControlsContainer.appendChild(prevButton);
+                const button = document.createElement('button');
+                button.textContent = label;
+                button.disabled = disabled;
+                if (active) button.classList.add('active');
+                if (!disabled && !active) button.addEventListener('click', () => gotoPage(page));
+                paginationControlsContainer.appendChild(button);
+            };
 
-            const maxPageButtons = 5; 
-            let startPage = Math.max(1, currentPage - Math.floor(maxPageButtons / 2));
-            let endPage = Math.min(pageCount, startPage + maxPageButtons - 1);
-            
-            if (endPage - startPage + 1 < maxPageButtons) {
-                startPage = Math.max(1, endPage - maxPageButtons + 1);
+            makeButton('Prev', currentPage - 1, { disabled: currentPage === 1 });
+
+            const maxButtons = 5;
+            let startPage = Math.max(1, currentPage - Math.floor(maxButtons / 2));
+            let endPage = Math.min(pageCount, startPage + maxButtons - 1);
+            if (endPage - startPage + 1 < maxButtons) {
+                startPage = Math.max(1, endPage - maxButtons + 1);
             }
 
             if (startPage > 1) {
-                const firstPageButton = document.createElement('button');
-                firstPageButton.textContent = '1';
-                firstPageButton.addEventListener('click', () => {
-                    currentPage = 1;
-                    displayResultsPage();
-                    setupPagination();
-                });
-                paginationControlsContainer.appendChild(firstPageButton);
-                if (startPage > 2) {
-                    const ellipsis = document.createElement('span');
-                    ellipsis.textContent = '...';
-                    ellipsis.className = 'ellipsis';
-                    paginationControlsContainer.appendChild(ellipsis);
-                }
+                makeButton('1', 1);
+                if (startPage > 2) makeButton(null, null, { ellipsis: true });
             }
-
             for (let i = startPage; i <= endPage; i++) {
-                const pageButton = document.createElement('button');
-                pageButton.textContent = i;
-                if (i === currentPage) {
-                    pageButton.classList.add('active');
-                }
-                pageButton.addEventListener('click', () => {
-                    currentPage = i;
-                    displayResultsPage();
-                    setupPagination();
-                });
-                paginationControlsContainer.appendChild(pageButton);
+                makeButton(String(i), i, { active: i === currentPage });
             }
-
             if (endPage < pageCount) {
-                if (endPage < pageCount - 1) {
-                    const ellipsis = document.createElement('span');
-                    ellipsis.textContent = '...';
-                    ellipsis.className = 'ellipsis';
-                    paginationControlsContainer.appendChild(ellipsis);
-                }
-                const lastPageButton = document.createElement('button');
-                lastPageButton.textContent = pageCount;
-                lastPageButton.addEventListener('click', () => {
-                    currentPage = pageCount;
-                    displayResultsPage();
-                    setupPagination();
-                });
-                paginationControlsContainer.appendChild(lastPageButton);
+                if (endPage < pageCount - 1) makeButton(null, null, { ellipsis: true });
+                makeButton(String(pageCount), pageCount);
             }
 
-            const nextButton = document.createElement('button');
-            nextButton.textContent = 'Next';
-            nextButton.disabled = currentPage === pageCount;
-            nextButton.addEventListener('click', () => {
-                if (currentPage < pageCount) {
-                    currentPage++;
-                    displayResultsPage();
-                    setupPagination();
-                }
-            });
-            paginationControlsContainer.appendChild(nextButton);
+            makeButton('Next', currentPage + 1, { disabled: currentPage === pageCount });
         }
 
         function performSearch() {
             const query = searchInput.value.toLowerCase().trim();
-            
+
             if (!query) {
-                currentFilteredData = [...allCircularData];
+                currentTerms = [];
+                textMatched = allCircularData;
+                const url = new URL(window.location.href);
+                url.searchParams.delete('query');
+                window.history.replaceState({}, "", url);
             } else {
-                window.history.pushState({ query: query }, "Search", "?query=" + encodeURIComponent(query));
+                window.history.pushState({ query }, "Search", "?query=" + encodeURIComponent(query));
                 gtag('event', 'search', { 'search_term': query });
 
-
-                // 1. Extract phrases in quotes (e.g., "rate of interest")
                 const phrases = [];
                 let tempQuery = query.replace(/"([^"]+)"/g, (match, phrase) => {
                     if (phrase) phrases.push(phrase);
-                    return ""; // Remove phrase from query
+                    return "";
                 });
 
-                // 2. Extract excluded words (e.g., -welfare)
                 const excludedWords = [];
                 tempQuery = tempQuery.replace(/-(\S+)/g, (match, word) => {
                     if (word) excludedWords.push(word);
-                    return ""; // Remove excluded word from query
+                    return "";
                 });
 
-                // 3. The rest are required terms (e.g., edli +scheme)
-                // The '+' is optional, all remaining words are treated as required.
                 const requiredTerms = tempQuery.replace(/\+/g, '').split(/\s+/).filter(term => term.length > 0);
+                currentTerms = [...requiredTerms, ...phrases];
 
-                currentFilteredData = allCircularData.filter(item => {
-                    // Combine all searchable text into one string for easier searching
-                    const title = item.title ? item.title.toLowerCase() : '';
-                    const serialNo = item.serial_no ? item.serial_no.toLowerCase() : '';
-                    const circularNo = item.circular_no ? item.circular_no.toLowerCase() : '';
-                    const date = item.date ? item.date.toLowerCase() : '';
-                    
-                    let ocrText = '';
-                    if (item.english_pdf_link && allIndexData[item.english_pdf_link]) {
-                        const indexedItemData = allIndexData[item.english_pdf_link];
-                        if (indexedItemData && indexedItemData.ocr_content) {
-                            ocrText = indexedItemData.ocr_content.toLowerCase();
-                        }
-                    }
+                textMatched = allCircularData.filter(item => {
+                    const fields = [
+                        (item.title || '').toLowerCase(),
+                        (item.serial_no || '').toLowerCase(),
+                        (item.circular_no || '').toLowerCase(),
+                        (item.date || '').toLowerCase(),
+                    ];
+                    // Check cheap metadata fields first; only touch the (large) OCR text if needed.
+                    const matches = needle =>
+                        fields.some(field => field.includes(needle)) ||
+                        ocrLower(item.english_pdf_link).includes(needle);
 
-                    const searchableText = `${title} ${serialNo} ${circularNo} ${date} ${ocrText}`;
-
-                    // --- Apply all search conditions ---
-
-                    // a. Check for excluded words first. If any are found, reject immediately.
-                    if (excludedWords.some(term => searchableText.includes(term))) {
-                        return false;
-                    }
-
-                    // b. Check for all required terms.
-                    const hasRequiredTerms = requiredTerms.every(term => searchableText.includes(term));
-                    
-                    // c. Check for all exact phrases.
-                    const hasPhrases = phrases.every(phrase => searchableText.includes(phrase));
-
-                    // The item is a match if it contains all required terms AND all phrases.
-                    return hasRequiredTerms && hasPhrases;
+                    if (excludedWords.some(matches)) return false;
+                    if (!requiredTerms.every(matches)) return false;
+                    if (!phrases.every(matches)) return false;
+                    return true;
                 });
             }
-            currentPage = 1; // Reset to first page after search
-            displayResultsPage();
-            setupPagination();
+            applyFilters();
         }
 
         searchButton.addEventListener('click', performSearch);
-        searchInput.addEventListener('keyup', (event) => {
-            if (event.key === 'Enter') {
-                performSearch();
-            }
+        searchInput.addEventListener('keyup', event => {
+            if (event.key === 'Enter') performSearch();
+        });
+        yearFilter.addEventListener('change', applyFilters);
+        langFilter.addEventListener('change', applyFilters);
+        window.addEventListener('popstate', () => {
+            const query = new URLSearchParams(window.location.search).get('query');
+            searchInput.value = query ? decodeURIComponent(query) : '';
+            performSearch();
         });
 
-        document.addEventListener('DOMContentLoaded', loadAllData); // Changed to loadAllData
+        document.addEventListener('DOMContentLoaded', loadAllData);
     </script>
 </body>
 </html>
