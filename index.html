@@ -146,8 +146,9 @@
             z-index: 10;
             border-top: 1px solid var(--line);
             border-bottom: 1px solid var(--line);
-            background: rgba(255, 255, 255, 0.92);
-            backdrop-filter: blur(8px);
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(16px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
         }
 
         .toolbar-inner { padding: 16px 0; }
@@ -539,6 +540,18 @@
         @media (prefers-reduced-motion: reduce) {
             * { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
         }
+
+        .snippet { font-size: 13px; color: var(--ink-2); margin-top: 6px; padding: 6px 10px; background: var(--tag-bg); border-left: 3px solid var(--accent); border-radius: 4px; font-style: italic; }
+        mark.hl { background: #fef08a; color: #854d0e; padding: 0 2px; border-radius: 2px; font-weight: 500; }
+        
+        .sortable { cursor: pointer; user-select: none; transition: color 0.2s; }
+        .sortable:hover { color: var(--accent); }
+        .sortable::after { content: " \2195"; opacity: 0.3; }
+        .sortable.asc::after { content: " \2191"; opacity: 1; color: var(--accent); }
+        .sortable.desc::after { content: " \2193"; opacity: 1; color: var(--accent); }
+        
+        .spinner { width: 40px; height: 40px; border: 3px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 16px; }
+        @keyframes spin { to { transform: rotate(360deg); } }
     </style>
 </head>
 <body>
@@ -623,6 +636,7 @@
 
             <div class="table-card" id="resultsContainer">
                 <div class="state">
+                    <div class="spinner"></div>
                     <strong>Loading the circular index</strong>
                     <p>Fetching circulars and full-text data…</p>
                 </div>
@@ -656,6 +670,24 @@
         const paginationControlsContainer = document.getElementById('paginationControls');
         const yearFilter = document.getElementById('yearFilter');
         const langFilter = document.getElementById('langFilter');
+
+        let sortColumn = 'date';
+        let sortAscending = false;
+
+        function setSort(col) {
+            if (sortColumn === col) {
+                sortAscending = !sortAscending;
+            } else {
+                sortColumn = col;
+                sortAscending = col !== 'date';
+            }
+            applyFilters();
+        }
+
+        function getSortClass(col) {
+            if (sortColumn !== col) return 'sortable';
+            return 'sortable ' + (sortAscending ? 'asc' : 'desc');
+        }
 
         let allCircularData = [];
         let allIndexData = {};
@@ -827,6 +859,26 @@
                 if (lang === 'bilingual' && !(item.english_pdf_link && item.hindi_pdf_link)) return false;
                 return true;
             });
+            currentFilteredData.sort((a, b) => {
+                let valA, valB;
+                if (sortColumn === 'date') {
+                    valA = parseDate(a.date) || 0;
+                    valB = parseDate(b.date) || 0;
+                } else if (sortColumn === 'title') {
+                    valA = (a.title || '').toLowerCase();
+                    valB = (b.title || '').toLowerCase();
+                } else if (sortColumn === 'circular_no') {
+                    valA = (a.circular_no || '').toLowerCase();
+                    valB = (b.circular_no || '').toLowerCase();
+                } else {
+                    valA = parseInt(a.serial_no) || 0;
+                    valB = parseInt(b.serial_no) || 0;
+                }
+                if (valA < valB) return sortAscending ? -1 : 1;
+                if (valA > valB) return sortAscending ? 1 : -1;
+                return 0;
+            });
+
             currentPage = 1;
             displayResultsPage();
             setupPagination();
@@ -891,10 +943,10 @@
                     </colgroup>
                     <thead>
                         <tr>
-                            <th scope="col">Sr. No</th>
-                            <th scope="col">Title</th>
-                            <th scope="col">Circular No</th>
-                            <th scope="col">Date</th>
+                            <th scope="col" class="${getSortClass('serial_no')}" onclick="setSort('serial_no')">Sr. No</th>
+                            <th scope="col" class="${getSortClass('title')}" onclick="setSort('title')">Title</th>
+                            <th scope="col" class="${getSortClass('circular_no')}" onclick="setSort('circular_no')">Circular No</th>
+                            <th scope="col" class="${getSortClass('date')}" onclick="setSort('date')">Date</th>
                             <th scope="col">Documents</th>
                         </tr>
                     </thead>
