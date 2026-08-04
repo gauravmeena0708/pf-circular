@@ -3,9 +3,12 @@ from bs4 import BeautifulSoup as bs, NavigableString
 import requests
 from urllib.parse import urljoin
 import json
-import fitz  # PyMuPDF
-import pytesseract
-from PIL import Image
+try:
+    import fitz  # PyMuPDF
+    import pytesseract
+    from PIL import Image
+except ImportError as e:
+    print(f"Warning: OCR dependencies not fully available ({e}).")
 from datetime import datetime, timezone
 import os
 import argparse # For command-line arguments
