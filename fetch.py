@@ -16,7 +16,7 @@ import argparse # For command-line arguments
 # --- Configuration ---
 # If tesseract is not in your PATH, you might need to specify its location
 # For example, on Windows:
-# pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 CIRCULAR_DATA_FILE = "circular-data.json"
 INDEX_DATA_FILE = "index-data.json"

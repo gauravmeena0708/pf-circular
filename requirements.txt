@@ -1,5 +1,6 @@
+requests
+beautifulsoup4
+PyMuPDF
+pytesseract
+Pillow
 numpy
-# requirements.txt
-
-# PDF Processing and OCR
-PyMuPDF # fitz
