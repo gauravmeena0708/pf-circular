@@ -300,7 +300,11 @@ def fetch_circular_metadata():
             if year not in years: years[year] = []
             years[year].append(c)
         
-        metadata = {'years': sorted(list(years.keys()), reverse=True)}
+        sorted_years = sorted(list(years.keys()), reverse=True)
+        if 'Unknown' in sorted_years:
+            sorted_years.remove('Unknown')
+            sorted_years.append('Unknown')
+        metadata = {'years': sorted_years}
         save_json_file(metadata, 'data/metadata.json')
         
         for year, data in years.items():

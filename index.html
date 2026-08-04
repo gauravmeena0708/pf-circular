@@ -798,21 +798,63 @@
                 : "—";
         }
 
+        let availableYears = [];
+        let loadedYears = [];
+
+        async function loadYearData(year) {
+            const [circularResponse, indexResponse] = await Promise.all([
+                fetch(`data/circulars-${year}.json`),
+                fetch(`data/index-${year}.json`).catch(() => ({ ok: false, json: () => Promise.resolve({}) }))
+            ]);
+            
+            if (circularResponse.ok) {
+                const cData = await circularResponse.json();
+                allCircularData = allCircularData.concat(cData);
+            }
+            if (indexResponse.ok) {
+                const iData = await indexResponse.json();
+                Object.assign(allIndexData, iData);
+            }
+            loadedYears.push(year);
+            window.fuseInstance = null; // reset fuse index
+        }
+
         async function loadAllData() {
             try {
-                const [circularResponse, indexResponse] = await Promise.all([
-                    fetch('circular-data.json'),
-                    fetch('index-data.json').catch(err => {
-                        console.warn('index-data.json unavailable; full-text search disabled.', err);
-                        return { ok: false, json: () => Promise.resolve({}) };
-                    })
-                ]);
-
-                if (!circularResponse.ok) {
-                    throw new Error(`HTTP ${circularResponse.status} for circular-data.json`);
+                const metaResp = await fetch('data/metadata.json');
+                const meta = await metaResp.json();
+                availableYears = meta.years;
+                
+                // Move 'Unknown' to the end of the array if it exists
+                if (availableYears.includes('Unknown')) {
+                    availableYears = availableYears.filter(y => y !== 'Unknown');
+                    availableYears.push('Unknown');
                 }
-                allCircularData = await circularResponse.json();
-                allIndexData = indexResponse.ok ? await indexResponse.json() : {};
+                
+                // Load latest year by default
+                await loadYearData(availableYears[0]);
+
+                if (availableYears.length > 1) {
+                    const btn = document.getElementById('loadOlderBtn');
+                    if(btn) {
+                        btn.style.display = 'block';
+                        btn.onclick = async () => {
+                            btn.disabled = true;
+                            btn.textContent = 'Loading...';
+                            for (let i = 1; i < availableYears.length; i++) {
+                                await loadYearData(availableYears[i]);
+                            }
+                            btn.style.display = 'none';
+                            updateStats();
+                            
+                            // Re-populate filters to include older years
+                            yearFilter.innerHTML = '<option value="">All Years</option>';
+                            populateFilters();
+                            
+                            performSearch();
+                        };
+                    }
+                }
 
                 updateStats();
                 populateFilters();
