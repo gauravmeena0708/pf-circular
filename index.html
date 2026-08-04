@@ -552,7 +552,11 @@
         
         .spinner { width: 40px; height: 40px; border: 3px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 16px; }
         @keyframes spin { to { transform: rotate(360deg); } }
-    </style>
+    
+        .load-more-btn { display: block; margin: 20px auto; padding: 10px 20px; border: 1px solid var(--accent); background: var(--surface); color: var(--accent); border-radius: 6px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+        .load-more-btn:hover { background: var(--accent-soft); }
+        .load-more-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+</style>
 </head>
 <body>
     <header class="topbar">
@@ -642,7 +646,10 @@
                 </div>
             </div>
 
+            
             <div class="pagination-controls" id="paginationControls"></div>
+            <button id="loadOlderBtn" class="load-more-btn" style="display: none;">Load Historical Data (Older Years)</button>
+
         </div>
     </main>
 
@@ -655,6 +662,7 @@
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JHNCW79FZT"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -1037,23 +1045,25 @@
                 const requiredTerms = tempQuery.replace(/\+/g, '').split(/\s+/).filter(term => term.length > 0);
                 currentTerms = [...requiredTerms, ...phrases];
 
-                textMatched = allCircularData.filter(item => {
-                    const fields = [
-                        (item.title || '').toLowerCase(),
-                        (item.serial_no || '').toLowerCase(),
-                        (item.circular_no || '').toLowerCase(),
-                        (item.date || '').toLowerCase(),
-                    ];
-                    // Check cheap metadata fields first; only touch the (large) OCR text if needed.
-                    const matches = needle =>
-                        fields.some(field => field.includes(needle)) ||
-                        ocrLower(item.english_pdf_link).includes(needle);
+                if (!window.fuseInstance) {
+                    const fuseData = allCircularData.map(item => ({
+                        ...item,
+                        fullText: ocrLower(item.english_pdf_link)
+                    }));
+                    window.fuseInstance = new Fuse(fuseData, {
+                        keys: ['title', 'circular_no', 'date', 'fullText'],
+                        threshold: 0.4, // 0 = exact, 1 = match anything. 0.4 provides excellent typo-tolerance.
+                        ignoreLocation: true,
+                        useExtendedSearch: true
+                    });
+                }
 
-                    if (excludedWords.some(matches)) return false;
-                    if (!requiredTerms.every(matches)) return false;
-                    if (!phrases.every(matches)) return false;
-                    return true;
-                });
+                let searchStr = requiredTerms.join(' ');
+                if (phrases.length > 0) searchStr += ' ' + phrases.map(p => "'" + p).join(' ');
+                if (excludedWords.length > 0) searchStr += ' ' + excludedWords.map(w => '!' + w).join(' ');
+
+                const fuseResults = window.fuseInstance.search(searchStr);
+                textMatched = fuseResults.map(result => result.item);
             }
             applyFilters();
         }

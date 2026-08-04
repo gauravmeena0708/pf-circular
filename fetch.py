@@ -18,8 +18,8 @@ import argparse # For command-line arguments
 # For example, on Windows:
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-CIRCULAR_DATA_FILE = "circular-data.json"
-INDEX_DATA_FILE = "index-data.json"
+CIRCULAR_DATA_FILE = "circular-data.json" # Not used directly anymore for output
+INDEX_DATA_FILE = "index-data.json" # Not used directly anymore for output
 MAX_URLS_TO_INDEX_PER_RUN = 50
 
 HEADERS = {
@@ -223,7 +223,21 @@ def fetch_circular_metadata():
             print(f"  An error occurred during parsing for {q_param}: {e}")
 
     if parsed_circulars_data:
-        save_json_file(parsed_circulars_data, CIRCULAR_DATA_FILE)
+        import os
+        os.makedirs('data', exist_ok=True)
+        years = {}
+        for c in parsed_circulars_data:
+            url = c.get('english_pdf_link') or c.get('hindi_pdf_link') or ''
+            m = re.search(r'/Y(\d{4}-\d{4})/', url)
+            year = m.group(1) if m else 'Unknown'
+            if year not in years: years[year] = []
+            years[year].append(c)
+        
+        metadata = {'years': sorted(list(years.keys()), reverse=True)}
+        save_json_file(metadata, 'data/metadata.json')
+        
+        for year, data in years.items():
+            save_json_file(data, f'data/circulars-{year}.json')
     else:
         print("No circular metadata was extracted.")
     print("Finished fetching circular metadata.")
@@ -236,19 +250,24 @@ def update_pdf_index():
     Limits processing to MAX_URLS_TO_INDEX_PER_RUN new URLs.
     """
     print("\nStarting PDF indexing process...")
-    circulars = load_json_file(CIRCULAR_DATA_FILE)
-    if not circulars:
-        print("No circular data found in {CIRCULAR_DATA_FILE}. Cannot proceed with indexing.")
+    import os
+    if not os.path.exists('data/metadata.json'):
+        print("No metadata found. Run fetch first.")
         return
-
-    indexed_data = load_json_file(INDEX_DATA_FILE)
+    
+    metadata = load_json_file('data/metadata.json')
     newly_indexed_count = 0
     processed_urls_in_this_run = 0
 
-    for circular_entry in circulars:
-        if processed_urls_in_this_run >= MAX_URLS_TO_INDEX_PER_RUN:
-            print(f"Reached maximum of {MAX_URLS_TO_INDEX_PER_RUN} URLs for this indexing run.")
-            break
+    for year in metadata.get('years', []):
+        if processed_urls_in_this_run >= MAX_URLS_TO_INDEX_PER_RUN: break
+        circulars = load_json_file(f'data/circulars-{year}.json')
+        if not circulars: continue
+        
+        indexed_data = load_json_file(f'data/index-{year}.json') or {}
+
+        for circular_entry in circulars:
+            if processed_urls_in_this_run >= MAX_URLS_TO_INDEX_PER_RUN: break
 
         pdf_url = circular_entry.get("english_pdf_link")
 
