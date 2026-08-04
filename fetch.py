@@ -1,4 +1,5 @@
 import io
+import re
 from bs4 import BeautifulSoup as bs, NavigableString
 import requests
 from urllib.parse import urljoin
@@ -75,47 +76,113 @@ def save_json_file(data, filepath):
         json.dump(data, f, ensure_ascii=False, indent=4)
     print(f"Data saved to {filepath}")
 
-# --- PDF Processing and OCR Function ---
-def get_first_page_ocr_text_from_url(pdf_url):
+# --- Text Processing & PDF Extraction Functions ---
+def clean_extracted_text(text):
+    """Normalizes extracted text by removing control characters, fixing hyphenations, and cleaning whitespace."""
+    if not text:
+        return ""
+    # Strip non-printable control characters
+    text = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', text)
+    # Fix broken line-end hyphens (e.g., "communica-\ntion" -> "communication")
+    text = re.sub(r'(\w+)-\s*\n\s*(\w+)', r'\1\2', text)
+    # Collapse multiple horizontal spaces and tabs
+    text = re.sub(r'[ \t]+', ' ', text)
+    # Normalize excessive vertical linebreaks (3+ newlines to 2)
+    text = re.sub(r'\n{3,}', '\n\n', text)
+    # Strip trailing whitespace on each line
+    lines = [line.strip() for line in text.splitlines()]
+    text = '\n'.join(lines)
+    return text.strip()
+
+def extract_pdf_text_from_url(pdf_url, max_pages=2):
     """
-    Downloads a PDF from a URL, extracts the first page,
-    and performs OCR on it.
-    Returns the OCRed text or None if an error occurs.
+    Downloads a PDF from a URL, extracts text from up to `max_pages` pages
+    using direct PyMuPDF text extraction first, falling back to OCR if needed.
+    Returns a metadata dictionary with extracted text or None if error.
     """
     if not pdf_url:
         return None
     try:
         print(f"    Downloading PDF: {pdf_url}")
-        pdf_response = requests.get(pdf_url, headers=HEADERS, timeout=45) # Increased timeout
+        pdf_response = requests.get(pdf_url, headers=HEADERS, timeout=45)
         pdf_response.raise_for_status()
         pdf_bytes = pdf_response.content
 
         print(f"    Opening PDF with PyMuPDF...")
         pdf_document = fitz.open(stream=pdf_bytes, filetype="pdf")
-
-        if len(pdf_document) > 0:
-            first_page = pdf_document.load_page(0)
-            pix = first_page.get_pixmap(dpi=300)
-            img_bytes = pix.tobytes("png")
-            img = Image.open(io.BytesIO(img_bytes))
-
-            print(f"    Performing OCR on the first page...")
-            ocr_text = pytesseract.image_to_string(img, lang='eng')
-            pdf_document.close()
-            print(f"    OCR successful for {pdf_url.split('/')[-1]}.")
-            return ocr_text.strip()
-        else:
+        total_pages = len(pdf_document)
+        if total_pages == 0:
             print(f"    PDF is empty: {pdf_url}")
             pdf_document.close()
             return None
+
+        pages_to_process = min(total_pages, max_pages)
+        page_texts = []
+        extraction_methods = []
+
+        for page_num in range(pages_to_process):
+            page = pdf_document.load_page(page_num)
+            direct_text = page.get_text("text").strip()
+            
+            # Use direct text if it yields >= 50 characters of content
+            if len(direct_text) >= 50:
+                page_texts.append(direct_text)
+                extraction_methods.append("direct_text")
+            else:
+                # Scanned/image page fallback to Tesseract OCR
+                try:
+                    pix = page.get_pixmap(dpi=300)
+                    img_bytes = pix.tobytes("png")
+                    img = Image.open(io.BytesIO(img_bytes))
+                    ocr_text = pytesseract.image_to_string(img, lang='eng').strip()
+                    if ocr_text:
+                        page_texts.append(ocr_text)
+                        extraction_methods.append("ocr")
+                    elif direct_text:
+                        page_texts.append(direct_text)
+                        extraction_methods.append("direct_text")
+                except pytesseract.TesseractNotFoundError:
+                    if direct_text:
+                        page_texts.append(direct_text)
+                        extraction_methods.append("direct_text")
+                    else:
+                        print("    Tesseract OCR not found.")
+                        pdf_document.close()
+                        return {
+                            "ocr_content": "OCR_ERROR: Tesseract not found",
+                            "method": "failed",
+                            "total_pages": total_pages,
+                            "pages_indexed": 0,
+                            "indexed_at": datetime.now(timezone.utc).isoformat()
+                        }
+
+        pdf_document.close()
+
+        raw_combined = "\n\n".join(page_texts)
+        cleaned_text = clean_extracted_text(raw_combined)
+
+        if "direct_text" in extraction_methods and "ocr" in extraction_methods:
+            final_method = "hybrid"
+        elif "ocr" in extraction_methods:
+            final_method = "ocr"
+        else:
+            final_method = "direct_text"
+
+        print(f"    Extraction successful for {pdf_url.split('/')[-1]} ({pages_to_process}/{total_pages} pages, method: {final_method}).")
+
+        return {
+            "ocr_content": cleaned_text,
+            "method": final_method,
+            "total_pages": total_pages,
+            "pages_indexed": pages_to_process,
+            "indexed_at": datetime.now(timezone.utc).isoformat()
+        }
+
     except requests.exceptions.RequestException as e:
         print(f"    Error downloading PDF {pdf_url}: {e}")
         return None
-    except pytesseract.TesseractNotFoundError:
-        print("    Tesseract OCR not found. Please ensure it's installed and in your PATH.")
-        return "OCR_ERROR: Tesseract not found" # So we know it was attempted but failed due to setup
     except Exception as e:
-        print(f"    Error processing PDF {pdf_url} for OCR: {e}")
+        print(f"    Error processing PDF {pdf_url}: {e}")
         return None
 
 # --- Main Data Fetching Logic ---
@@ -243,68 +310,62 @@ def fetch_circular_metadata():
     print("Finished fetching circular metadata.")
 
 # --- Indexing Logic ---
-def update_pdf_index():
+def update_pdf_index(max_urls=50):
     """
-    Reads circular-data.json, processes new English PDF links for OCR,
-    and updates index-data.json.
-    Limits processing to MAX_URLS_TO_INDEX_PER_RUN new URLs.
+    Reads circular metadata files from data/, extracts text (direct + OCR fallback)
+    for English PDF links up to 2 pages, and updates data/index-{year}.json.
+    Limits processing to max_urls new URLs per execution (or unlimited if None/0).
     """
     print("\nStarting PDF indexing process...")
-    import os
     if not os.path.exists('data/metadata.json'):
         print("No metadata found. Run fetch first.")
         return
-    
+
     metadata = load_json_file('data/metadata.json')
     newly_indexed_count = 0
     processed_urls_in_this_run = 0
+    limit = max_urls if max_urls and max_urls > 0 else float('inf')
 
     for year in metadata.get('years', []):
-        if processed_urls_in_this_run >= MAX_URLS_TO_INDEX_PER_RUN: break
-        circulars = load_json_file(f'data/circulars-{year}.json')
-        if not circulars: continue
-        
-        indexed_data = load_json_file(f'data/index-{year}.json') or {}
-
-        for circular_entry in circulars:
-            if processed_urls_in_this_run >= MAX_URLS_TO_INDEX_PER_RUN: break
-
-        pdf_url = circular_entry.get("english_pdf_link")
-
-        if not pdf_url:
-            # print(f"  Skipping entry S.No {circular_entry.get('serial_no', 'N/A')} (no English PDF link).")
+        if processed_urls_in_this_run >= limit:
+            break
+        circulars_file = f'data/circulars-{year}.json'
+        index_file = f'data/index-{year}.json'
+        circulars = load_json_file(circulars_file)
+        if not circulars:
             continue
 
-        if pdf_url in indexed_data:
-            # print(f"  URL already indexed: {pdf_url.split('/')[-1]}")
-            continue # Skip if already indexed
+        indexed_data = load_json_file(index_file) or {}
+        year_updated = False
 
-        print(f"  Processing new URL for indexing: {pdf_url.split('/')[-1]} (S.No {circular_entry.get('serial_no', 'N/A')})")
-        ocr_text = get_first_page_ocr_text_from_url(pdf_url)
-        processed_urls_in_this_run += 1
+        for circular_entry in circulars:
+            if processed_urls_in_this_run >= limit:
+                break
 
-        if ocr_text is not None: # Includes cases where OCR failed but attempted
-            indexed_data[pdf_url] = {
-                "ocr_content": ocr_text,
-                "indexed_at": datetime.now(timezone.utc).isoformat()
-            }
-            if not ocr_text.startswith("OCR_ERROR"): # Count only successful OCRs as "newly indexed" for this metric
-                 newly_indexed_count +=1
-            print(f"    Added to index. Total newly indexed in this run so far: {newly_indexed_count}")
-        else:
-            # Optionally, add a placeholder if OCR returned None to prevent re-attempts if it's a persistent issue
-            # indexed_data[pdf_url] = {
-            #     "ocr_content": "OCR_FAILED_PERMANENTLY_OR_EMPTY", # Or some other marker
-            #     "indexed_at": datetime.now(timezone.utc).isoformat()
-            # }
-            print(f"    OCR returned None. Not adding to index data for now: {pdf_url.split('/')[-1]}")
+            pdf_url = circular_entry.get("english_pdf_link")
+            if not pdf_url:
+                continue
 
+            if pdf_url in indexed_data:
+                continue  # Skip if already indexed
 
-    if newly_indexed_count > 0 or processed_urls_in_this_run > 0 : # Save if any attempt was made
-        save_json_file(indexed_data, INDEX_DATA_FILE)
-    else:
-        print("No new PDFs were processed or indexed in this run.")
-    print(f"Finished PDF indexing process. Successfully indexed {newly_indexed_count} new PDFs.")
+            print(f"  Processing new URL for indexing: {pdf_url.split('/')[-1]} (S.No {circular_entry.get('serial_no', 'N/A')})")
+            result = extract_pdf_text_from_url(pdf_url, max_pages=2)
+            processed_urls_in_this_run += 1
+
+            if result is not None:
+                indexed_data[pdf_url] = result
+                if not result.get("ocr_content", "").startswith("OCR_ERROR"):
+                    newly_indexed_count += 1
+                year_updated = True
+                print(f"    Added to index. Total newly indexed in this run: {newly_indexed_count}")
+            else:
+                print(f"    Extraction returned None. Skipping for now: {pdf_url.split('/')[-1]}")
+
+        if year_updated:
+            save_json_file(indexed_data, index_file)
+
+    print(f"Finished PDF indexing process. Successfully indexed {newly_indexed_count} new PDFs across processed batches.")
 
 
 # --- Main Execution ---
@@ -316,12 +377,18 @@ if __name__ == "__main__":
         default='all',
         help="Specify action: 'fetch' metadata, 'index' PDFs, or 'all' (default)."
     )
+    parser.add_argument(
+        "--max-urls",
+        type=int,
+        default=50,
+        help="Maximum number of new PDFs to process for indexing in this run (0 for unlimited)."
+    )
     args = parser.parse_args()
 
     if args.action == 'fetch' or args.action == 'all':
         fetch_circular_metadata()
 
     if args.action == 'index' or args.action == 'all':
-        update_pdf_index()
+        update_pdf_index(max_urls=args.max_urls)
 
     print("\nScript finished.")
