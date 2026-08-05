@@ -1,5 +1,6 @@
 import io
 import re
+import time
 from bs4 import BeautifulSoup as bs, NavigableString
 import requests
 from urllib.parse import urljoin
@@ -63,10 +64,10 @@ def load_json_file(filepath):
     """Loads a JSON file if it exists, otherwise returns an empty dictionary."""
     if os.path.exists(filepath):
         try:
-            with open(filepath, 'r', encoding='utf-8') as f:
+            with open(filepath, 'r', encoding='utf-8-sig') as f:
                 return json.load(f)
-        except json.JSONDecodeError:
-            print(f"Warning: Could not decode JSON from {filepath}. Starting fresh.")
+        except json.JSONDecodeError as e:
+            print(f"Warning: Could not decode JSON from {filepath} ({e}). Starting fresh.")
             return {}
     return {}
 
@@ -94,20 +95,33 @@ def clean_extracted_text(text):
     text = '\n'.join(lines)
     return text.strip()
 
-def extract_pdf_text_from_url(pdf_url, max_pages=2):
+def extract_pdf_text_from_url(pdf_url, max_pages=2, retries=3):
     """
-    Downloads a PDF from a URL, extracts text from up to `max_pages` pages
+    Downloads a PDF from a URL with retries and rate limiting, extracts text from up to `max_pages` pages
     using direct PyMuPDF text extraction first, falling back to OCR if needed.
     Returns a metadata dictionary with extracted text or None if error.
     """
     if not pdf_url:
         return None
-    try:
-        print(f"    Downloading PDF: {pdf_url}")
-        pdf_response = requests.get(pdf_url, headers=HEADERS, timeout=45)
-        pdf_response.raise_for_status()
-        pdf_bytes = pdf_response.content
+    
+    pdf_bytes = None
+    for attempt in range(retries):
+        try:
+            time.sleep(0.3)  # Rate limiting delay
+            print(f"    Downloading PDF (attempt {attempt+1}/{retries}): {pdf_url}")
+            pdf_response = requests.get(pdf_url, headers=HEADERS, timeout=35)
+            pdf_response.raise_for_status()
+            pdf_bytes = pdf_response.content
+            break
+        except requests.exceptions.RequestException as e:
+            if attempt < retries - 1:
+                print(f"    Connection warning ({e}), retrying in {(attempt+1)*2}s...")
+                time.sleep((attempt + 1) * 2)
+            else:
+                print(f"    Failed downloading PDF after {retries} attempts: {pdf_url} ({e})")
+                return None
 
+    try:
         print(f"    Opening PDF with PyMuPDF...")
         pdf_document = fitz.open(stream=pdf_bytes, filetype="pdf")
         total_pages = len(pdf_document)
