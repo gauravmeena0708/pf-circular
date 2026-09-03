@@ -162,6 +162,8 @@
 
         .search-wrap {
             position: relative;
+            display: flex;
+            align-items: center;
         }
 
         .search-wrap svg {
@@ -177,7 +179,7 @@
         .search-input {
             width: 100%;
             height: 44px;
-            padding: 0 14px 0 38px;
+            padding: 0 42px 0 38px;
             border: 1px solid var(--line-strong);
             border-radius: 6px;
             outline: none;
@@ -189,6 +191,31 @@
         .search-input:focus {
             border-color: var(--accent);
             box-shadow: 0 0 0 3px var(--focus-ring);
+        }
+
+        .search-kbd {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 20px;
+            height: 20px;
+            padding: 0 4px;
+            font: 600 11px/1 var(--sans);
+            color: var(--muted);
+            background: #f1f5f9;
+            border: 1px solid var(--line-strong);
+            border-radius: 4px;
+            pointer-events: none;
+            user-select: none;
+            transition: opacity 120ms ease;
+        }
+
+        .search-input:focus ~ .search-kbd {
+            opacity: 0;
         }
 
         .search-button {
@@ -333,7 +360,7 @@
         .ledger col.col-sr { width: 74px; }
         .ledger col.col-no { width: 230px; }
         .ledger col.col-date { width: 116px; }
-        .ledger col.col-docs { width: 175px; }
+        .ledger col.col-docs { width: 195px; }
 
         .ledger tbody td {
             padding: 15px 18px;
@@ -396,20 +423,32 @@
 
         .doc {
             display: inline-flex;
-            padding: 5px 11px;
+            align-items: center;
+            gap: 3px;
+            padding: 4px 8px;
             border: 1px solid var(--line-strong);
             border-radius: 6px;
-            color: var(--ink-2);
-            background: var(--surface);
-            font: 600 12px/1 var(--sans);
+            color: var(--muted);
+            background: #f8fafc;
+            font: 500 11.5px/1 var(--sans);
             text-decoration: none;
-            transition: border-color 130ms ease, color 130ms ease, background 130ms ease;
+            transition: all 130ms ease;
         }
 
         .doc:hover {
-            border-color: var(--accent);
-            color: var(--accent);
-            background: var(--accent-soft);
+            border-color: #94a3b8;
+            color: var(--ink);
+            background: #ffffff;
+        }
+
+        .doc .doc-arrow {
+            font-size: 10px;
+            opacity: 0.65;
+            transition: opacity 120ms ease;
+        }
+
+        .doc:hover .doc-arrow {
+            opacity: 1;
         }
 
         .no-doc {
@@ -566,21 +605,25 @@
         .doc-reproduced {
             display: inline-flex;
             align-items: center;
-            padding: 5px 10px;
-            border: 1px solid #93c5fd;
+            gap: 5px;
+            padding: 4px 10px;
+            border: 1px solid #2563eb;
             border-radius: 6px;
-            background: #eff6ff;
-            color: #1d4ed8;
+            background: #2563eb;
+            color: #ffffff;
             font: 600 11.5px/1 var(--sans);
             cursor: pointer;
             text-decoration: none;
+            box-shadow: 0 1px 3px rgba(37, 99, 235, 0.25);
             transition: all 130ms ease;
         }
 
         .doc-reproduced:hover {
-            border-color: #2563eb;
-            background: #2563eb;
+            border-color: #1d4ed8;
+            background: #1d4ed8;
             color: #ffffff;
+            box-shadow: 0 2px 6px rgba(37, 99, 235, 0.35);
+            transform: translateY(-1px);
         }
 
         .badge-reproduced {
@@ -1183,6 +1226,7 @@
                             autocomplete="off"
                             placeholder="Title, circular number, date, or PDF text"
                         >
+                        <kbd class="search-kbd" title="Press / to focus search">/</kbd>
                     </div>
                 </div>
                 <button id="searchButton" class="search-button" type="button">Search</button>
@@ -1242,6 +1286,10 @@
                         <button type="button" id="fontSerifBtn" class="ocr-font-btn active" title="Official serif document font">Serif</button>
                         <button type="button" id="fontSansBtn" class="ocr-font-btn" title="Modern sans-serif font">Sans</button>
                     </div>
+                    <div class="ocr-font-toggle" role="group" aria-label="Font size">
+                        <button type="button" id="fontDecreaseBtn" class="ocr-font-btn" title="Decrease font size">A−</button>
+                        <button type="button" id="fontIncreaseBtn" class="ocr-font-btn" title="Increase font size">A+</button>
+                    </div>
                     <button type="button" id="copyLinkBtn" class="ocr-btn-action" title="Copy shareable direct link to this circular">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
@@ -1255,6 +1303,14 @@
                             <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                         </svg>
                         <span id="copyBtnText">Copy Text</span>
+                    </button>
+                    <button type="button" id="downloadTxtBtn" class="ocr-btn-action" title="Download text as .txt file">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span>Download .txt</span>
                     </button>
                     <button type="button" id="printOcrBtn" class="ocr-btn-action" title="Print this reproduced circular">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -1647,7 +1703,7 @@
 
         function documentPill(url, code, label) {
             if (!url) return "";
-            return `<a class="doc" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(label)} PDF">${code}</a>`;
+            return `<a class="doc" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" title="Official ${escapeHtml(label)} PDF (external epfindia/epfo link - may be intermittently unavailable)">${code}<span class="doc-arrow" aria-hidden="true">↗</span></a>`;
         }
 
         function renderRow(item) {
@@ -1656,13 +1712,13 @@
                 : ((item.hindi_pdf_link && allIndexData[item.hindi_pdf_link]) ? item.hindi_pdf_link : null);
             const hasFullText = Boolean(ocrLink);
 
-            let docs =
+            let docs = "";
+            if (ocrLink) {
+                docs += `<button type="button" class="doc-reproduced" data-ocr-link="${escapeHtml(ocrLink)}" title="View reproduced circular text (instant, archived)">📄 Reproduced</button>`;
+            }
+            docs +=
                 documentPill(item.english_pdf_link, "EN", "English") +
                 documentPill(item.hindi_pdf_link, "HI", "Hindi");
-
-            if (ocrLink) {
-                docs += `<button type="button" class="doc-reproduced" data-ocr-link="${escapeHtml(ocrLink)}" title="View reproduced circular content">Reproduced</button>`;
-            }
 
             const snippet = ocrSnippet(item, currentTerms);
             const titleHtml = highlightText(escapeHtml(item.title || "Untitled circular"), currentTerms);
@@ -1869,11 +1925,14 @@
         const modalCloseBtnBottom = document.getElementById('modalCloseBtnBottom');
         const copyOcrBtn = document.getElementById('copyOcrBtn');
         const copyBtnText = document.getElementById('copyBtnText');
+        const downloadTxtBtn = document.getElementById('downloadTxtBtn');
         const printOcrBtn = document.getElementById('printOcrBtn');
         const copyLinkBtn = document.getElementById('copyLinkBtn');
         const copyLinkBtnText = document.getElementById('copyLinkBtnText');
         const fontSerifBtn = document.getElementById('fontSerifBtn');
         const fontSansBtn = document.getElementById('fontSansBtn');
+        const fontDecreaseBtn = document.getElementById('fontDecreaseBtn');
+        const fontIncreaseBtn = document.getElementById('fontIncreaseBtn');
         const paperSheet = document.getElementById('paperSheet');
 
         if (fontSerifBtn && fontSansBtn && paperSheet) {
@@ -1888,6 +1947,22 @@
                 paperSheet.classList.remove('mode-serif');
                 fontSansBtn.classList.add('active');
                 fontSerifBtn.classList.remove('active');
+            });
+        }
+
+        let currentFontSizePx = 15;
+        if (fontDecreaseBtn && fontIncreaseBtn && modalOcrText) {
+            fontDecreaseBtn.addEventListener('click', () => {
+                if (currentFontSizePx > 12) {
+                    currentFontSizePx -= 1.5;
+                    modalOcrText.style.fontSize = `${currentFontSizePx}px`;
+                }
+            });
+            fontIncreaseBtn.addEventListener('click', () => {
+                if (currentFontSizePx < 22) {
+                    currentFontSizePx += 1.5;
+                    modalOcrText.style.fontSize = `${currentFontSizePx}px`;
+                }
             });
         }
 
@@ -2019,6 +2094,16 @@
                     ocrModal.setAttribute('open', '');
                     document.body.style.overflow = 'hidden';
                 }
+
+                // If circular has search term matches, smoothly scroll to first match
+                if (currentTerms && currentTerms.length > 0) {
+                    setTimeout(() => {
+                        const firstMatch = modalOcrText ? modalOcrText.querySelector('mark.hl') : null;
+                        if (firstMatch) {
+                            firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }
+                    }, 120);
+                }
             }
         }
 
@@ -2118,6 +2203,65 @@
                 }
             });
         }
+
+        if (downloadTxtBtn) {
+            downloadTxtBtn.addEventListener('click', () => {
+                const text = currentModalOcrText || (modalOcrText ? modalOcrText.innerText : "");
+                if (!text) return;
+
+                const currentLink = modalPdfLink.href;
+                const circular = allCircularData.find(c => c.english_pdf_link === currentLink || c.hindi_pdf_link === currentLink) || {};
+                const circularNo = (circular.circular_no || '').replace(/[/\\?%*:|"<>]/g, '_').trim();
+                const circularDate = (circular.date || '').replace(/[/\\?%*:|"<>]/g, '-').trim();
+                const filename = `EPFO_Circular_${circularNo || 'Record'}_${circularDate || 'Archive'}.txt`;
+
+                const headerInfo = [
+                    "=======================================================================",
+                    "EMPLOYEES' PROVIDENT FUND ORGANISATION - REPRODUCED CIRCULAR",
+                    "=======================================================================",
+                    `Title:          ${circular.title || 'Untitled'}`,
+                    `Circular No:    ${circular.circular_no || '—'}`,
+                    `Date of Issue:  ${circular.date ? displayDate(circular.date) : '—'}`,
+                    `Financial Year: ${fyFromUrl(circular) || '—'}`,
+                    `Source URL:     ${currentLink}`,
+                    "Disclaimer:     Automated OCR reproduction for reference only.",
+                    "                Official and updated details: https://www.epfo.gov.in",
+                    "=======================================================================\n\n"
+                ].join('\n');
+
+                const blob = new Blob([headerInfo + text], { type: 'text/plain;charset=utf-8' });
+                const downloadUrl = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = downloadUrl;
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(downloadUrl);
+            });
+        }
+
+        // Global Keyboard Shortcuts: '/' to focus search, 'Escape' to clear search
+        document.addEventListener('keydown', (event) => {
+            if (ocrModal && ocrModal.open) return;
+
+            if (event.key === '/' && document.activeElement !== searchInput) {
+                const tag = (document.activeElement && document.activeElement.tagName) || '';
+                if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
+
+                event.preventDefault();
+                searchInput.focus();
+                searchInput.select();
+            }
+
+            if (event.key === 'Escape' && document.activeElement === searchInput) {
+                if (searchInput.value) {
+                    searchInput.value = '';
+                    performSearch();
+                }
+                searchInput.blur();
+            }
+        });
 
         resultsContainer.addEventListener('click', (event) => {
             const trigger = event.target.closest('[data-ocr-link]');
