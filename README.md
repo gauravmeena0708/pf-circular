@@ -1,13 +1,14 @@
 # EPFO Circular Fetcher and Indexer
 
-This project is designed to fetch circulars from the Employees' Provident Fund Organisation (EPFO) India website. It extracts metadata, downloads PDF circulars, performs Optical Character Recognition (OCR) on their first page, and builds an index of the extracted text to facilitate searching and information retrieval.
+This project fetches circulars from the Employees' Provident Fund Organisation (EPFO) India website. It extracts metadata, downloads PDF circulars, extracts text from the first two pages using direct PDF text with an OCR fallback, and builds a static client-side search index.
 
 ## Features
 
 *   **Circular Metadata Fetching:** Automatically scrapes the official EPFO website to gather metadata for circulars, including title, circular number, date, and direct PDF download links.
 *   **PDF Downloading:** Downloads the circulars in PDF format from the links obtained.
-*   **OCR Processing:** Performs OCR on the first page of downloaded English PDF circulars using Tesseract OCR to extract textual content.
-*   **Text Indexing:** Creates a local index (`index-data.json`) of the OCRed text, mapping it to the respective PDF URLs for quick lookups.
+*   **PDF Text Processing:** Extracts text from up to two pages and uses Tesseract OCR when a page has no usable text layer.
+*   **Text Indexing:** Creates year-sharded indexes of extracted PDF text, mapped to the original PDF URLs.
+*   **Static Search Assets:** Builds a compact all-years catalog and token posting buckets for fast client-side search on GitHub Pages without loading the complete OCR corpus.
 *   **Command-Line Interface:** Provides a script (`fetch.py`) to control fetching and indexing processes.
 
 ## How it Works
@@ -22,8 +23,8 @@ The project operates in two main stages:
 2.  **PDF Indexing (`update_pdf_index()` in `fetch.py`):**
     *   The script reads `circular-data.json` for entries with English PDF links.
     *   For each new PDF, it downloads the file.
-    *   The first page of the PDF is then processed using PyMuPDF to render it as an image.
-    *   Pytesseract is used to perform OCR on this image to extract text.
+    *   Up to two pages are processed using PyMuPDF direct text extraction.
+    *   Pytesseract is used as a fallback for scanned pages without usable embedded text.
     *   The extracted text and an indexing timestamp are stored in `index-data.json`, keyed by the PDF URL.
     *   To avoid overwhelming the system or the source server, the indexing process is limited by `MAX_URLS_TO_INDEX_PER_RUN` for each execution.
 
@@ -32,7 +33,7 @@ The project operates in two main stages:
 1.  **Prerequisites:**
     *   Python 3.7+
     *   Tesseract OCR: This project relies on Tesseract OCR for extracting text from PDF images. You must install it separately and ensure that the `tesseract` command is available in your system's PATH.
-        *   **Windows:** Download and run the installer from the [official Tesseract releases page](https://github.com/UB-Mannheim/tesseract/wiki). During installation, make sure to add Tesseract to your PATH. If you encounter issues, you might need to specify the path to `tesseract.exe` directly in the `fetch.py` script by uncommenting and setting the `pytesseract.pytesseract.tesseract_cmd` variable (e.g., `pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'`).
+        *   **Windows:** Download and run the installer from the [official Tesseract releases page](https://github.com/UB-Mannheim/tesseract/wiki). The common `C:\Program Files\Tesseract-OCR\tesseract.exe` installation is detected automatically; other locations should be added to PATH.
         *   **Linux (Ubuntu/Debian):** `sudo apt-get install tesseract-ocr libtesseract-dev tesseract-ocr-eng`
         *   **macOS:** `brew install tesseract tesseract-lang`
 
@@ -59,17 +60,17 @@ The project operates in two main stages:
 The primary way to interact with this project is through the `fetch.py` script.
 
 1.  **Fetching Circular Metadata:**
-    To fetch the latest circular metadata from the EPFO website and save it to `circular-data.json`:
+    To fetch the latest circular metadata from the EPFO website and save it in year-sharded `data/circulars-*.json` files:
     ```bash
     python fetch.py --action fetch
     ```
 
 2.  **Indexing PDF Content:**
-    To process the English PDFs linked in `circular-data.json`, perform OCR, and update `index-data.json`:
+    To process the English PDFs, extract text, and update the year-sharded `data/index-*.json` files:
     ```bash
     python fetch.py --action index
     ```
-    This will process up to `MAX_URLS_TO_INDEX_PER_RUN` (currently 500) new PDFs per run. Run it multiple times if you have more PDFs to index.
+    This will process up to `MAX_URLS_TO_INDEX_PER_RUN` (currently 50) new PDFs per run. Run it multiple times if you have more PDFs to index.
 
 3.  **Fetch and Index (All Actions):**
     To perform both fetching and indexing in a single run:
@@ -78,12 +79,20 @@ The primary way to interact with this project is through the `fetch.py` script.
     ```
     This is equivalent to running `fetch` then `index`.
 
+4.  **Rebuild GitHub Pages Search Assets:**
+    ```bash
+    python fetch.py --action search
+    ```
+    Run this after manually changing any `circulars-*.json` or `index-*.json` file. The `fetch`, `index`, and `all` actions rebuild these assets automatically.
+
 ## Data Files
 
 The project uses the following JSON files to store data:
 
-*   **`circular-data.json`**: This file stores the metadata fetched from the EPFO website. Each entry includes details like the circular's title, number, date, and direct links to PDF versions (both English and Hindi, if available).
-*   **`index-data.json`**: This file acts as an index for the OCR-processed PDFs. It contains a mapping where keys are the URLs of the English PDF circulars, and values are objects containing the extracted text from the first page (`ocr_content`) and the timestamp of when it was indexed (`indexed_at`).
+*   **`data/circulars-YYYY-YYYY.json`**: Year-sharded metadata fetched from EPFO, including titles, numbers, dates, and PDF links.
+*   **`data/index-YYYY-YYYY.json`**: Year-sharded reproduced text, loaded lazily when a user opens a reproduction or runs an exact phrase search that needs verification.
+*   **`data/search/catalog.json`**: Compact display metadata for every year. This is loaded once by the browser.
+*   **`data/search/postings-*.json`**: First-character token buckets used for exact all-word matching. Only buckets needed by the query are downloaded.
 
 ## Key Dependencies
 

@@ -1,28 +1,36 @@
 import io
+import html
 import re
 import time
+import unicodedata
+from collections import defaultdict
 from bs4 import BeautifulSoup as bs, NavigableString
 import requests
 from urllib.parse import urljoin
 import json
+OCR_DEPENDENCIES_AVAILABLE = True
 try:
     import fitz  # PyMuPDF
     import pytesseract
     from PIL import Image
 except ImportError as e:
+    OCR_DEPENDENCIES_AVAILABLE = False
     print(f"Warning: OCR dependencies not fully available ({e}).")
 from datetime import datetime, timezone
 import os
 import argparse # For command-line arguments
 
 # --- Configuration ---
-# If tesseract is not in your PATH, you might need to specify its location
-# For example, on Windows:
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+# Use the common Windows install location when present. Linux/macOS and other
+# Windows installations continue to resolve Tesseract from PATH.
+WINDOWS_TESSERACT_PATH = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+if OCR_DEPENDENCIES_AVAILABLE and os.name == 'nt' and os.path.exists(WINDOWS_TESSERACT_PATH):
+    pytesseract.pytesseract.tesseract_cmd = WINDOWS_TESSERACT_PATH
 
 CIRCULAR_DATA_FILE = "circular-data.json" # Not used directly anymore for output
 INDEX_DATA_FILE = "index-data.json" # Not used directly anymore for output
 MAX_URLS_TO_INDEX_PER_RUN = 50
+SEARCH_INDEX_VERSION = 1
 
 HEADERS = {
     'Host': 'www.epfindia.gov.in',
@@ -76,6 +84,39 @@ def save_json_file(data, filepath):
     with open(filepath, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
     print(f"Data saved to {filepath}")
+
+def save_compact_json_file(data, filepath):
+    """Saves generated web assets without indentation to reduce transfer size."""
+    with open(filepath, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, separators=(',', ':'))
+    print(f"Search asset saved to {filepath}")
+
+def tokenize_for_search(value):
+    """Returns normalized Unicode word tokens shared by the static search index."""
+    normalized = unicodedata.normalize('NFKC', html.unescape(str(value or ''))).casefold()
+    tokens = []
+    current = []
+
+    for character in normalized:
+        if unicodedata.category(character)[0] in {'L', 'M', 'N'}:
+            current.append(character)
+        elif current:
+            token = ''.join(current)
+            if len(token) >= 2:
+                tokens.append(token)
+            current = []
+
+    if current:
+        token = ''.join(current)
+        if len(token) >= 2:
+            tokens.append(token)
+
+    return tokens
+
+def posting_bucket(token):
+    """Maps a token to a safe, cacheable GitHub Pages filename bucket."""
+    first = token[0] if token else ''
+    return first if first in 'abcdefghijklmnopqrstuvwxyz0123456789' else 'other'
 
 # --- Text Processing & PDF Extraction Functions ---
 def clean_extracted_text(text):
@@ -386,14 +427,114 @@ def update_pdf_index(max_urls=50):
     print(f"Finished PDF indexing process. Successfully indexed {newly_indexed_count} new PDFs across processed batches.")
 
 
+def build_static_search_index():
+    """
+    Builds the compact, all-years search assets used by the GitHub Pages UI.
+
+    The catalog contains only display metadata. Full OCR text stays in the
+    existing year files, while token-to-document postings are split by first
+    character so ordinary searches download only the buckets they need.
+    """
+    metadata = load_json_file('data/metadata.json') or {}
+    years = metadata.get('years', [])
+    if not years:
+        print("No metadata found. Run fetch first.")
+        return
+
+    documents = []
+    postings = defaultdict(list)
+    documents_with_text = 0
+
+    for year in years:
+        circulars = load_json_file(f'data/circulars-{year}.json') or []
+        indexed_data = load_json_file(f'data/index-{year}.json') or {}
+
+        for circular in circulars:
+            english_link = circular.get('english_pdf_link')
+            hindi_link = circular.get('hindi_pdf_link')
+            ocr_link = None
+            if english_link and english_link in indexed_data:
+                ocr_link = english_link
+            elif hindi_link and hindi_link in indexed_data:
+                ocr_link = hindi_link
+
+            ocr_record = indexed_data.get(ocr_link, {}) if ocr_link else {}
+            ocr_content = ocr_record.get('ocr_content', '') or ''
+            if ocr_content.startswith('OCR_ERROR:'):
+                ocr_content = ''
+                ocr_link = None
+            ocr_source = 1 if ocr_link == english_link else (2 if ocr_link == hindi_link else 0)
+
+            document_id = len(documents)
+            documents.append([
+                circular.get('serial_no'),
+                circular.get('title'),
+                circular.get('circular_no'),
+                circular.get('date'),
+                hindi_link,
+                english_link,
+                year,
+                ocr_source,
+            ])
+
+            searchable_parts = [
+                circular.get('title'),
+                circular.get('circular_no'),
+                circular.get('date'),
+                ocr_content,
+            ]
+            document_tokens = set()
+            for part in searchable_parts:
+                document_tokens.update(tokenize_for_search(part))
+
+            for token in sorted(document_tokens):
+                postings[token].append(document_id)
+
+            if ocr_link:
+                documents_with_text += 1
+
+    output_directory = os.path.join('data', 'search')
+    os.makedirs(output_directory, exist_ok=True)
+
+    bucket_contents = defaultdict(dict)
+    for token in sorted(postings):
+        bucket_contents[posting_bucket(token)][token] = postings[token]
+
+    buckets = sorted(bucket_contents)
+    manifest = {
+        'version': SEARCH_INDEX_VERSION,
+        'years': years,
+        'document_count': len(documents),
+        'documents_with_text': documents_with_text,
+        'buckets': buckets,
+    }
+    catalog = {
+        'version': SEARCH_INDEX_VERSION,
+        'documents': documents,
+    }
+
+    save_compact_json_file(manifest, os.path.join(output_directory, 'manifest.json'))
+    save_compact_json_file(catalog, os.path.join(output_directory, 'catalog.json'))
+    for bucket in buckets:
+        save_compact_json_file(
+            bucket_contents[bucket],
+            os.path.join(output_directory, f'postings-{bucket}.json'),
+        )
+
+    print(
+        f"Built static search index for {len(documents)} documents "
+        f"({documents_with_text} with reproduced text, {len(buckets)} buckets)."
+    )
+
+
 # --- Main Execution ---
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Fetch EPFO circular data and/or update PDF index.")
+    parser = argparse.ArgumentParser(description="Fetch EPFO circular data, update PDF text, and build static search assets.")
     parser.add_argument(
         "--action",
-        choices=['fetch', 'index', 'all'],
+        choices=['fetch', 'index', 'search', 'all'],
         default='all',
-        help="Specify action: 'fetch' metadata, 'index' PDFs, or 'all' (default)."
+        help="Specify action: 'fetch' metadata, 'index' PDFs, 'search' static assets, or 'all' (default)."
     )
     parser.add_argument(
         "--max-urls",
@@ -408,5 +549,8 @@ if __name__ == "__main__":
 
     if args.action == 'index' or args.action == 'all':
         update_pdf_index(max_urls=args.max_urls)
+
+    if args.action in {'fetch', 'index', 'search', 'all'}:
+        build_static_search_index()
 
     print("\nScript finished.")

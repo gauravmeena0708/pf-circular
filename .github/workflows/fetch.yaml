@@ -1,5 +1,8 @@
 name: Fetch EPF India circulars
 
+permissions:
+  contents: write
+
 on:
   workflow_dispatch: # Allows manual triggering
   schedule:
@@ -10,34 +13,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v3
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
-      - name: Install Tesseract OCR
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y tesseract-ocr
+      - name: Install metadata dependencies
+        run: pip install requests beautifulsoup4
 
-      - name: Install Python dependencies for indexing
-        run: pip install requests beautifulsoup4 pymupdf pytesseract Pillow
-
-      - name: Run fetching script
-        run: python ./fetch.py # Store the script in your repo
+      - name: Fetch metadata and rebuild static search assets
+        run: python ./fetch.py --action fetch
 
       - name: Commit and push if changed
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git pull
-          git add circular-data.json # Or whatever your output file is named
+          git pull --ff-only
+          git add data/metadata.json data/circulars-*.json data/search/
           # Commit only if there are changes
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Update EPF circular data"
+            git commit -m "Update EPFO circular metadata and search assets"
             git push
           fi

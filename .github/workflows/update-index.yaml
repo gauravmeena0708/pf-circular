@@ -1,12 +1,15 @@
 name: Update EPF Circulars Search Index
 
+permissions:
+  contents: write
+
 on:
   workflow_dispatch: # Allows manual triggering
   #schedule:
   #  - cron: '0 4 * * 1' # Example: Runs every Monday at 4 AM UTC (after metadata fetch)
   # Alternatively, to run after the metadata fetch workflow completes successfully:
   workflow_run:
-    workflows: ["Fetch EPF Circulars Metadata"] # Name of the first workflow
+    workflows: ["Fetch EPF India circulars"]
     types:
       - completed
     branches:
@@ -15,17 +18,15 @@ on:
 jobs:
   update_index:
     runs-on: ubuntu-latest
-    # Uncomment the following 'if' condition if using workflow_run to ensure it only runs on success
-    # if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
-        # If using workflow_run, you might need to fetch the latest changes
-        # with:
-        #   ref: ${{ github.event.workflow_run.head_branch }} # Or your default branch
+        with:
+          ref: ${{ github.event.repository.default_branch }}
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10' # Or your preferred Python version
 
@@ -37,19 +38,19 @@ jobs:
       - name: Install Python dependencies for indexing
         run: pip install requests beautifulsoup4 pymupdf pytesseract Pillow # All dependencies for --action index
 
-      - name: Run indexing script
-        run: python ./fetch.py --action index # Assumes fetch.py is in the root
+      - name: Update reproduced text and rebuild static search assets
+        run: python ./fetch.py --action index
 
-      - name: Commit and push index-data.json
+      - name: Commit and push reproduced text and search assets
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git pull
-          git add index-data.json
+          git pull --ff-only
+          git add data/index-*.json data/search/
           if git diff --staged --quiet; then
-            echo "No changes to index-data.json."
+            echo "No reproduced text or search asset changes."
           else
-            git commit -m "Update EPF circulars search index (index-data.json)"
+            git commit -m "Update EPFO reproduced text and search assets"
             git push
-            echo "index-data.json committed and pushed."
+            echo "Updated data committed and pushed."
           fi

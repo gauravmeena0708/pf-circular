@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Search EPFO circulars by title, number, date, or full text from indexed PDFs.">
+    <meta name="description" content="Search EPFO circulars by title, number, date, or extracted text from indexed PDF pages.">
     <title>Circular Archive</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -340,6 +340,31 @@
             overflow: hidden;
         }
 
+        .search-quality-note {
+            padding: 11px 18px;
+            border-bottom: 1px solid #dbe4ea;
+            background: #f5f9fb;
+            color: #456273;
+            font-size: 12.5px;
+            line-height: 1.45;
+        }
+
+        .search-quality-note strong { color: #29495c; }
+
+        .match-kind {
+            display: inline-block;
+            margin-top: 7px;
+            padding: 3px 7px;
+            border: 1px solid #dfc77c;
+            border-radius: 999px;
+            background: #fff8df;
+            color: #765713;
+            font-size: 9.5px;
+            font-weight: 700;
+            letter-spacing: 0.045em;
+            text-transform: uppercase;
+        }
+
         .ledger {
             width: 100%;
             border-collapse: collapse;
@@ -592,10 +617,6 @@
         .spinner { width: 40px; height: 40px; border: 3px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 16px; }
         @keyframes spin { to { transform: rotate(360deg); } }
     
-        .load-more-btn { display: block; margin: 20px auto; padding: 10px 20px; border: 1px solid var(--accent); background: var(--surface); color: var(--accent); border-radius: 6px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
-        .load-more-btn:hover { background: var(--accent-soft); }
-        .load-more-btn:disabled { opacity: 0.5; cursor: not-allowed; }
-
         .trust-note {
             margin: 0 0 16px;
             font-size: 13px;
@@ -1204,7 +1225,7 @@
         <div class="wrap">
             <div class="ledger-stats" aria-label="Dataset summary">
                 <span><b id="stat-total">—</b> circulars indexed</span>
-                <span><b id="stat-fulltext">—</b> with full-text search</span>
+                <span><b id="stat-fulltext">—</b> with extracted-text search</span>
                 <span>latest <b id="stat-latest">—</b></span>
             </div>
         </div>
@@ -1247,10 +1268,10 @@
                 </div>
             </div>
             <p class="search-hint">
+                all words required<span class="sep">·</span>
                 <code>"exact phrase"</code><span class="sep">·</span>
-                <code>+include</code><span class="sep">·</span>
                 <code>-exclude</code><span class="sep">·</span>
-                full text searched across indexed PDFs
+                approximate title matches shown separately
             </p>
         </div>
     </div>
@@ -1266,14 +1287,12 @@
                 <div class="state">
                     <div class="spinner"></div>
                     <strong>Loading the circular index</strong>
-                    <p>Fetching circulars and full-text data…</p>
+                    <p>Loading the all-years search catalog…</p>
                 </div>
             </div>
 
             
             <div class="pagination-controls" id="paginationControls"></div>
-            <button id="loadOlderBtn" class="load-more-btn" style="display: none;">Load Historical Data (Older Years)</button>
-
         </div>
     </main>
 
@@ -1411,7 +1430,7 @@
         const yearFilter = document.getElementById('yearFilter');
         const langFilter = document.getElementById('langFilter');
 
-        let sortColumn = 'date';
+        let sortColumn = 'relevance';
         let sortAscending = false;
 
         function setSort(col) {
@@ -1435,21 +1454,90 @@
         let currentFilteredData = [];
         let currentPage = 1;
         let currentTerms = [];
+        let currentQuery = '';
+        let currentParsedQuery = null;
+        let filteredExactCount = 0;
+        let filteredApproximateCount = 0;
+        let searchSequence = 0;
         const itemsPerPage = 50;
-        const ocrLowerCache = Object.create(null);
-
-        function ocrLower(link) {
-            if (!link || !allIndexData[link]) return '';
-            if (ocrLowerCache[link] === undefined) {
-                ocrLowerCache[link] = (allIndexData[link].ocr_content || '').toLowerCase();
-            }
-            return ocrLowerCache[link];
-        }
+        const approximateMatchIds = new Set();
+        const searchScores = new Map();
+        const postingBucketCache = Object.create(null);
+        const postingBucketPromises = Object.create(null);
+        const ocrYearPromises = Object.create(null);
+        const loadedOcrYears = new Set();
+        let searchManifest = null;
+        let metadataFuse = null;
 
         const escapeHtml = (value = "") =>
             String(value).replace(/[&<>"']/g, character => ({
                 "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;",
             })[character]);
+
+        const htmlEntityDecoder = document.createElement('textarea');
+
+        function decodeHtmlEntities(value = '') {
+            htmlEntityDecoder.innerHTML = String(value);
+            return htmlEntityDecoder.value;
+        }
+
+        function normalizeSearchText(value = '') {
+            return decodeHtmlEntities(value)
+                .normalize('NFKC')
+                .toLocaleLowerCase('en')
+                .replace(/[^\p{L}\p{M}\p{N}]+/gu, ' ')
+                .replace(/\s+/g, ' ')
+                .trim();
+        }
+
+        function searchTokens(value = '') {
+            return normalizeSearchText(value)
+                .split(' ')
+                .filter(token => token.length >= 2);
+        }
+
+        function parseSearchQuery(rawQuery) {
+            const phrases = [];
+            let remainder = String(rawQuery || '').replace(/"([^"]+)"/g, (match, phrase) => {
+                const normalized = normalizeSearchText(phrase);
+                if (normalized) phrases.push(normalized);
+                return ' ';
+            });
+
+            const excludedTerms = [];
+            remainder = remainder.replace(/(^|\s)-([^\s"]+)/g, (match, leadingSpace, excluded) => {
+                excludedTerms.push(...searchTokens(excluded));
+                return leadingSpace || ' ';
+            });
+
+            return {
+                raw: String(rawQuery || '').trim(),
+                terms: searchTokens(remainder.replace(/(^|\s)\+/g, '$1')),
+                phrases,
+                excludedTerms,
+            };
+        }
+
+        function tokenVariants(token) {
+            const variants = new Set([token]);
+            if (!/^[a-z]+$/.test(token) || token.length < 4) return [...variants];
+
+            if (token.endsWith('ies') && token.length > 4) {
+                variants.add(token.slice(0, -3) + 'y');
+            } else if (token.endsWith('s') && !token.endsWith('ss')) {
+                variants.add(token.slice(0, -1));
+            } else if (token.endsWith('y')) {
+                variants.add(token.slice(0, -1) + 'ies');
+            } else {
+                variants.add(token + 's');
+            }
+            return [...variants];
+        }
+
+        function bucketForToken(token) {
+            const first = token.charAt(0);
+            return /^[a-z0-9]$/.test(first) ? first : 'other';
+        }
 
         function highlightText(escaped, terms) {
             if (!terms || !terms.length) return escaped;
@@ -1463,7 +1551,7 @@
 
         function ocrSnippet(item, terms) {
             if (!terms || !terms.length) return "";
-            const link = item.english_pdf_link;
+            const link = item._ocr_link;
             if (!link || !allIndexData[link]) return "";
             const text = allIndexData[link].ocr_content || "";
             if (!text) return "";
@@ -1524,69 +1612,68 @@
             document.getElementById('stat-total').textContent =
                 allCircularData.length.toLocaleString("en-IN");
             document.getElementById('stat-fulltext').textContent =
-                Object.keys(allIndexData).length.toLocaleString("en-IN");
+                (searchManifest?.documents_with_text || 0).toLocaleString("en-IN");
             document.getElementById('stat-latest').textContent = latest
                 ? latest.toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric", timeZone: "UTC" })
                 : "—";
         }
 
         let availableYears = [];
-        let loadedYears = [];
 
-        async function loadYearData(year) {
-            const [circularResponse, indexResponse] = await Promise.all([
-                fetch(`data/circulars-${year}.json`),
-                fetch(`data/index-${year}.json`).catch(() => ({ ok: false, json: () => Promise.resolve({}) }))
-            ]);
-            
-            if (circularResponse.ok) {
-                const cData = await circularResponse.json();
-                allCircularData = allCircularData.concat(cData);
-            }
-            if (indexResponse.ok) {
-                const iData = await indexResponse.json();
-                Object.assign(allIndexData, iData);
-            }
-            loadedYears.push(year);
-            window.fuseInstance = null; // reset fuse index
+        function circularFromCatalogRow(row, documentId) {
+            return {
+                _id: documentId,
+                serial_no: row[0] || '',
+                title: decodeHtmlEntities(row[1] || ''),
+                circular_no: decodeHtmlEntities(row[2] || ''),
+                date: row[3] || '',
+                hindi_pdf_link: row[4] || null,
+                english_pdf_link: row[5] || null,
+                _fy: row[6] || '',
+                _ocr_link: row[7] === 1 ? (row[5] || null) : (row[7] === 2 ? (row[4] || null) : null),
+            };
+        }
+
+        async function loadYearOcr(year) {
+            if (!year) return;
+            if (loadedOcrYears.has(year)) return;
+            if (ocrYearPromises[year]) return ocrYearPromises[year];
+
+            ocrYearPromises[year] = fetch(`data/index-${encodeURIComponent(year)}.json`)
+                .then(response => {
+                    if (!response.ok) throw new Error(`Unable to load reproduced text for ${year}`);
+                    return response.json();
+                })
+                .then(indexData => {
+                    Object.assign(allIndexData, indexData);
+                    loadedOcrYears.add(year);
+                })
+                .catch(error => {
+                    delete ocrYearPromises[year];
+                    throw error;
+                });
+
+            return ocrYearPromises[year];
         }
 
         async function loadAllData() {
             try {
-                const metaResp = await fetch('data/metadata.json');
-                const meta = await metaResp.json();
-                availableYears = meta.years;
-                
-                // Move 'Unknown' to the end of the array if it exists
-                if (availableYears.includes('Unknown')) {
-                    availableYears = availableYears.filter(y => y !== 'Unknown');
-                    availableYears.push('Unknown');
+                const [manifestResponse, catalogResponse] = await Promise.all([
+                    fetch('data/search/manifest.json'),
+                    fetch('data/search/catalog.json'),
+                ]);
+                if (!manifestResponse.ok || !catalogResponse.ok) {
+                    throw new Error('Static search assets are missing; run python fetch.py --action search');
                 }
-                
-                // Load latest year by default
-                await loadYearData(availableYears[0]);
 
-                if (availableYears.length > 1) {
-                    const btn = document.getElementById('loadOlderBtn');
-                    if(btn) {
-                        btn.style.display = 'block';
-                        btn.onclick = async () => {
-                            btn.disabled = true;
-                            btn.textContent = 'Loading...';
-                            for (let i = 1; i < availableYears.length; i++) {
-                                await loadYearData(availableYears[i]);
-                            }
-                            btn.style.display = 'none';
-                            updateStats();
-                            
-                            // Re-populate filters to include older years
-                            yearFilter.innerHTML = '<option value="">All Years</option>';
-                            populateFilters();
-                            
-                            performSearch();
-                        };
-                    }
+                searchManifest = await manifestResponse.json();
+                const catalog = await catalogResponse.json();
+                if (catalog.version !== searchManifest.version) {
+                    throw new Error('Static search assets are out of sync');
                 }
+
+                availableYears = searchManifest.years || [];
+                allCircularData = (catalog.documents || []).map(circularFromCatalogRow);
 
                 const urlParams = new URLSearchParams(window.location.search);
                 const queryFromUrl = urlParams.get('query');
@@ -1599,13 +1686,6 @@
                     if (match) targetFy = match[1];
                 }
 
-                // If target financial year is specified and valid, ensure it is loaded
-                if (targetFy && availableYears.includes(targetFy)) {
-                    if (!loadedYears.includes(targetFy)) {
-                        await loadYearData(targetFy);
-                    }
-                }
-
                 updateStats();
                 populateFilters();
                 if (targetFy) {
@@ -1613,12 +1693,12 @@
                 }
 
                 if (queryFromUrl) {
-                    searchInput.value = decodeURIComponent(queryFromUrl);
+                    searchInput.value = queryFromUrl;
                 }
-                performSearch();
+                await performSearch({ updateHistory: false });
 
                 if (docFromQuery) {
-                    openDocFromQuery(decodeURIComponent(docFromQuery));
+                    await openDocFromQuery(docFromQuery);
                 }
             } catch (error) {
                 console.error('Error loading data:', error);
@@ -1632,6 +1712,7 @@
         }
 
         function fyFromUrl(item) {
+            if (item && item._fy) return item._fy;
             const url = item.english_pdf_link || item.hindi_pdf_link || '';
             const match = url.match(/\/Y(\d{4}-\d{4})\//);
             return match ? match[1] : '';
@@ -1665,9 +1746,15 @@
                 if (lang === 'bilingual' && !(item.english_pdf_link && item.hindi_pdf_link)) return false;
                 return true;
             });
+            filteredApproximateCount = currentFilteredData.filter(item => approximateMatchIds.has(item._id)).length;
+            filteredExactCount = currentFilteredData.length - filteredApproximateCount;
+
             currentFilteredData.sort((a, b) => {
                 let valA, valB;
-                if (sortColumn === 'date') {
+                if (sortColumn === 'relevance' && currentQuery) {
+                    valA = searchScores.get(a._id) || 0;
+                    valB = searchScores.get(b._id) || 0;
+                } else if (sortColumn === 'date' || sortColumn === 'relevance') {
                     valA = parseDate(a.date) || 0;
                     valB = parseDate(b.date) || 0;
                 } else if (sortColumn === 'title') {
@@ -1707,9 +1794,7 @@
         }
 
         function renderRow(item) {
-            const ocrLink = (item.english_pdf_link && allIndexData[item.english_pdf_link])
-                ? item.english_pdf_link
-                : ((item.hindi_pdf_link && allIndexData[item.hindi_pdf_link]) ? item.hindi_pdf_link : null);
+            const ocrLink = item._ocr_link || null;
             const hasFullText = Boolean(ocrLink);
 
             let docs = "";
@@ -1723,6 +1808,9 @@
             const snippet = ocrSnippet(item, currentTerms);
             const titleHtml = highlightText(escapeHtml(item.title || "Untitled circular"), currentTerms);
             const circularHtml = highlightText(escapeHtml(item.circular_no || "—"), currentTerms);
+            const matchKind = approximateMatchIds.has(item._id)
+                ? '<span class="match-kind">Approximate title match</span>'
+                : '';
 
             let subjectExtra = "";
             if (snippet) {
@@ -1730,7 +1818,7 @@
                     ? `<div class="snippet-clickable" data-ocr-link="${escapeHtml(ocrLink)}" title="Click to view reproduced text">${snippet}</div>`
                     : snippet;
             } else if (hasFullText) {
-                subjectExtra = `<button type="button" class="badge-reproduced" data-ocr-link="${escapeHtml(ocrLink)}" title="Click to view reproduced text">Full text</button>`;
+                subjectExtra = `<button type="button" class="badge-reproduced" data-ocr-link="${escapeHtml(ocrLink)}" title="Click to view reproduced text">Indexed text</button>`;
             }
 
             const docName = filenameFromUrl(item.english_pdf_link || item.hindi_pdf_link || "");
@@ -1740,6 +1828,7 @@
                     <td class="cell-sr" data-label="Sr. No"><span class="mono">${escapeHtml(item.serial_no || "—")}</span></td>
                     <td class="cell-subject" data-label="Title">
                         <p class="subject-title">${titleHtml}</p>
+                        ${matchKind}
                         ${subjectExtra}
                     </td>
                     <td class="cell-no" data-label="Circular No"><span class="mono">${circularHtml}</span></td>
@@ -1767,7 +1856,11 @@
             }
 
             const rows = paginatedItems.map(renderRow).join("");
+            const qualityNote = filteredApproximateCount > 0
+                ? `<div class="search-quality-note"><strong>${filteredExactCount.toLocaleString("en-IN")} exact result${filteredExactCount === 1 ? '' : 's'}.</strong> ${filteredApproximateCount.toLocaleString("en-IN")} approximate title match${filteredApproximateCount === 1 ? '' : 'es'} ${filteredExactCount ? 'are included after exact matches' : 'are shown because no exact all-word match was found'}.</div>`
+                : '';
             resultsContainer.innerHTML = `
+                ${qualityNote}
                 <table class="ledger">
                     <colgroup>
                         <col class="col-sr">
@@ -1788,8 +1881,9 @@
                     <tbody>${rows}</tbody>
                 </table>`;
 
+            const resultLabel = currentQuery ? 'matches' : 'circulars';
             resultsCount.innerHTML =
-                `Showing <b>${(startIndex + 1).toLocaleString("en-IN")}–${Math.min(endIndex, currentFilteredData.length).toLocaleString("en-IN")}</b> of <b>${currentFilteredData.length.toLocaleString("en-IN")}</b> circulars`;
+                `Showing <b>${(startIndex + 1).toLocaleString("en-IN")}–${Math.min(endIndex, currentFilteredData.length).toLocaleString("en-IN")}</b> of <b>${currentFilteredData.length.toLocaleString("en-IN")}</b> ${resultLabel}`;
         }
 
         function gotoPage(page) {
@@ -1844,58 +1938,208 @@
             makeButton('Next', currentPage + 1, { disabled: currentPage === pageCount });
         }
 
-        function performSearch() {
-            const query = searchInput.value.toLowerCase().trim();
+        async function loadPostingBucket(bucket) {
+            if (postingBucketCache[bucket]) return postingBucketCache[bucket];
+            if (postingBucketPromises[bucket]) return postingBucketPromises[bucket];
+            if (!searchManifest?.buckets?.includes(bucket)) return {};
 
-            if (!query) {
-                currentTerms = [];
-                textMatched = allCircularData;
-                const url = new URL(window.location.href);
-                url.searchParams.delete('query');
-                window.history.replaceState({}, "", url);
-            } else {
-                window.history.pushState({ query }, "Search", "?query=" + encodeURIComponent(query));
-                gtag('event', 'search', { 'search_term': query });
-
-                const phrases = [];
-                let tempQuery = query.replace(/"([^"]+)"/g, (match, phrase) => {
-                    if (phrase) phrases.push(phrase);
-                    return "";
+            postingBucketPromises[bucket] = fetch(`data/search/postings-${bucket}.json`)
+                .then(response => {
+                    if (!response.ok) throw new Error(`Unable to load search bucket ${bucket}`);
+                    return response.json();
+                })
+                .then(data => {
+                    postingBucketCache[bucket] = data;
+                    return data;
+                })
+                .catch(error => {
+                    delete postingBucketPromises[bucket];
+                    throw error;
                 });
 
-                const excludedWords = [];
-                tempQuery = tempQuery.replace(/-(\S+)/g, (match, word) => {
-                    if (word) excludedWords.push(word);
-                    return "";
-                });
-
-                const requiredTerms = tempQuery.replace(/\+/g, '').split(/\s+/).filter(term => term.length > 0);
-                currentTerms = [...requiredTerms, ...phrases];
-
-                if (!window.fuseInstance) {
-                    const fuseData = allCircularData.map(item => ({
-                        ...item,
-                        fullText: ocrLower(item.english_pdf_link)
-                    }));
-                    window.fuseInstance = new Fuse(fuseData, {
-                        keys: ['title', 'circular_no', 'date', 'fullText'],
-                        threshold: 0.4, // 0 = exact, 1 = match anything. 0.4 provides excellent typo-tolerance.
-                        ignoreLocation: true,
-                        useExtendedSearch: true
-                    });
-                }
-
-                let searchStr = requiredTerms.join(' ');
-                if (phrases.length > 0) searchStr += ' ' + phrases.map(p => "'" + p).join(' ');
-                if (excludedWords.length > 0) searchStr += ' ' + excludedWords.map(w => '!' + w).join(' ');
-
-                const fuseResults = window.fuseInstance.search(searchStr);
-                textMatched = fuseResults.map(result => result.item);
-            }
-            applyFilters();
+            return postingBucketPromises[bucket];
         }
 
-        searchButton.addEventListener('click', performSearch);
+        async function documentIdsForToken(token, includeInflections = true) {
+            const variants = includeInflections ? tokenVariants(token) : [token];
+            const buckets = await Promise.all(variants.map(variant => loadPostingBucket(bucketForToken(variant))));
+            const ids = new Set();
+            variants.forEach((variant, index) => {
+                const posting = Object.prototype.hasOwnProperty.call(buckets[index], variant)
+                    ? buckets[index][variant]
+                    : [];
+                posting.forEach(id => ids.add(id));
+            });
+            return ids;
+        }
+
+        function intersectDocumentSets(groups) {
+            if (!groups.length) return new Set(allCircularData.map(item => item._id));
+            const ordered = [...groups].sort((a, b) => a.size - b.size);
+            const result = new Set(ordered[0]);
+            for (let index = 1; index < ordered.length && result.size; index += 1) {
+                for (const id of result) {
+                    if (!ordered[index].has(id)) result.delete(id);
+                }
+            }
+            return result;
+        }
+
+        function metadataSearchText(item) {
+            return normalizeSearchText(`${item.title || ''} ${item.circular_no || ''} ${item.date || ''}`);
+        }
+
+        async function resolveExactDocumentIds(parsed) {
+            const positiveLookups = parsed.terms.map(term => documentIdsForToken(term, true));
+            parsed.phrases.forEach(phrase => {
+                searchTokens(phrase).forEach(token => positiveLookups.push(documentIdsForToken(token, false)));
+            });
+            const exclusionLookups = parsed.excludedTerms.map(term => documentIdsForToken(term, true));
+
+            const [positiveGroups, exclusionGroups] = await Promise.all([
+                Promise.all(positiveLookups),
+                Promise.all(exclusionLookups),
+            ]);
+
+            const candidateIds = intersectDocumentSets(positiveGroups);
+            const excludedIds = new Set();
+            exclusionGroups.forEach(group => group.forEach(id => excludedIds.add(id)));
+            excludedIds.forEach(id => candidateIds.delete(id));
+
+            if (parsed.phrases.length && candidateIds.size) {
+                const yearsNeeded = new Set();
+                candidateIds.forEach(id => {
+                    const item = allCircularData[id];
+                    const metadataText = metadataSearchText(item);
+                    if (!parsed.phrases.every(phrase => metadataText.includes(phrase)) && item._ocr_link) {
+                        yearsNeeded.add(item._fy);
+                    }
+                });
+                await Promise.all([...yearsNeeded].map(loadYearOcr));
+
+                for (const id of candidateIds) {
+                    const item = allCircularData[id];
+                    const ocrText = item._ocr_link && allIndexData[item._ocr_link]
+                        ? allIndexData[item._ocr_link].ocr_content || ''
+                        : '';
+                    const completeText = normalizeSearchText(`${item.title || ''} ${item.circular_no || ''} ${item.date || ''} ${ocrText}`);
+                    if (!parsed.phrases.every(phrase => completeText.includes(phrase))) {
+                        candidateIds.delete(id);
+                    }
+                }
+            }
+
+            return { ids: [...candidateIds], excludedIds };
+        }
+
+        function relevanceScore(item, parsed) {
+            const title = normalizeSearchText(item.title || '');
+            const circularNumber = normalizeSearchText(item.circular_no || '');
+            const titleTokens = new Set(searchTokens(title));
+            let score = 1000;
+
+            parsed.phrases.forEach(phrase => {
+                if (title.includes(phrase)) score += 240;
+                else if (circularNumber.includes(phrase)) score += 180;
+                else score += 30;
+            });
+            parsed.terms.forEach(term => {
+                const variants = tokenVariants(term);
+                if (variants.some(variant => titleTokens.has(variant))) score += 80;
+                else if (variants.some(variant => circularNumber.includes(variant))) score += 55;
+                else score += 10;
+            });
+            return score;
+        }
+
+        function approximateMetadataMatches(parsed, exactIds, excludedIds) {
+            if (exactIds.length >= 5 || parsed.phrases.length || !parsed.terms.length || typeof Fuse === 'undefined') {
+                return [];
+            }
+            if (!metadataFuse) {
+                metadataFuse = new Fuse(allCircularData, {
+                    keys: [
+                        { name: 'title', weight: 0.78 },
+                        { name: 'circular_no', weight: 0.22 },
+                    ],
+                    threshold: 0.3,
+                    ignoreLocation: true,
+                    minMatchCharLength: 3,
+                });
+            }
+
+            const exactSet = new Set(exactIds);
+            return metadataFuse.search(parsed.terms.join(' '))
+                .map(result => result.item)
+                .filter(item => !exactSet.has(item._id) && !excludedIds.has(item._id))
+                .slice(0, 20);
+        }
+
+        async function performSearch({ updateHistory = true } = {}) {
+            const sequence = ++searchSequence;
+            const query = searchInput.value.trim();
+            currentQuery = query;
+            currentParsedQuery = query ? parseSearchQuery(query) : null;
+            currentTerms = currentParsedQuery
+                ? [...currentParsedQuery.terms, ...currentParsedQuery.phrases]
+                : [];
+            approximateMatchIds.clear();
+            searchScores.clear();
+            sortColumn = 'relevance';
+            sortAscending = false;
+
+            if (updateHistory) {
+                const url = new URL(window.location.href);
+                if (query) url.searchParams.set('query', query);
+                else url.searchParams.delete('query');
+                url.searchParams.delete('doc');
+                window.history.pushState({ query }, 'Search', url);
+                if (query) gtag('event', 'search', { 'search_term': query });
+            }
+
+            if (!query) {
+                textMatched = allCircularData;
+                applyFilters();
+                return;
+            }
+
+            searchButton.disabled = true;
+            resultsContainer.setAttribute('aria-busy', 'true');
+            resultsCount.textContent = 'Searching all indexed years…';
+
+            try {
+                const { ids: exactIds, excludedIds } = await resolveExactDocumentIds(currentParsedQuery);
+                if (sequence !== searchSequence) return;
+
+                const exactItems = exactIds.map(id => allCircularData[id]).filter(Boolean);
+                exactItems.forEach(item => searchScores.set(item._id, relevanceScore(item, currentParsedQuery)));
+
+                const approximateItems = approximateMetadataMatches(currentParsedQuery, exactIds, excludedIds);
+                approximateItems.forEach((item, index) => {
+                    approximateMatchIds.add(item._id);
+                    searchScores.set(item._id, 100 - index);
+                });
+
+                textMatched = [...exactItems, ...approximateItems];
+                applyFilters();
+            } catch (error) {
+                if (sequence !== searchSequence) return;
+                console.error('Search failed:', error);
+                resultsContainer.innerHTML = `
+                    <div class="state error">
+                        <strong>Search could not be completed</strong>
+                        <p>${escapeHtml(error.message)}. Refresh the page and try again.</p>
+                    </div>`;
+                resultsCount.textContent = '';
+            } finally {
+                if (sequence === searchSequence) {
+                    searchButton.disabled = false;
+                    resultsContainer.removeAttribute('aria-busy');
+                }
+            }
+        }
+
+        searchButton.addEventListener('click', () => performSearch());
         searchInput.addEventListener('keyup', event => {
             if (event.key === 'Enter') performSearch();
         });
@@ -1905,13 +2149,13 @@
             const urlParams = new URLSearchParams(window.location.search);
             const query = urlParams.get('query');
             const doc = urlParams.get('doc');
-            searchInput.value = query ? decodeURIComponent(query) : '';
+            searchInput.value = query || '';
             if (doc) {
-                openDocFromQuery(decodeURIComponent(doc));
+                openDocFromQuery(doc);
             } else if (ocrModal && ocrModal.open) {
                 closeOcrModal();
             }
-            performSearch();
+            performSearch({ updateHistory: false });
         });
         const ocrModal = document.getElementById('ocrModal');
         const modalTitle = document.getElementById('modalTitle');
@@ -1966,7 +2210,7 @@
             });
         }
 
-        function openDocFromQuery(docQuery) {
+        async function openDocFromQuery(docQuery) {
             if (!docQuery) return;
             const match = allCircularData.find(item => {
                 const en = item.english_pdf_link || "";
@@ -1977,12 +2221,10 @@
             });
 
             if (match) {
-                const ocrLink = (match.english_pdf_link && allIndexData[match.english_pdf_link])
-                    ? match.english_pdf_link
-                    : ((match.hindi_pdf_link && allIndexData[match.hindi_pdf_link]) ? match.hindi_pdf_link : null);
+                const ocrLink = match._ocr_link;
 
                 if (ocrLink) {
-                    openOcrModal(ocrLink, false);
+                    await openOcrModal(ocrLink, false);
                 }
 
                 setTimeout(() => {
@@ -2041,13 +2283,21 @@
             }
         }
 
-        function openOcrModal(link, updateUrl = true) {
+        async function openOcrModal(link, updateUrl = true) {
+            const circular = allCircularData.find(c => c.english_pdf_link === link || c.hindi_pdf_link === link) || {};
+            if (link && !allIndexData[link] && circular._fy) {
+                try {
+                    await loadYearOcr(circular._fy);
+                } catch (error) {
+                    console.error('Unable to load reproduced text:', error);
+                }
+            }
+
             if (!link || !allIndexData[link]) {
                 alert("Reproduced text is not currently available for this circular.");
                 return;
             }
             const ocrData = allIndexData[link];
-            const circular = allCircularData.find(c => c.english_pdf_link === link || c.hindi_pdf_link === link) || {};
 
             currentModalOcrText = ocrData.ocr_content || "";
 
@@ -2263,13 +2513,25 @@
             }
         });
 
-        resultsContainer.addEventListener('click', (event) => {
+        resultsContainer.addEventListener('click', async (event) => {
             const trigger = event.target.closest('[data-ocr-link]');
             if (trigger) {
                 event.preventDefault();
                 const ocrLink = trigger.getAttribute('data-ocr-link');
                 if (ocrLink) {
-                    openOcrModal(ocrLink);
+                    const originalLabel = trigger.textContent;
+                    if (trigger instanceof HTMLButtonElement) trigger.disabled = true;
+                    trigger.setAttribute('aria-busy', 'true');
+                    if (trigger instanceof HTMLButtonElement) trigger.textContent = 'Loading…';
+                    try {
+                        await openOcrModal(ocrLink);
+                    } finally {
+                        if (trigger instanceof HTMLButtonElement) {
+                            trigger.disabled = false;
+                            trigger.textContent = originalLabel;
+                        }
+                        trigger.removeAttribute('aria-busy');
+                    }
                 }
             }
         });
