@@ -1470,6 +1470,11 @@
         });
         yearFilter.addEventListener('change', applyFilters);
         langFilter.addEventListener('change', applyFilters);
+        window.addEventListener('popstate', () => {
+            const query = new URLSearchParams(window.location.search).get('query');
+            searchInput.value = query ? decodeURIComponent(query) : '';
+            performSearch();
+        });
         const ocrModal = document.getElementById('ocrModal');
         const modalTitle = document.getElementById('modalTitle');
         const modalCircularNo = document.getElementById('modalCircularNo');
