@@ -1581,6 +1581,50 @@
             }
         }
 
+        let currentModalOcrText = "";
+
+        async function copyTextToClipboard(text) {
+            if (!text) return false;
+
+            // 1. Try modern Clipboard API if supported and in secure context
+            if (navigator.clipboard && window.isSecureContext) {
+                try {
+                    await navigator.clipboard.writeText(text);
+                    return true;
+                } catch (e) {
+                    console.warn('navigator.clipboard.writeText failed, falling back to execCommand:', e);
+                }
+            }
+
+            // 2. Fallback: execCommand('copy') with textarea
+            try {
+                const textarea = document.createElement('textarea');
+                textarea.value = text;
+                textarea.setAttribute('readonly', '');
+                textarea.style.position = 'fixed';
+                textarea.style.left = '-9999px';
+                textarea.style.top = '0';
+                textarea.style.opacity = '0';
+
+                // CRITICAL: When dialog.showModal() is active, elements appended to document.body
+                // are inert/outside the modal focus trap and cannot be selected.
+                // Appending inside ocrModal ensures textarea.select() works.
+                const container = (ocrModal && ocrModal.open) ? ocrModal : document.body;
+                container.appendChild(textarea);
+
+                textarea.focus();
+                textarea.select();
+                textarea.setSelectionRange(0, textarea.value.length);
+
+                const successful = document.execCommand('copy');
+                container.removeChild(textarea);
+                return successful;
+            } catch (err) {
+                console.error('execCommand copy failed:', err);
+                return false;
+            }
+        }
+
         function openOcrModal(link, updateUrl = true) {
             if (!link || !allIndexData[link]) {
                 alert("Reproduced text is not currently available for this circular.");
@@ -1588,6 +1632,8 @@
             }
             const ocrData = allIndexData[link];
             const circular = allCircularData.find(c => c.english_pdf_link === link || c.hindi_pdf_link === link) || {};
+
+            currentModalOcrText = ocrData.ocr_content || "";
 
             const rawTitle = circular.title || "Circular Content";
             modalTitle.innerHTML = highlightText(escapeHtml(rawTitle), currentTerms);
@@ -1616,9 +1662,8 @@
 
             modalPdfLink.href = link;
 
-            const rawText = ocrData.ocr_content || "No extracted text available.";
+            const rawText = currentModalOcrText || "No extracted text available.";
             modalOcrText.innerHTML = highlightText(escapeHtml(rawText), currentTerms);
-            modalOcrText.dataset.rawText = rawText;
 
             if (ocrData.indexed_at) {
                 const indexedDate = new Date(ocrData.indexed_at);
@@ -1691,26 +1736,22 @@
 
         if (copyOcrBtn) {
             copyOcrBtn.addEventListener('click', async () => {
-                const textToCopy = modalOcrText.dataset.rawText || modalOcrText.innerText;
-                try {
-                    await navigator.clipboard.writeText(textToCopy);
+                const textToCopy = currentModalOcrText || (modalOcrText ? modalOcrText.innerText : "");
+                const success = await copyTextToClipboard(textToCopy);
+                if (success) {
                     if (copyBtnText) copyBtnText.textContent = "Copied!";
                     setTimeout(() => { if (copyBtnText) copyBtnText.textContent = "Copy Text"; }, 2000);
-                } catch (err) {
-                    const textarea = document.createElement('textarea');
-                    textarea.value = textToCopy;
-                    textarea.style.position = 'fixed';
-                    textarea.style.opacity = '0';
-                    document.body.appendChild(textarea);
-                    textarea.select();
+                } else {
+                    // Fallback: select text in modal so user can press Ctrl+C
                     try {
-                        document.execCommand('copy');
-                        if (copyBtnText) copyBtnText.textContent = "Copied!";
-                        setTimeout(() => { if (copyBtnText) copyBtnText.textContent = "Copy Text"; }, 2000);
-                    } catch (e) {
-                        console.error('Failed to copy', e);
-                    }
-                    document.body.removeChild(textarea);
+                        const range = document.createRange();
+                        range.selectNodeContents(modalOcrText);
+                        const sel = window.getSelection();
+                        sel.removeAllRanges();
+                        sel.addRange(range);
+                    } catch (e) {}
+                    if (copyBtnText) copyBtnText.textContent = "Press Ctrl+C to copy";
+                    setTimeout(() => { if (copyBtnText) copyBtnText.textContent = "Copy Text"; }, 3000);
                 }
             });
         }
@@ -1727,25 +1768,13 @@
                 if (fy) shareUrl.searchParams.set('fy', fy);
                 if (doc) shareUrl.searchParams.set('doc', doc);
 
-                try {
-                    await navigator.clipboard.writeText(shareUrl.toString());
+                const success = await copyTextToClipboard(shareUrl.toString());
+                if (success) {
                     if (copyLinkBtnText) copyLinkBtnText.textContent = "Link Copied!";
                     setTimeout(() => { if (copyLinkBtnText) copyLinkBtnText.textContent = "Copy Link"; }, 2000);
-                } catch (err) {
-                    const textarea = document.createElement('textarea');
-                    textarea.value = shareUrl.toString();
-                    textarea.style.position = 'fixed';
-                    textarea.style.opacity = '0';
-                    document.body.appendChild(textarea);
-                    textarea.select();
-                    try {
-                        document.execCommand('copy');
-                        if (copyLinkBtnText) copyLinkBtnText.textContent = "Link Copied!";
-                        setTimeout(() => { if (copyLinkBtnText) copyLinkBtnText.textContent = "Copy Link"; }, 2000);
-                    } catch (e) {
-                        console.error('Failed to copy link', e);
-                    }
-                    document.body.removeChild(textarea);
+                } else {
+                    if (copyLinkBtnText) copyLinkBtnText.textContent = "Copy failed";
+                    setTimeout(() => { if (copyLinkBtnText) copyLinkBtnText.textContent = "Copy Link"; }, 2000);
                 }
             });
         }
