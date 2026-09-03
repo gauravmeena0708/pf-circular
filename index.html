@@ -628,161 +628,83 @@
             padding: 0;
             border: 1px solid var(--line);
             border-radius: 12px;
-            background: var(--surface);
+            background: #ffffff;
             color: var(--ink);
-            max-width: min(840px, calc(100vw - 32px));
+            max-width: min(940px, calc(100vw - 32px));
             width: 100%;
-            max-height: min(88vh, 880px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.05);
+            max-height: min(92vh, 960px);
+            box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
             margin: auto;
             overflow: hidden;
         }
 
         dialog.ocr-modal::backdrop {
-            background: rgba(15, 23, 42, 0.6);
-            backdrop-filter: blur(4px);
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(6px);
         }
 
         .ocr-modal-content {
             display: flex;
             flex-direction: column;
-            max-height: min(88vh, 880px);
+            max-height: min(92vh, 960px);
             height: 100%;
         }
 
         .ocr-modal-header {
             display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            gap: 16px;
-            padding: 20px 24px 16px;
-            border-bottom: 1px solid var(--line);
-            background: #fafbfc;
-        }
-
-        .ocr-modal-meta {
-            flex: 1;
-            min-width: 0;
-        }
-
-        .ocr-modal-tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            align-items: center;
-            margin-bottom: 8px;
-        }
-
-        .modal-badge-no {
-            font-size: 12px;
-            font-weight: 600;
-            color: var(--ink);
-            background: var(--tag-bg);
-            padding: 2px 8px;
-            border-radius: 4px;
-        }
-
-        .modal-badge-date, .modal-badge-year {
-            font-size: 12px;
-            color: var(--muted);
-            background: #f1f5f9;
-            padding: 2px 8px;
-            border-radius: 4px;
-        }
-
-        .ocr-modal-title {
-            margin: 0;
-            font-size: 16px;
-            font-weight: 600;
-            line-height: 1.4;
-            color: var(--ink);
-        }
-
-        .ocr-close-btn {
-            background: transparent;
-            border: none;
-            font-size: 24px;
-            line-height: 1;
-            color: var(--muted);
-            cursor: pointer;
-            padding: 4px 8px;
-            border-radius: 6px;
-            transition: background 120ms ease, color 120ms ease;
-        }
-
-        .ocr-close-btn:hover {
-            background: var(--tag-bg);
-            color: var(--ink);
-        }
-
-        .ocr-disclaimer-box {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            margin: 16px 24px 8px;
-            padding: 12px 14px;
-            background: #fffbeb;
-            border: 1px solid #fef3c7;
-            border-left: 4px solid #f59e0b;
-            border-radius: 6px;
-            color: #92400e;
-            font-size: 13px;
-            line-height: 1.45;
-        }
-
-        .ocr-disclaimer-icon {
-            font-size: 18px;
-            line-height: 1;
-            flex-shrink: 0;
-        }
-
-        .ocr-disclaimer-text strong {
-            display: block;
-            font-weight: 600;
-            margin-bottom: 2px;
-            color: #78350f;
-        }
-
-        .ocr-disclaimer-text p {
-            margin: 0;
-        }
-
-        .ocr-disclaimer-text a {
-            color: #b45309;
-            font-weight: 600;
-            text-decoration: underline;
-        }
-
-        .ocr-modal-toolbar {
-            display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 10px 24px;
-            border-bottom: 1px solid var(--line);
-            background: #ffffff;
-            gap: 12px;
+            gap: 14px;
+            padding: 10px 18px;
+            border-bottom: 1px solid #cbd5e1;
+            background: #f8fafc;
             flex-wrap: wrap;
         }
 
-        .ocr-text-label {
+        .ocr-modal-app-tag {
             font-size: 11px;
-            font-weight: 600;
+            font-weight: 700;
             letter-spacing: 0.08em;
             text-transform: uppercase;
-            color: var(--muted);
+            color: #475569;
         }
 
         .ocr-toolbar-actions {
             display: flex;
             align-items: center;
             gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .ocr-font-toggle {
+            display: inline-flex;
+            border: 1px solid var(--line-strong);
+            border-radius: 6px;
+            overflow: hidden;
+            background: var(--surface);
+        }
+
+        .ocr-font-btn {
+            padding: 5px 10px;
+            border: none;
+            background: transparent;
+            color: var(--muted);
+            font-size: 11.5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 120ms ease;
+        }
+
+        .ocr-font-btn.active {
+            background: var(--accent);
+            color: #ffffff;
         }
 
         .ocr-btn-action {
             display: inline-flex;
             align-items: center;
             gap: 6px;
-            padding: 6px 12px;
+            padding: 6px 11px;
             border: 1px solid var(--line-strong);
             border-radius: 6px;
             background: var(--surface);
@@ -800,46 +722,241 @@
             background: var(--accent-soft);
         }
 
-        .ocr-modal-body {
-            padding: 18px 24px;
-            overflow-y: auto;
-            flex: 1;
-            background: #ffffff;
+        .ocr-close-btn {
+            background: transparent;
+            border: none;
+            font-size: 22px;
+            line-height: 1;
+            color: var(--muted);
+            cursor: pointer;
+            padding: 2px 7px;
+            border-radius: 6px;
+            transition: background 120ms ease, color 120ms ease;
         }
 
-        .ocr-content-text {
+        .ocr-close-btn:hover {
+            background: #e2e8f0;
+            color: var(--ink);
+        }
+
+        /* Paper sheet desk background */
+        .ocr-modal-body {
+            padding: 28px 20px;
+            overflow-y: auto;
+            flex: 1;
+            background: #eef2f6;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Floating Paper Sheet */
+        .paper-sheet {
+            position: relative;
+            background: #ffffff;
+            width: 100%;
+            max-width: 820px;
+            min-height: 700px;
+            padding: 44px 52px 36px;
+            border: 1px solid #d1d5db;
+            border-radius: 3px;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12), 0 2px 6px rgba(0, 0, 0, 0.04);
+            color: #17212b;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        /* Faint vertical margin watermark */
+        .dynamic-watermark {
+            position: absolute;
+            right: -65px;
+            top: 90px;
+            transform: rotate(90deg);
+            color: rgba(30, 58, 86, 0.08);
+            font-size: 9px;
+            font-weight: 900;
+            letter-spacing: 0.22em;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        /* Paper Header with Seal */
+        .dynamic-paper-header {
+            display: grid;
+            grid-template-columns: 46px 1fr;
+            gap: 16px;
+            align-items: center;
+            padding-bottom: 18px;
+            border-bottom: 2px solid #1e3a5f;
+        }
+
+        .dynamic-seal {
+            width: 46px;
+            height: 46px;
+            display: grid;
+            place-items: center;
+            color: #1e3a5f;
+            border: 2px double #3b5a82;
+            border-radius: 50%;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            background: #f8fafc;
+        }
+
+        .paper-header-copy span {
+            display: block;
+            color: #475569;
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .paper-title {
+            margin: 4px 0 2px;
+            color: #0f172a;
+            font-family: Georgia, "Times New Roman", Cambria, serif;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.35;
+            letter-spacing: -0.01em;
+        }
+
+        .paper-subtitle {
+            margin: 0;
+            color: #64748b;
+            font-size: 11.5px;
+            font-style: italic;
+        }
+
+        /* Gazette-Style Metadata Strip */
+        .paper-meta-strip {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr 0.8fr;
+            margin: 18px 0 16px;
+            border: 1px solid #cbd5e1;
+            background: #f8fafc;
+        }
+
+        .meta-strip-cell {
+            padding: 8px 12px;
+            border-right: 1px solid #cbd5e1;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            min-width: 0;
+        }
+
+        .meta-strip-cell:last-child {
+            border-right: none;
+        }
+
+        .meta-strip-cell span {
+            color: #64748b;
+            font-size: 9px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        .meta-strip-cell strong {
+            color: #1e293b;
+            font-size: 12.5px;
+            font-weight: 600;
+            word-break: break-word;
+        }
+
+        /* Disclaimer notice integrated on paper */
+        .paper-disclaimer {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin: 0 0 24px;
+            padding: 10px 14px;
+            background: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-left: 3px solid #d97706;
+            color: #92400e;
+            font-size: 12.5px;
+            line-height: 1.45;
+        }
+
+        .paper-disclaimer-icon {
+            font-size: 16px;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        .paper-disclaimer-text a {
+            color: #b45309;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        /* Circular Content Typography */
+        .paper-content-wrap {
+            margin: 20px 0;
+        }
+
+        .paper-content {
             margin: 0;
             white-space: pre-wrap;
             word-break: break-word;
-            font-family: inherit;
-            font-size: 13.5px;
-            line-height: 1.6;
-            color: var(--ink-2);
+            font-size: 15px;
+            line-height: 1.75;
+            color: #1a202c;
             user-select: text;
+        }
+
+        .paper-sheet.mode-serif .paper-content {
+            font-family: Georgia, "Times New Roman", Cambria, serif;
+            letter-spacing: 0.01em;
+        }
+
+        .paper-sheet.mode-sans .paper-content {
+            font-family: "Inter", system-ui, -apple-system, sans-serif;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        /* Paper Footer */
+        .paper-footer {
+            margin-top: 36px;
+            padding-top: 14px;
+            border-top: 1px solid #cbd5e1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            color: #64748b;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
 
         .ocr-modal-footer {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 14px 24px;
-            border-top: 1px solid var(--line);
-            background: #fafbfc;
+            padding: 10px 20px;
+            border-top: 1px solid #e2e8f0;
+            background: #f8fafc;
             gap: 12px;
         }
 
-        .ocr-indexed-note {
-            font-size: 12px;
+        .ocr-footer-note {
+            font-size: 11.5px;
             color: var(--muted);
         }
 
         .ocr-btn-secondary {
-            padding: 8px 18px;
+            padding: 7px 16px;
             border: 1px solid var(--line-strong);
             border-radius: 6px;
             background: var(--surface);
             color: var(--ink-2);
-            font-size: 13px;
+            font-size: 12.5px;
             font-weight: 500;
             cursor: pointer;
             transition: all 120ms ease;
@@ -848,6 +965,75 @@
         .ocr-btn-secondary:hover {
             border-color: var(--ink-2);
             color: var(--ink);
+        }
+
+        @media (max-width: 720px) {
+            .paper-sheet {
+                padding: 22px 16px 18px;
+            }
+
+            .dynamic-paper-header {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .dynamic-seal {
+                display: none;
+            }
+
+            .paper-meta-strip {
+                grid-template-columns: 1fr;
+            }
+
+            .meta-strip-cell {
+                border-right: none;
+                border-bottom: 1px solid #cbd5e1;
+            }
+
+            .meta-strip-cell:last-child {
+                border-bottom: none;
+            }
+
+            .paper-footer {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6px;
+            }
+        }
+
+        @media print {
+            body * {
+                visibility: hidden;
+            }
+            dialog.ocr-modal,
+            dialog.ocr-modal * {
+                visibility: visible;
+            }
+            dialog.ocr-modal {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                max-width: 100%;
+                border: none;
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+            }
+            .ocr-modal-header,
+            .ocr-modal-footer {
+                display: none !important;
+            }
+            .paper-sheet {
+                box-shadow: none;
+                border: none;
+                padding: 0;
+                max-width: 100%;
+            }
+            .ocr-modal-body {
+                background: #ffffff;
+                padding: 0;
+            }
         }
 </style>
 </head>
@@ -949,28 +1135,12 @@
     <dialog id="ocrModal" class="ocr-modal" aria-labelledby="modalTitle">
         <div class="ocr-modal-content">
             <header class="ocr-modal-header">
-                <div class="ocr-modal-meta">
-                    <div class="ocr-modal-tags">
-                        <span id="modalCircularNo" class="modal-badge-no"></span>
-                        <span id="modalCircularDate" class="modal-badge-date"></span>
-                        <span id="modalCircularYear" class="modal-badge-year"></span>
-                    </div>
-                    <h2 id="modalTitle" class="ocr-modal-title"></h2>
-                </div>
-                <button type="button" id="modalCloseBtnTop" class="ocr-close-btn" aria-label="Close modal">&times;</button>
-            </header>
-
-            <div class="ocr-disclaimer-box" role="note">
-                <div class="ocr-disclaimer-icon" aria-hidden="true">⚠️</div>
-                <div class="ocr-disclaimer-text">
-                    <strong>Temporary Reproduction</strong>
-                    <p>This is an automated OCR text reproduction from the archived circular. For official and updated information, please check the official EPFO website (<a href="https://www.epfo.gov.in" target="_blank" rel="noopener noreferrer">epfo.gov.in</a>).</p>
-                </div>
-            </div>
-
-            <div class="ocr-modal-toolbar">
-                <span class="ocr-text-label">Extracted Circular Text</span>
+                <span class="ocr-modal-app-tag">Circular Archive · Reproduced Document</span>
                 <div class="ocr-toolbar-actions">
+                    <div class="ocr-font-toggle" role="group" aria-label="Reading font">
+                        <button type="button" id="fontSerifBtn" class="ocr-font-btn active" title="Official serif document font">Serif</button>
+                        <button type="button" id="fontSansBtn" class="ocr-font-btn" title="Modern sans-serif font">Sans</button>
+                    </div>
                     <button type="button" id="copyLinkBtn" class="ocr-btn-action" title="Copy shareable direct link to this circular">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
@@ -993,15 +1163,58 @@
                         </svg>
                         <span>Official PDF</span>
                     </a>
+                    <button type="button" id="modalCloseBtnTop" class="ocr-close-btn" aria-label="Close modal">&times;</button>
                 </div>
-            </div>
+            </header>
 
             <div class="ocr-modal-body">
-                <pre id="modalOcrText" class="ocr-content-text" tabindex="0"></pre>
+                <article id="paperSheet" class="paper-sheet mode-serif">
+                    <div class="dynamic-watermark" aria-hidden="true">EPFO ARCHIVED REPRODUCTION</div>
+
+                    <header class="dynamic-paper-header">
+                        <div class="dynamic-seal" aria-hidden="true">EPFO</div>
+                        <div class="paper-header-copy">
+                            <span>Employees' Provident Fund Organisation</span>
+                            <h2 id="modalTitle" class="paper-title"></h2>
+                            <p class="paper-subtitle">Official Circular Record (Archived Reproduction)</p>
+                        </div>
+                    </header>
+
+                    <div class="paper-meta-strip">
+                        <div class="meta-strip-cell">
+                            <span>Circular No</span>
+                            <strong id="modalCircularNo">—</strong>
+                        </div>
+                        <div class="meta-strip-cell">
+                            <span>Date of Issue</span>
+                            <strong id="modalCircularDate">—</strong>
+                        </div>
+                        <div class="meta-strip-cell">
+                            <span>Financial Year</span>
+                            <strong id="modalCircularYear">—</strong>
+                        </div>
+                    </div>
+
+                    <div class="paper-disclaimer" role="note">
+                        <div class="paper-disclaimer-icon" aria-hidden="true">⚠️</div>
+                        <div class="paper-disclaimer-text">
+                            <strong>Temporary Reproduction</strong>: This is an automated OCR text reproduction from the archived circular. For official and updated information, please check the official EPFO website (<a href="https://www.epfo.gov.in" target="_blank" rel="noopener noreferrer">epfo.gov.in</a>).
+                        </div>
+                    </div>
+
+                    <div class="paper-content-wrap">
+                        <div id="modalOcrText" class="paper-content" tabindex="0"></div>
+                    </div>
+
+                    <footer class="paper-footer">
+                        <span>Employees' Provident Fund Organisation · Archived Record</span>
+                        <span id="modalIndexedAt"></span>
+                    </footer>
+                </article>
             </div>
 
             <footer class="ocr-modal-footer">
-                <span id="modalIndexedAt" class="ocr-indexed-note"></span>
+                <span class="ocr-footer-note">Press Esc or click outside to close</span>
                 <button type="button" id="modalCloseBtnBottom" class="ocr-btn-secondary">Close</button>
             </footer>
         </div>
@@ -1549,6 +1762,24 @@
         const copyBtnText = document.getElementById('copyBtnText');
         const copyLinkBtn = document.getElementById('copyLinkBtn');
         const copyLinkBtnText = document.getElementById('copyLinkBtnText');
+        const fontSerifBtn = document.getElementById('fontSerifBtn');
+        const fontSansBtn = document.getElementById('fontSansBtn');
+        const paperSheet = document.getElementById('paperSheet');
+
+        if (fontSerifBtn && fontSansBtn && paperSheet) {
+            fontSerifBtn.addEventListener('click', () => {
+                paperSheet.classList.add('mode-serif');
+                paperSheet.classList.remove('mode-sans');
+                fontSerifBtn.classList.add('active');
+                fontSansBtn.classList.remove('active');
+            });
+            fontSansBtn.addEventListener('click', () => {
+                paperSheet.classList.add('mode-sans');
+                paperSheet.classList.remove('mode-serif');
+                fontSansBtn.classList.add('active');
+                fontSerifBtn.classList.remove('active');
+            });
+        }
 
         function openDocFromQuery(docQuery) {
             if (!docQuery) return;
@@ -1638,27 +1869,10 @@
             const rawTitle = circular.title || "Circular Content";
             modalTitle.innerHTML = highlightText(escapeHtml(rawTitle), currentTerms);
 
-            if (circular.circular_no) {
-                modalCircularNo.textContent = `No: ${circular.circular_no}`;
-                modalCircularNo.style.display = 'inline-block';
-            } else {
-                modalCircularNo.style.display = 'none';
-            }
-
-            if (circular.date) {
-                modalCircularDate.textContent = `Date: ${displayDate(circular.date)}`;
-                modalCircularDate.style.display = 'inline-block';
-            } else {
-                modalCircularDate.style.display = 'none';
-            }
-
+            modalCircularNo.textContent = circular.circular_no || '—';
+            modalCircularDate.textContent = circular.date ? displayDate(circular.date) : '—';
             const fy = fyFromUrl(circular);
-            if (fy) {
-                modalCircularYear.textContent = `FY ${fy}`;
-                modalCircularYear.style.display = 'inline-block';
-            } else {
-                modalCircularYear.style.display = 'none';
-            }
+            modalCircularYear.textContent = fy || '—';
 
             modalPdfLink.href = link;
 
