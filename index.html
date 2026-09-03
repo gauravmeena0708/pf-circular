@@ -333,7 +333,7 @@
         .ledger col.col-sr { width: 74px; }
         .ledger col.col-no { width: 230px; }
         .ledger col.col-date { width: 116px; }
-        .ledger col.col-docs { width: 116px; }
+        .ledger col.col-docs { width: 175px; }
 
         .ledger tbody td {
             padding: 15px 18px;
@@ -556,6 +556,290 @@
         .load-more-btn { display: block; margin: 20px auto; padding: 10px 20px; border: 1px solid var(--accent); background: var(--surface); color: var(--accent); border-radius: 6px; font-weight: 600; cursor: pointer; transition: all 0.2s; }
         .load-more-btn:hover { background: var(--accent-soft); }
         .load-more-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        .trust-note {
+            margin: 0 0 16px;
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .doc-reproduced {
+            display: inline-flex;
+            align-items: center;
+            padding: 5px 10px;
+            border: 1px solid #93c5fd;
+            border-radius: 6px;
+            background: #eff6ff;
+            color: #1d4ed8;
+            font: 600 11.5px/1 var(--sans);
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 130ms ease;
+        }
+
+        .doc-reproduced:hover {
+            border-color: #2563eb;
+            background: #2563eb;
+            color: #ffffff;
+        }
+
+        .badge-reproduced {
+            display: inline-block;
+            margin-top: 6px;
+            padding: 3px 8px;
+            border: 1px solid rgba(37, 99, 235, 0.2);
+            border-radius: 5px;
+            background: var(--accent-soft);
+            color: var(--accent);
+            font: 500 10px/1.2 var(--sans);
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 120ms ease;
+        }
+
+        .badge-reproduced:hover {
+            background: var(--accent);
+            color: #ffffff;
+            border-color: var(--accent);
+        }
+
+        .snippet-clickable {
+            cursor: pointer;
+            transition: background 120ms ease, border-left-color 120ms ease;
+        }
+
+        .snippet-clickable:hover {
+            background: #e2e8f0;
+            border-left-color: var(--accent-hover);
+        }
+
+        /* Modal dialog styles */
+        dialog.ocr-modal {
+            padding: 0;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            background: var(--surface);
+            color: var(--ink);
+            max-width: min(840px, calc(100vw - 32px));
+            width: 100%;
+            max-height: min(88vh, 880px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.05);
+            margin: auto;
+            overflow: hidden;
+        }
+
+        dialog.ocr-modal::backdrop {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(4px);
+        }
+
+        .ocr-modal-content {
+            display: flex;
+            flex-direction: column;
+            max-height: min(88vh, 880px);
+            height: 100%;
+        }
+
+        .ocr-modal-header {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 20px 24px 16px;
+            border-bottom: 1px solid var(--line);
+            background: #fafbfc;
+        }
+
+        .ocr-modal-meta {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .ocr-modal-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .modal-badge-no {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--ink);
+            background: var(--tag-bg);
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        .modal-badge-date, .modal-badge-year {
+            font-size: 12px;
+            color: var(--muted);
+            background: #f1f5f9;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        .ocr-modal-title {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.4;
+            color: var(--ink);
+        }
+
+        .ocr-close-btn {
+            background: transparent;
+            border: none;
+            font-size: 24px;
+            line-height: 1;
+            color: var(--muted);
+            cursor: pointer;
+            padding: 4px 8px;
+            border-radius: 6px;
+            transition: background 120ms ease, color 120ms ease;
+        }
+
+        .ocr-close-btn:hover {
+            background: var(--tag-bg);
+            color: var(--ink);
+        }
+
+        .ocr-disclaimer-box {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin: 16px 24px 8px;
+            padding: 12px 14px;
+            background: #fffbeb;
+            border: 1px solid #fef3c7;
+            border-left: 4px solid #f59e0b;
+            border-radius: 6px;
+            color: #92400e;
+            font-size: 13px;
+            line-height: 1.45;
+        }
+
+        .ocr-disclaimer-icon {
+            font-size: 18px;
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        .ocr-disclaimer-text strong {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 2px;
+            color: #78350f;
+        }
+
+        .ocr-disclaimer-text p {
+            margin: 0;
+        }
+
+        .ocr-disclaimer-text a {
+            color: #b45309;
+            font-weight: 600;
+            text-decoration: underline;
+        }
+
+        .ocr-modal-toolbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 24px;
+            border-bottom: 1px solid var(--line);
+            background: #ffffff;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .ocr-text-label {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        .ocr-toolbar-actions {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .ocr-btn-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            border: 1px solid var(--line-strong);
+            border-radius: 6px;
+            background: var(--surface);
+            color: var(--ink-2);
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 120ms ease;
+        }
+
+        .ocr-btn-action:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: var(--accent-soft);
+        }
+
+        .ocr-modal-body {
+            padding: 18px 24px;
+            overflow-y: auto;
+            flex: 1;
+            background: #ffffff;
+        }
+
+        .ocr-content-text {
+            margin: 0;
+            white-space: pre-wrap;
+            word-break: break-word;
+            font-family: inherit;
+            font-size: 13.5px;
+            line-height: 1.6;
+            color: var(--ink-2);
+            user-select: text;
+        }
+
+        .ocr-modal-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 24px;
+            border-top: 1px solid var(--line);
+            background: #fafbfc;
+            gap: 12px;
+        }
+
+        .ocr-indexed-note {
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        .ocr-btn-secondary {
+            padding: 8px 18px;
+            border: 1px solid var(--line-strong);
+            border-radius: 6px;
+            background: var(--surface);
+            color: var(--ink-2);
+            font-size: 13px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 120ms ease;
+        }
+
+        .ocr-btn-secondary:hover {
+            border-color: var(--ink-2);
+            color: var(--ink);
+        }
 </style>
 </head>
 <body>
@@ -633,7 +917,7 @@
 
     <main class="results">
         <div class="wrap">
-            <p class="trust-note">Document links open the original PDFs on <strong>epfindia.gov.in</strong> — always verify against the official source.</p>
+            <p class="trust-note">Document links open the original PDFs on <strong>epfindia.gov.in</strong> — always verify against the official source. Use the <strong>Reproduced</strong> button to view archived circular text.</p>
             <div class="results-head">
                 <p class="results-count" id="resultsCount" role="status" aria-live="polite"></p>
             </div>
@@ -652,6 +936,60 @@
 
         </div>
     </main>
+
+    <dialog id="ocrModal" class="ocr-modal" aria-labelledby="modalTitle">
+        <div class="ocr-modal-content">
+            <header class="ocr-modal-header">
+                <div class="ocr-modal-meta">
+                    <div class="ocr-modal-tags">
+                        <span id="modalCircularNo" class="modal-badge-no"></span>
+                        <span id="modalCircularDate" class="modal-badge-date"></span>
+                        <span id="modalCircularYear" class="modal-badge-year"></span>
+                    </div>
+                    <h2 id="modalTitle" class="ocr-modal-title"></h2>
+                </div>
+                <button type="button" id="modalCloseBtnTop" class="ocr-close-btn" aria-label="Close modal">&times;</button>
+            </header>
+
+            <div class="ocr-disclaimer-box" role="note">
+                <div class="ocr-disclaimer-icon" aria-hidden="true">⚠️</div>
+                <div class="ocr-disclaimer-text">
+                    <strong>Temporary Reproduction</strong>
+                    <p>This is an automated OCR text reproduction from the archived circular. For official and updated information, please check the official EPFO website (<a href="https://www.epfo.gov.in" target="_blank" rel="noopener noreferrer">epfo.gov.in</a>).</p>
+                </div>
+            </div>
+
+            <div class="ocr-modal-toolbar">
+                <span class="ocr-text-label">Extracted Circular Text</span>
+                <div class="ocr-toolbar-actions">
+                    <button type="button" id="copyOcrBtn" class="ocr-btn-action" title="Copy circular text to clipboard">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                        <span id="copyBtnText">Copy Text</span>
+                    </button>
+                    <a id="modalPdfLink" class="ocr-btn-action" href="#" target="_blank" rel="noopener noreferrer" title="Attempt to open official PDF">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                        <span>Official PDF</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="ocr-modal-body">
+                <pre id="modalOcrText" class="ocr-content-text" tabindex="0"></pre>
+            </div>
+
+            <footer class="ocr-modal-footer">
+                <span id="modalIndexedAt" class="ocr-indexed-note"></span>
+                <button type="button" id="modalCloseBtnBottom" class="ocr-btn-secondary">Close</button>
+            </footer>
+        </div>
+    </dialog>
 
     <footer>
         <div class="wrap footer-inner">
@@ -940,15 +1278,31 @@
         }
 
         function renderRow(item) {
-            const hasFullText = item.english_pdf_link && allIndexData[item.english_pdf_link];
-            const docs =
+            const ocrLink = (item.english_pdf_link && allIndexData[item.english_pdf_link])
+                ? item.english_pdf_link
+                : ((item.hindi_pdf_link && allIndexData[item.hindi_pdf_link]) ? item.hindi_pdf_link : null);
+            const hasFullText = Boolean(ocrLink);
+
+            let docs =
                 documentPill(item.english_pdf_link, "EN", "English") +
                 documentPill(item.hindi_pdf_link, "HI", "Hindi");
+
+            if (ocrLink) {
+                docs += `<button type="button" class="doc-reproduced" data-ocr-link="${escapeHtml(ocrLink)}" title="View reproduced circular content">Reproduced</button>`;
+            }
 
             const snippet = ocrSnippet(item, currentTerms);
             const titleHtml = highlightText(escapeHtml(item.title || "Untitled circular"), currentTerms);
             const circularHtml = highlightText(escapeHtml(item.circular_no || "—"), currentTerms);
-            const subjectExtra = snippet || (hasFullText ? `<span class="badge">Full text</span>` : "");
+
+            let subjectExtra = "";
+            if (snippet) {
+                subjectExtra = ocrLink
+                    ? `<div class="snippet-clickable" data-ocr-link="${escapeHtml(ocrLink)}" title="Click to view reproduced text">${snippet}</div>`
+                    : snippet;
+            } else if (hasFullText) {
+                subjectExtra = `<button type="button" class="badge-reproduced" data-ocr-link="${escapeHtml(ocrLink)}" title="Click to view reproduced text">Full text</button>`;
+            }
 
             return `
                 <tr>
@@ -1116,10 +1470,142 @@
         });
         yearFilter.addEventListener('change', applyFilters);
         langFilter.addEventListener('change', applyFilters);
-        window.addEventListener('popstate', () => {
-            const query = new URLSearchParams(window.location.search).get('query');
-            searchInput.value = query ? decodeURIComponent(query) : '';
-            performSearch();
+        const ocrModal = document.getElementById('ocrModal');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalCircularNo = document.getElementById('modalCircularNo');
+        const modalCircularDate = document.getElementById('modalCircularDate');
+        const modalCircularYear = document.getElementById('modalCircularYear');
+        const modalPdfLink = document.getElementById('modalPdfLink');
+        const modalOcrText = document.getElementById('modalOcrText');
+        const modalIndexedAt = document.getElementById('modalIndexedAt');
+        const modalCloseBtnTop = document.getElementById('modalCloseBtnTop');
+        const modalCloseBtnBottom = document.getElementById('modalCloseBtnBottom');
+        const copyOcrBtn = document.getElementById('copyOcrBtn');
+        const copyBtnText = document.getElementById('copyBtnText');
+
+        function openOcrModal(link) {
+            if (!link || !allIndexData[link]) {
+                alert("Reproduced text is not currently available for this circular.");
+                return;
+            }
+            const ocrData = allIndexData[link];
+            const circular = allCircularData.find(c => c.english_pdf_link === link || c.hindi_pdf_link === link) || {};
+
+            const rawTitle = circular.title || "Circular Content";
+            modalTitle.innerHTML = highlightText(escapeHtml(rawTitle), currentTerms);
+
+            if (circular.circular_no) {
+                modalCircularNo.textContent = `No: ${circular.circular_no}`;
+                modalCircularNo.style.display = 'inline-block';
+            } else {
+                modalCircularNo.style.display = 'none';
+            }
+
+            if (circular.date) {
+                modalCircularDate.textContent = `Date: ${displayDate(circular.date)}`;
+                modalCircularDate.style.display = 'inline-block';
+            } else {
+                modalCircularDate.style.display = 'none';
+            }
+
+            const fy = fyFromUrl(circular);
+            if (fy) {
+                modalCircularYear.textContent = `FY ${fy}`;
+                modalCircularYear.style.display = 'inline-block';
+            } else {
+                modalCircularYear.style.display = 'none';
+            }
+
+            modalPdfLink.href = link;
+
+            const rawText = ocrData.ocr_content || "No extracted text available.";
+            modalOcrText.innerHTML = highlightText(escapeHtml(rawText), currentTerms);
+            modalOcrText.dataset.rawText = rawText;
+
+            if (ocrData.indexed_at) {
+                const indexedDate = new Date(ocrData.indexed_at);
+                modalIndexedAt.textContent = `Indexed on ${indexedDate.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}`;
+            } else {
+                modalIndexedAt.textContent = '';
+            }
+
+            if (copyBtnText) copyBtnText.textContent = "Copy Text";
+
+            if (ocrModal) {
+                if (typeof ocrModal.showModal === 'function') {
+                    document.body.style.overflow = 'hidden';
+                    ocrModal.showModal();
+                } else {
+                    ocrModal.setAttribute('open', '');
+                    document.body.style.overflow = 'hidden';
+                }
+            }
+        }
+
+        function closeOcrModal() {
+            if (!ocrModal) return;
+            if (typeof ocrModal.close === 'function') {
+                ocrModal.close();
+            } else {
+                ocrModal.removeAttribute('open');
+            }
+            document.body.style.overflow = '';
+        }
+
+        if (modalCloseBtnTop) modalCloseBtnTop.addEventListener('click', closeOcrModal);
+        if (modalCloseBtnBottom) modalCloseBtnBottom.addEventListener('click', closeOcrModal);
+
+        if (ocrModal) {
+            ocrModal.addEventListener('click', (event) => {
+                if (event.target === ocrModal) {
+                    closeOcrModal();
+                }
+            });
+            ocrModal.addEventListener('close', () => {
+                document.body.style.overflow = '';
+            });
+            ocrModal.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    closeOcrModal();
+                }
+            });
+        }
+
+        if (copyOcrBtn) {
+            copyOcrBtn.addEventListener('click', async () => {
+                const textToCopy = modalOcrText.dataset.rawText || modalOcrText.innerText;
+                try {
+                    await navigator.clipboard.writeText(textToCopy);
+                    if (copyBtnText) copyBtnText.textContent = "Copied!";
+                    setTimeout(() => { if (copyBtnText) copyBtnText.textContent = "Copy Text"; }, 2000);
+                } catch (err) {
+                    const textarea = document.createElement('textarea');
+                    textarea.value = textToCopy;
+                    textarea.style.position = 'fixed';
+                    textarea.style.opacity = '0';
+                    document.body.appendChild(textarea);
+                    textarea.select();
+                    try {
+                        document.execCommand('copy');
+                        if (copyBtnText) copyBtnText.textContent = "Copied!";
+                        setTimeout(() => { if (copyBtnText) copyBtnText.textContent = "Copy Text"; }, 2000);
+                    } catch (e) {
+                        console.error('Failed to copy', e);
+                    }
+                    document.body.removeChild(textarea);
+                }
+            });
+        }
+
+        resultsContainer.addEventListener('click', (event) => {
+            const trigger = event.target.closest('[data-ocr-link]');
+            if (trigger) {
+                event.preventDefault();
+                const ocrLink = trigger.getAttribute('data-ocr-link');
+                if (ocrLink) {
+                    openOcrModal(ocrLink);
+                }
+            }
         });
 
         document.addEventListener('DOMContentLoaded', loadAllData);
