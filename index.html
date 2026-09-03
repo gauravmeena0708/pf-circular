@@ -614,6 +614,15 @@
             border-left-color: var(--accent-hover);
         }
 
+        @keyframes rowPulse {
+            0% { background-color: rgba(37, 99, 235, 0.25); }
+            100% { background-color: transparent; }
+        }
+
+        .row-highlight td {
+            animation: rowPulse 3s ease-out;
+        }
+
         /* Modal dialog styles */
         dialog.ocr-modal {
             padding: 0;
@@ -962,6 +971,13 @@
             <div class="ocr-modal-toolbar">
                 <span class="ocr-text-label">Extracted Circular Text</span>
                 <div class="ocr-toolbar-actions">
+                    <button type="button" id="copyLinkBtn" class="ocr-btn-action" title="Copy shareable direct link to this circular">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                            <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                        </svg>
+                        <span id="copyLinkBtnText">Copy Link</span>
+                    </button>
                     <button type="button" id="copyOcrBtn" class="ocr-btn-action" title="Copy circular text to clipboard">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                             <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
@@ -1194,14 +1210,38 @@
                     }
                 }
 
+                const urlParams = new URLSearchParams(window.location.search);
+                const queryFromUrl = urlParams.get('query');
+                let targetFy = urlParams.get('fy');
+                const docFromQuery = urlParams.get('doc');
+
+                // If doc is provided without fy, try extracting fy from doc string
+                if (!targetFy && docFromQuery) {
+                    const match = docFromQuery.match(/\/Y(\d{4}-\d{4})\//) || docFromQuery.match(/(20\d{2}-20\d{2})/);
+                    if (match) targetFy = match[1];
+                }
+
+                // If target financial year is specified and valid, ensure it is loaded
+                if (targetFy && availableYears.includes(targetFy)) {
+                    if (!loadedYears.includes(targetFy)) {
+                        await loadYearData(targetFy);
+                    }
+                }
+
                 updateStats();
                 populateFilters();
+                if (targetFy) {
+                    yearFilter.value = targetFy;
+                }
 
-                const queryFromUrl = new URLSearchParams(window.location.search).get('query');
                 if (queryFromUrl) {
                     searchInput.value = decodeURIComponent(queryFromUrl);
                 }
                 performSearch();
+
+                if (docFromQuery) {
+                    openDocFromQuery(decodeURIComponent(docFromQuery));
+                }
             } catch (error) {
                 console.error('Error loading data:', error);
                 resultsContainer.innerHTML = `
@@ -1272,6 +1312,17 @@
             setupPagination();
         }
 
+        function filenameFromUrl(url) {
+            if (!url) return "";
+            try {
+                const clean = url.split('?')[0].split('#')[0];
+                const parts = clean.split('/');
+                return parts[parts.length - 1];
+            } catch (e) {
+                return url;
+            }
+        }
+
         function documentPill(url, code, label) {
             if (!url) return "";
             return `<a class="doc" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(label)} PDF">${code}</a>`;
@@ -1304,8 +1355,10 @@
                 subjectExtra = `<button type="button" class="badge-reproduced" data-ocr-link="${escapeHtml(ocrLink)}" title="Click to view reproduced text">Full text</button>`;
             }
 
+            const docName = filenameFromUrl(item.english_pdf_link || item.hindi_pdf_link || "");
+
             return `
-                <tr>
+                <tr data-doc-name="${escapeHtml(docName)}">
                     <td class="cell-sr" data-label="Sr. No"><span class="mono">${escapeHtml(item.serial_no || "—")}</span></td>
                     <td class="cell-subject" data-label="Title">
                         <p class="subject-title">${titleHtml}</p>
@@ -1471,8 +1524,15 @@
         yearFilter.addEventListener('change', applyFilters);
         langFilter.addEventListener('change', applyFilters);
         window.addEventListener('popstate', () => {
-            const query = new URLSearchParams(window.location.search).get('query');
+            const urlParams = new URLSearchParams(window.location.search);
+            const query = urlParams.get('query');
+            const doc = urlParams.get('doc');
             searchInput.value = query ? decodeURIComponent(query) : '';
+            if (doc) {
+                openDocFromQuery(decodeURIComponent(doc));
+            } else if (ocrModal && ocrModal.open) {
+                closeOcrModal();
+            }
             performSearch();
         });
         const ocrModal = document.getElementById('ocrModal');
@@ -1487,8 +1547,41 @@
         const modalCloseBtnBottom = document.getElementById('modalCloseBtnBottom');
         const copyOcrBtn = document.getElementById('copyOcrBtn');
         const copyBtnText = document.getElementById('copyBtnText');
+        const copyLinkBtn = document.getElementById('copyLinkBtn');
+        const copyLinkBtnText = document.getElementById('copyLinkBtnText');
 
-        function openOcrModal(link) {
+        function openDocFromQuery(docQuery) {
+            if (!docQuery) return;
+            const match = allCircularData.find(item => {
+                const en = item.english_pdf_link || "";
+                const hi = item.hindi_pdf_link || "";
+                return en === docQuery || hi === docQuery ||
+                       filenameFromUrl(en) === docQuery || filenameFromUrl(hi) === docQuery ||
+                       en.endsWith(docQuery) || hi.endsWith(docQuery);
+            });
+
+            if (match) {
+                const ocrLink = (match.english_pdf_link && allIndexData[match.english_pdf_link])
+                    ? match.english_pdf_link
+                    : ((match.hindi_pdf_link && allIndexData[match.hindi_pdf_link]) ? match.hindi_pdf_link : null);
+
+                if (ocrLink) {
+                    openOcrModal(ocrLink, false);
+                }
+
+                setTimeout(() => {
+                    const docName = filenameFromUrl(match.english_pdf_link || match.hindi_pdf_link || "");
+                    const row = document.querySelector(`tr[data-doc-name="${CSS.escape(docName)}"]`);
+                    if (row) {
+                        row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        row.classList.add('row-highlight');
+                        setTimeout(() => row.classList.remove('row-highlight'), 3000);
+                    }
+                }, 300);
+            }
+        }
+
+        function openOcrModal(link, updateUrl = true) {
             if (!link || !allIndexData[link]) {
                 alert("Reproduced text is not currently available for this circular.");
                 return;
@@ -1535,6 +1628,16 @@
             }
 
             if (copyBtnText) copyBtnText.textContent = "Copy Text";
+            if (copyLinkBtnText) copyLinkBtnText.textContent = "Copy Link";
+
+            // Update browser URL if requested so user can copy from address bar
+            if (updateUrl) {
+                const docName = filenameFromUrl(link);
+                const url = new URL(window.location.href);
+                if (fy) url.searchParams.set('fy', fy);
+                if (docName) url.searchParams.set('doc', docName);
+                window.history.replaceState({ fy, doc: docName }, "", url);
+            }
 
             if (ocrModal) {
                 if (typeof ocrModal.showModal === 'function') {
@@ -1555,6 +1658,16 @@
                 ocrModal.removeAttribute('open');
             }
             document.body.style.overflow = '';
+
+            // Clean up doc param from URL
+            const url = new URL(window.location.href);
+            if (url.searchParams.has('doc')) {
+                url.searchParams.delete('doc');
+                if (!yearFilter.value) {
+                    url.searchParams.delete('fy');
+                }
+                window.history.replaceState({}, "", url);
+            }
         }
 
         if (modalCloseBtnTop) modalCloseBtnTop.addEventListener('click', closeOcrModal);
@@ -1596,6 +1709,41 @@
                         setTimeout(() => { if (copyBtnText) copyBtnText.textContent = "Copy Text"; }, 2000);
                     } catch (e) {
                         console.error('Failed to copy', e);
+                    }
+                    document.body.removeChild(textarea);
+                }
+            });
+        }
+
+        if (copyLinkBtn) {
+            copyLinkBtn.addEventListener('click', async () => {
+                const currentLink = modalPdfLink.href;
+                if (!currentLink) return;
+                const circular = allCircularData.find(c => c.english_pdf_link === currentLink || c.hindi_pdf_link === currentLink) || {};
+                const fy = fyFromUrl(circular);
+                const doc = filenameFromUrl(currentLink);
+
+                const shareUrl = new URL(window.location.origin + window.location.pathname);
+                if (fy) shareUrl.searchParams.set('fy', fy);
+                if (doc) shareUrl.searchParams.set('doc', doc);
+
+                try {
+                    await navigator.clipboard.writeText(shareUrl.toString());
+                    if (copyLinkBtnText) copyLinkBtnText.textContent = "Link Copied!";
+                    setTimeout(() => { if (copyLinkBtnText) copyLinkBtnText.textContent = "Copy Link"; }, 2000);
+                } catch (err) {
+                    const textarea = document.createElement('textarea');
+                    textarea.value = shareUrl.toString();
+                    textarea.style.position = 'fixed';
+                    textarea.style.opacity = '0';
+                    document.body.appendChild(textarea);
+                    textarea.select();
+                    try {
+                        document.execCommand('copy');
+                        if (copyLinkBtnText) copyLinkBtnText.textContent = "Link Copied!";
+                        setTimeout(() => { if (copyLinkBtnText) copyLinkBtnText.textContent = "Copy Link"; }, 2000);
+                    } catch (e) {
+                        console.error('Failed to copy link', e);
                     }
                     document.body.removeChild(textarea);
                 }
