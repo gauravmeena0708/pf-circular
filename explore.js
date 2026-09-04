@@ -125,40 +125,46 @@
 
     function populateFilters() {
         // Financial years
-        const fys = (state.summary.financial_years || []).filter(y => y !== 'Unknown');
-        elements.yearSelect.innerHTML = '<option value="">All Financial Years (2009–2027)</option>';
-        fys.forEach(fy => {
-            const opt = document.createElement('option');
-            opt.value = fy;
-            opt.textContent = `FY ${fy}`;
-            elements.yearSelect.appendChild(opt);
-        });
+        if (elements.yearSelect) {
+            const fys = (state.summary.financial_years || []).filter(y => y !== 'Unknown');
+            elements.yearSelect.innerHTML = '<option value="">All Financial Years (2009–2027)</option>';
+            fys.forEach(fy => {
+                const opt = document.createElement('option');
+                opt.value = fy;
+                opt.textContent = `FY ${fy}`;
+                elements.yearSelect.appendChild(opt);
+            });
+        }
 
         // Divisions
-        const divs = Object.keys(state.summary.divisions || {}).sort();
-        elements.divisionSelect.innerHTML = '<option value="">All Divisions / Wings</option>';
-        divs.forEach(div => {
-            const opt = document.createElement('option');
-            opt.value = div;
-            opt.textContent = `${div} (${state.summary.divisions[div].toLocaleString()})`;
-            elements.divisionSelect.appendChild(opt);
-        });
+        if (elements.divisionSelect) {
+            const divs = Object.keys(state.summary.divisions || {}).sort();
+            elements.divisionSelect.innerHTML = '<option value="">All Divisions / Wings</option>';
+            divs.forEach(div => {
+                const opt = document.createElement('option');
+                opt.value = div;
+                opt.textContent = `${div} (${state.summary.divisions[div].toLocaleString()})`;
+                elements.divisionSelect.appendChild(opt);
+            });
+        }
 
         // Network Focus Select
-        const nodes = state.network?.nodes || [];
-        elements.networkFocusSelect.innerHTML = '<option value="">All connected nodes</option>';
-        nodes.forEach(n => {
-            const opt = document.createElement('option');
-            opt.value = n.id;
-            opt.textContent = n.name;
-            elements.networkFocusSelect.appendChild(opt);
-        });
+        if (elements.networkFocusSelect) {
+            const nodes = state.network?.nodes || [];
+            elements.networkFocusSelect.innerHTML = '<option value="">All connected nodes</option>';
+            nodes.forEach(n => {
+                const opt = document.createElement('option');
+                opt.value = n.id;
+                opt.textContent = n.name;
+                elements.networkFocusSelect.appendChild(opt);
+            });
+        }
     }
 
     function setupEventListeners() {
         // View tabs
         Object.entries(elements.tabs).forEach(([viewName, btn]) => {
-            btn.addEventListener('click', () => switchView(viewName));
+            if (btn) btn.addEventListener('click', () => switchView(viewName));
         });
 
         // Signal tier switch
@@ -173,47 +179,59 @@
         });
 
         // FY Select
-        elements.yearSelect.addEventListener('change', (e) => {
-            state.selectedFY = e.target.value;
-            updateMetrics();
-            renderActiveView();
-        });
+        if (elements.yearSelect) {
+            elements.yearSelect.addEventListener('change', (e) => {
+                state.selectedFY = e.target.value;
+                updateMetrics();
+                renderActiveView();
+            });
+        }
 
         // Division Select
-        elements.divisionSelect.addEventListener('change', (e) => {
-            state.selectedDivision = e.target.value;
-            updateMetrics();
-            renderActiveView();
-        });
+        if (elements.divisionSelect) {
+            elements.divisionSelect.addEventListener('change', (e) => {
+                state.selectedDivision = e.target.value;
+                updateMetrics();
+                renderActiveView();
+            });
+        }
 
         // Network Slider
-        elements.networkStrengthRange.addEventListener('input', (e) => {
-            state.networkThreshold = parseInt(e.target.value, 10);
-            elements.networkStrengthOutput.innerHTML = `<b>${state.networkThreshold}+</b>`;
-            if (state.activeView === 'network') renderNetwork();
-        });
+        if (elements.networkStrengthRange) {
+            elements.networkStrengthRange.addEventListener('input', (e) => {
+                state.networkThreshold = parseInt(e.target.value, 10);
+                if (elements.networkStrengthOutput) {
+                    elements.networkStrengthOutput.innerHTML = `<b>${state.networkThreshold}+</b>`;
+                }
+                if (state.activeView === 'network') renderNetwork();
+            });
+        }
 
         // Network Focus Select
-        elements.networkFocusSelect.addEventListener('change', (e) => {
-            state.networkFocus = e.target.value;
-            if (state.activeView === 'network') {
-                if (state.networkFocus) selectNetworkNode(state.networkFocus);
-                else clearNetworkSelection();
-            }
-        });
+        if (elements.networkFocusSelect) {
+            elements.networkFocusSelect.addEventListener('change', (e) => {
+                state.networkFocus = e.target.value;
+                if (state.activeView === 'network') {
+                    if (state.networkFocus) selectNetworkNode(state.networkFocus);
+                    else clearNetworkSelection();
+                }
+            });
+        }
 
         // Network Reset
-        elements.networkResetBtn.addEventListener('click', () => {
-            state.networkFocus = '';
-            elements.networkFocusSelect.value = '';
-            clearNetworkSelection();
-        });
+        if (elements.networkResetBtn) {
+            elements.networkResetBtn.addEventListener('click', () => {
+                state.networkFocus = '';
+                if (elements.networkFocusSelect) elements.networkFocusSelect.value = '';
+                clearNetworkSelection();
+            });
+        }
 
         // Drawer close
-        elements.drawerCloseBtn.addEventListener('click', closeDrawer);
-        elements.drawerOverlay.addEventListener('click', closeDrawer);
+        if (elements.drawerCloseBtn) elements.drawerCloseBtn.addEventListener('click', closeDrawer);
+        if (elements.drawerOverlay) elements.drawerOverlay.addEventListener('click', closeDrawer);
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && elements.drawer.classList.contains('open')) {
+            if (e.key === 'Escape' && elements.drawer && elements.drawer.classList.contains('open')) {
                 closeDrawer();
             }
         });
