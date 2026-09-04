@@ -1093,7 +1093,10 @@
         };
     }
 
-    // Start on DOM ready
-    document.addEventListener('DOMContentLoaded', init);
-
+    // Start on DOM ready (or immediately if DOM is already ready)
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+    } else {
+        init();
+    }
 })();
