@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Interactive graph concept for exploring relationships between EPFO circular topics.">
+    <title>EPFO Circular Archive · Relationship Graph Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+    <style>
+        :root {
+            --sans: "Inter", system-ui, sans-serif;
+            --mono: "JetBrains Mono", ui-monospace, monospace;
+            --bg: #f4f7fb;
+            --surface: #ffffff;
+            --ink: #102033;
+            --ink-2: #34475b;
+            --muted: #6b7d90;
+            --line: #dce5ed;
+            --line-strong: #b8c7d5;
+            --accent: #2563eb;
+            --accent-soft: #eaf2ff;
+            --navy: #193b5a;
+            --focus: rgba(37, 99, 235, 0.24);
+        }
+
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            min-width: 320px;
+            background: var(--bg);
+            color: var(--ink);
+            font-family: var(--sans);
+        }
+        button, select, input { font: inherit; }
+        button, select, input[type="range"] { cursor: pointer; }
+
+        .hub-banner {
+            background: #1e3a5f;
+            color: #ffffff;
+            padding: 10px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 12.5px;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .hub-banner a {
+            background: #2563eb;
+            color: #ffffff;
+            padding: 5px 12px;
+            border-radius: 6px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 11.5px;
+            transition: background 120ms ease;
+        }
+
+        .hub-banner a:hover {
+            background: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+    <div class="hub-banner">
+        <span>🚀 <strong>New:</strong> The complete <strong>EPFO Policy Intelligence Hub</strong> is live with real data, Policy Atlas, Milestone Timeline & Division Matrix!</span>
+        <a href="explore.html#network">Open Unified Hub →</a>
+    </div>
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 12px 24px;
+            border-bottom: 1px solid var(--line);
+            background: var(--surface);
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            min-width: 0;
+        }
+        .seal {
+            display: grid;
+            flex: 0 0 36px;
+            width: 36px;
+            height: 36px;
+            place-items: center;
+            border: 2px solid var(--navy);
+            border-radius: 50%;
+            color: var(--navy);
+            font-size: 10px;
+            font-weight: 700;
+        }
+        .brand h1 { margin: 0; font-size: 15px; letter-spacing: -0.01em; }
+        .brand p { margin: 2px 0 0; color: var(--muted); font-size: 11px; }
+        .demo-badge {
+            flex: 0 0 auto;
+            padding: 5px 9px;
+            border: 1px solid #f4c167;
+            border-radius: 999px;
+            background: #fff7df;
+            color: #78520b;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+        }
+
+        .hero {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 24px;
+            padding: 20px 24px 16px;
+            border-bottom: 1px solid var(--line);
+            background: var(--surface);
+        }
+        .hero h2 { margin: 0; font-size: 22px; letter-spacing: -0.025em; }
+        .hero p { max-width: 720px; margin: 6px 0 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
+        .summary {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            gap: 8px;
+        }
+        .summary-item {
+            min-width: 92px;
+            padding: 8px 10px;
+            border: 1px solid var(--line);
+            border-radius: 7px;
+            background: #f9fbfd;
+        }
+        .summary-item span { display: block; color: var(--muted); font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+        .summary-item strong { display: block; margin-top: 2px; font-family: var(--mono); font-size: 14px; }
+
+        .controls {
+            display: grid;
+            grid-template-columns: minmax(220px, 1.4fr) minmax(220px, 1.2fr) minmax(180px, 1fr) auto;
+            gap: 18px;
+            align-items: end;
+            padding: 12px 24px;
+            border-bottom: 1px solid var(--line);
+            background: var(--surface);
+        }
+        .control label, .control .label-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 6px;
+            color: var(--muted);
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .control output { color: var(--ink); font-family: var(--mono); }
+        .control input[type="range"] { width: 100%; accent-color: var(--accent); }
+        .select {
+            width: 100%;
+            height: 36px;
+            padding: 0 10px;
+            border: 1px solid var(--line-strong);
+            border-radius: 6px;
+            outline: none;
+            background: var(--surface);
+            color: var(--ink-2);
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--focus); }
+        .button {
+            height: 36px;
+            padding: 0 13px;
+            border: 1px solid var(--line-strong);
+            border-radius: 6px;
+            background: var(--surface);
+            color: var(--ink-2);
+            font-size: 12px;
+            font-weight: 700;
+        }
+        .button:hover { border-color: var(--accent); color: var(--accent); background: var(--accent-soft); }
+        .button:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+        .workspace {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 330px;
+            gap: 14px;
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 16px 24px 28px;
+        }
+        .graph-panel, .detail-panel {
+            position: relative;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            background: var(--surface);
+            box-shadow: 0 3px 12px rgba(26, 51, 76, 0.04);
+        }
+        .graph-panel { min-height: 620px; }
+        .graph-heading, .detail-heading {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 13px 16px;
+            border-bottom: 1px solid var(--line);
+            background: #fbfcfe;
+        }
+        .graph-heading h3, .detail-heading h3 { margin: 0; font-size: 13px; }
+        .graph-heading p, .detail-heading p { margin: 3px 0 0; color: var(--muted); font-size: 10px; line-height: 1.45; }
+        .legend { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 11px; color: var(--muted); font-size: 10px; }
+        .legend-item { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
+        .legend-node { width: 11px; height: 11px; border-radius: 50%; background: var(--accent); }
+        .legend-line { width: 22px; height: 3px; border-radius: 2px; background: #8fa3b5; }
+        #graph { width: 100%; height: 560px; }
+        #graph svg { display: block; width: 100%; height: 100%; }
+        .graph-note {
+            position: absolute;
+            left: 14px;
+            bottom: 12px;
+            padding: 6px 9px;
+            border: 1px solid var(--line);
+            border-radius: 5px;
+            background: rgba(255,255,255,0.92);
+            color: var(--muted);
+            font-size: 9px;
+            pointer-events: none;
+        }
+
+        .link-visible { stroke: #9aabba; stroke-opacity: 0.65; }
+        .link-hit { stroke: transparent; cursor: pointer; }
+        .link-visible.is-muted { stroke-opacity: 0.08; }
+        .link-visible.is-selected { stroke: var(--navy); stroke-opacity: 1; }
+        .node { cursor: grab; }
+        .node:active { cursor: grabbing; }
+        .node circle { stroke: #fff; stroke-width: 3px; filter: drop-shadow(0 2px 3px rgba(22, 45, 66, 0.14)); }
+        .node text { fill: var(--ink); font-family: var(--sans); font-size: 10px; font-weight: 700; paint-order: stroke; stroke: #fff; stroke-width: 4px; stroke-linejoin: round; pointer-events: none; }
+        .node.is-muted { opacity: 0.2; }
+        .node.is-selected circle { stroke: var(--navy); stroke-width: 5px; }
+        .node:focus { outline: none; }
+        .node:focus circle { stroke: var(--navy); stroke-width: 5px; }
+
+        .detail-panel { min-height: 620px; }
+        .detail-body { padding: 15px 16px 20px; }
+        .detail-placeholder { display: grid; min-height: 470px; place-items: center; padding: 28px; color: var(--muted); text-align: center; font-size: 12px; line-height: 1.6; }
+        .selected-title { margin: 0; font-size: 17px; line-height: 1.3; }
+        .selected-meta { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 9px; }
+        .pill { padding: 4px 7px; border-radius: 999px; background: #edf3f8; color: var(--ink-2); font-size: 9px; font-weight: 700; }
+        .section-title { margin: 20px 0 8px; color: var(--muted); font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; }
+        .connection-list { display: grid; gap: 7px; }
+        .connection {
+            display: grid;
+            grid-template-columns: 9px minmax(0, 1fr) auto;
+            gap: 8px;
+            align-items: center;
+            width: 100%;
+            padding: 8px 9px;
+            border: 1px solid var(--line);
+            border-radius: 6px;
+            background: var(--surface);
+            color: var(--ink-2);
+            text-align: left;
+            font-size: 10px;
+        }
+        button.connection:hover { border-color: var(--accent); background: var(--accent-soft); }
+        .connection-dot { width: 8px; height: 8px; border-radius: 50%; }
+        .connection strong { color: var(--ink); font-family: var(--mono); }
+        .document-list { display: grid; gap: 9px; }
+        .document {
+            padding: 10px;
+            border-left: 3px solid var(--line-strong);
+            background: #f8fafc;
+        }
+        .document span { display: block; color: var(--muted); font-family: var(--mono); font-size: 8px; }
+        .document strong { display: block; margin-top: 4px; color: var(--ink-2); font-size: 10px; line-height: 1.45; }
+        .demo-warning { margin-top: 18px; padding: 9px 10px; border: 1px solid #f4d089; border-radius: 6px; background: #fff9e9; color: #78520b; font-size: 9px; line-height: 1.5; }
+
+        .tooltip {
+            position: fixed;
+            z-index: 20;
+            max-width: 250px;
+            padding: 7px 9px;
+            border-radius: 6px;
+            background: #102033;
+            color: #fff;
+            box-shadow: 0 8px 20px rgba(16, 32, 51, 0.2);
+            font-size: 10px;
+            line-height: 1.5;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 100ms ease;
+        }
+
+        @media (max-width: 980px) {
+            .hero { align-items: flex-start; flex-direction: column; }
+            .summary { justify-content: flex-start; }
+            .controls { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .workspace { grid-template-columns: 1fr; }
+            .detail-panel { min-height: 0; }
+            .detail-placeholder { min-height: 220px; }
+        }
+        @media (max-width: 600px) {
+            .site-nav, .hero, .controls, .workspace { padding-left: 14px; padding-right: 14px; }
+            .brand p { display: none; }
+            .controls { grid-template-columns: 1fr; gap: 12px; }
+            .graph-heading { flex-direction: column; }
+            .legend { justify-content: flex-start; }
+            .graph-panel { min-height: 540px; }
+            #graph { height: 480px; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-nav">
+        <div class="brand">
+            <div class="seal" aria-hidden="true">EPFO</div>
+            <div>
+                <h1>Circular Archive · Relationship Graph</h1>
+                <p>Concept preview for topic connections and document discovery</p>
+            </div>
+        </div>
+        <span class="demo-badge">DEMO DATA</span>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h2>How EPFO circular topics connect</h2>
+            <p>Each node is a topic. A line appears when circulars link a primary topic with a secondary topic. Select a node or connection to inspect the circulars behind it; drag nodes and pan or zoom the canvas.</p>
+        </div>
+        <div class="summary" aria-live="polite">
+            <div class="summary-item"><span>Visible topics</span><strong id="visibleTopics">—</strong></div>
+            <div class="summary-item"><span>Relationships</span><strong id="visibleLinks">—</strong></div>
+            <div class="summary-item"><span>Shared circulars</span><strong id="sharedDocuments">—</strong></div>
+        </div>
+    </section>
+
+    <section class="controls" aria-label="Graph controls">
+        <div class="control">
+            <div class="label-row"><label for="yearRange">Relationship year</label><output id="yearOutput" for="yearRange">FY 2024–25</output></div>
+            <input id="yearRange" type="range" min="0" max="4" value="3" step="1">
+        </div>
+        <div class="control">
+            <div class="label-row"><label for="strengthRange">Minimum shared circulars</label><output id="strengthOutput" for="strengthRange">8+</output></div>
+            <input id="strengthRange" type="range" min="1" max="35" value="8" step="1">
+        </div>
+        <div class="control">
+            <label for="focusSelect">Focus a topic</label>
+            <select id="focusSelect" class="select"><option value="">All connected topics</option></select>
+        </div>
+        <button type="button" id="resetButton" class="button">Reset view</button>
+    </section>
+
+    <main class="workspace">
+        <section class="graph-panel" aria-labelledby="graphTitle">
+            <header class="graph-heading">
+                <div>
+                    <h3 id="graphTitle">Aggregated topic network</h3>
+                    <p id="graphSubtitle">Showing relationships with 8 or more shared circulars in FY 2024–25.</p>
+                </div>
+                <div class="legend" aria-label="Graph legend">
+                    <span class="legend-item"><span class="legend-node"></span>Size = topic volume</span>
+                    <span class="legend-item"><span class="legend-line"></span>Width = shared circulars</span>
+                </div>
+            </header>
+            <div id="graph"></div>
+            <div class="graph-note">Scroll to zoom · drag the background to pan · drag nodes to rearrange</div>
+        </section>
+
+        <aside class="detail-panel" aria-labelledby="detailTitle">
+            <header class="detail-heading">
+                <div>
+                    <h3 id="detailTitle">Selection details</h3>
+                    <p>Topic relationships and example circulars</p>
+                </div>
+            </header>
+            <div id="detailBody" class="detail-body">
+                <div class="detail-placeholder">Select a topic node to see its strongest connections, or select a line to inspect the shared circulars behind that relationship.</div>
+            </div>
+        </aside>
+    </main>
+
+    <div id="tooltip" class="tooltip" role="tooltip"></div>
+
+    <script>
+        (() => {
+            'use strict';
+
+            const years = [
+                { key: '2018', label: 'FY 2018–19' },
+                { key: '2020', label: 'FY 2020–21' },
+                { key: '2022', label: 'FY 2022–23' },
+                { key: '2024', label: 'FY 2024–25' },
+                { key: '2026', label: 'FY 2026–27' },
+            ];
+
+            const nodes = [
+                { id: 'hr', name: 'HR & Cadre', count: 2525, color: '#4f46e5' },
+                { id: 'training', name: 'Training', count: 1130, color: '#0891b2' },
+                { id: 'citizen', name: 'Citizen Care & RTI', count: 934, color: '#ea580c' },
+                { id: 'compliance', name: 'Compliance', count: 496, color: '#dc2626' },
+                { id: 'finance', name: 'Finance & Investment', count: 487, color: '#2563eb' },
+                { id: 'digital', name: 'IT, UAN & Digital', count: 388, color: '#7c3aed' },
+                { id: 'governance', name: 'Governance & CBT', count: 323, color: '#854d0e' },
+                { id: 'admin', name: 'Administration', count: 291, color: '#64748b' },
+                { id: 'language', name: 'Official Language', count: 274, color: '#be185d' },
+                { id: 'pension', name: 'Pension & EPS-95', count: 260, color: '#059669' },
+                { id: 'legal', name: 'Legal & Courts', count: 211, color: '#0284c7' },
+                { id: 'schemes', name: 'Schemes & Campaigns', count: 161, color: '#0d9488' },
+                { id: 'exempted', name: 'Exempted Establishments', count: 160, color: '#d97706' },
+            ];
+
+            const links = [
+                { source: 'hr', target: 'training', values: {2018: 38, 2020: 28, 2022: 44, 2024: 31, 2026: 16}, examples: [
+                    ['HRD/Training/2024/1181', 'Nomination of officers for leadership and team-building programme'],
+                    ['PDUNASS/Capacity/2024/287', 'Capacity-building programme for newly promoted officers'],
+                ]},
+                { source: 'hr', target: 'legal', values: {2018: 18, 2020: 12, 2022: 16, 2024: 27, 2026: 9}, examples: [
+                    ['HRM-IV/Legal/2024/9071', 'Instructions concerning service matters pending before tribunals'],
+                    ['Legal/CAT/2024/402', 'Compliance with tribunal orders in cadre cases'],
+                ]},
+                { source: 'hr', target: 'admin', values: {2018: 31, 2020: 19, 2022: 26, 2024: 34, 2026: 12}, examples: [
+                    ['HRD/Facilities/2024/1161', 'Revised instructions for devices provided to eligible officers'],
+                    ['HRM-V/Premises/2024/883', 'Residential accommodation entitlement for officers'],
+                ]},
+                { source: 'hr', target: 'language', values: {2018: 20, 2020: 11, 2022: 16, 2024: 23, 2026: 8}, examples: [
+                    ['HRD/OL-Cadre/2024/1219', 'Revision of pay scale for the Official Language cadre'],
+                ]},
+                { source: 'citizen', target: 'digital', values: {2018: 29, 2020: 17, 2022: 36, 2024: 42, 2026: 18}, examples: [
+                    ['WSU/Portal/2024/006', 'Simplification of the online joint declaration process'],
+                    ['CSD/EPFiGMS/2024/339', 'Integration of grievance monitoring with the member portal'],
+                ]},
+                { source: 'citizen', target: 'legal', values: {2018: 16, 2020: 9, 2022: 18, 2024: 21, 2026: 7}, examples: [
+                    ['Legal/Consumer/2024/315', 'Resolution of pending consumer-forum cases'],
+                ]},
+                { source: 'citizen', target: 'schemes', values: {2018: 12, 2020: 21, 2022: 24, 2024: 19, 2026: 11}, examples: [
+                    ['NAN-2.0/Outreach/2024/72', 'Nidhi Aapke Nikat outreach and grievance resolution campaign'],
+                ]},
+                { source: 'pension', target: 'digital', values: {2018: 15, 2020: 10, 2022: 48, 2024: 39, 2026: 17}, examples: [
+                    ['Pension/Higher-Wages/2024/41', 'Online validation of joint options for pension on higher wages'],
+                    ['Pension/DLC/2024/87', 'Face-authentication process for digital life certificates'],
+                ]},
+                { source: 'pension', target: 'legal', values: {2018: 13, 2020: 8, 2022: 45, 2024: 30, 2026: 12}, examples: [
+                    ['Pension/SC-Judgment/2024/44', 'Implementation of the Supreme Court judgment on higher pension'],
+                ]},
+                { source: 'pension', target: 'finance', values: {2018: 11, 2020: 7, 2022: 26, 2024: 24, 2026: 10}, examples: [
+                    ['Pension/Accounts/2024/908', 'Accounting treatment for pension contributions on higher wages'],
+                ]},
+                { source: 'compliance', target: 'legal', values: {2018: 32, 2020: 18, 2022: 28, 2024: 33, 2026: 15}, examples: [
+                    ['Compliance/7A/2024/63', 'Procedural safeguards for inquiries under Section 7A'],
+                    ['Legal/14B/2024/22', 'Application of court directions in damages proceedings'],
+                ]},
+                { source: 'compliance', target: 'digital', values: {2018: 18, 2020: 13, 2022: 27, 2024: 36, 2026: 20}, examples: [
+                    ['Compliance/Dashboard/2024/91', 'Monitoring inspections and compliance through digital dashboards'],
+                ]},
+                { source: 'compliance', target: 'exempted', values: {2018: 22, 2020: 8, 2022: 17, 2024: 25, 2026: 9}, examples: [
+                    ['C-II/Exemption/2024/118', 'Compliance audit of exempted establishments and private trusts'],
+                ]},
+                { source: 'finance', target: 'governance', values: {2018: 21, 2020: 11, 2022: 14, 2024: 26, 2026: 8}, examples: [
+                    ['CBT/FIC/2024/155', 'Agenda papers for the Finance and Investment Committee'],
+                ]},
+                { source: 'finance', target: 'digital', values: {2018: 19, 2020: 16, 2022: 22, 2024: 31, 2026: 13}, examples: [
+                    ['BSC/Reconciliation/2024/48', 'Digitisation of payment reconciliation and remittances'],
+                ]},
+                { source: 'finance', target: 'admin', values: {2018: 14, 2020: 8, 2022: 12, 2024: 18, 2026: 5}, examples: [
+                    ['Budget/Procurement/2024/344', 'Classification and depreciation of fixed assets'],
+                ]},
+                { source: 'governance', target: 'legal', values: {2018: 17, 2020: 6, 2022: 12, 2024: 15, 2026: 6}, examples: [
+                    ['CBT/Committee/2024/184', 'Reconstitution of committees under statutory provisions'],
+                ]},
+                { source: 'training', target: 'digital', values: {2018: 14, 2020: 25, 2022: 31, 2024: 28, 2026: 14}, examples: [
+                    ['PDUNASS/Digital/2024/49', 'Training on dashboards, MIS tools and key digital procedures'],
+                ]},
+                { source: 'training', target: 'language', values: {2018: 10, 2020: 7, 2022: 13, 2024: 17, 2026: 8}, examples: [
+                    ['PDUNASS/Hindi/2024/1223', 'Hindi training programme for departmental personnel'],
+                ]},
+                { source: 'schemes', target: 'compliance', values: {2018: 9, 2020: 24, 2022: 20, 2024: 16, 2026: 9}, examples: [
+                    ['PMRPY/Compliance/2024/73', 'Compliance verification for employment incentive schemes'],
+                ]},
+                { source: 'schemes', target: 'digital', values: {2018: 8, 2020: 18, 2022: 23, 2024: 21, 2026: 12}, examples: [
+                    ['Campaign/Portal/2024/49598', 'Digital communication for social-security campaigns'],
+                ]},
+                { source: 'admin', target: 'digital', values: {2018: 17, 2020: 15, 2022: 19, 2024: 25, 2026: 10}, examples: [
+                    ['IS/Procurement/2024/1161', 'Procurement guidance for laptops and digital devices'],
+                ]},
+            ];
+
+            const nodeById = new Map(nodes.map(node => [node.id, node]));
+            const radius = d3.scaleSqrt().domain(d3.extent(nodes, node => node.count)).range([16, 39]);
+            const yearRange = document.getElementById('yearRange');
+            const strengthRange = document.getElementById('strengthRange');
+            const focusSelect = document.getElementById('focusSelect');
+            const resetButton = document.getElementById('resetButton');
+            const graphElement = document.getElementById('graph');
+            const detailBody = document.getElementById('detailBody');
+            const tooltip = document.getElementById('tooltip');
+            let simulation;
+            let svg;
+            let zoomLayer;
+            let zoomBehavior;
+            let currentSelection = null;
+
+            nodes.slice().sort((a, b) => a.name.localeCompare(b.name)).forEach(node => focusSelect.add(new Option(node.name, node.id)));
+            yearRange.addEventListener('input', renderGraph);
+            strengthRange.addEventListener('input', renderGraph);
+            focusSelect.addEventListener('change', () => focusSelect.value ? selectNode(focusSelect.value) : clearSelection());
+            resetButton.addEventListener('click', resetView);
+            window.addEventListener('resize', debounce(renderGraph, 140));
+
+            function state() {
+                const year = years[Number(yearRange.value)];
+                return { year, threshold: Number(strengthRange.value) };
+            }
+
+            function visibleData() {
+                const { year, threshold } = state();
+                const visibleLinks = links.filter(link => (link.values[year.key] || 0) >= threshold).map(link => ({ ...link, value: link.values[year.key] || 0 }));
+                const nodeIds = new Set(visibleLinks.flatMap(link => [sourceId(link), targetId(link)]));
+                return { visibleLinks, visibleNodes: nodes.filter(node => nodeIds.has(node.id)) };
+            }
+
+            function sourceId(link) { return typeof link.source === 'object' ? link.source.id : link.source; }
+            function targetId(link) { return typeof link.target === 'object' ? link.target.id : link.target; }
+
+            function renderGraph() {
+                const { year, threshold } = state();
+                const { visibleLinks, visibleNodes } = visibleData();
+                currentSelection = null;
+                focusSelect.value = '';
+                detailBody.innerHTML = '<div class="detail-placeholder">Select a topic node to see its strongest connections, or select a line to inspect the shared circulars behind that relationship.</div>';
+                document.getElementById('yearOutput').textContent = year.label;
+                document.getElementById('strengthOutput').textContent = `${threshold}+`;
+                document.getElementById('graphSubtitle').textContent = `Showing relationships with ${threshold} or more shared circulars in ${year.label}.`;
+                document.getElementById('visibleTopics').textContent = visibleNodes.length;
+                document.getElementById('visibleLinks').textContent = visibleLinks.length;
+                document.getElementById('sharedDocuments').textContent = d3.sum(visibleLinks, link => link.value).toLocaleString('en-IN');
+                const visibleNodeIds = new Set(visibleNodes.map(node => node.id));
+                [...focusSelect.options].forEach(option => { option.disabled = Boolean(option.value) && !visibleNodeIds.has(option.value); });
+                graphElement.innerHTML = '';
+                if (simulation) simulation.stop();
+                if (!visibleLinks.length) {
+                    graphElement.innerHTML = '<div class="detail-placeholder">No relationships meet this strength threshold. Lower the minimum shared-circular value.</div>';
+                    return;
+                }
+
+                const width = graphElement.clientWidth || 900;
+                const height = graphElement.clientHeight || 560;
+                const graphNodes = visibleNodes.map(node => ({ ...node }));
+                const graphLinks = visibleLinks.map(link => ({ ...link, source: sourceId(link), target: targetId(link) }));
+                svg = d3.select(graphElement).append('svg').attr('viewBox', `0 0 ${width} ${height}`).attr('role', 'img')
+                    .attr('aria-label', `Interactive topic relationship network for ${year.label}`);
+                zoomLayer = svg.append('g');
+                zoomBehavior = d3.zoom().scaleExtent([0.55, 2.6]).on('zoom', event => zoomLayer.attr('transform', event.transform));
+                svg.call(zoomBehavior).on('dblclick.zoom', null);
+
+                const maxValue = d3.max(graphLinks, link => link.value) || 1;
+                const linkWidth = d3.scaleSqrt().domain([1, maxValue]).range([1, 8]);
+                const visibleLink = zoomLayer.append('g').selectAll('line').data(graphLinks).enter().append('line')
+                    .attr('class', 'link-visible').attr('stroke-width', link => linkWidth(link.value));
+                const hitLink = zoomLayer.append('g').selectAll('line').data(graphLinks).enter().append('line')
+                    .attr('class', 'link-hit').attr('stroke-width', link => Math.max(15, linkWidth(link.value) + 10))
+                    .attr('tabindex', 0).attr('role', 'button')
+                    .attr('aria-label', link => `${nodeById.get(sourceId(link)).name} and ${nodeById.get(targetId(link)).name}, ${link.value} shared circulars`)
+                    .on('click', (event, link) => { event.stopPropagation(); selectLink(link); })
+                    .on('keydown', (event, link) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); selectLink(link); } })
+                    .on('mouseenter focus', (event, link) => showTooltip(event, `<strong>${nodeById.get(sourceId(link)).name} ↔ ${nodeById.get(targetId(link)).name}</strong><br>${link.value} shared circulars`))
+                    .on('mousemove', moveTooltip).on('mouseleave blur', hideTooltip);
+
+                const node = zoomLayer.append('g').selectAll('g').data(graphNodes).enter().append('g').attr('class', 'node')
+                    .attr('tabindex', 0).attr('role', 'button')
+                    .attr('aria-label', item => `${item.name}, ${item.count.toLocaleString('en-IN')} total circulars`)
+                    .on('click', (event, item) => { event.stopPropagation(); selectNode(item.id); })
+                    .on('keydown', (event, item) => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); selectNode(item.id); } })
+                    .on('mouseenter focus', (event, item) => showTooltip(event, `<strong>${item.name}</strong><br>${item.count.toLocaleString('en-IN')} circulars in the complete archive`))
+                    .on('mousemove', moveTooltip).on('mouseleave blur', hideTooltip)
+                    .call(d3.drag().on('start', dragStarted).on('drag', dragged).on('end', dragEnded));
+                node.append('circle').attr('r', item => radius(item.count)).attr('fill', item => item.color);
+                node.append('text').attr('text-anchor', 'middle').attr('dy', item => radius(item.count) + 15).text(item => shortName(item.name));
+
+                svg.on('click', clearSelection);
+                simulation = d3.forceSimulation(graphNodes)
+                    .force('link', d3.forceLink(graphLinks).id(item => item.id).distance(link => 165 - Math.min(55, link.value)).strength(0.55))
+                    .force('charge', d3.forceManyBody().strength(-560))
+                    .force('center', d3.forceCenter(width / 2, height / 2))
+                    .force('collision', d3.forceCollide().radius(item => radius(item.count) + 29).iterations(2))
+                    .force('x', d3.forceX(width / 2).strength(0.04))
+                    .force('y', d3.forceY(height / 2).strength(0.05))
+                    .on('tick', () => {
+                        graphNodes.forEach(item => {
+                            const padding = radius(item.count) + 8;
+                            item.x = Math.max(padding, Math.min(width - padding, item.x));
+                            item.y = Math.max(padding, Math.min(height - padding - 18, item.y));
+                        });
+                        visibleLink.attr('x1', link => link.source.x).attr('y1', link => link.source.y).attr('x2', link => link.target.x).attr('y2', link => link.target.y);
+                        hitLink.attr('x1', link => link.source.x).attr('y1', link => link.source.y).attr('x2', link => link.target.x).attr('y2', link => link.target.y);
+                        node.attr('transform', item => `translate(${item.x},${item.y})`);
+                    });
+            }
+
+            function selectNode(nodeId) {
+                const { visibleLinks } = visibleData();
+                if (!visibleLinks.some(link => sourceId(link) === nodeId || targetId(link) === nodeId)) return;
+                currentSelection = { type: 'node', id: nodeId };
+                focusSelect.value = nodeId;
+                const neighbours = new Set([nodeId]);
+                visibleLinks.forEach(link => {
+                    if (sourceId(link) === nodeId) neighbours.add(targetId(link));
+                    if (targetId(link) === nodeId) neighbours.add(sourceId(link));
+                });
+                d3.selectAll('.node').classed('is-selected', item => item.id === nodeId).classed('is-muted', item => !neighbours.has(item.id));
+                d3.selectAll('.link-visible').classed('is-selected', link => sourceId(link) === nodeId || targetId(link) === nodeId)
+                    .classed('is-muted', link => sourceId(link) !== nodeId && targetId(link) !== nodeId);
+                renderNodeDetail(nodeId, visibleLinks);
+            }
+
+            function selectLink(link) {
+                const a = sourceId(link);
+                const b = targetId(link);
+                currentSelection = { type: 'link', a, b };
+                focusSelect.value = '';
+                d3.selectAll('.node').classed('is-selected', item => item.id === a || item.id === b).classed('is-muted', item => item.id !== a && item.id !== b);
+                d3.selectAll('.link-visible').classed('is-selected', item => sourceId(item) === a && targetId(item) === b || sourceId(item) === b && targetId(item) === a)
+                    .classed('is-muted', item => !(sourceId(item) === a && targetId(item) === b || sourceId(item) === b && targetId(item) === a));
+                renderLinkDetail(link);
+            }
+
+            function clearSelection() {
+                currentSelection = null;
+                focusSelect.value = '';
+                d3.selectAll('.node, .link-visible').classed('is-selected', false).classed('is-muted', false);
+                detailBody.innerHTML = '<div class="detail-placeholder">Select a topic node to see its strongest connections, or select a line to inspect the shared circulars behind that relationship.</div>';
+            }
+
+            function renderNodeDetail(nodeId, visibleLinks) {
+                const selected = nodeById.get(nodeId);
+                const connections = visibleLinks.filter(link => sourceId(link) === nodeId || targetId(link) === nodeId)
+                    .map(link => ({ link, other: nodeById.get(sourceId(link) === nodeId ? targetId(link) : sourceId(link)) }))
+                    .sort((a, b) => b.link.value - a.link.value);
+                const examples = uniqueExamples(connections.flatMap(item => item.link.examples)).slice(0, 3);
+                detailBody.innerHTML = `
+                    <h4 class="selected-title">${selected.name}</h4>
+                    <div class="selected-meta"><span class="pill">${selected.count.toLocaleString('en-IN')} archive circulars</span><span class="pill">${connections.length} visible relationships</span></div>
+                    <h5 class="section-title">Strongest connections</h5>
+                    <div class="connection-list">${connections.map(item => `<button type="button" class="connection" data-source="${sourceId(item.link)}" data-target="${targetId(item.link)}"><span class="connection-dot" style="background:${item.other.color}"></span><span>${item.other.name}</span><strong>${item.link.value}</strong></button>`).join('')}</div>
+                    <h5 class="section-title">Example circulars across these links</h5>
+                    <div class="document-list">${renderExamples(examples)}</div>
+                    <div class="demo-warning">Connection counts and example titles on this page are illustrative. The production graph would use the secondary-topic assignments generated from the archive.</div>`;
+                detailBody.querySelectorAll('.connection').forEach(button => button.addEventListener('click', () => {
+                    const relation = visibleLinks.find(link => sourceId(link) === button.dataset.source && targetId(link) === button.dataset.target);
+                    if (relation) selectLink(relation);
+                }));
+            }
+
+            function renderLinkDetail(link) {
+                const source = nodeById.get(sourceId(link));
+                const target = nodeById.get(targetId(link));
+                const { year } = state();
+                detailBody.innerHTML = `
+                    <h4 class="selected-title">${source.name} ↔ ${target.name}</h4>
+                    <div class="selected-meta"><span class="pill">${link.value} shared circulars</span><span class="pill">${year.label}</span></div>
+                    <h5 class="section-title">Why this connection exists</h5>
+                    <p style="margin:0;color:var(--ink-2);font-size:11px;line-height:1.6">These circulars were assigned to one topic as their primary subject and the other as a strong secondary subject.</p>
+                    <h5 class="section-title">Example matching circulars</h5>
+                    <div class="document-list">${renderExamples(link.examples)}</div>
+                    <div class="demo-warning">In the live explorer, selecting a relationship would open the actual matching circulars in the same document drawer used by the Atlas and Evolution tabs.</div>`;
+            }
+
+            function renderExamples(examples) {
+                return examples.map(([number, title]) => `<article class="document"><span>${number}</span><strong>${title}</strong></article>`).join('');
+            }
+
+            function uniqueExamples(examples) {
+                const seen = new Set();
+                return examples.filter(example => !seen.has(example[0]) && seen.add(example[0]));
+            }
+
+            function resetView() {
+                yearRange.value = 3;
+                strengthRange.value = 8;
+                renderGraph();
+            }
+
+            function shortName(name) {
+                return name.length > 22 ? `${name.slice(0, 21)}…` : name;
+            }
+
+            function dragStarted(event) {
+                if (!event.active) simulation.alphaTarget(0.25).restart();
+                event.subject.fx = event.subject.x;
+                event.subject.fy = event.subject.y;
+            }
+            function dragged(event) { event.subject.fx = event.x; event.subject.fy = event.y; }
+            function dragEnded(event) {
+                if (!event.active) simulation.alphaTarget(0);
+                event.subject.fx = null;
+                event.subject.fy = null;
+            }
+
+            function showTooltip(event, html) { tooltip.innerHTML = html; tooltip.style.opacity = '1'; moveTooltip(event); }
+            function moveTooltip(event) {
+                const bounds = event.currentTarget?.getBoundingClientRect?.();
+                const x = Number.isFinite(event.clientX) ? event.clientX : (bounds ? bounds.left + bounds.width / 2 : 0);
+                const y = Number.isFinite(event.clientY) ? event.clientY : (bounds ? bounds.top + bounds.height / 2 : 0);
+                tooltip.style.left = `${Math.min(window.innerWidth - 270, x + 12)}px`;
+                tooltip.style.top = `${Math.min(window.innerHeight - 90, y + 12)}px`;
+            }
+            function hideTooltip() { tooltip.style.opacity = '0'; }
+            function debounce(fn, delay) { let timer; return (...args) => { clearTimeout(timer); timer = setTimeout(() => fn(...args), delay); }; }
+
+            renderGraph();
+        })();
+    </script>
+</body>
+</html>
