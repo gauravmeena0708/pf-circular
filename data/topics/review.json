@@ -1,6 +1,6 @@
 {
-  "unclassified_count": 1894,
-  "review_count": 2739,
+  "unclassified_count": 1734,
+  "review_count": 2639,
   "sample": [
     {
       "id": 10,
@@ -11,30 +11,6 @@
       "assigned_domain": "exempted_establishments"
     },
     {
-      "id": 18,
-      "title": "Calendar of sittings of Monsoon Session 2026 - Regarding Fiae No :PQ/92020Calendarofsitingsandalotnenisfdays/2825 dated 09/07/2026",
-      "circular_no": "Fiae No :PQ/92020Calendarofsitingsandalotnenisfdays/2825",
-      "fy": "2026-2027",
-      "confidence": "low",
-      "assigned_domain": "governance_cbt"
-    },
-    {
-      "id": 19,
-      "title": "Prompt Interest credit @8.25% for 2025-2026 in CITES 2.01 - Regarding No:WSU/5(1)2005/Annual Accts/2026-2027/E-789534/23 dated 09/07/2026",
-      "circular_no": "No:WSU/5(1)2005/Annual Accts/2026-2027/E-789534/23",
-      "fy": "2026-2027",
-      "confidence": "low",
-      "assigned_domain": "unclassified"
-    },
-    {
-      "id": 22,
-      "title": "Office order regarding the GRC order in JTO and STO cadres - Regasrding File No: HRM-X/8(2)2021/TransferpolicyofOLCadre/2784 dated 08/07/2026",
-      "circular_no": "File No: HRM-X/8(2)2021/TransferpolicyofOLCadre/2784",
-      "fy": "2026-2027",
-      "confidence": "low",
-      "assigned_domain": "hr_personnel_cadre"
-    },
-    {
       "id": 25,
       "title": "Revision of Fee payable to panel advocates of the Central Board/EPFO - Regarding",
       "circular_no": "No. Legal Consultation-Part (1)Circular/E50586/2759",
@@ -43,28 +19,12 @@
       "assigned_domain": "legal_litigation"
     },
     {
-      "id": 34,
-      "title": "Office Order for identification of Sensitive and Non-sensitive Post_17-06-2026 - Regarding File",
-      "circular_no": "File No.:-HRD/4(1)2010/Misc.Circular/Pt.-1/1582",
+      "id": 29,
+      "title": "Circular for Additional charge to Accounts Officers in the absence of sufficient number of APFCs in the Office- Regarding",
+      "circular_no": "No. HRD-1/8/2024/Misc.-Circulars/1584",
       "fy": "2026-2027",
       "confidence": "low",
       "assigned_domain": "hr_personnel_cadre"
-    },
-    {
-      "id": 39,
-      "title": "Modifications in the Audit Manual-Reconstitution of Committee 'A' & Committee 'B'",
-      "circular_no": "No. Audit/ 1(07)2023/QuarterlymeetingCPFC/-Part(1)/18",
-      "fy": "2026-2027",
-      "confidence": "none",
-      "assigned_domain": "unclassified"
-    },
-    {
-      "id": 47,
-      "title": "Change in the date of holiday on account of Id-u-Zuha (Bakrid)- Regarding संख्या: एच.आर.डी/12(1) 2011/Holiday/Pt./1566 dated 26/05/2026",
-      "circular_no": "संख्या: एच.आर.डी/12(1) 2011/Holiday/Pt./1566",
-      "fy": "2026-2027",
-      "confidence": "low",
-      "assigned_domain": "unclassified"
     },
     {
       "id": 54,
@@ -75,12 +35,20 @@
       "assigned_domain": "compliance_recovery"
     },
     {
+      "id": 59,
+      "title": "Circular for Additional charge to Accounts Officers in the absence of sufficient number of APFCs in the Office - Regarding",
+      "circular_no": "No. HRD-1/8/2024/Misc.-Circulars/1554",
+      "fy": "2026-2027",
+      "confidence": "low",
+      "assigned_domain": "hr_personnel_cadre"
+    },
+    {
       "id": 70,
       "title": "Nominations for of RC-I & RC-II (Preferably OICs) on various Dashboards, MIS Tools, Key SOPs CoSS, Leadership, Team Building, Goal Setting, Communication Skills, Strategic Decision Making Through Systems and Tools - regarding",
       "circular_no": "No.V8/13/48/2026-27/PDUNASS/TrainingforRC-I&RCII/Preferably OICs/49",
       "fy": "2026-2027",
       "confidence": "low",
-      "assigned_domain": "training_research"
+      "assigned_domain": "compliance_recovery"
     },
     {
       "id": 72,
@@ -99,28 +67,20 @@
       "assigned_domain": "compliance_recovery"
     },
     {
-      "id": 74,
-      "title": "Instructions on Schedule of Fixed Assets, Classification of Assets and Rates of Depreciation- Regarding",
-      "circular_no": "No. BSC-1(12025-26/Main_File /13/344",
+      "id": 83,
+      "title": "Holding meeting of EPF Central Staff Welfare Committee & EPF Central Sports Promotion Board – forwarding agenda items for discussion - regarding",
+      "circular_no": "No. HRD-II/meeting/CSWC&CSPB/2024 (E-986819)/1",
       "fy": "2026-2027",
       "confidence": "low",
-      "assigned_domain": "unclassified"
+      "assigned_domain": "hr_personnel_cadre"
     },
     {
-      "id": 87,
-      "title": "Release of additional fund for the year 2025-26 (RE) in respect of Welfare Activities from the staff Welfare Fund - Regarding",
-      "circular_no": "No. HRD-II/Staff_Welfare_Fund(2025-2026) (E-1143626)/16703",
+      "id": 91,
+      "title": "Circular for Additional charge to Accounts Officers in the absence of sufficient number of APFCs in the Office- Regarding HRD-1/8/2024/Misc-Circulars/1529 dated 24/03/2026",
+      "circular_no": "HRD-1/8/2024/Misc-Circulars/1529",
       "fy": "2025-2026",
       "confidence": "low",
-      "assigned_domain": "finance_accounts_invest"
-    },
-    {
-      "id": 88,
-      "title": "Release of additional fund for the year 2025-26 (RE) in respect of Sports Activities -Regarding",
-      "circular_no": "No.HRD-II/2025-2026/RevisedEstimate_BudgetEstimate(E-1226839)/16704",
-      "fy": "2025-2026",
-      "confidence": "low",
-      "assigned_domain": "finance_accounts_invest"
+      "assigned_domain": "hr_personnel_cadre"
     },
     {
       "id": 101,
@@ -131,20 +91,12 @@
       "assigned_domain": "official_language"
     },
     {
-      "id": 106,
-      "title": "Leveraging forthcoming Nidhi Aapke Nikat (NAN 2.0) on 27 March 2026 for systematic resolution of pending consumer forum cases - Regarding No: Legal/2026/2/Misc/E-1265224 dated 05/03/2026",
-      "circular_no": "No: Legal/2026/2/Misc/E-1265224",
+      "id": 105,
+      "title": "Coverage under CCS (Pension) Rules, 1972 in certain category of cases- Regarding File No: HRD/58/2017/NSDL/1524 dated 06/03/2026",
+      "circular_no": "File No: HRD/58/2017/NSDL/1524",
       "fy": "2025-2026",
       "confidence": "low",
       "assigned_domain": "pension_eps"
-    },
-    {
-      "id": 109,
-      "title": "Reinstatement of Physical Transfer of remittances - Regarding",
-      "circular_no": "No. BSC-12(1)2025/Remittances /48/16068",
-      "fy": "2025-2026",
-      "confidence": "low",
-      "assigned_domain": "finance_accounts_invest"
     },
     {
       "id": 111,
@@ -179,6 +131,14 @@
       "assigned_domain": "hr_personnel_cadre"
     },
     {
+      "id": 122,
+      "title": "Additional charge to Accounts Officers in the absence of sufficient number of APFCs in the Office- Regarding",
+      "circular_no": "No. HRD-1/8/2024/Misc.-Circulars/1498",
+      "fy": "2025-2026",
+      "confidence": "low",
+      "assigned_domain": "hr_personnel_cadre"
+    },
+    {
       "id": 124,
       "title": "Acceptance of Voluntary Retirement from Service (VRS) in respect of Shri Manoj Yadav, Regional P.F. Commissioner-I, ZO Faridabad under CCS (Pension) Rules - Regarding",
       "circular_no": "No.: HRM-I/A-10(98)98/Part-111/ 947",
@@ -192,14 +152,6 @@
       "circular_no": "HRD/29/2022/Cadre-Restructuring/SanctionedStrength/1495",
       "fy": "2025-2026",
       "confidence": "low",
-      "assigned_domain": "governance_cbt"
-    },
-    {
-      "id": 127,
-      "title": "Advisory for Annual General Transfers in r/o Group ‘A’, ‘B’ & ‘C’ Cadres – Regarding",
-      "circular_no": "No. HRM-I/TP/2025/942",
-      "fy": "2025-2026",
-      "confidence": "low",
       "assigned_domain": "hr_personnel_cadre"
     },
     {
@@ -211,20 +163,12 @@
       "assigned_domain": "hr_personnel_cadre"
     },
     {
-      "id": 141,
-      "title": "Constitution of Representation Committee against the premature retirement under FR 56j & Rule 42 of the CCS Pension Rules 2020- Reg. File No: A-45011/124/2024-HRM-IV/542 dated 12/01/2026",
-      "circular_no": "File No: A-45011/124/2024-HRM-IV/542",
+      "id": 161,
+      "title": "Additional charge to Accounts Officers in the absence of sufficient number of APFCs in the Office - Regarding",
+      "circular_no": "No. HRD-1/8/2024/Misc.-Circular/1471",
       "fy": "2025-2026",
       "confidence": "low",
-      "assigned_domain": "unclassified"
-    },
-    {
-      "id": 153,
-      "title": "Simplification of Joint Declaration Process– Acceptance of Transgender Identity Certificate/Card for Change in Name and Gender - Regarding No: WSU/JointDeclaration/E-54018/2025-26/43 dated 26/12/2025",
-      "circular_no": "No: WSU/JointDeclaration/E-54018/2025-26/43",
-      "fy": "2025-2026",
-      "confidence": "low",
-      "assigned_domain": "it_digital_services"
+      "assigned_domain": "hr_personnel_cadre"
     },
     {
       "id": 167,
@@ -243,22 +187,6 @@
       "assigned_domain": "hr_personnel_cadre"
     },
     {
-      "id": 182,
-      "title": "Calendar and instruction for sitting of forthcoming Winter Session 2025 of Parliament - Regarding File No :PQ/95/2020/Calendarofsittingsandallotmentofdays/13971 dated 25/11/2025",
-      "circular_no": "File No :PQ/95/2020/Calendarofsittingsandallotmentofdays/13971",
-      "fy": "2025-2026",
-      "confidence": "low",
-      "assigned_domain": "governance_cbt"
-    },
-    {
-      "id": 193,
-      "title": "Submission of RE for the year 2025-26 and BE for the year 2026-27 towards welfare activities - Regarding",
-      "circular_no": "No.HR-II/Staff Welfare Fund (2025-2026)/13759",
-      "fy": "2025-2026",
-      "confidence": "low",
-      "assigned_domain": "finance_accounts_invest"
-    },
-    {
       "id": 206,
       "title": "Circular on \" Instructions for ensuring fairness, transparency and accuracy in Audit process\" - Regarding",
       "circular_no": "No. Audit/PolicymatterCirculars/2025/40",
@@ -267,28 +195,12 @@
       "assigned_domain": "finance_accounts_invest"
     },
     {
-      "id": 215,
-      "title": "Expenditure on Gifts on account of festivals- Regarding",
-      "circular_no": "No.HRD-1/8/2024/Misc.Circular/1446",
+      "id": 218,
+      "title": "Nomination for training program on \"Vigilance Administration and Disciplinary Proceedings\" - Regarding",
+      "circular_no": "No.V8/13/8/2025-26/PDUNASS/trg-cal-2025-26/478",
       "fy": "2025-2026",
       "confidence": "low",
-      "assigned_domain": "unclassified"
-    },
-    {
-      "id": 235,
-      "title": "Implementation of revised scholarship amount for female students - Regarding No:HRD-II/Staff_Welfare_Fund_(2025-2026)/E-1143626/12919 dated 19/09/2025",
-      "circular_no": "No:HRD-II/Staff_Welfare_Fund_(2025-2026)/E-1143626/12919",
-      "fy": "2025-2026",
-      "confidence": "low",
-      "assigned_domain": "unclassified"
-    },
-    {
-      "id": 236,
-      "title": "Adoption of Unified Pension Scheme - Regarding",
-      "circular_no": "No. (E-981962)HRID-ILV60/2025/UPS-Adoption/1418",
-      "fy": "2025-2026",
-      "confidence": "low",
-      "assigned_domain": "unclassified"
+      "assigned_domain": "hr_personnel_cadre"
     },
     {
       "id": 237,
@@ -299,12 +211,28 @@
       "assigned_domain": "finance_accounts_invest"
     },
     {
+      "id": 238,
+      "title": "Simplification/Revision of Delegation of Power for exceptional transactions – Regarding",
+      "circular_no": "No. Finance/Coord/Taskforce-Delegationofpowers/2024/34",
+      "fy": "2025-2026",
+      "confidence": "low",
+      "assigned_domain": "it_digital_services"
+    },
+    {
+      "id": 239,
+      "title": "Simplification of Transfer Claims - Transfer Certificate in Annexure K now made available in Member Portal – Regarding No: WSU/TransferClaimPt1/E-1163369/2025-26/33 dated 18/09/2025",
+      "circular_no": "No: WSU/TransferClaimPt1/E-1163369/2025-26/33",
+      "fy": "2025-2026",
+      "confidence": "low",
+      "assigned_domain": "it_digital_services"
+    },
+    {
       "id": 240,
       "title": "Introduction of Doubles Events for Women in Table Tennis, Badminton, and Carrom from 2025-26 File",
       "circular_no": "File No. HRD-I/Sports. Fund /2025-26/35",
       "fy": "2025-2026",
       "confidence": "low",
-      "assigned_domain": "unclassified"
+      "assigned_domain": "hr_personnel_cadre"
     },
     {
       "id": 244,
@@ -323,12 +251,12 @@
       "assigned_domain": "governance_cbt"
     },
     {
-      "id": 251,
-      "title": "Circular regarding Orientation Program for newly promoted APFCs on the EPFO website - Regarding स/ं",
-      "circular_no": "स/ं No.v8/13/20/2025-26/PDUNASS /Orientation program for APFCs on Promotion/389",
+      "id": 249,
+      "title": "राजभाषा कार्यान्वयन समिति की बैठक एवं कार्यशाला का नियमित आयोजन करनेके संबंध में। पत्र सं:    हि.का.ए./ति. बैठक/समीक्षा/2021/667 dated 01/09/2025",
+      "circular_no": "पत्र सं:    हि.का.ए./ति. बैठक/समीक्षा/2021/667",
       "fy": "2025-2026",
       "confidence": "low",
-      "assigned_domain": "hr_personnel_cadre"
+      "assigned_domain": "training_research"
     },
     {
       "id": 252,
@@ -339,49 +267,9 @@
       "assigned_domain": "finance_accounts_invest"
     },
     {
-      "id": 253,
-      "title": "Allocation of funds towards Sports Activities & Sports Calendar for the Year 2025-26 - Regarding File No: HRD-/Sports_Fund/2025-26/31 dated 27/08/2025",
-      "circular_no": "File No: HRD-/Sports_Fund/2025-26/31",
-      "fy": "2025-2026",
-      "confidence": "low",
-      "assigned_domain": "unclassified"
-    },
-    {
       "id": 256,
       "title": "क.भ.नि.सं. मुख्यालय में 14 सितम्बर, 2025 से 29 सितम्बर, 2025 तक हिंदी पखवाड़े का आयोजन के संबंध में अपील । पत्र संख्या:  अर्धशासकीय पत्र संख्या: हि.अ/ 8(7)2023/हिंदी पखवाडा/1630 dated 20/08/2025",
       "circular_no": "पत्र संख्या:  अर्धशासकीय पत्र संख्या: हि.अ/ 8(7)2023/हिंदी पखवाडा/1630",
-      "fy": "2025-2026",
-      "confidence": "none",
-      "assigned_domain": "unclassified"
-    },
-    {
-      "id": 259,
-      "title": "Circular: Enhancement of Ex Gratia amount under Death Relief Fund to Rs. 15 Lakh (Rupees fifteen Lakh only) in the event of death of an employee of the Central Board - Regarding File",
-      "circular_no": "File No. HRD-II/DeathReliefFund/2025-26/24",
-      "fy": "2025-2026",
-      "confidence": "low",
-      "assigned_domain": "unclassified"
-    },
-    {
-      "id": 261,
-      "title": "Instructions regarding transfer of subsidy from A/c 24 to A/c 22 of ROs - Regarding",
-      "circular_no": "No.BKG-12/1/2020-BKG/E-13786/191/23",
-      "fy": "2025-2026",
-      "confidence": "low",
-      "assigned_domain": "unclassified"
-    },
-    {
-      "id": 262,
-      "title": "Circular for Holidays to be observed in Central government Offices during the Year 2026 - Regarding HRD/12(1)2011/Holiday/Pt. I1403 dated 13/08/2025",
-      "circular_no": "HRD/12(1)2011/Holiday/Pt. I1403",
-      "fy": "2025-2026",
-      "confidence": "low",
-      "assigned_domain": "unclassified"
-    },
-    {
-      "id": 263,
-      "title": "Simplification of Death claims - Non-requirement of Guardianship Certificate for settlements to bank accounts of minor children - Regarding WSU/Death Claims/E-1115891/2025-26/25 dated 13/08/2025",
-      "circular_no": "WSU/Death Claims/E-1115891/2025-26/25",
       "fy": "2025-2026",
       "confidence": "none",
       "assigned_domain": "unclassified"
@@ -392,15 +280,15 @@
       "circular_no": "HRD-I/85/2024/RationalisationOfOffices/Hyderabad/1399",
       "fy": "2025-2026",
       "confidence": "low",
-      "assigned_domain": "unclassified"
+      "assigned_domain": "hr_personnel_cadre"
     },
     {
-      "id": 277,
-      "title": "Grant of Senior Time Scale -Regarding No:HRM-II/S-4(3)2019/E-9739/705 dated 23/07/2025",
-      "circular_no": "No:HRM-II/S-4(3)2019/E-9739/705",
+      "id": 282,
+      "title": "Additional charge to Accounts Officers in the absence of sufficient number of APFCs in the Office – Regarding",
+      "circular_no": "No. (E-882775) HRD-1/8/2024/Misc.-Circulars /135",
       "fy": "2025-2026",
       "confidence": "low",
-      "assigned_domain": "unclassified"
+      "assigned_domain": "hr_personnel_cadre"
     },
     {
       "id": 290,
@@ -419,25 +307,9 @@
       "assigned_domain": "unclassified"
     },
     {
-      "id": 293,
-      "title": "Calendar and Instructions for Sittings of forthcoming Monsoon Session 2025 of Parliament- Regarding File No:PQ/95/2020/CalendarOfSittingAllotmentDays/9435 dated 07/07/2025",
-      "circular_no": "File No:PQ/95/2020/CalendarOfSittingAllotmentDays/9435",
-      "fy": "2025-2026",
-      "confidence": "low",
-      "assigned_domain": "governance_cbt"
-    },
-    {
       "id": 295,
       "title": "Modification in the Office Order dated 23.04.2025 regarding re-distribution of Posts of Commissioner Cadre among Regional Offices – Regarding HRD/29/2022/Cadre-Restructuring/SanctionedStrength/1384 dated 03/07/2025",
       "circular_no": "HRD/29/2022/Cadre-Restructuring/SanctionedStrength/1384",
-      "fy": "2025-2026",
-      "confidence": "low",
-      "assigned_domain": "unclassified"
-    },
-    {
-      "id": 297,
-      "title": "Order with respect to grievances received in the cadre of Assistant Section Officer & Section Officer – Regarding",
-      "circular_no": "No.A-45011/82/2024-HRM-III/85",
       "fy": "2025-2026",
       "confidence": "low",
       "assigned_domain": "hr_personnel_cadre"
@@ -451,20 +323,12 @@
       "assigned_domain": "official_language"
     },
     {
-      "id": 312,
-      "title": "Reconstitution of EPF Central Staff Welfare Committee for the year 2025-26 to 2027-2028 – regarding HRM-VI/1(2)2022/Reconstitution-CSWC/1367 dated 02/06/2025",
-      "circular_no": "HRM-VI/1(2)2022/Reconstitution-CSWC/1367",
-      "fy": "2025-2026",
-      "confidence": "low",
-      "assigned_domain": "unclassified"
-    },
-    {
       "id": 315,
       "title": "Grant of notional increment on 1st July/1st January to the employees who retired from Central Govt. service on 30th June/31st December respectively – Regarding HRD-OA",
       "circular_no": "HRD-OA No.571/2021/DKailashNath/NotionalIncrement/1365",
       "fy": "2025-2026",
       "confidence": "low",
-      "assigned_domain": "unclassified"
+      "assigned_domain": "hr_personnel_cadre"
     },
     {
       "id": 321,
@@ -483,12 +347,12 @@
       "assigned_domain": "compliance_recovery"
     },
     {
-      "id": 323,
-      "title": "Simplification of Transfer Claim Process- Handling of Overlapping Service Period during processing of Transfer Claim requests – Regarding No: WSU/TransferClaim/E-52972/2025-26/07 dated 20/05/2025",
-      "circular_no": "No: WSU/TransferClaim/E-52972/2025-26/07",
+      "id": 328,
+      "title": "Additional charge to Accounts Officers in the absence of sufficient number of APFCs in the Office- Regarding",
+      "circular_no": "No.(E-882775) HRD-1/8/2024/Misc.-Circulars/1350",
       "fy": "2025-2026",
       "confidence": "low",
-      "assigned_domain": "unclassified"
+      "assigned_domain": "hr_personnel_cadre"
     },
     {
       "id": 332,
@@ -499,41 +363,9 @@
       "assigned_domain": "training_research"
     },
     {
-      "id": 333,
-      "title": "Revision of rates of Honorarium to Inquiry Officers / Presenting Officers (Retd. and serving) in the departmental inquiries conducted by the EPFO – Regarding HRD-/1(71)2020/Misc.-Part(1)/1347 dated 30/04/2025",
-      "circular_no": "HRD-/1(71)2020/Misc.-Part(1)/1347",
-      "fy": "2025-2026",
-      "confidence": "low",
-      "assigned_domain": "unclassified"
-    },
-    {
-      "id": 335,
-      "title": "Empanelment of retired officers as Inquiry Officers for conducting departmental inquiries – regarding AVS-24012/1/2023-DAR/E-457338 dated 28/04/2025",
-      "circular_no": "AVS-24012/1/2023-DAR/E-457338",
-      "fy": "2025-2026",
-      "confidence": "low",
-      "assigned_domain": "pension_eps"
-    },
-    {
-      "id": 338,
-      "title": "Revamped Form 13 (Transfer-Out) Functionality- Simplification of Transfer Claim Process – Regarding WSU/Amendments in IT, 1961/E-33306/2025-26/21 dated 25/04/2025",
-      "circular_no": "WSU/Amendments in IT, 1961/E-33306/2025-26/21",
-      "fy": "2025-2026",
-      "confidence": "none",
-      "assigned_domain": "unclassified"
-    },
-    {
       "id": 340,
       "title": "Revamped Appendix-E functionality – Regarding WSU/Appendix-E/E-55791/2025-26/20 dated 25/04/2025",
       "circular_no": "WSU/Appendix-E/E-55791/2025-26/20",
-      "fy": "2025-2026",
-      "confidence": "low",
-      "assigned_domain": "unclassified"
-    },
-    {
-      "id": 341,
-      "title": "Revised Entitlement for leased residential accommodation for Officers of EPFO – Regarding HRM-8/V/25(9)94/LEASEACCOMMODATION/Vol.IV/1343 dated 24/04/2025",
-      "circular_no": "HRM-8/V/25(9)94/LEASEACCOMMODATION/Vol.IV/1343",
       "fy": "2025-2026",
       "confidence": "low",
       "assigned_domain": "unclassified"
@@ -563,28 +395,20 @@
       "assigned_domain": "unclassified"
     },
     {
+      "id": 353,
+      "title": "Vacancy Position and Compassionate Appointments made during the years 2020 to 2024 – Regarding A-45011/3/2024-HRM-IV/6 dated 09/04/2025",
+      "circular_no": "A-45011/3/2024-HRM-IV/6",
+      "fy": "2025-2026",
+      "confidence": "low",
+      "assigned_domain": "hr_personnel_cadre"
+    },
+    {
       "id": 359,
       "title": "Circular - Planning & Preparation for Audit and Performing the Audit Engagement – Regarding",
       "circular_no": "No. Audit/Manual&PolicyMatters/325973/15",
       "fy": "2025-2026",
       "confidence": "low",
-      "assigned_domain": "unclassified"
-    },
-    {
-      "id": 365,
-      "title": "Constitution of Representation Committee against the premature retirement under FR 56j & Rule 42 of the CCS Pension Rules 2020- Regarding File No: A-45011/124/2024-HRM-IV/542 dated 12/01/2025",
-      "circular_no": "File No: A-45011/124/2024-HRM-IV/542",
-      "fy": "2024-2025",
-      "confidence": "none",
-      "assigned_domain": "unclassified"
-    },
-    {
-      "id": 369,
-      "title": "Adoption of Unified Pension Scheme for EPFO Employees – Regarding",
-      "circular_no": "No.(E-981962) HRD-II/60/2025/UPS-Adoption/1324",
-      "fy": "2024-2025",
-      "confidence": "low",
-      "assigned_domain": "governance_cbt"
+      "assigned_domain": "finance_accounts_invest"
     },
     {
       "id": 371,
@@ -593,6 +417,22 @@
       "fy": "2024-2025",
       "confidence": "none",
       "assigned_domain": "unclassified"
+    },
+    {
+      "id": 375,
+      "title": "Revised Estimates for the year 2024-25 towards Welfare Activities – Regarding HRD-II/Staff Welfare Fund (2024-2025)/1316 dated 24/03/2025",
+      "circular_no": "HRD-II/Staff Welfare Fund (2024-2025)/1316",
+      "fy": "2024-2025",
+      "confidence": "low",
+      "assigned_domain": "finance_accounts_invest"
+    },
+    {
+      "id": 381,
+      "title": "Additional charge to Accounts Officers in the absence of sufficient number of APFCs in the Office - regarding No: (E-882775) HRD-1/8/2024/Misc. Circulars/1309 dated 19/03/2025",
+      "circular_no": "No: (E-882775) HRD-1/8/2024/Misc. Circulars/1309",
+      "fy": "2024-2025",
+      "confidence": "low",
+      "assigned_domain": "hr_personnel_cadre"
     },
     {
       "id": 382,
@@ -619,28 +459,12 @@
       "assigned_domain": "unclassified"
     },
     {
-      "id": 393,
-      "title": "Enhancement of Ex Gratia Death Relief Fund to Rs. 8.80 Lakh (Eight Lakhs Eighty Thousand only) in the event of death of an employee of the Central Board due to non-Covid 19 (normal death) Regarding HRD-II/2024-25/Death Relief Fund/1296 dated 03/03/2025",
-      "circular_no": "HRD-II/2024-25/Death Relief Fund/1296",
-      "fy": "2024-2025",
-      "confidence": "none",
-      "assigned_domain": "unclassified"
-    },
-    {
-      "id": 397,
-      "title": "Admissibility of FMA to one of the spouses if both are EPFO Staff pensioners – regarding A-45011/64/2023-HRM-VII/1290 dated 25/02/2025",
-      "circular_no": "A-45011/64/2023-HRM-VII/1290",
+      "id": 405,
+      "title": "Vacancy Position of MTS under Compassionate Appointment Quota – Regarding",
+      "circular_no": "No.A-32022/1/2021/HRM-IV/286",
       "fy": "2024-2025",
       "confidence": "low",
-      "assigned_domain": "unclassified"
-    },
-    {
-      "id": 408,
-      "title": "Draft Seniority list in the cadre of Enforcement Officer / Accounts Officer (EO/AO) for the period 01.04.2016 to 31.12.2022 – regarding A-23011/1/2023-HRM-III/191 dated 18/02/2025",
-      "circular_no": "A-23011/1/2023-HRM-III/191",
-      "fy": "2024-2025",
-      "confidence": "low",
-      "assigned_domain": "compliance_recovery"
+      "assigned_domain": "hr_personnel_cadre"
     },
     {
       "id": 410,
@@ -651,20 +475,12 @@
       "assigned_domain": "compliance_recovery"
     },
     {
-      "id": 422,
-      "title": "General Election to the Legislative Assembly of NCT of Delhi, 2025\r\nand Bye- elections to two Assembly Constituencies each of Tamil Nadu and\r\nUttar Pradesh, 2025-Paid Holiday -reg",
-      "circular_no": "No.(E-984501) HRD-1/16/2025/Circulars",
+      "id": 429,
+      "title": "Additional charge to Accounts Officers in the absence of sufficient number of APFCs in the Office- reg",
+      "circular_no": "No. (E-882775) HRD-1/8/2024/Misc.Circulars/1222",
       "fy": "2024-2025",
       "confidence": "low",
-      "assigned_domain": "citizen_services_rti"
-    },
-    {
-      "id": 427,
-      "title": "Draft Seniority list in the cadre of Enforcement Officer / Accounts Officer (EO/AO) for the period 01.04.2016 to 31.12.2022 – regarding File No: A-2301/1/2023-HRM-III/180 dated 30/01/2025",
-      "circular_no": "File No: A-2301/1/2023-HRM-III/180",
-      "fy": "2024-2025",
-      "confidence": "low",
-      "assigned_domain": "compliance_recovery"
+      "assigned_domain": "hr_personnel_cadre"
     },
     {
       "id": 430,
@@ -699,52 +515,12 @@
       "assigned_domain": "citizen_services_rti"
     },
     {
-      "id": 438,
-      "title": "Setting up of Centralized Payment Reconciliation Cell(CPRC) at RO Delhi West – Regarding HRD/05/2022/Misc.Matters/1216 dated 20/01/2025",
-      "circular_no": "HRD/05/2022/Misc.Matters/1216",
-      "fy": "2024-2025",
-      "confidence": "low",
-      "assigned_domain": "unclassified"
-    },
-    {
-      "id": 444,
-      "title": "Simplification of Joint Declaration Process – regarding WSU/Joint Declaration/E-54018/2024-25/006 dated 16/01/2025",
-      "circular_no": "WSU/Joint Declaration/E-54018/2024-25/006",
-      "fy": "2024-2025",
-      "confidence": "low",
-      "assigned_domain": "unclassified"
-    },
-    {
-      "id": 445,
-      "title": "Acceptance for Voluntary Retirement from Service under rule FR 56(K) read with Rule 48 (1)(a) of CCS Pension Rules, 1972 in respect of Shri Rakesh Kumar Verma, Regional Provident Fund Commissioner-II, RO Delhi (East) -reg A-19011/7/2024-HRM-I/550 dated 16/01/2025",
-      "circular_no": "A-19011/7/2024-HRM-I/550",
-      "fy": "2024-2025",
-      "confidence": "low",
-      "assigned_domain": "hr_personnel_cadre"
-    },
-    {
       "id": 446,
       "title": "Conducting of All India Athletic Meet and Indoor Finals 2024-25 at Indore- regarding HRD-II/2024/Sports_Fund/1199 dated 15/01/2025",
       "circular_no": "HRD-II/2024/Sports_Fund/1199",
       "fy": "2024-2025",
       "confidence": "low",
-      "assigned_domain": "unclassified"
-    },
-    {
-      "id": 447,
-      "title": "For widespread Circulation Simplification of Transfer of Provident Fund Account-reg WSU/E-52972/350 dated 15/01/2025",
-      "circular_no": "WSU/E-52972/350",
-      "fy": "2024-2025",
-      "confidence": "low",
-      "assigned_domain": "unclassified"
-    },
-    {
-      "id": 450,
-      "title": "Modifications in the Audit Manual – regarding Audit/Modifications in Audit Manual/505325/2024-25/04 dated 03/01/2025",
-      "circular_no": "Audit/Modifications in Audit Manual/505325/2024-25/04",
-      "fy": "2024-2025",
-      "confidence": "low",
-      "assigned_domain": "unclassified"
+      "assigned_domain": "hr_personnel_cadre"
     },
     {
       "id": 457,
@@ -759,7 +535,7 @@
       "title": "Web Upload- Revised Instructions for the purchase of laptops/notebooks and similar devices for eligible officers in Regional Offices, District Offices and Special State Offices –revised guidelines.",
       "circular_no": "No.(E-55917) HRD/98/2022/LaptopEntitlement/1161",
       "fy": "2024-2025",
-      "confidence": "none",
+      "confidence": "low",
       "assigned_domain": "unclassified"
     },
     {
@@ -779,28 +555,252 @@
       "assigned_domain": "unclassified"
     },
     {
+      "id": 473,
+      "title": "Extension of period of Additional charge to Account Officers in the absence of sufficient number of APFC’s in the office – regarding HRD-1/8/2024/Misc.-Circulars/1158 dated 09/12/2024",
+      "circular_no": "HRD-1/8/2024/Misc.-Circulars/1158",
+      "fy": "2024-2025",
+      "confidence": "none",
+      "assigned_domain": "unclassified"
+    },
+    {
       "id": 500,
       "title": "Instructions regarding verification of Character and Antecedents on appointment in EPFO – Regarding",
       "circular_no": "No.A-12011/12/2024-EPFO-HQ/RC/328",
       "fy": "2024-2025",
       "confidence": "low",
+      "assigned_domain": "hr_personnel_cadre"
+    },
+    {
+      "id": 510,
+      "title": "Grant of notional increment on 1st July/1st January to the employees who retired from Central Govt. service on 30th June/31st December respectively for the purpose of calculating their pensionary benefits",
+      "circular_no": "No.HRD-OAno.571/2021/DKailashnath/Notionalincrement/1131",
+      "fy": "2024-2025",
+      "confidence": "low",
+      "assigned_domain": "hr_personnel_cadre"
+    },
+    {
+      "id": 511,
+      "title": "Rationalization of Regional Offices under Benguluru Zone along with opening of two (2) new offices. HO.HRD/50/2023/RationalisationofBigOffices/Bengaluru/1129 dated 25/10/2024",
+      "circular_no": "HO.HRD/50/2023/RationalisationofBigOffices/Bengaluru/1129",
+      "fy": "2024-2025",
+      "confidence": "none",
       "assigned_domain": "unclassified"
     },
     {
-      "id": 503,
-      "title": "Acceptance for Voluntary Retirement from Service (VRS) in respect of Shri Yagya Narayan Chaubey, Regional Provident Fund Commissioner-II, DO Junagadh under rule FR 56(K) read with Rule 48 (A) of CCS Pension Rules, 1972",
-      "circular_no": "No. HRM-II/A-10(254)2017/1032/507",
+      "id": 514,
+      "title": "Bhavishya Nidhi Swachchhata Awards-2024 to be awarded on Foundation Day Award in the series of  for field offices HO",
+      "circular_no": "HO No. HRD-II/14(2)2023/FOUNDATION-DAY/AWARDS/1126",
+      "fy": "2024-2025",
+      "confidence": "low",
+      "assigned_domain": "admin_procurement_facilities"
+    },
+    {
+      "id": 515,
+      "title": "Selection of Best Zonal Office in the category of Bhavishya Nidhi Awards-2024 HO",
+      "circular_no": "HO No. HRD-II/14(2)2023/FOUNDATION-DAY/AWARDS/1125",
+      "fy": "2024-2025",
+      "confidence": "low",
+      "assigned_domain": "unclassified"
+    },
+    {
+      "id": 516,
+      "title": "Selection of Best Performing Remote Office in the category of Bhavishya Nidhi Awards-2024 HO",
+      "circular_no": "HO No. HRD-II/14(2)2023/FOUNDATION-DAY/AWARDS/1128",
+      "fy": "2024-2025",
+      "confidence": "low",
+      "assigned_domain": "unclassified"
+    },
+    {
+      "id": 517,
+      "title": "Selection of Best Performing District Office in the category of Bhavishya Nidhi Awards-2024 HO",
+      "circular_no": "HO No. HRD-II/14(2)2023/FOUNDATION-DAY/AWARDS/1124",
+      "fy": "2024-2025",
+      "confidence": "low",
+      "assigned_domain": "compliance_recovery"
+    },
+    {
+      "id": 518,
+      "title": "Bhavishya Nidhi Award-2024 for Best Innovative Practice adopted by Field Office HO",
+      "circular_no": "HO No. HRD-II/14(2)2023/FOUNDATION-DAY/AWARDS/1127",
+      "fy": "2024-2025",
+      "confidence": "low",
+      "assigned_domain": "unclassified"
+    },
+    {
+      "id": 520,
+      "title": "Extension of period of Additional Charge to Accounts Officers in the absence of sufficient number of APFCs in the office HO",
+      "circular_no": "HO No. HRD-1/8/2024/Misc.-Circulars/1122",
+      "fy": "2024-2025",
+      "confidence": "none",
+      "assigned_domain": "unclassified"
+    },
+    {
+      "id": 522,
+      "title": "Corrigendum regarding Revision of monetary ceiling for purchase/reimbursement of briefcase/official bag/ladies purses NO: (E-27818)HRD/1(71)2020/Misc./1117 dated 15/10/2024",
+      "circular_no": "NO: (E-27818)HRD/1(71)2020/Misc./1117",
+      "fy": "2024-2025",
+      "confidence": "low",
+      "assigned_domain": "unclassified"
+    },
+    {
+      "id": 533,
+      "title": "Refund of GIS to non-covered GIS members",
+      "circular_no": "No.ASD-III/GIS/Clarification/2022/419",
+      "fy": "2024-2025",
+      "confidence": "low",
+      "assigned_domain": "unclassified"
+    },
+    {
+      "id": 535,
+      "title": "Rationalization of Regional Offices of Telangana Zone – Regarding HRD-I/85/2024/RationalisationofOffices/Hyderabad/1106 dated 01/10/2024",
+      "circular_no": "HRD-I/85/2024/RationalisationofOffices/Hyderabad/1106",
+      "fy": "2024-2025",
+      "confidence": "none",
+      "assigned_domain": "unclassified"
+    },
+    {
+      "id": 536,
+      "title": "Revision of monetary ceiling for purchase/reimbursement of briefcase/official bag/ladies purses",
+      "circular_no": "No.(E-27818)HRD/1(71)2020/Misc./1104",
+      "fy": "2024-2025",
+      "confidence": "low",
+      "assigned_domain": "unclassified"
+    },
+    {
+      "id": 537,
+      "title": "Revision of monetary ceiling for Hospitality Facilities to Officers of EPFO",
+      "circular_no": "No.(E-732264)HRD-1/8/2024/Misc.-Circulars-Part(1)/1105",
       "fy": "2024-2025",
       "confidence": "low",
       "assigned_domain": "hr_personnel_cadre"
     },
     {
-      "id": 504,
-      "title": "Acceptance for Voluntary Retirement from Service (VRS) in respect of Smt Manjusha R Jadhav, Regional Provident Fund Commissioner-II, DO Ahmednagar under rule FR 56(K) read with Rule 48 (A) of CCS Pension Rules, 1972",
-      "circular_no": "No. HRM-II/A-10(254)2017/1032/506",
+      "id": 540,
+      "title": "Office Order regarding Rationalization of Regional Offices of Delhi Zone",
+      "circular_no": "No.(E-296412)HRD/50/2023/RationalisationofBigOffices/Delhi/1101",
+      "fy": "2024-2025",
+      "confidence": "none",
+      "assigned_domain": "unclassified"
+    },
+    {
+      "id": 544,
+      "title": "Composition of Screening Committee for grant of Non Functional Selection Grade in Private Secretary Cadre",
+      "circular_no": "No.A-45011/97/2024-HRM-III/30",
       "fy": "2024-2025",
       "confidence": "low",
       "assigned_domain": "hr_personnel_cadre"
+    },
+    {
+      "id": 548,
+      "title": "Allotment of funds  for the year 2024-2025 towards Welfare Activities",
+      "circular_no": "No. HRD-II/Staff_Welfare_Fund_(2024-2025)/1090",
+      "fy": "2024-2025",
+      "confidence": "low",
+      "assigned_domain": "unclassified"
+    },
+    {
+      "id": 554,
+      "title": "Office Order regarding Rationalisation of Regional Offices Kolkata, Barrackpore, Howrah and Park Street",
+      "circular_no": "No.HRD/52/2023/RationalisationofBigOffices/Kolkata/1087",
+      "fy": "2024-2025",
+      "confidence": "none",
+      "assigned_domain": "unclassified"
+    },
+    {
+      "id": 557,
+      "title": "Rationalisation of Regional Office, Chennai North & Chennai South along with Opening of Two new Regional Offices. HO",
+      "circular_no": "HO No. HRD/51/2023/RationalisationofBigOffices/Chennai/1083",
+      "fy": "2024-2025",
+      "confidence": "low",
+      "assigned_domain": "unclassified"
+    },
+    {
+      "id": 561,
+      "title": "Extension of period of Additional Charge to Accounts Officers in the absence of sufficient number of APFCs in the Office",
+      "circular_no": "No.HRD-1/8/2024/Misc.-Circulars/1081",
+      "fy": "2024-2025",
+      "confidence": "none",
+      "assigned_domain": "unclassified"
+    },
+    {
+      "id": 565,
+      "title": "Activities of filed offices on Social Media Platforms",
+      "circular_no": "No.C&PR/2021/Social_Media_Strategy_Meeting_49598",
+      "fy": "2024-2025",
+      "confidence": "low",
+      "assigned_domain": "unclassified"
+    },
+    {
+      "id": 576,
+      "title": "Har Ghar Tiranga – Campaign under the aegis of Azadi Ka Amrit Mahotsav",
+      "circular_no": "No.A-45012/8/2022-HRM-VIII/1974",
+      "fy": "2024-2025",
+      "confidence": "low",
+      "assigned_domain": "unclassified"
+    },
+    {
+      "id": 579,
+      "title": "Standard Operating Procedure (SOP) for Transaction-less and Inoperative accounts in EPFO (version 2.0)",
+      "circular_no": "No.WSU/2023/12/”InoperativeAccountsEPF’(300140)/3978",
+      "fy": "2024-2025",
+      "confidence": "low",
+      "assigned_domain": "unclassified"
+    },
+    {
+      "id": 597,
+      "title": "Proper functioning of PRO-Strengthening of Communication Channels",
+      "circular_no": "No.CSD/PRO/2024/3616",
+      "fy": "2024-2025",
+      "confidence": "none",
+      "assigned_domain": "unclassified"
+    },
+    {
+      "id": 604,
+      "title": "Extension of period of Additional charge to Accounts Officers in the absence of sufficient number of APFCs in the Office",
+      "circular_no": "No.HRD-1/8/2024/Misc.-Circulars/1065",
+      "fy": "2024-2025",
+      "confidence": "none",
+      "assigned_domain": "unclassified"
+    },
+    {
+      "id": 605,
+      "title": "Amendment in General Financial Rules, 2017",
+      "circular_no": "No.Fin/IFD/Receipts-misc(36340)/3461",
+      "fy": "2024-2025",
+      "confidence": "low",
+      "assigned_domain": "unclassified"
+    },
+    {
+      "id": 610,
+      "title": "Policy for hiring of retired officers and employees on contract basis in EPFO, 2023",
+      "circular_no": "No.HRD/56/2021/Misc./1062",
+      "fy": "2024-2025",
+      "confidence": "low",
+      "assigned_domain": "citizen_services_rti"
+    },
+    {
+      "id": 616,
+      "title": "Circular regarding Hotline and Telephone Numbers of all Senior Officers",
+      "circular_no": "No.ASD-II/Misc/2024/",
+      "fy": "2024-2025",
+      "confidence": "low",
+      "assigned_domain": "unclassified"
+    },
+    {
+      "id": 617,
+      "title": "Appointment of Complaints Officers as per The HIV and AIDS (P&C) Act, 2017",
+      "circular_no": "No.HRD-II/03/2023/MISC-Part(1)/1061",
+      "fy": "2024-2025",
+      "confidence": "low",
+      "assigned_domain": "unclassified"
+    },
+    {
+      "id": 641,
+      "title": "Modification in Table B under EPS’95 for the purpose of calculation of past service benefit under Para 12(3)(i)(b) of the scheme",
+      "circular_no": "No.e-37633/1921",
+      "fy": "2024-2025",
+      "confidence": "low",
+      "assigned_domain": "official_language"
     }
   ]
 }

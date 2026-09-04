@@ -204,7 +204,9 @@ TAXONOMY = {
                 "keywords": [
                     "seniority", "seniority list", "promotion", "dpc", "departmental promotion committee",
                     "regularization", "confirmation of", "clearance of probation", "probation clearance",
-                    "adhoc promotion", "macp", "varishtha", "वरिष्ठता", "पदोन्नति"
+                    "adhoc promotion", "macp", "varishtha", "cadre restructuring", "senior time scale",
+                    "grant of senior", "premature retirement", "fr 56", "fr 56(j)", "fr 56j", "pay fixation",
+                    "वरिष्ठता", "पदोन्नति"
                 ]
             },
             "recruitment_exams": {
@@ -213,7 +215,7 @@ TAXONOMY = {
                     "recruitment", "direct recruitment", "probationary examination", "departmental exam",
                     "ldce", "limited departmental", "upsc", "ssc", "assistant provident fund commissioner exam",
                     "enforcement officer exam", "section officer exam", "ldc/jsa", "marks of candidates",
-                    "भर्ती", "परीक्षा"
+                    "examination scheme", "exam scheme", "syllabus", "scheme of examination", "भर्ती", "परीक्षा"
                 ]
             },
             "transfers_and_postings": {
@@ -237,13 +239,15 @@ TAXONOMY = {
                     "leave", "child care leave", "ccl", "ltc", "leave travel", "bonus", "productivity linked bonus",
                     "holiday", "declaration of holiday", "dr. b.r. ambedkar", "bakrid", "id-u-zuha",
                     "permission for foreign visit", "staff welfare fund", "sports activities", "sports promotion",
-                    "staff provident fund", "spf", "छुट्टी", "भत्ता", "अवकाश"
+                    "staff provident fund", "spf", "scholarship", "ex gratia", "children education allowance",
+                    "cea", "death relief fund", "छुट्टी", "भत्ता", "अवकाश"
                 ]
             },
             "vigilance_and_discipline": {
                 "name": "Vigilance & Disciplinary Matters",
                 "keywords": [
                     "vigilance", "disciplinary proceedings", "suspension", "charge sheet", "inquiry officer",
+                    "inquiry officers", "presenting officer", "presenting officers", "honorarium to inquiry",
                     "cvo", "central vigilance", "major penalty", "minor penalty", "sensitive posts",
                     "sensitive and non-sensitive", "epf staff (cca) rules", "service regulations, 2025",
                     "review committee for suspension", "dar", "सतर्कता", "निलंबन"
@@ -262,7 +266,8 @@ TAXONOMY = {
                 "keywords": [
                     "supreme court", "high court", "cat", "central administrative tribunal", "slp",
                     "writ petition", "court order", "stay order", "contempt petition", "legal notice",
-                    "judgement", "judgment", "न्यायालय", "अदालत"
+                    "judgement", "judgment", "wp(", "wp(c)", "wp(md)", "slp(", "civil appeal", "original application",
+                    "final order in wp", "forwarding of final order", "न्यायालय", "अदालत"
                 ]
             },
             "advocates_and_panels": {
@@ -357,7 +362,7 @@ TAXONOMY = {
                 "keywords": [
                     "procurement", "gem", "tender", "e-procurement", "stationery", "furniture",
                     "swachh bharat", "swachhata", "security agency", "housekeeping", "office maintenance",
-                    "निविदा", "खरीद"
+                    "gifts on account of festivals", "gifts", "festival", "निविदा", "खरीद"
                 ]
             }
         }
@@ -379,7 +384,8 @@ TAXONOMY = {
                 "name": "EEC, PMRPY, ABRY & Special Relief",
                 "keywords": [
                     "pmrpy", "abry", "atmanirbhar", "enrolment campaign", "eec", "covid-19 advance",
-                    "corona", "pandemic", "edli", "insurance scheme", "special campaign", "अभियान"
+                    "corona", "pandemic", "edli", "insurance scheme", "special campaign", "death claim",
+                    "death claims", "guardianship certificate", "settlement of claims", "अभियान"
                 ]
             }
         }
