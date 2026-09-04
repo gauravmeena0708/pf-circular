@@ -91,16 +91,16 @@ The primary way to interact with this project is through the `fetch.py` script.
     ```
     This classifies the current catalog and generates the compact topic, timeline, comparison, language, confidence, and seasonality summaries used by `explore.html`. The `all` action runs this step automatically.
 
-## Topic Explorer
+## Policy Intelligence Hub
 
 Open `explore.html` through a local web server or GitHub Pages. It provides:
 
-* A keyboard-accessible topic atlas with exact financial-year and subtopic filtering.
-* A yearly activity matrix with count and percentage-of-year modes.
-* Two-year topic-share comparison.
-* Search-term trends using the static posting buckets.
-* Classification-confidence, document-language, and monthly issuance views.
-* On-demand document drawers linked to the archive reader and source PDFs.
+* **Policy Milestone Chronicle**: 18-year chronological timeline across 6 regulatory eras with founding circular links.
+* **Cross-Domain Knowledge Graph**: D3 force-directed co-occurrence network reflecting real secondary topic overlaps and linkage intensities.
+* **Signal vs. Noise Filtering**: One-click toggles between `All Circulars` (9,534), `Public Policy & Schemes` (3,597), and `Internal Administration` (5,937).
+* **Division Activity Matrix**: Heatmap cross-tabulating 18 financial years against key issuing wings (WSU, Pension, Compliance, Legal, HRM, etc.).
+* **Dynamic Topic Atlas**: Zoomable treemap and hierarchical explorer with instant subtopic breakdowns.
+* **Document Drawer**: Contextual slide-over drawer with instant search, metadata badges, and deep reader links into `index.html?fy=...&doc=...`.
 
 ## Data Files
 
