@@ -85,6 +85,23 @@ The primary way to interact with this project is through the `fetch.py` script.
     ```
     Run this after manually changing any `circulars-*.json` or `index-*.json` file. The `fetch`, `index`, and `all` actions rebuild these assets automatically.
 
+5.  **Rebuild Topic Explorer Assets:**
+    ```bash
+    python fetch.py --action topics
+    ```
+    This classifies the current catalog and generates the compact topic, timeline, comparison, language, confidence, and seasonality summaries used by `explore.html`. The `all` action runs this step automatically.
+
+## Topic Explorer
+
+Open `explore.html` through a local web server or GitHub Pages. It provides:
+
+* A keyboard-accessible topic atlas with exact financial-year and subtopic filtering.
+* A yearly activity matrix with count and percentage-of-year modes.
+* Two-year topic-share comparison.
+* Search-term trends using the static posting buckets.
+* Classification-confidence, document-language, and monthly issuance views.
+* On-demand document drawers linked to the archive reader and source PDFs.
+
 ## Data Files
 
 The project uses the following JSON files to store data:

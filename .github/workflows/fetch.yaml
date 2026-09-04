@@ -26,12 +26,15 @@ jobs:
       - name: Fetch metadata and rebuild static search assets
         run: python ./fetch.py --action fetch
 
+      - name: Rebuild topic explorer assets
+        run: python ./fetch.py --action topics
+
       - name: Commit and push if changed
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git pull --ff-only
-          git add data/metadata.json data/circulars-*.json data/search/
+          git add data/metadata.json data/circulars-*.json data/search/ data/topics/
           # Commit only if there are changes
           if git diff --staged --quiet; then
             echo "No changes to commit."

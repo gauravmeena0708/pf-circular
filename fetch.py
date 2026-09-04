@@ -463,7 +463,12 @@ def build_static_search_index():
             if ocr_content.startswith('OCR_ERROR:'):
                 ocr_content = ''
                 ocr_link = None
-            ocr_source = 1 if ocr_link == english_link else (2 if ocr_link == hindi_link else 0)
+            # Guard the comparisons: without this, a missing OCR link and a
+            # missing English link compare equal (None == None) and incorrectly
+            # mark the document as having an English reproduction.
+            ocr_source = 1 if ocr_link and ocr_link == english_link else (
+                2 if ocr_link and ocr_link == hindi_link else 0
+            )
 
             document_id = len(documents)
             documents.append([
@@ -532,9 +537,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Fetch EPFO circular data, update PDF text, and build static search assets.")
     parser.add_argument(
         "--action",
-        choices=['fetch', 'index', 'search', 'all'],
+        choices=['fetch', 'index', 'search', 'topics', 'all'],
         default='all',
-        help="Specify action: 'fetch' metadata, 'index' PDFs, 'search' static assets, or 'all' (default)."
+        help="Specify action: 'fetch' metadata, 'index' PDFs, 'search' static assets, 'topics' explorer assets, or 'all' (default)."
     )
     parser.add_argument(
         "--max-urls",
@@ -552,5 +557,9 @@ if __name__ == "__main__":
 
     if args.action in {'fetch', 'index', 'search', 'all'}:
         build_static_search_index()
+
+    if args.action in {'topics', 'all'}:
+        from classify import run_classification
+        run_classification()
 
     print("\nScript finished.")

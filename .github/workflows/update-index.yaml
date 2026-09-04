@@ -41,12 +41,15 @@ jobs:
       - name: Update reproduced text and rebuild static search assets
         run: python ./fetch.py --action index
 
+      - name: Rebuild topic explorer assets
+        run: python ./fetch.py --action topics
+
       - name: Commit and push reproduced text and search assets
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git pull --ff-only
-          git add data/index-*.json data/search/
+          git add data/index-*.json data/search/ data/topics/
           if git diff --staged --quiet; then
             echo "No reproduced text or search asset changes."
           else

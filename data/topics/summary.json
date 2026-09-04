@@ -1,0 +1,2074 @@
+{
+  "version": 2,
+  "total_documents": 9534,
+  "domains": {
+    "pension_eps": {
+      "name": "Pension & EPS-95",
+      "color": "#059669",
+      "total": 260,
+      "subtopics": {
+        "ppo_and_processing": 113,
+        "digital_life_certificate": 46,
+        "general_pension": 86,
+        "higher_pension": 15
+      }
+    },
+    "compliance_recovery": {
+      "name": "Compliance & Recovery",
+      "color": "#dc2626",
+      "total": 496,
+      "subtopics": {
+        "7a_and_quasi_judicial": 107,
+        "coverage_and_inspection": 283,
+        "recovery_and_defaulters": 106
+      }
+    },
+    "exempted_establishments": {
+      "name": "Exempted Establishments",
+      "color": "#d97706",
+      "total": 160,
+      "subtopics": {
+        "trust_compliance_audit": 158,
+        "surrender_and_cancellation": 2
+      }
+    },
+    "finance_accounts_invest": {
+      "name": "Finance, Accounts & Investment",
+      "color": "#2563eb",
+      "total": 487,
+      "subtopics": {
+        "budget_accounts_audit": 274,
+        "interest_rate": 86,
+        "investment_and_portfolio": 127
+      }
+    },
+    "it_digital_services": {
+      "name": "IT, UAN & Digital Services",
+      "color": "#7c3aed",
+      "total": 388,
+      "subtopics": {
+        "eoffice_and_software": 188,
+        "uan_and_kyc": 200
+      }
+    },
+    "hr_personnel_cadre": {
+      "name": "HR, Personnel & Cadre",
+      "color": "#4f46e5",
+      "total": 2525,
+      "subtopics": {
+        "promotions_seniority_dpc": 668,
+        "recruitment_exams": 614,
+        "apar_sparrow": 223,
+        "transfers_and_postings": 411,
+        "benefits_allowances_leave": 300,
+        "vigilance_and_discipline": 309
+      }
+    },
+    "legal_litigation": {
+      "name": "Legal & Court Matters",
+      "color": "#0284c7",
+      "total": 211,
+      "subtopics": {
+        "court_cases_and_orders": 208,
+        "advocates_and_legal_fees": 3
+      }
+    },
+    "citizen_services_rti": {
+      "name": "Citizen Care & RTI",
+      "color": "#ea580c",
+      "total": 934,
+      "subtopics": {
+        "rti_act": 758,
+        "grievances_epfigms": 176
+      }
+    },
+    "training_research": {
+      "name": "Training & Academics",
+      "color": "#0891b2",
+      "total": 1130,
+      "subtopics": {
+        "pdunass_natrss": 1130
+      }
+    },
+    "official_language": {
+      "name": "Official Language (Rajbhasha)",
+      "color": "#be185d",
+      "total": 274,
+      "subtopics": {
+        "rajbhasha_and_events": 274
+      }
+    },
+    "admin_procurement_facilities": {
+      "name": "Administration & Procurement",
+      "color": "#64748b",
+      "total": 291,
+      "subtopics": {
+        "procurement_and_tenders": 103,
+        "vehicles_and_transport": 61,
+        "buildings_and_premises": 127
+      }
+    },
+    "social_security_schemes": {
+      "name": "Schemes & Campaigns",
+      "color": "#0d9488",
+      "total": 161,
+      "subtopics": {
+        "special_schemes_campaigns": 83,
+        "international_workers_ssa": 78
+      }
+    },
+    "governance_cbt": {
+      "name": "Governance & CBT",
+      "color": "#854d0e",
+      "total": 323,
+      "subtopics": {
+        "cbt_and_committees": 323
+      }
+    },
+    "unclassified": {
+      "name": "Other / Unclassified",
+      "color": "#94a3b8",
+      "total": 1894,
+      "subtopics": {
+        "general": 1894
+      }
+    }
+  },
+  "financial_years": [
+    "2009-2010",
+    "2010-2011",
+    "2011-2012",
+    "2012-2013",
+    "2013-2014",
+    "2014-2015",
+    "2015-2016",
+    "2016-2017",
+    "2017-2018",
+    "2018-2019",
+    "2019-2020",
+    "2020-2021",
+    "2021-2022",
+    "2022-2023",
+    "2023-2024",
+    "2024-2025",
+    "2025-2026",
+    "2026-2027",
+    "Unknown"
+  ],
+  "year_totals": {
+    "2009-2010": 256,
+    "2010-2011": 567,
+    "2011-2012": 647,
+    "2012-2013": 682,
+    "2013-2014": 840,
+    "2014-2015": 860,
+    "2015-2016": 780,
+    "2016-2017": 707,
+    "2017-2018": 742,
+    "2018-2019": 642,
+    "2019-2020": 474,
+    "2020-2021": 278,
+    "2021-2022": 300,
+    "2022-2023": 409,
+    "2023-2024": 391,
+    "2024-2025": 357,
+    "2025-2026": 278,
+    "2026-2027": 86,
+    "Unknown": 238
+  },
+  "timeline": {
+    "2009-2010": {
+      "pension_eps": 5,
+      "compliance_recovery": 22,
+      "exempted_establishments": 10,
+      "finance_accounts_invest": 17,
+      "it_digital_services": 6,
+      "hr_personnel_cadre": 73,
+      "legal_litigation": 5,
+      "citizen_services_rti": 22,
+      "training_research": 19,
+      "official_language": 2,
+      "admin_procurement_facilities": 6,
+      "social_security_schemes": 2,
+      "governance_cbt": 13,
+      "unclassified": 54
+    },
+    "2010-2011": {
+      "pension_eps": 3,
+      "compliance_recovery": 44,
+      "exempted_establishments": 17,
+      "finance_accounts_invest": 24,
+      "it_digital_services": 23,
+      "hr_personnel_cadre": 100,
+      "legal_litigation": 6,
+      "citizen_services_rti": 71,
+      "training_research": 57,
+      "official_language": 4,
+      "admin_procurement_facilities": 23,
+      "social_security_schemes": 9,
+      "governance_cbt": 20,
+      "unclassified": 166
+    },
+    "2011-2012": {
+      "pension_eps": 12,
+      "compliance_recovery": 22,
+      "exempted_establishments": 8,
+      "finance_accounts_invest": 31,
+      "it_digital_services": 16,
+      "hr_personnel_cadre": 139,
+      "legal_litigation": 14,
+      "citizen_services_rti": 69,
+      "training_research": 85,
+      "official_language": 30,
+      "admin_procurement_facilities": 12,
+      "social_security_schemes": 10,
+      "governance_cbt": 44,
+      "unclassified": 155
+    },
+    "2012-2013": {
+      "pension_eps": 18,
+      "compliance_recovery": 36,
+      "exempted_establishments": 5,
+      "finance_accounts_invest": 25,
+      "it_digital_services": 23,
+      "hr_personnel_cadre": 184,
+      "legal_litigation": 14,
+      "citizen_services_rti": 33,
+      "training_research": 131,
+      "official_language": 11,
+      "admin_procurement_facilities": 13,
+      "social_security_schemes": 8,
+      "governance_cbt": 38,
+      "unclassified": 143
+    },
+    "2013-2014": {
+      "pension_eps": 35,
+      "compliance_recovery": 35,
+      "exempted_establishments": 13,
+      "finance_accounts_invest": 47,
+      "it_digital_services": 34,
+      "hr_personnel_cadre": 237,
+      "legal_litigation": 22,
+      "citizen_services_rti": 42,
+      "training_research": 144,
+      "official_language": 22,
+      "admin_procurement_facilities": 12,
+      "social_security_schemes": 10,
+      "governance_cbt": 30,
+      "unclassified": 157
+    },
+    "2014-2015": {
+      "pension_eps": 36,
+      "compliance_recovery": 58,
+      "exempted_establishments": 16,
+      "finance_accounts_invest": 64,
+      "it_digital_services": 39,
+      "hr_personnel_cadre": 188,
+      "legal_litigation": 33,
+      "citizen_services_rti": 74,
+      "training_research": 105,
+      "official_language": 23,
+      "admin_procurement_facilities": 28,
+      "social_security_schemes": 22,
+      "governance_cbt": 30,
+      "unclassified": 144
+    },
+    "2015-2016": {
+      "pension_eps": 13,
+      "compliance_recovery": 48,
+      "exempted_establishments": 13,
+      "finance_accounts_invest": 56,
+      "it_digital_services": 55,
+      "hr_personnel_cadre": 189,
+      "legal_litigation": 35,
+      "citizen_services_rti": 72,
+      "training_research": 85,
+      "official_language": 19,
+      "admin_procurement_facilities": 19,
+      "social_security_schemes": 12,
+      "governance_cbt": 28,
+      "unclassified": 136
+    },
+    "2016-2017": {
+      "pension_eps": 32,
+      "compliance_recovery": 37,
+      "exempted_establishments": 16,
+      "finance_accounts_invest": 38,
+      "it_digital_services": 41,
+      "hr_personnel_cadre": 199,
+      "legal_litigation": 25,
+      "citizen_services_rti": 54,
+      "training_research": 67,
+      "official_language": 11,
+      "admin_procurement_facilities": 37,
+      "social_security_schemes": 11,
+      "governance_cbt": 28,
+      "unclassified": 111
+    },
+    "2017-2018": {
+      "pension_eps": 24,
+      "compliance_recovery": 42,
+      "exempted_establishments": 13,
+      "finance_accounts_invest": 38,
+      "it_digital_services": 32,
+      "hr_personnel_cadre": 208,
+      "legal_litigation": 16,
+      "citizen_services_rti": 81,
+      "training_research": 71,
+      "official_language": 24,
+      "admin_procurement_facilities": 29,
+      "social_security_schemes": 17,
+      "governance_cbt": 20,
+      "unclassified": 127
+    },
+    "2018-2019": {
+      "pension_eps": 15,
+      "compliance_recovery": 23,
+      "exempted_establishments": 13,
+      "finance_accounts_invest": 24,
+      "it_digital_services": 24,
+      "hr_personnel_cadre": 132,
+      "legal_litigation": 10,
+      "citizen_services_rti": 142,
+      "training_research": 58,
+      "official_language": 27,
+      "admin_procurement_facilities": 18,
+      "social_security_schemes": 10,
+      "governance_cbt": 12,
+      "unclassified": 134
+    },
+    "2019-2020": {
+      "pension_eps": 10,
+      "compliance_recovery": 18,
+      "exempted_establishments": 9,
+      "finance_accounts_invest": 17,
+      "it_digital_services": 18,
+      "hr_personnel_cadre": 126,
+      "legal_litigation": 12,
+      "citizen_services_rti": 43,
+      "training_research": 40,
+      "official_language": 11,
+      "admin_procurement_facilities": 36,
+      "social_security_schemes": 8,
+      "governance_cbt": 7,
+      "unclassified": 119
+    },
+    "2020-2021": {
+      "pension_eps": 3,
+      "compliance_recovery": 14,
+      "exempted_establishments": 1,
+      "finance_accounts_invest": 11,
+      "it_digital_services": 7,
+      "hr_personnel_cadre": 69,
+      "legal_litigation": 6,
+      "citizen_services_rti": 23,
+      "training_research": 54,
+      "official_language": 9,
+      "admin_procurement_facilities": 11,
+      "social_security_schemes": 9,
+      "governance_cbt": 5,
+      "unclassified": 56
+    },
+    "2021-2022": {
+      "pension_eps": 10,
+      "compliance_recovery": 14,
+      "exempted_establishments": 2,
+      "finance_accounts_invest": 13,
+      "it_digital_services": 8,
+      "hr_personnel_cadre": 108,
+      "legal_litigation": 1,
+      "citizen_services_rti": 28,
+      "training_research": 13,
+      "official_language": 14,
+      "admin_procurement_facilities": 9,
+      "social_security_schemes": 6,
+      "governance_cbt": 13,
+      "unclassified": 61
+    },
+    "2022-2023": {
+      "pension_eps": 6,
+      "compliance_recovery": 26,
+      "exempted_establishments": 2,
+      "finance_accounts_invest": 12,
+      "it_digital_services": 12,
+      "hr_personnel_cadre": 106,
+      "legal_litigation": 4,
+      "citizen_services_rti": 62,
+      "training_research": 66,
+      "official_language": 11,
+      "admin_procurement_facilities": 10,
+      "social_security_schemes": 7,
+      "governance_cbt": 5,
+      "unclassified": 80
+    },
+    "2023-2024": {
+      "pension_eps": 9,
+      "compliance_recovery": 13,
+      "exempted_establishments": 4,
+      "finance_accounts_invest": 8,
+      "it_digital_services": 9,
+      "hr_personnel_cadre": 92,
+      "legal_litigation": 1,
+      "citizen_services_rti": 80,
+      "training_research": 67,
+      "official_language": 12,
+      "admin_procurement_facilities": 8,
+      "social_security_schemes": 6,
+      "governance_cbt": 5,
+      "unclassified": 77
+    },
+    "2024-2025": {
+      "pension_eps": 7,
+      "compliance_recovery": 15,
+      "exempted_establishments": 4,
+      "finance_accounts_invest": 9,
+      "it_digital_services": 14,
+      "hr_personnel_cadre": 160,
+      "legal_litigation": 1,
+      "citizen_services_rti": 23,
+      "training_research": 23,
+      "official_language": 15,
+      "admin_procurement_facilities": 13,
+      "social_security_schemes": 3,
+      "governance_cbt": 6,
+      "unclassified": 64
+    },
+    "2025-2026": {
+      "pension_eps": 5,
+      "compliance_recovery": 12,
+      "exempted_establishments": 3,
+      "finance_accounts_invest": 20,
+      "it_digital_services": 18,
+      "hr_personnel_cadre": 137,
+      "citizen_services_rti": 3,
+      "training_research": 19,
+      "official_language": 21,
+      "admin_procurement_facilities": 4,
+      "social_security_schemes": 6,
+      "governance_cbt": 4,
+      "unclassified": 26
+    },
+    "2026-2027": {
+      "compliance_recovery": 7,
+      "exempted_establishments": 4,
+      "finance_accounts_invest": 5,
+      "it_digital_services": 3,
+      "hr_personnel_cadre": 34,
+      "legal_litigation": 2,
+      "citizen_services_rti": 3,
+      "training_research": 13,
+      "official_language": 5,
+      "social_security_schemes": 3,
+      "governance_cbt": 2,
+      "unclassified": 5
+    },
+    "Unknown": {
+      "pension_eps": 17,
+      "compliance_recovery": 10,
+      "exempted_establishments": 7,
+      "finance_accounts_invest": 28,
+      "it_digital_services": 6,
+      "hr_personnel_cadre": 44,
+      "legal_litigation": 4,
+      "citizen_services_rti": 9,
+      "training_research": 13,
+      "official_language": 3,
+      "admin_procurement_facilities": 3,
+      "social_security_schemes": 2,
+      "governance_cbt": 13,
+      "unclassified": 79
+    }
+  },
+  "subtopic_timeline": {
+    "2009-2010": {
+      "pension_eps": {
+        "general_pension": 5
+      },
+      "compliance_recovery": {
+        "recovery_and_defaulters": 6,
+        "7a_and_quasi_judicial": 5,
+        "coverage_and_inspection": 11
+      },
+      "exempted_establishments": {
+        "trust_compliance_audit": 10
+      },
+      "finance_accounts_invest": {
+        "budget_accounts_audit": 12,
+        "interest_rate": 2,
+        "investment_and_portfolio": 3
+      },
+      "it_digital_services": {
+        "eoffice_and_software": 6
+      },
+      "hr_personnel_cadre": {
+        "transfers_and_postings": 6,
+        "benefits_allowances_leave": 9,
+        "apar_sparrow": 4,
+        "recruitment_exams": 6,
+        "vigilance_and_discipline": 6,
+        "promotions_seniority_dpc": 42
+      },
+      "legal_litigation": {
+        "court_cases_and_orders": 5
+      },
+      "citizen_services_rti": {
+        "grievances_epfigms": 6,
+        "rti_act": 16
+      },
+      "training_research": {
+        "pdunass_natrss": 19
+      },
+      "official_language": {
+        "rajbhasha_and_events": 2
+      },
+      "admin_procurement_facilities": {
+        "buildings_and_premises": 2,
+        "procurement_and_tenders": 3,
+        "vehicles_and_transport": 1
+      },
+      "social_security_schemes": {
+        "international_workers_ssa": 2
+      },
+      "governance_cbt": {
+        "cbt_and_committees": 13
+      },
+      "unclassified": {
+        "general": 54
+      }
+    },
+    "2010-2011": {
+      "pension_eps": {
+        "ppo_and_processing": 2,
+        "general_pension": 1
+      },
+      "compliance_recovery": {
+        "coverage_and_inspection": 23,
+        "recovery_and_defaulters": 14,
+        "7a_and_quasi_judicial": 7
+      },
+      "exempted_establishments": {
+        "trust_compliance_audit": 16,
+        "surrender_and_cancellation": 1
+      },
+      "finance_accounts_invest": {
+        "budget_accounts_audit": 20,
+        "interest_rate": 2,
+        "investment_and_portfolio": 2
+      },
+      "it_digital_services": {
+        "eoffice_and_software": 22,
+        "uan_and_kyc": 1
+      },
+      "hr_personnel_cadre": {
+        "benefits_allowances_leave": 8,
+        "promotions_seniority_dpc": 20,
+        "transfers_and_postings": 21,
+        "apar_sparrow": 10,
+        "vigilance_and_discipline": 5,
+        "recruitment_exams": 36
+      },
+      "legal_litigation": {
+        "court_cases_and_orders": 6
+      },
+      "citizen_services_rti": {
+        "rti_act": 67,
+        "grievances_epfigms": 4
+      },
+      "training_research": {
+        "pdunass_natrss": 57
+      },
+      "official_language": {
+        "rajbhasha_and_events": 4
+      },
+      "admin_procurement_facilities": {
+        "buildings_and_premises": 9,
+        "vehicles_and_transport": 1,
+        "procurement_and_tenders": 13
+      },
+      "social_security_schemes": {
+        "international_workers_ssa": 6,
+        "special_schemes_campaigns": 3
+      },
+      "governance_cbt": {
+        "cbt_and_committees": 20
+      },
+      "unclassified": {
+        "general": 166
+      }
+    },
+    "2011-2012": {
+      "pension_eps": {
+        "ppo_and_processing": 6,
+        "general_pension": 6
+      },
+      "compliance_recovery": {
+        "coverage_and_inspection": 11,
+        "recovery_and_defaulters": 5,
+        "7a_and_quasi_judicial": 6
+      },
+      "exempted_establishments": {
+        "trust_compliance_audit": 8
+      },
+      "finance_accounts_invest": {
+        "budget_accounts_audit": 21,
+        "interest_rate": 6,
+        "investment_and_portfolio": 4
+      },
+      "it_digital_services": {
+        "uan_and_kyc": 4,
+        "eoffice_and_software": 12
+      },
+      "hr_personnel_cadre": {
+        "recruitment_exams": 35,
+        "promotions_seniority_dpc": 25,
+        "vigilance_and_discipline": 12,
+        "benefits_allowances_leave": 20,
+        "transfers_and_postings": 38,
+        "apar_sparrow": 9
+      },
+      "legal_litigation": {
+        "court_cases_and_orders": 14
+      },
+      "citizen_services_rti": {
+        "rti_act": 66,
+        "grievances_epfigms": 3
+      },
+      "training_research": {
+        "pdunass_natrss": 85
+      },
+      "official_language": {
+        "rajbhasha_and_events": 30
+      },
+      "admin_procurement_facilities": {
+        "procurement_and_tenders": 2,
+        "buildings_and_premises": 8,
+        "vehicles_and_transport": 2
+      },
+      "social_security_schemes": {
+        "international_workers_ssa": 8,
+        "special_schemes_campaigns": 2
+      },
+      "governance_cbt": {
+        "cbt_and_committees": 44
+      },
+      "unclassified": {
+        "general": 155
+      }
+    },
+    "2012-2013": {
+      "pension_eps": {
+        "ppo_and_processing": 10,
+        "general_pension": 8
+      },
+      "compliance_recovery": {
+        "recovery_and_defaulters": 18,
+        "7a_and_quasi_judicial": 8,
+        "coverage_and_inspection": 10
+      },
+      "exempted_establishments": {
+        "trust_compliance_audit": 5
+      },
+      "finance_accounts_invest": {
+        "budget_accounts_audit": 13,
+        "investment_and_portfolio": 9,
+        "interest_rate": 3
+      },
+      "it_digital_services": {
+        "uan_and_kyc": 11,
+        "eoffice_and_software": 12
+      },
+      "hr_personnel_cadre": {
+        "promotions_seniority_dpc": 49,
+        "vigilance_and_discipline": 27,
+        "transfers_and_postings": 41,
+        "benefits_allowances_leave": 16,
+        "apar_sparrow": 8,
+        "recruitment_exams": 43
+      },
+      "legal_litigation": {
+        "court_cases_and_orders": 14
+      },
+      "citizen_services_rti": {
+        "rti_act": 27,
+        "grievances_epfigms": 6
+      },
+      "training_research": {
+        "pdunass_natrss": 131
+      },
+      "official_language": {
+        "rajbhasha_and_events": 11
+      },
+      "admin_procurement_facilities": {
+        "buildings_and_premises": 6,
+        "vehicles_and_transport": 5,
+        "procurement_and_tenders": 2
+      },
+      "social_security_schemes": {
+        "international_workers_ssa": 5,
+        "special_schemes_campaigns": 3
+      },
+      "governance_cbt": {
+        "cbt_and_committees": 38
+      },
+      "unclassified": {
+        "general": 143
+      }
+    },
+    "2013-2014": {
+      "pension_eps": {
+        "digital_life_certificate": 2,
+        "ppo_and_processing": 19,
+        "general_pension": 13,
+        "higher_pension": 1
+      },
+      "compliance_recovery": {
+        "coverage_and_inspection": 16,
+        "recovery_and_defaulters": 8,
+        "7a_and_quasi_judicial": 11
+      },
+      "exempted_establishments": {
+        "trust_compliance_audit": 13
+      },
+      "finance_accounts_invest": {
+        "budget_accounts_audit": 29,
+        "interest_rate": 8,
+        "investment_and_portfolio": 10
+      },
+      "it_digital_services": {
+        "uan_and_kyc": 22,
+        "eoffice_and_software": 12
+      },
+      "hr_personnel_cadre": {
+        "benefits_allowances_leave": 17,
+        "vigilance_and_discipline": 25,
+        "promotions_seniority_dpc": 63,
+        "recruitment_exams": 66,
+        "apar_sparrow": 28,
+        "transfers_and_postings": 38
+      },
+      "legal_litigation": {
+        "court_cases_and_orders": 22
+      },
+      "citizen_services_rti": {
+        "grievances_epfigms": 24,
+        "rti_act": 18
+      },
+      "training_research": {
+        "pdunass_natrss": 144
+      },
+      "official_language": {
+        "rajbhasha_and_events": 22
+      },
+      "admin_procurement_facilities": {
+        "procurement_and_tenders": 1,
+        "vehicles_and_transport": 5,
+        "buildings_and_premises": 6
+      },
+      "social_security_schemes": {
+        "international_workers_ssa": 9,
+        "special_schemes_campaigns": 1
+      },
+      "governance_cbt": {
+        "cbt_and_committees": 30
+      },
+      "unclassified": {
+        "general": 157
+      }
+    },
+    "2014-2015": {
+      "pension_eps": {
+        "general_pension": 10,
+        "ppo_and_processing": 22,
+        "higher_pension": 2,
+        "digital_life_certificate": 2
+      },
+      "compliance_recovery": {
+        "recovery_and_defaulters": 15,
+        "7a_and_quasi_judicial": 13,
+        "coverage_and_inspection": 30
+      },
+      "exempted_establishments": {
+        "trust_compliance_audit": 16
+      },
+      "finance_accounts_invest": {
+        "investment_and_portfolio": 23,
+        "budget_accounts_audit": 37,
+        "interest_rate": 4
+      },
+      "it_digital_services": {
+        "eoffice_and_software": 5,
+        "uan_and_kyc": 34
+      },
+      "hr_personnel_cadre": {
+        "vigilance_and_discipline": 38,
+        "recruitment_exams": 53,
+        "transfers_and_postings": 25,
+        "promotions_seniority_dpc": 46,
+        "apar_sparrow": 10,
+        "benefits_allowances_leave": 16
+      },
+      "legal_litigation": {
+        "advocates_and_legal_fees": 1,
+        "court_cases_and_orders": 32
+      },
+      "citizen_services_rti": {
+        "rti_act": 30,
+        "grievances_epfigms": 44
+      },
+      "training_research": {
+        "pdunass_natrss": 105
+      },
+      "official_language": {
+        "rajbhasha_and_events": 23
+      },
+      "admin_procurement_facilities": {
+        "buildings_and_premises": 18,
+        "vehicles_and_transport": 3,
+        "procurement_and_tenders": 7
+      },
+      "social_security_schemes": {
+        "international_workers_ssa": 9,
+        "special_schemes_campaigns": 13
+      },
+      "governance_cbt": {
+        "cbt_and_committees": 30
+      },
+      "unclassified": {
+        "general": 144
+      }
+    },
+    "2015-2016": {
+      "pension_eps": {
+        "digital_life_certificate": 4,
+        "general_pension": 3,
+        "ppo_and_processing": 6
+      },
+      "compliance_recovery": {
+        "coverage_and_inspection": 28,
+        "recovery_and_defaulters": 11,
+        "7a_and_quasi_judicial": 9
+      },
+      "exempted_establishments": {
+        "trust_compliance_audit": 13
+      },
+      "finance_accounts_invest": {
+        "budget_accounts_audit": 25,
+        "investment_and_portfolio": 27,
+        "interest_rate": 4
+      },
+      "it_digital_services": {
+        "uan_and_kyc": 44,
+        "eoffice_and_software": 11
+      },
+      "hr_personnel_cadre": {
+        "vigilance_and_discipline": 54,
+        "promotions_seniority_dpc": 61,
+        "apar_sparrow": 20,
+        "transfers_and_postings": 18,
+        "benefits_allowances_leave": 14,
+        "recruitment_exams": 22
+      },
+      "legal_litigation": {
+        "court_cases_and_orders": 35
+      },
+      "citizen_services_rti": {
+        "rti_act": 36,
+        "grievances_epfigms": 36
+      },
+      "training_research": {
+        "pdunass_natrss": 85
+      },
+      "official_language": {
+        "rajbhasha_and_events": 19
+      },
+      "admin_procurement_facilities": {
+        "buildings_and_premises": 4,
+        "procurement_and_tenders": 6,
+        "vehicles_and_transport": 9
+      },
+      "social_security_schemes": {
+        "international_workers_ssa": 5,
+        "special_schemes_campaigns": 7
+      },
+      "governance_cbt": {
+        "cbt_and_committees": 28
+      },
+      "unclassified": {
+        "general": 136
+      }
+    },
+    "2016-2017": {
+      "pension_eps": {
+        "general_pension": 11,
+        "ppo_and_processing": 14,
+        "digital_life_certificate": 7
+      },
+      "compliance_recovery": {
+        "coverage_and_inspection": 20,
+        "7a_and_quasi_judicial": 9,
+        "recovery_and_defaulters": 8
+      },
+      "exempted_establishments": {
+        "trust_compliance_audit": 16
+      },
+      "finance_accounts_invest": {
+        "budget_accounts_audit": 13,
+        "interest_rate": 8,
+        "investment_and_portfolio": 17
+      },
+      "it_digital_services": {
+        "uan_and_kyc": 24,
+        "eoffice_and_software": 17
+      },
+      "hr_personnel_cadre": {
+        "vigilance_and_discipline": 22,
+        "promotions_seniority_dpc": 81,
+        "benefits_allowances_leave": 27,
+        "recruitment_exams": 34,
+        "apar_sparrow": 17,
+        "transfers_and_postings": 18
+      },
+      "legal_litigation": {
+        "court_cases_and_orders": 25
+      },
+      "citizen_services_rti": {
+        "grievances_epfigms": 12,
+        "rti_act": 42
+      },
+      "training_research": {
+        "pdunass_natrss": 67
+      },
+      "official_language": {
+        "rajbhasha_and_events": 11
+      },
+      "admin_procurement_facilities": {
+        "buildings_and_premises": 18,
+        "procurement_and_tenders": 8,
+        "vehicles_and_transport": 11
+      },
+      "social_security_schemes": {
+        "special_schemes_campaigns": 10,
+        "international_workers_ssa": 1
+      },
+      "governance_cbt": {
+        "cbt_and_committees": 28
+      },
+      "unclassified": {
+        "general": 111
+      }
+    },
+    "2017-2018": {
+      "pension_eps": {
+        "general_pension": 10,
+        "ppo_and_processing": 7,
+        "digital_life_certificate": 7
+      },
+      "compliance_recovery": {
+        "7a_and_quasi_judicial": 10,
+        "recovery_and_defaulters": 8,
+        "coverage_and_inspection": 24
+      },
+      "exempted_establishments": {
+        "trust_compliance_audit": 13
+      },
+      "finance_accounts_invest": {
+        "budget_accounts_audit": 22,
+        "investment_and_portfolio": 10,
+        "interest_rate": 6
+      },
+      "it_digital_services": {
+        "uan_and_kyc": 16,
+        "eoffice_and_software": 16
+      },
+      "hr_personnel_cadre": {
+        "benefits_allowances_leave": 47,
+        "vigilance_and_discipline": 24,
+        "transfers_and_postings": 18,
+        "promotions_seniority_dpc": 60,
+        "recruitment_exams": 40,
+        "apar_sparrow": 19
+      },
+      "legal_litigation": {
+        "court_cases_and_orders": 15,
+        "advocates_and_legal_fees": 1
+      },
+      "citizen_services_rti": {
+        "rti_act": 73,
+        "grievances_epfigms": 8
+      },
+      "training_research": {
+        "pdunass_natrss": 71
+      },
+      "official_language": {
+        "rajbhasha_and_events": 24
+      },
+      "admin_procurement_facilities": {
+        "buildings_and_premises": 18,
+        "procurement_and_tenders": 10,
+        "vehicles_and_transport": 1
+      },
+      "social_security_schemes": {
+        "special_schemes_campaigns": 10,
+        "international_workers_ssa": 7
+      },
+      "governance_cbt": {
+        "cbt_and_committees": 20
+      },
+      "unclassified": {
+        "general": 127
+      }
+    },
+    "2018-2019": {
+      "pension_eps": {
+        "ppo_and_processing": 7,
+        "digital_life_certificate": 5,
+        "general_pension": 2,
+        "higher_pension": 1
+      },
+      "compliance_recovery": {
+        "coverage_and_inspection": 18,
+        "7a_and_quasi_judicial": 4,
+        "recovery_and_defaulters": 1
+      },
+      "exempted_establishments": {
+        "trust_compliance_audit": 13
+      },
+      "finance_accounts_invest": {
+        "budget_accounts_audit": 18,
+        "investment_and_portfolio": 2,
+        "interest_rate": 4
+      },
+      "it_digital_services": {
+        "eoffice_and_software": 18,
+        "uan_and_kyc": 6
+      },
+      "hr_personnel_cadre": {
+        "promotions_seniority_dpc": 35,
+        "vigilance_and_discipline": 22,
+        "recruitment_exams": 22,
+        "benefits_allowances_leave": 22,
+        "apar_sparrow": 11,
+        "transfers_and_postings": 20
+      },
+      "legal_litigation": {
+        "court_cases_and_orders": 9,
+        "advocates_and_legal_fees": 1
+      },
+      "citizen_services_rti": {
+        "rti_act": 141,
+        "grievances_epfigms": 1
+      },
+      "training_research": {
+        "pdunass_natrss": 58
+      },
+      "official_language": {
+        "rajbhasha_and_events": 27
+      },
+      "admin_procurement_facilities": {
+        "buildings_and_premises": 10,
+        "procurement_and_tenders": 5,
+        "vehicles_and_transport": 3
+      },
+      "social_security_schemes": {
+        "special_schemes_campaigns": 7,
+        "international_workers_ssa": 3
+      },
+      "governance_cbt": {
+        "cbt_and_committees": 12
+      },
+      "unclassified": {
+        "general": 134
+      }
+    },
+    "2019-2020": {
+      "pension_eps": {
+        "ppo_and_processing": 5,
+        "digital_life_certificate": 4,
+        "general_pension": 1
+      },
+      "compliance_recovery": {
+        "coverage_and_inspection": 12,
+        "7a_and_quasi_judicial": 3,
+        "recovery_and_defaulters": 3
+      },
+      "exempted_establishments": {
+        "trust_compliance_audit": 9
+      },
+      "finance_accounts_invest": {
+        "interest_rate": 4,
+        "budget_accounts_audit": 12,
+        "investment_and_portfolio": 1
+      },
+      "it_digital_services": {
+        "eoffice_and_software": 15,
+        "uan_and_kyc": 3
+      },
+      "hr_personnel_cadre": {
+        "transfers_and_postings": 11,
+        "vigilance_and_discipline": 17,
+        "benefits_allowances_leave": 12,
+        "recruitment_exams": 39,
+        "apar_sparrow": 13,
+        "promotions_seniority_dpc": 34
+      },
+      "legal_litigation": {
+        "court_cases_and_orders": 12
+      },
+      "citizen_services_rti": {
+        "rti_act": 39,
+        "grievances_epfigms": 4
+      },
+      "training_research": {
+        "pdunass_natrss": 40
+      },
+      "official_language": {
+        "rajbhasha_and_events": 11
+      },
+      "admin_procurement_facilities": {
+        "procurement_and_tenders": 15,
+        "buildings_and_premises": 11,
+        "vehicles_and_transport": 10
+      },
+      "social_security_schemes": {
+        "special_schemes_campaigns": 3,
+        "international_workers_ssa": 5
+      },
+      "governance_cbt": {
+        "cbt_and_committees": 7
+      },
+      "unclassified": {
+        "general": 119
+      }
+    },
+    "2020-2021": {
+      "pension_eps": {
+        "ppo_and_processing": 1,
+        "digital_life_certificate": 1,
+        "general_pension": 1
+      },
+      "compliance_recovery": {
+        "7a_and_quasi_judicial": 4,
+        "coverage_and_inspection": 8,
+        "recovery_and_defaulters": 2
+      },
+      "exempted_establishments": {
+        "trust_compliance_audit": 1
+      },
+      "finance_accounts_invest": {
+        "budget_accounts_audit": 4,
+        "investment_and_portfolio": 2,
+        "interest_rate": 5
+      },
+      "it_digital_services": {
+        "uan_and_kyc": 3,
+        "eoffice_and_software": 4
+      },
+      "hr_personnel_cadre": {
+        "promotions_seniority_dpc": 8,
+        "apar_sparrow": 9,
+        "vigilance_and_discipline": 15,
+        "benefits_allowances_leave": 14,
+        "transfers_and_postings": 16,
+        "recruitment_exams": 7
+      },
+      "legal_litigation": {
+        "court_cases_and_orders": 6
+      },
+      "citizen_services_rti": {
+        "rti_act": 22,
+        "grievances_epfigms": 1
+      },
+      "training_research": {
+        "pdunass_natrss": 54
+      },
+      "official_language": {
+        "rajbhasha_and_events": 9
+      },
+      "admin_procurement_facilities": {
+        "buildings_and_premises": 6,
+        "procurement_and_tenders": 3,
+        "vehicles_and_transport": 2
+      },
+      "social_security_schemes": {
+        "special_schemes_campaigns": 7,
+        "international_workers_ssa": 2
+      },
+      "governance_cbt": {
+        "cbt_and_committees": 5
+      },
+      "unclassified": {
+        "general": 56
+      }
+    },
+    "2021-2022": {
+      "pension_eps": {
+        "digital_life_certificate": 8,
+        "ppo_and_processing": 1,
+        "general_pension": 1
+      },
+      "compliance_recovery": {
+        "recovery_and_defaulters": 1,
+        "coverage_and_inspection": 9,
+        "7a_and_quasi_judicial": 4
+      },
+      "exempted_establishments": {
+        "trust_compliance_audit": 2
+      },
+      "finance_accounts_invest": {
+        "budget_accounts_audit": 7,
+        "interest_rate": 5,
+        "investment_and_portfolio": 1
+      },
+      "it_digital_services": {
+        "eoffice_and_software": 5,
+        "uan_and_kyc": 3
+      },
+      "hr_personnel_cadre": {
+        "promotions_seniority_dpc": 12,
+        "transfers_and_postings": 10,
+        "recruitment_exams": 61,
+        "vigilance_and_discipline": 9,
+        "benefits_allowances_leave": 9,
+        "apar_sparrow": 7
+      },
+      "legal_litigation": {
+        "court_cases_and_orders": 1
+      },
+      "citizen_services_rti": {
+        "rti_act": 26,
+        "grievances_epfigms": 2
+      },
+      "training_research": {
+        "pdunass_natrss": 13
+      },
+      "official_language": {
+        "rajbhasha_and_events": 14
+      },
+      "admin_procurement_facilities": {
+        "procurement_and_tenders": 6,
+        "buildings_and_premises": 3
+      },
+      "social_security_schemes": {
+        "international_workers_ssa": 2,
+        "special_schemes_campaigns": 4
+      },
+      "governance_cbt": {
+        "cbt_and_committees": 13
+      },
+      "unclassified": {
+        "general": 61
+      }
+    },
+    "2022-2023": {
+      "pension_eps": {
+        "higher_pension": 2,
+        "digital_life_certificate": 1,
+        "ppo_and_processing": 3
+      },
+      "compliance_recovery": {
+        "coverage_and_inspection": 22,
+        "7a_and_quasi_judicial": 3,
+        "recovery_and_defaulters": 1
+      },
+      "exempted_establishments": {
+        "trust_compliance_audit": 2
+      },
+      "finance_accounts_invest": {
+        "interest_rate": 6,
+        "budget_accounts_audit": 6
+      },
+      "it_digital_services": {
+        "eoffice_and_software": 11,
+        "uan_and_kyc": 1
+      },
+      "hr_personnel_cadre": {
+        "recruitment_exams": 15,
+        "promotions_seniority_dpc": 25,
+        "vigilance_and_discipline": 10,
+        "apar_sparrow": 8,
+        "transfers_and_postings": 33,
+        "benefits_allowances_leave": 15
+      },
+      "legal_litigation": {
+        "court_cases_and_orders": 4
+      },
+      "citizen_services_rti": {
+        "rti_act": 50,
+        "grievances_epfigms": 12
+      },
+      "training_research": {
+        "pdunass_natrss": 66
+      },
+      "official_language": {
+        "rajbhasha_and_events": 11
+      },
+      "admin_procurement_facilities": {
+        "buildings_and_premises": 4,
+        "procurement_and_tenders": 6
+      },
+      "social_security_schemes": {
+        "special_schemes_campaigns": 5,
+        "international_workers_ssa": 2
+      },
+      "governance_cbt": {
+        "cbt_and_committees": 5
+      },
+      "unclassified": {
+        "general": 80
+      }
+    },
+    "2023-2024": {
+      "pension_eps": {
+        "higher_pension": 7,
+        "general_pension": 2
+      },
+      "compliance_recovery": {
+        "coverage_and_inspection": 10,
+        "recovery_and_defaulters": 3
+      },
+      "exempted_establishments": {
+        "trust_compliance_audit": 4
+      },
+      "finance_accounts_invest": {
+        "budget_accounts_audit": 4,
+        "interest_rate": 4
+      },
+      "it_digital_services": {
+        "eoffice_and_software": 7,
+        "uan_and_kyc": 2
+      },
+      "hr_personnel_cadre": {
+        "recruitment_exams": 29,
+        "benefits_allowances_leave": 12,
+        "promotions_seniority_dpc": 22,
+        "transfers_and_postings": 14,
+        "vigilance_and_discipline": 8,
+        "apar_sparrow": 7
+      },
+      "legal_litigation": {
+        "court_cases_and_orders": 1
+      },
+      "citizen_services_rti": {
+        "rti_act": 77,
+        "grievances_epfigms": 3
+      },
+      "training_research": {
+        "pdunass_natrss": 67
+      },
+      "official_language": {
+        "rajbhasha_and_events": 12
+      },
+      "admin_procurement_facilities": {
+        "procurement_and_tenders": 6,
+        "buildings_and_premises": 2
+      },
+      "social_security_schemes": {
+        "international_workers_ssa": 4,
+        "special_schemes_campaigns": 2
+      },
+      "governance_cbt": {
+        "cbt_and_committees": 5
+      },
+      "unclassified": {
+        "general": 77
+      }
+    },
+    "2024-2025": {
+      "pension_eps": {
+        "digital_life_certificate": 4,
+        "ppo_and_processing": 3
+      },
+      "compliance_recovery": {
+        "coverage_and_inspection": 10,
+        "7a_and_quasi_judicial": 3,
+        "recovery_and_defaulters": 2
+      },
+      "exempted_establishments": {
+        "trust_compliance_audit": 3,
+        "surrender_and_cancellation": 1
+      },
+      "finance_accounts_invest": {
+        "budget_accounts_audit": 5,
+        "interest_rate": 4
+      },
+      "it_digital_services": {
+        "uan_and_kyc": 11,
+        "eoffice_and_software": 3
+      },
+      "hr_personnel_cadre": {
+        "apar_sparrow": 18,
+        "promotions_seniority_dpc": 40,
+        "benefits_allowances_leave": 10,
+        "recruitment_exams": 47,
+        "transfers_and_postings": 40,
+        "vigilance_and_discipline": 5
+      },
+      "legal_litigation": {
+        "court_cases_and_orders": 1
+      },
+      "citizen_services_rti": {
+        "rti_act": 20,
+        "grievances_epfigms": 3
+      },
+      "training_research": {
+        "pdunass_natrss": 23
+      },
+      "official_language": {
+        "rajbhasha_and_events": 15
+      },
+      "admin_procurement_facilities": {
+        "procurement_and_tenders": 6,
+        "vehicles_and_transport": 7
+      },
+      "social_security_schemes": {
+        "international_workers_ssa": 3
+      },
+      "governance_cbt": {
+        "cbt_and_committees": 6
+      },
+      "unclassified": {
+        "general": 64
+      }
+    },
+    "2025-2026": {
+      "pension_eps": {
+        "ppo_and_processing": 2,
+        "digital_life_certificate": 1,
+        "general_pension": 1,
+        "higher_pension": 1
+      },
+      "compliance_recovery": {
+        "coverage_and_inspection": 11,
+        "7a_and_quasi_judicial": 1
+      },
+      "exempted_establishments": {
+        "trust_compliance_audit": 3
+      },
+      "finance_accounts_invest": {
+        "budget_accounts_audit": 14,
+        "interest_rate": 4,
+        "investment_and_portfolio": 2
+      },
+      "it_digital_services": {
+        "uan_and_kyc": 14,
+        "eoffice_and_software": 4
+      },
+      "hr_personnel_cadre": {
+        "apar_sparrow": 17,
+        "transfers_and_postings": 38,
+        "recruitment_exams": 41,
+        "promotions_seniority_dpc": 22,
+        "vigilance_and_discipline": 6,
+        "benefits_allowances_leave": 13
+      },
+      "citizen_services_rti": {
+        "grievances_epfigms": 3
+      },
+      "training_research": {
+        "pdunass_natrss": 19
+      },
+      "official_language": {
+        "rajbhasha_and_events": 21
+      },
+      "admin_procurement_facilities": {
+        "procurement_and_tenders": 4
+      },
+      "social_security_schemes": {
+        "international_workers_ssa": 2,
+        "special_schemes_campaigns": 4
+      },
+      "governance_cbt": {
+        "cbt_and_committees": 4
+      },
+      "unclassified": {
+        "general": 26
+      }
+    },
+    "2026-2027": {
+      "compliance_recovery": {
+        "7a_and_quasi_judicial": 3,
+        "coverage_and_inspection": 4
+      },
+      "exempted_establishments": {
+        "trust_compliance_audit": 4
+      },
+      "finance_accounts_invest": {
+        "budget_accounts_audit": 3,
+        "interest_rate": 2
+      },
+      "it_digital_services": {
+        "eoffice_and_software": 2,
+        "uan_and_kyc": 1
+      },
+      "hr_personnel_cadre": {
+        "promotions_seniority_dpc": 9,
+        "recruitment_exams": 15,
+        "apar_sparrow": 4,
+        "transfers_and_postings": 3,
+        "benefits_allowances_leave": 3
+      },
+      "legal_litigation": {
+        "court_cases_and_orders": 2
+      },
+      "citizen_services_rti": {
+        "rti_act": 3
+      },
+      "training_research": {
+        "pdunass_natrss": 13
+      },
+      "official_language": {
+        "rajbhasha_and_events": 5
+      },
+      "social_security_schemes": {
+        "special_schemes_campaigns": 1,
+        "international_workers_ssa": 2
+      },
+      "governance_cbt": {
+        "cbt_and_committees": 2
+      },
+      "unclassified": {
+        "general": 5
+      }
+    },
+    "Unknown": {
+      "pension_eps": {
+        "general_pension": 11,
+        "ppo_and_processing": 5,
+        "higher_pension": 1
+      },
+      "compliance_recovery": {
+        "coverage_and_inspection": 6,
+        "7a_and_quasi_judicial": 4
+      },
+      "exempted_establishments": {
+        "trust_compliance_audit": 7
+      },
+      "finance_accounts_invest": {
+        "interest_rate": 5,
+        "investment_and_portfolio": 14,
+        "budget_accounts_audit": 9
+      },
+      "it_digital_services": {
+        "eoffice_and_software": 6
+      },
+      "hr_personnel_cadre": {
+        "apar_sparrow": 4,
+        "benefits_allowances_leave": 16,
+        "promotions_seniority_dpc": 14,
+        "recruitment_exams": 3,
+        "transfers_and_postings": 3,
+        "vigilance_and_discipline": 4
+      },
+      "legal_litigation": {
+        "court_cases_and_orders": 4
+      },
+      "citizen_services_rti": {
+        "rti_act": 5,
+        "grievances_epfigms": 4
+      },
+      "training_research": {
+        "pdunass_natrss": 13
+      },
+      "official_language": {
+        "rajbhasha_and_events": 3
+      },
+      "admin_procurement_facilities": {
+        "buildings_and_premises": 2,
+        "vehicles_and_transport": 1
+      },
+      "social_security_schemes": {
+        "special_schemes_campaigns": 1,
+        "international_workers_ssa": 1
+      },
+      "governance_cbt": {
+        "cbt_and_committees": 13
+      },
+      "unclassified": {
+        "general": 79
+      }
+    }
+  },
+  "confidence_counts": {
+    "0": 566,
+    "1": 2173,
+    "2": 2597,
+    "3": 4198
+  },
+  "confidence_timeline": {
+    "2009-2010": {
+      "0": 10,
+      "1": 82,
+      "2": 92,
+      "3": 72
+    },
+    "2010-2011": {
+      "0": 36,
+      "1": 191,
+      "2": 129,
+      "3": 211
+    },
+    "2011-2012": {
+      "0": 31,
+      "1": 171,
+      "2": 168,
+      "3": 277
+    },
+    "2012-2013": {
+      "0": 34,
+      "1": 169,
+      "2": 182,
+      "3": 297
+    },
+    "2013-2014": {
+      "0": 63,
+      "1": 156,
+      "2": 185,
+      "3": 436
+    },
+    "2014-2015": {
+      "0": 47,
+      "1": 161,
+      "2": 222,
+      "3": 430
+    },
+    "2015-2016": {
+      "0": 36,
+      "1": 168,
+      "2": 212,
+      "3": 364
+    },
+    "2016-2017": {
+      "0": 21,
+      "1": 149,
+      "2": 206,
+      "3": 331
+    },
+    "2017-2018": {
+      "0": 54,
+      "1": 139,
+      "2": 207,
+      "3": 342
+    },
+    "2018-2019": {
+      "0": 48,
+      "1": 127,
+      "2": 169,
+      "3": 298
+    },
+    "2019-2020": {
+      "0": 36,
+      "1": 114,
+      "2": 127,
+      "3": 197
+    },
+    "2020-2021": {
+      "0": 14,
+      "1": 112,
+      "2": 85,
+      "3": 67
+    },
+    "2021-2022": {
+      "0": 18,
+      "1": 68,
+      "2": 71,
+      "3": 143
+    },
+    "2022-2023": {
+      "0": 18,
+      "1": 95,
+      "2": 124,
+      "3": 172
+    },
+    "2023-2024": {
+      "0": 20,
+      "1": 80,
+      "2": 111,
+      "3": 180
+    },
+    "2024-2025": {
+      "0": 21,
+      "1": 72,
+      "2": 112,
+      "3": 152
+    },
+    "2025-2026": {
+      "0": 5,
+      "1": 53,
+      "2": 89,
+      "3": 131
+    },
+    "2026-2027": {
+      "0": 2,
+      "1": 11,
+      "2": 29,
+      "3": 44
+    },
+    "Unknown": {
+      "0": 52,
+      "1": 55,
+      "2": 77,
+      "3": 54
+    }
+  },
+  "language_counts": {
+    "english": 7354,
+    "hindi": 547,
+    "both": 1578,
+    "none": 55
+  },
+  "language_timeline": {
+    "2009-2010": {
+      "english": 256
+    },
+    "2010-2011": {
+      "english": 550,
+      "both": 17
+    },
+    "2011-2012": {
+      "english": 606,
+      "both": 40,
+      "hindi": 1
+    },
+    "2012-2013": {
+      "english": 661,
+      "hindi": 2,
+      "both": 19
+    },
+    "2013-2014": {
+      "both": 479,
+      "english": 286,
+      "hindi": 75
+    },
+    "2014-2015": {
+      "english": 547,
+      "hindi": 100,
+      "both": 213
+    },
+    "2015-2016": {
+      "both": 177,
+      "english": 575,
+      "hindi": 28
+    },
+    "2016-2017": {
+      "english": 502,
+      "both": 180,
+      "hindi": 25
+    },
+    "2017-2018": {
+      "english": 580,
+      "both": 102,
+      "hindi": 60
+    },
+    "2018-2019": {
+      "english": 463,
+      "both": 103,
+      "hindi": 76
+    },
+    "2019-2020": {
+      "english": 355,
+      "both": 68,
+      "hindi": 51
+    },
+    "2020-2021": {
+      "english": 246,
+      "hindi": 11,
+      "both": 21
+    },
+    "2021-2022": {
+      "english": 234,
+      "hindi": 24,
+      "both": 42
+    },
+    "2022-2023": {
+      "english": 382,
+      "hindi": 14,
+      "both": 13
+    },
+    "2023-2024": {
+      "english": 366,
+      "hindi": 14,
+      "both": 11
+    },
+    "2024-2025": {
+      "english": 333,
+      "hindi": 22,
+      "both": 2
+    },
+    "2025-2026": {
+      "english": 183,
+      "hindi": 35,
+      "both": 60
+    },
+    "2026-2027": {
+      "english": 46,
+      "hindi": 9,
+      "both": 31
+    },
+    "Unknown": {
+      "none": 55,
+      "english": 183
+    }
+  },
+  "month_timeline": {
+    "2009-2010": {
+      "03": 21,
+      "01": 34,
+      "09": 31,
+      "02": 14,
+      "12": 17,
+      "11": 30,
+      "10": 20,
+      "08": 27,
+      "07": 11,
+      "04": 20,
+      "06": 19,
+      "05": 8
+    },
+    "2010-2011": {
+      "03": 68,
+      "02": 32,
+      "12": 56,
+      "01": 45,
+      "11": 50,
+      "10": 49,
+      "09": 49,
+      "08": 49,
+      "07": 51,
+      "06": 39,
+      "05": 39,
+      "04": 31
+    },
+    "2011-2012": {
+      "09": 58,
+      "03": 67,
+      "02": 47,
+      "01": 53,
+      "12": 63,
+      "11": 44,
+      "10": 42,
+      "08": 41,
+      "07": 50,
+      "06": 57,
+      "05": 62,
+      "04": 57
+    },
+    "2012-2013": {
+      "03": 61,
+      "02": 53,
+      "01": 69,
+      "12": 47,
+      "11": 41,
+      "10": 56,
+      "09": 47,
+      "08": 47,
+      "07": 62,
+      "06": 51,
+      "05": 88,
+      "04": 57
+    },
+    "2013-2014": {
+      "03": 62,
+      "02": 73,
+      "01": 84,
+      "12": 66,
+      "11": 67,
+      "10": 82,
+      "08": 84,
+      "09": 61,
+      "07": 67,
+      "06": 47,
+      "05": 74,
+      "04": 73
+    },
+    "2014-2015": {
+      "01": 63,
+      "03": 62,
+      "02": 60,
+      "12": 57,
+      "00": 1,
+      "11": 54,
+      "10": 64,
+      "09": 87,
+      "07": 85,
+      "08": 95,
+      "05": 88,
+      "06": 61,
+      "04": 80
+    },
+    "2015-2016": {
+      "03": 69,
+      "02": 49,
+      "01": 78,
+      "12": 70,
+      "11": 52,
+      "09": 64,
+      "10": 57,
+      "08": 58,
+      "07": 71,
+      "06": 77,
+      "05": 60,
+      "04": 74
+    },
+    "2016-2017": {
+      "03": 43,
+      "02": 52,
+      "01": 62,
+      "12": 60,
+      "11": 51,
+      "10": 56,
+      "09": 61,
+      "08": 72,
+      "07": 53,
+      "06": 82,
+      "05": 57,
+      "04": 58
+    },
+    "2017-2018": {
+      "03": 60,
+      "02": 55,
+      "01": 57,
+      "12": 64,
+      "11": 87,
+      "10": 66,
+      "09": 71,
+      "08": 60,
+      "07": 60,
+      "06": 59,
+      "05": 56,
+      "04": 47
+    },
+    "2018-2019": {
+      "03": 53,
+      "02": 23,
+      "01": 54,
+      "12": 42,
+      "10": 47,
+      "11": 49,
+      "09": 62,
+      "08": 59,
+      "07": 63,
+      "06": 59,
+      "05": 70,
+      "04": 60
+    },
+    "2019-2020": {
+      "03": 19,
+      "02": 23,
+      "01": 30,
+      "12": 30,
+      "11": 25,
+      "10": 40,
+      "09": 61,
+      "08": 54,
+      "05": 45,
+      "07": 50,
+      "06": 41,
+      "04": 56
+    },
+    "2020-2021": {
+      "03": 41,
+      "02": 42,
+      "01": 41,
+      "12": 22,
+      "11": 18,
+      "10": 21,
+      "09": 22,
+      "08": 17,
+      "07": 25,
+      "06": 9,
+      "05": 7,
+      "04": 13
+    },
+    "2021-2022": {
+      "03": 35,
+      "02": 53,
+      "01": 40,
+      "12": 17,
+      "11": 30,
+      "10": 27,
+      "09": 15,
+      "08": 21,
+      "07": 25,
+      "06": 16,
+      "05": 5,
+      "04": 16
+    },
+    "2022-2023": {
+      "03": 30,
+      "02": 36,
+      "01": 40,
+      "12": 49,
+      "10": 39,
+      "11": 33,
+      "09": 35,
+      "08": 20,
+      "07": 26,
+      "06": 27,
+      "05": 40,
+      "04": 32
+    },
+    "2023-2024": {
+      "03": 20,
+      "02": 30,
+      "01": 40,
+      "12": 35,
+      "11": 29,
+      "10": 31,
+      "09": 46,
+      "08": 41,
+      "07": 31,
+      "06": 31,
+      "05": 32,
+      "04": 25
+    },
+    "2024-2025": {
+      "03": 29,
+      "01": 30,
+      "02": 29,
+      "12": 30,
+      "11": 23,
+      "10": 33,
+      "09": 23,
+      "08": 19,
+      "07": 53,
+      "05": 26,
+      "06": 32,
+      "04": 30
+    },
+    "2025-2026": {
+      "04": 34,
+      "03": 24,
+      "02": 15,
+      "01": 29,
+      "12": 21,
+      "11": 24,
+      "10": 24,
+      "09": 26,
+      "08": 21,
+      "07": 27,
+      "06": 13,
+      "05": 20
+    },
+    "2026-2027": {
+      "08": 1,
+      "07": 26,
+      "06": 17,
+      "05": 18,
+      "04": 24
+    },
+    "Unknown": {
+      "04": 3,
+      "02": 30,
+      "03": 27,
+      "07": 9,
+      "10": 18,
+      "06": 13,
+      "05": 10,
+      "11": 13,
+      "01": 22,
+      "09": 16,
+      "08": 10,
+      "12": 25
+    }
+  }
+}

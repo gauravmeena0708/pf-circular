@@ -1,0 +1,260 @@
+{
+  "pension_eps": {
+    "name": "Pension & EPS-95",
+    "color": "#059669",
+    "icon": "user-check",
+    "description": "EPS-95 scheme, higher pension, pension calculations, PPOs, and pensioner welfare",
+    "count": 260,
+    "subtopics": {
+      "higher_pension": {
+        "name": "Higher Pension (SC Judgment)",
+        "count": 15
+      },
+      "digital_life_certificate": {
+        "name": "Life Certificate & Jeevan Pramaan",
+        "count": 46
+      },
+      "ppo_and_processing": {
+        "name": "PPO & Pension Processing",
+        "count": 113
+      },
+      "general_pension": {
+        "name": "General EPS-95 Policies",
+        "count": 86
+      }
+    }
+  },
+  "compliance_recovery": {
+    "name": "Compliance & Recovery",
+    "color": "#dc2626",
+    "icon": "shield-alert",
+    "description": "Establishment coverage, 7A/14B proceedings, default enforcement, inspections and recovery",
+    "count": 496,
+    "subtopics": {
+      "7a_and_quasi_judicial": {
+        "name": "Section 7A, 7Q & 14B Quasi-Judicial",
+        "count": 107
+      },
+      "recovery_and_defaulters": {
+        "name": "Recovery & Defaulter Actions",
+        "count": 106
+      },
+      "coverage_and_inspection": {
+        "name": "Coverage, Inspection & Compliance",
+        "count": 283
+      }
+    }
+  },
+  "exempted_establishments": {
+    "name": "Exempted Establishments",
+    "color": "#d97706",
+    "icon": "building",
+    "description": "Section 17 exemptions, private PF trusts, surrender of exemption, and trust compliance",
+    "count": 160,
+    "subtopics": {
+      "trust_compliance_audit": {
+        "name": "Trust Compliance & Audits",
+        "count": 158
+      },
+      "surrender_and_cancellation": {
+        "name": "Surrender & Cancellation of Exemption",
+        "count": 2
+      }
+    }
+  },
+  "finance_accounts_invest": {
+    "name": "Finance, Accounts & Investment",
+    "color": "#2563eb",
+    "icon": "trending-up",
+    "description": "Interest rates, budget, investments, banking, balance sheets, and CAG audit",
+    "count": 487,
+    "subtopics": {
+      "interest_rate": {
+        "name": "Interest Rate Declarations",
+        "count": 86
+      },
+      "investment_and_portfolio": {
+        "name": "Investments & Banking",
+        "count": 127
+      },
+      "budget_accounts_audit": {
+        "name": "Budget, Balance Sheet & Audit",
+        "count": 274
+      }
+    }
+  },
+  "it_digital_services": {
+    "name": "IT, UAN & Digital Services",
+    "color": "#7c3aed",
+    "icon": "cpu",
+    "description": "Universal Account Number (UAN), member portals, e-office, APIs, software, and cybersecurity",
+    "count": 388,
+    "subtopics": {
+      "uan_and_kyc": {
+        "name": "UAN, KYC & Online Portals",
+        "count": 200
+      },
+      "eoffice_and_software": {
+        "name": "Software, E-Office & Downtime",
+        "count": 188
+      }
+    }
+  },
+  "hr_personnel_cadre": {
+    "name": "HR, Personnel & Cadre",
+    "color": "#4f46e5",
+    "icon": "users",
+    "description": "Promotions, DPC, seniority lists, transfers, recruitment, APAR, SPARROW, and vigilance",
+    "count": 2525,
+    "subtopics": {
+      "promotions_seniority_dpc": {
+        "name": "Promotions, DPC & Seniority",
+        "count": 668
+      },
+      "transfers_and_postings": {
+        "name": "Transfers & Postings",
+        "count": 411
+      },
+      "apar_sparrow": {
+        "name": "APAR & SPARROW Appraisal",
+        "count": 223
+      },
+      "recruitment_exams": {
+        "name": "Recruitment & Departmental Exams",
+        "count": 614
+      },
+      "vigilance_and_discipline": {
+        "name": "Vigilance & Disciplinary",
+        "count": 309
+      },
+      "benefits_allowances_leave": {
+        "name": "Salaries, Allowances & Leave",
+        "count": 300
+      }
+    }
+  },
+  "legal_litigation": {
+    "name": "Legal & Court Matters",
+    "color": "#0284c7",
+    "icon": "scale",
+    "description": "Supreme Court, High Court, CAT cases, panel advocates, and legal dispute monitoring",
+    "count": 211,
+    "subtopics": {
+      "court_cases_and_orders": {
+        "name": "Court Judgments & Writs",
+        "count": 208
+      },
+      "advocates_and_legal_fees": {
+        "name": "Panel Advocates & Legal Fees",
+        "count": 3
+      }
+    }
+  },
+  "citizen_services_rti": {
+    "name": "Citizen Care & RTI",
+    "color": "#ea580c",
+    "icon": "message-circle",
+    "description": "Right to Information (RTI), CPGRAMS, EPFiGMS grievances, and member assistance",
+    "count": 934,
+    "subtopics": {
+      "rti_act": {
+        "name": "RTI Applications & Appeals",
+        "count": 758
+      },
+      "grievances_epfigms": {
+        "name": "Grievance Portals (EPFiGMS / CPGRAMS)",
+        "count": 176
+      }
+    }
+  },
+  "training_research": {
+    "name": "Training & Academics",
+    "color": "#0891b2",
+    "icon": "book-open",
+    "description": "PDUNASS, NATRSS, ZTI training calendars, workshops, seminars, and capacity building",
+    "count": 1130,
+    "subtopics": {
+      "pdunass_natrss": {
+        "name": "PDUNASS & ZTI Programs",
+        "count": 1130
+      }
+    }
+  },
+  "official_language": {
+    "name": "Official Language (Rajbhasha)",
+    "color": "#be185d",
+    "icon": "globe",
+    "description": "Hindi Pakhwada, Rajbhasha inspections, Hindi Diwas, workshops, and quarterly reports",
+    "count": 274,
+    "subtopics": {
+      "rajbhasha_and_events": {
+        "name": "Hindi Pakhwada & Rajbhasha",
+        "count": 274
+      }
+    }
+  },
+  "admin_procurement_facilities": {
+    "name": "Administration & Procurement",
+    "color": "#64748b",
+    "icon": "tool",
+    "description": "Vehicles, buildings, GeM procurement, office premises, logistics, tenders, and Swachhata",
+    "count": 291,
+    "subtopics": {
+      "vehicles_and_transport": {
+        "name": "Hiring of Vehicles & Transport",
+        "count": 61
+      },
+      "buildings_and_premises": {
+        "name": "Buildings, Infrastructure & Leases",
+        "count": 127
+      },
+      "procurement_and_tenders": {
+        "name": "GeM, Tenders & General Admin",
+        "count": 103
+      }
+    }
+  },
+  "social_security_schemes": {
+    "name": "Schemes & Campaigns",
+    "color": "#0d9488",
+    "icon": "award",
+    "description": "International Workers (SSA), EEC, PMRPY, ABRY schemes, and EDLI insurance",
+    "count": 161,
+    "subtopics": {
+      "international_workers_ssa": {
+        "name": "International Workers & SSA",
+        "count": 78
+      },
+      "special_schemes_campaigns": {
+        "name": "EEC, PMRPY, ABRY & Special Relief",
+        "count": 83
+      }
+    }
+  },
+  "governance_cbt": {
+    "name": "Governance & CBT",
+    "color": "#854d0e",
+    "icon": "landmark",
+    "description": "Central Board of Trustees (CBT), Executive Committee, Parliament questions, and annual reports",
+    "count": 323,
+    "subtopics": {
+      "cbt_and_committees": {
+        "name": "CBT & Executive Committee",
+        "count": 323
+      }
+    }
+  },
+  "unclassified": {
+    "name": "Other / Unclassified",
+    "color": "#94a3b8",
+    "icon": "help-circle",
+    "description": "General circulars, miscellaneous notices, and multi-topic announcements",
+    "count": 1894,
+    "subtopics": {
+      "general": {
+        "name": "Miscellaneous",
+        "count": 1894
+      }
+    }
+  }
+}

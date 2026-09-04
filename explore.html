@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Interactive visual explorer and topic classification for 9,500+ EPFO circulars spanning 2009–2027.">
+    <title>EPFO Circular Archive · Topic Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <style>
+        :root {
+            --sans: 'Inter', system-ui, -apple-system, sans-serif;
+            --mono: 'JetBrains Mono', monospace;
+            --bg: #f8fafc;
+            --surface: #ffffff;
+            --ink: #0f172a;
+            --ink-2: #334155;
+            --muted: #64748b;
+            --line: #e2e8f0;
+            --line-strong: #cbd5e1;
+            --accent: #2563eb;
+            --accent-soft: #eff6ff;
+            --focus-ring: rgba(37, 99, 235, 0.2);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--sans);
+            background: var(--bg);
+            color: var(--ink);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        /* Top Navigation Banner */
+        .site-nav {
+            background: #ffffff;
+            border-bottom: 1px solid var(--line);
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            position: sticky;
+            top: 0;
+            z-index: 40;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+
+        .site-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--ink);
+        }
+
+        .brand-seal {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            border: 2px solid #1e3a5f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 11px;
+            color: #1e3a5f;
+            background: #f1f5f9;
+        }
+
+        .brand-text h1 {
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+            line-height: 1.2;
+        }
+
+        .brand-text p {
+            font-size: 11px;
+            color: var(--muted);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 7px 14px;
+            border-radius: 6px;
+            font-size: 12.5px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 130ms ease;
+        }
+
+        .nav-btn-secondary {
+            border: 1px solid var(--line-strong);
+            background: #ffffff;
+            color: var(--ink-2);
+        }
+
+        .nav-btn-secondary:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: var(--accent-soft);
+        }
+
+        .nav-btn-primary {
+            background: var(--accent);
+            border: 1px solid var(--accent);
+            color: #ffffff;
+        }
+
+        /* Controls & Stats Bar */
+        .controls-bar {
+            background: #ffffff;
+            border-bottom: 1px solid var(--line);
+            padding: 14px 24px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .tab-switcher {
+            display: inline-flex;
+            flex-wrap: wrap;
+            background: #f1f5f9;
+            padding: 3px;
+            border-radius: 8px;
+            border: 1px solid var(--line);
+        }
+
+        .tab-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 7px 16px;
+            border-radius: 6px;
+            border: none;
+            background: transparent;
+            color: var(--muted);
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 120ms ease;
+        }
+
+        .tab-btn.active {
+            background: #ffffff;
+            color: var(--ink);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .filter-group {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .filter-select {
+            height: 36px;
+            padding: 0 12px;
+            border: 1px solid var(--line-strong);
+            border-radius: 6px;
+            background: #ffffff;
+            color: var(--ink-2);
+            font-size: 12.5px;
+            font-weight: 500;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .filter-select:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--focus-ring);
+        }
+
+        .stats-pills {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .stat-pill {
+            padding: 5px 11px;
+            border-radius: 999px;
+            background: #f1f5f9;
+            color: var(--ink-2);
+            font-size: 11.5px;
+            font-weight: 600;
+            border: 1px solid var(--line);
+        }
+
+        .stat-pill b {
+            color: var(--accent);
+        }
+
+        /* Main Workspace */
+        .workspace {
+            flex: 1;
+            padding: 20px 24px 40px;
+            max-width: 1600px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            position: relative;
+        }
+
+        /* View Containers */
+        .view-panel {
+            display: none;
+            flex-direction: column;
+            gap: 14px;
+            flex: 1;
+        }
+
+        .view-panel.active {
+            display: flex;
+        }
+
+        /* Breadcrumb Navigation */
+        .breadcrumb-bar {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            color: var(--muted);
+            min-height: 28px;
+        }
+
+        .breadcrumb-item {
+            color: var(--accent);
+            cursor: pointer;
+            font-weight: 600;
+            text-decoration: none;
+            border: 0;
+            padding: 0;
+            background: transparent;
+            font: inherit;
+        }
+
+        .breadcrumb-item:hover {
+            text-decoration: underline;
+        }
+
+        .breadcrumb-item.current {
+            color: var(--ink);
+            cursor: default;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .breadcrumb-sep {
+            opacity: 0.4;
+        }
+
+        /* Chart Canvas Card */
+        .chart-card {
+            background: #ffffff;
+            border: 1px solid var(--line);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.03);
+            position: relative;
+            overflow: hidden;
+            min-height: 640px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chart-header {
+            padding: 14px 18px;
+            border-bottom: 1px solid var(--line);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #fafcff;
+        }
+
+        .chart-title h2 {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--ink);
+        }
+
+        .chart-title p {
+            font-size: 11.5px;
+            color: var(--muted);
+            margin-top: 1px;
+        }
+
+        .chart-svg-container {
+            flex: 1;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-height: 580px;
+        }
+
+        /* Treemap Styles */
+        .treemap-node {
+            cursor: pointer;
+            transition: filter 120ms ease;
+        }
+
+        .treemap-node:hover rect {
+            filter: brightness(0.92);
+        }
+
+        .treemap-node text {
+            font-family: var(--sans);
+            pointer-events: none;
+            user-select: none;
+        }
+
+        .node-title {
+            font-weight: 700;
+            font-size: 13px;
+            fill: #ffffff;
+        }
+
+        .node-count {
+            font-weight: 500;
+            font-size: 11px;
+            fill: rgba(255, 255, 255, 0.88);
+        }
+
+        /* Heatmap Styles */
+        .heatmap-table-wrap {
+            overflow-x: auto;
+            width: 100%;
+            padding: 16px 20px;
+        }
+
+        .heatmap-grid {
+            border-collapse: separate;
+            border-spacing: 3px;
+            font-size: 12px;
+            width: 100%;
+            min-width: 1100px;
+        }
+
+        .heatmap-grid th {
+            padding: 8px 10px;
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            text-align: center;
+        }
+
+        .heatmap-grid th.col-topic-name {
+            text-align: left;
+            min-width: 220px;
+            width: 240px;
+        }
+
+        .heatmap-row-header {
+            padding: 8px 12px;
+            font-weight: 600;
+            color: var(--ink);
+            text-align: left;
+            background: #ffffff;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+
+        .domain-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .heatmap-cell {
+            text-align: center;
+            padding: 10px 4px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: var(--mono);
+            font-size: 11px;
+            font-weight: 600;
+            transition: transform 120ms ease, box-shadow 120ms ease;
+            position: relative;
+        }
+
+        .heatmap-cell:hover {
+            transform: scale(1.08);
+            z-index: 10;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .heatmap-cell.empty {
+            background: #f1f5f9;
+            color: #cbd5e1;
+            cursor: default;
+        }
+
+        .heatmap-cell.empty:hover {
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* Slide-Out Document Drawer */
+        .drawer-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(15, 23, 42, 0.4);
+            backdrop-filter: blur(4px);
+            z-index: 50;
+            display: none;
+            opacity: 0;
+            transition: opacity 200ms ease;
+        }
+
+        .drawer-overlay.open {
+            display: block;
+            opacity: 1;
+        }
+
+        .document-drawer {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: min(620px, 100vw);
+            background: #ffffff;
+            z-index: 60;
+            box-shadow: -10px 0 25px rgba(0,0,0,0.15);
+            display: flex;
+            flex-direction: column;
+            transform: translateX(100%);
+            transition: transform 240ms cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .document-drawer.open {
+            transform: translateX(0);
+        }
+
+        .drawer-header {
+            padding: 18px 20px;
+            border-bottom: 1px solid var(--line);
+            background: #fafcff;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 14px;
+        }
+
+        .drawer-title-wrap h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--ink);
+        }
+
+        .drawer-title-wrap p {
+            font-size: 12px;
+            color: var(--muted);
+            margin-top: 3px;
+        }
+
+        .drawer-close-btn {
+            background: transparent;
+            border: none;
+            font-size: 24px;
+            line-height: 1;
+            color: var(--muted);
+            cursor: pointer;
+            padding: 4px;
+            border-radius: 6px;
+        }
+
+        .drawer-close-btn:hover {
+            background: #e2e8f0;
+            color: var(--ink);
+        }
+
+        .drawer-search-bar {
+            padding: 12px 20px;
+            border-bottom: 1px solid var(--line);
+            background: #ffffff;
+        }
+
+        .drawer-search-input {
+            width: 100%;
+            height: 38px;
+            padding: 0 12px;
+            border: 1px solid var(--line-strong);
+            border-radius: 6px;
+            font-size: 13px;
+            outline: none;
+        }
+
+        .drawer-search-input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px var(--focus-ring);
+        }
+
+        .drawer-body {
+            flex: 1;
+            overflow-y: auto;
+            padding: 16px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        /* Drawer Circular Card */
+        .drawer-circular-card {
+            padding: 14px 16px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: #ffffff;
+            transition: all 120ms ease;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .drawer-circular-card:hover {
+            border-color: #94a3b8;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .card-meta-line {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            font-size: 11px;
+            color: var(--muted);
+        }
+
+        .card-cno {
+            font-family: var(--mono);
+            font-weight: 500;
+            color: var(--ink-2);
+        }
+
+        .card-title {
+            font-size: 13.5px;
+            font-weight: 600;
+            line-height: 1.4;
+            color: var(--ink);
+        }
+
+        .card-actions {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .card-read-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 4px 10px;
+            border-radius: 5px;
+            border: 1px solid var(--accent);
+            background: var(--accent);
+            color: #ffffff;
+            font-size: 11.5px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 120ms ease;
+        }
+
+        .card-read-btn:hover {
+            background: #1d4ed8;
+            border-color: #1d4ed8;
+        }
+
+        .card-pdf-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            padding: 4px 8px;
+            border-radius: 5px;
+            border: 1px solid var(--line-strong);
+            background: #f8fafc;
+            color: var(--muted);
+            font-size: 11px;
+            text-decoration: none;
+        }
+
+        .card-pdf-link:hover {
+            color: var(--ink);
+            background: #ffffff;
+        }
+
+        /* Tooltip */
+        .explorer-tooltip {
+            position: absolute;
+            pointer-events: none;
+            background: #0f172a;
+            color: #ffffff;
+            padding: 7px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 100;
+            opacity: 0;
+            transition: opacity 100ms ease;
+            white-space: nowrap;
+        }
+
+        /* Empty state */
+        .empty-drawer-state {
+            text-align: center;
+            padding: 48px 20px;
+            color: var(--muted);
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .text-muted {
+            color: var(--muted);
+            font-size: 10px;
+            font-weight: 500;
+        }
+
+        .panel-controls,
+        .panel-controls label {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--muted);
+        }
+
+        .panel-controls label {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .segmented-control {
+            display: inline-flex;
+            padding: 3px;
+            border: 1px solid var(--line);
+            border-radius: 7px;
+            background: #f1f5f9;
+        }
+
+        .segment {
+            border: 0;
+            border-radius: 5px;
+            padding: 6px 11px;
+            background: transparent;
+            color: var(--muted);
+            font: inherit;
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .segment.active {
+            color: var(--ink);
+            background: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .compact-card {
+            min-height: 0;
+        }
+
+        .summary-strip {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1px;
+            background: var(--line);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .summary-item {
+            padding: 14px 18px;
+            background: #ffffff;
+        }
+
+        .summary-item span {
+            display: block;
+            color: var(--muted);
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .summary-item strong {
+            display: block;
+            margin-top: 3px;
+            color: var(--ink);
+            font-size: 19px;
+        }
+
+        .comparison-chart,
+        .trend-chart,
+        .trend-breakdown,
+        .quality-chart,
+        .seasonality-chart {
+            padding: 18px 20px;
+        }
+
+        .comparison-row {
+            display: grid;
+            grid-template-columns: minmax(190px, 1.2fr) minmax(220px, 3fr) 90px;
+            gap: 14px;
+            align-items: center;
+            padding: 9px 0;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .comparison-topic {
+            border: 0;
+            padding: 0;
+            background: transparent;
+            color: var(--ink);
+            text-align: left;
+            font: inherit;
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .comparison-bars {
+            display: grid;
+            gap: 5px;
+        }
+
+        .bar-track {
+            height: 8px;
+            border-radius: 999px;
+            background: #eef2f7;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            min-width: 1px;
+            border-radius: inherit;
+        }
+
+        .comparison-value {
+            text-align: right;
+            font-family: var(--mono);
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .delta-positive { color: #047857; }
+        .delta-negative { color: #b91c1c; }
+        .delta-flat { color: var(--muted); }
+
+        .trend-form {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: min(460px, 100%);
+        }
+
+        .trend-form .drawer-search-input {
+            min-width: 180px;
+        }
+
+        .inline-status {
+            padding: 12px 20px 0;
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        .chart-axis text,
+        .chart-label {
+            font-family: var(--sans);
+            font-size: 11px;
+            fill: var(--muted);
+        }
+
+        .chart-axis path,
+        .chart-axis line {
+            stroke: var(--line-strong);
+        }
+
+        .trend-line {
+            fill: none;
+            stroke: var(--accent);
+            stroke-width: 2.5;
+        }
+
+        .trend-point {
+            fill: #ffffff;
+            stroke: var(--accent);
+            stroke-width: 2;
+            cursor: pointer;
+        }
+
+        .breakdown-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 8px 18px;
+        }
+
+        .breakdown-item,
+        .quality-row {
+            display: grid;
+            grid-template-columns: minmax(120px, 1fr) minmax(90px, 2fr) auto;
+            gap: 10px;
+            align-items: center;
+            border: 0;
+            padding: 7px 0;
+            background: transparent;
+            color: var(--ink);
+            font: inherit;
+            font-size: 12px;
+            text-align: left;
+        }
+
+        button.breakdown-item {
+            cursor: pointer;
+        }
+
+        .mini-track {
+            height: 7px;
+            overflow: hidden;
+            border-radius: 999px;
+            background: #eef2f7;
+        }
+
+        .mini-fill {
+            height: 100%;
+            border-radius: inherit;
+            background: var(--accent);
+        }
+
+        .quality-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .quality-action-row {
+            padding: 0 20px 18px;
+        }
+
+        .seasonality-bars {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(34px, 1fr));
+            gap: 8px;
+            align-items: end;
+            min-height: 190px;
+        }
+
+        .month-bar {
+            display: flex;
+            min-width: 0;
+            height: 170px;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 5px;
+            color: var(--muted);
+            font-size: 10px;
+        }
+
+        .month-bar-fill {
+            width: min(28px, 80%);
+            min-height: 1px;
+            border-radius: 4px 4px 0 0;
+            background: var(--accent);
+        }
+
+        .heatmap-button {
+            width: 100%;
+            min-width: 42px;
+            padding: 10px 4px;
+            border: 0;
+            border-radius: 4px;
+            background: transparent;
+            color: inherit;
+            font-family: var(--mono);
+            font-size: 11px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .treemap-node:focus rect,
+        .comparison-topic:focus-visible,
+        .breakdown-item:focus-visible,
+        .heatmap-button:focus-visible,
+        .trend-point:focus {
+            outline: 3px solid var(--ink);
+            outline-offset: -4px;
+        }
+
+        .document-drawer[aria-hidden="true"] {
+            visibility: hidden;
+        }
+
+        @media (max-width: 768px) {
+            .site-nav { padding: 10px 14px; }
+            .controls-bar { padding: 10px 14px; flex-direction: column; align-items: stretch; }
+            .workspace { padding: 12px 14px; }
+            .document-drawer { width: 100vw; }
+            .chart-header { align-items: flex-start; flex-direction: column; gap: 12px; }
+            .quality-grid { grid-template-columns: 1fr; }
+            .summary-strip { grid-template-columns: 1fr; }
+            .comparison-row { grid-template-columns: 1fr; gap: 7px; }
+            .comparison-value { text-align: left; }
+            .seasonality-bars { gap: 3px; }
+            .month-bar { font-size: 9px; }
+            .trend-form { align-items: stretch; flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Site Navigation -->
+    <header class="site-nav">
+        <a class="site-brand" href="index.html">
+            <div class="brand-seal">EPFO</div>
+            <div class="brand-text">
+                <h1>Circular Archive · Topic Explorer</h1>
+                <p>Interactive Taxonomy & Policy Evolution (2009–2027)</p>
+            </div>
+        </a>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-btn nav-btn-secondary" title="Search all circulars in table ledger">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <span>Search Ledger</span>
+            </a>
+        </nav>
+    </header>
+
+    <!-- View switcher and archive summary -->
+    <div class="controls-bar">
+        <div class="tab-switcher" role="tablist">
+            <button type="button" id="tabAtlas" class="tab-btn active" role="tab" aria-selected="true" aria-controls="panelAtlas">
+                Topic Atlas
+            </button>
+            <button type="button" id="tabEvolution" class="tab-btn" role="tab" aria-selected="false" aria-controls="panelEvolution">
+                Evolution
+            </button>
+            <button type="button" id="tabCompare" class="tab-btn" role="tab" aria-selected="false" aria-controls="panelCompare">
+                Compare
+            </button>
+            <button type="button" id="tabTrends" class="tab-btn" role="tab" aria-selected="false" aria-controls="panelTrends">
+                Search Trends
+            </button>
+            <button type="button" id="tabQuality" class="tab-btn" role="tab" aria-selected="false" aria-controls="panelQuality">
+                Data Quality
+            </button>
+        </div>
+
+        <div class="stats-pills">
+            <span class="stat-pill"><b id="statTotalDocs">9,534</b> Circulars</span>
+            <span class="stat-pill"><b id="statTotalDomains">14</b> Topic buckets</span>
+            <span class="stat-pill"><b>18</b> Financial Years</span>
+        </div>
+    </div>
+
+    <!-- Main Workspace -->
+    <main class="workspace">
+
+        <!-- View 1: Topic Atlas (Treemap) -->
+        <section id="panelAtlas" class="view-panel active" role="tabpanel" aria-labelledby="tabAtlas">
+            <nav id="breadcrumbNav" class="breadcrumb-bar" aria-label="Topic hierarchy">
+                <span class="breadcrumb-item current" data-id="root">All EPFO Circular Topics (9,534)</span>
+            </nav>
+
+            <div class="chart-card">
+                <div class="chart-header">
+                    <div class="chart-title">
+                        <h2 id="atlasTitle">EPFO Policy Domain Breakdown</h2>
+                        <p id="atlasSubtitle">Click any colored domain block to zoom into its sub-topics. Click a sub-topic to view matching circulars.</p>
+                    </div>
+                    <div class="filter-group panel-controls">
+                        <label for="yearFilterSelect">Financial year
+                            <select id="yearFilterSelect" class="filter-select">
+                                <option value="">All years</option>
+                            </select>
+                        </label>
+                        <label for="domainFilterSelect">Topic
+                            <select id="domainFilterSelect" class="filter-select">
+                                <option value="">All topics</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class="chart-svg-container" id="treemapContainer">
+                    <!-- Dynamic SVG Rendered Here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- View 2: Policy Evolution (Heatmap) -->
+        <section id="panelEvolution" class="view-panel" role="tabpanel" aria-labelledby="tabEvolution">
+            <div class="chart-card">
+                <div class="chart-header">
+                    <div class="chart-title">
+                        <h2>18-Year Policy Activity Matrix (2009–2027)</h2>
+                        <p>Compare absolute volume or each topic’s share of a financial year. Select a cell to inspect its circulars.</p>
+                    </div>
+                    <div class="filter-group panel-controls">
+                        <label for="evolutionDomainSelect">Topic
+                            <select id="evolutionDomainSelect" class="filter-select">
+                                <option value="">All topics</option>
+                            </select>
+                        </label>
+                        <div class="segmented-control" role="group" aria-label="Evolution metric">
+                            <button type="button" id="metricCount" class="segment active" aria-pressed="true">Count</button>
+                            <button type="button" id="metricShare" class="segment" aria-pressed="false">Share</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="heatmap-table-wrap" id="heatmapContainer">
+                    <!-- Dynamic Heatmap Rendered Here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- View 3: period comparison -->
+        <section id="panelCompare" class="view-panel" role="tabpanel" aria-labelledby="tabCompare">
+            <div class="chart-card compact-card">
+                <div class="chart-header">
+                    <div class="chart-title">
+                        <h2>Financial-Year Comparison</h2>
+                        <p>See which topics gained or lost share, independent of total archive volume.</p>
+                    </div>
+                    <div class="filter-group panel-controls">
+                        <label for="compareYearA">Baseline
+                            <select id="compareYearA" class="filter-select"></select>
+                        </label>
+                        <label for="compareYearB">Comparison
+                            <select id="compareYearB" class="filter-select"></select>
+                        </label>
+                    </div>
+                </div>
+                <div id="compareSummary" class="summary-strip" aria-live="polite"></div>
+                <div id="compareChart" class="comparison-chart"></div>
+            </div>
+        </section>
+
+        <!-- View 4: keyword trends -->
+        <section id="panelTrends" class="view-panel" role="tabpanel" aria-labelledby="tabTrends">
+            <div class="chart-card compact-card">
+                <div class="chart-header">
+                    <div class="chart-title">
+                        <h2>Search Trend Explorer</h2>
+                        <p>Track circulars containing every search term, then open any year or topic.</p>
+                    </div>
+                    <form id="trendForm" class="trend-form" role="search">
+                        <label class="sr-only" for="trendQuery">Search terms</label>
+                        <input id="trendQuery" class="drawer-search-input" type="search" placeholder="Try: higher pension, UAN, audit" autocomplete="off">
+                        <button class="nav-btn nav-btn-primary" type="submit">Plot trend</button>
+                    </form>
+                </div>
+                <p id="trendStatus" class="inline-status" aria-live="polite">Enter one or more words to plot their occurrence across the archive.</p>
+                <div id="trendChart" class="trend-chart"></div>
+                <div id="trendBreakdown" class="trend-breakdown"></div>
+            </div>
+        </section>
+
+        <!-- View 5: coverage and classification quality -->
+        <section id="panelQuality" class="view-panel" role="tabpanel" aria-labelledby="tabQuality">
+            <div class="quality-grid">
+                <article class="chart-card compact-card">
+                    <div class="chart-header">
+                        <div class="chart-title">
+                            <h2>Classification Confidence</h2>
+                            <p>Understand how much of the archive is safe to use for topic conclusions.</p>
+                        </div>
+                        <label class="panel-controls" for="qualityYearSelect">Financial year
+                            <select id="qualityYearSelect" class="filter-select">
+                                <option value="">All years</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div id="confidenceChart" class="quality-chart"></div>
+                    <div class="quality-action-row">
+                        <button type="button" id="reviewLowConfidence" class="nav-btn nav-btn-primary">Review low-confidence circulars</button>
+                    </div>
+                </article>
+                <article class="chart-card compact-card">
+                    <div class="chart-header">
+                        <div class="chart-title">
+                            <h2>Document-Language Coverage</h2>
+                            <p>English and Hindi PDF availability for the same selected scope.</p>
+                        </div>
+                    </div>
+                    <div id="languageChart" class="quality-chart"></div>
+                </article>
+            </div>
+            <div class="chart-card compact-card">
+                <div class="chart-header">
+                    <div class="chart-title">
+                        <h2>Monthly Issuance Pattern</h2>
+                        <p>Monthly volume for circulars with a known issue date in the selected scope.</p>
+                    </div>
+                </div>
+                <div id="seasonalityChart" class="seasonality-chart"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Slide-Out Document Drawer -->
+    <div id="drawerOverlay" class="drawer-overlay"></div>
+    <aside id="documentDrawer" class="document-drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true">
+        <header class="drawer-header">
+            <div class="drawer-title-wrap">
+                <h3 id="drawerTitle">Matching Circulars</h3>
+                <p id="drawerSubtitle">Loading circular records...</p>
+            </div>
+            <button type="button" id="drawerCloseBtn" class="drawer-close-btn" aria-label="Close drawer">&times;</button>
+        </header>
+        <div class="drawer-search-bar">
+            <input type="search" id="drawerSearchInput" class="drawer-search-input" placeholder="Filter these circulars by title or number...">
+        </div>
+        <div class="drawer-body" id="drawerList">
+            <!-- Dynamic Circular Cards Rendered Here -->
+        </div>
+    </aside>
+
+    <!-- Interactive Tooltip -->
+    <div id="explorerTooltip" class="explorer-tooltip"></div>
+
+    <script type="text/plain" id="legacyExplorerScript">
+        // State
+        let taxonomyData = null;
+        let summaryData = null;
+        let assignmentsData = null;
+        let catalogData = null;
+        let currentZoomDomain = null;
+        let activeTab = 'atlas';
+
+        // Elements
+        const tabAtlas = document.getElementById('tabAtlas');
+        const tabEvolution = document.getElementById('tabEvolution');
+        const panelAtlas = document.getElementById('panelAtlas');
+        const panelEvolution = document.getElementById('panelEvolution');
+        const yearFilterSelect = document.getElementById('yearFilterSelect');
+        const domainFilterSelect = document.getElementById('domainFilterSelect');
+        const treemapContainer = document.getElementById('treemapContainer');
+        const heatmapContainer = document.getElementById('heatmapContainer');
+        const breadcrumbNav = document.getElementById('breadcrumbNav');
+        const atlasTitle = document.getElementById('atlasTitle');
+        const atlasSubtitle = document.getElementById('atlasSubtitle');
+        const drawerOverlay = document.getElementById('drawerOverlay');
+        const documentDrawer = document.getElementById('documentDrawer');
+        const drawerCloseBtn = document.getElementById('drawerCloseBtn');
+        const drawerTitle = document.getElementById('drawerTitle');
+        const drawerSubtitle = document.getElementById('drawerSubtitle');
+        const drawerList = document.getElementById('drawerList');
+        const drawerSearchInput = document.getElementById('drawerSearchInput');
+        const tooltip = document.getElementById('explorerTooltip');
+
+        // Tab Switching
+        tabAtlas.addEventListener('click', () => switchTab('atlas'));
+        tabEvolution.addEventListener('click', () => switchTab('evolution'));
+
+        function switchTab(tab) {
+            activeTab = tab;
+            tabAtlas.classList.toggle('active', tab === 'atlas');
+            tabEvolution.classList.toggle('active', tab === 'evolution');
+            panelAtlas.classList.toggle('active', tab === 'atlas');
+            panelEvolution.classList.toggle('active', tab === 'evolution');
+            if (tab === 'evolution' && !heatmapContainer.hasChildNodes()) {
+                renderHeatmap();
+            }
+        }
+
+        // Load Taxonomy & Summary upfront (Progressive Loading)
+        async function init() {
+            try {
+                const [taxResp, sumResp] = await Promise.all([
+                    fetch('data/topics/taxonomy.json'),
+                    fetch('data/topics/summary.json')
+                ]);
+                taxonomyData = await taxResp.json();
+                summaryData = await sumResp.json();
+
+                populateFilterControls();
+                renderTreemap();
+            } catch (err) {
+                console.error("Failed to load initial topic data:", err);
+                treemapContainer.innerHTML = `<div style="padding:40px; text-align:center; color:#ef4444;">Failed to load topic assets. Ensure <code>classify.py</code> has been run.</div>`;
+            }
+        }
+
+        function populateFilterControls() {
+            // Populate financial years
+            const fys = summaryData.financial_years || [];
+            fys.slice().reverse().forEach(fy => {
+                const opt = document.createElement('option');
+                opt.value = fy;
+                opt.textContent = `FY ${fy}`;
+                yearFilterSelect.appendChild(opt);
+            });
+
+            // Populate domains
+            for (const [dId, dInfo] of Object.entries(taxonomyData)) {
+                const opt = document.createElement('option');
+                opt.value = dId;
+                opt.textContent = `${dInfo.name} (${dInfo.count.toLocaleString()})`;
+                domainFilterSelect.appendChild(opt);
+            }
+
+            yearFilterSelect.addEventListener('change', () => {
+                renderTreemap();
+                if (activeTab === 'evolution') renderHeatmap();
+            });
+
+            domainFilterSelect.addEventListener('change', (e) => {
+                currentZoomDomain = e.target.value || null;
+                renderTreemap();
+            });
+        }
+
+        // Render D3 Treemap (Topic Atlas)
+        function renderTreemap() {
+            treemapContainer.innerHTML = '';
+            const width = treemapContainer.clientWidth || 1100;
+            const height = Math.max(580, treemapContainer.clientHeight || 600);
+            const selectedFy = yearFilterSelect.value;
+
+            // Build hierarchical dataset
+            let rootData;
+            if (!currentZoomDomain) {
+                // Top level: Domains
+                atlasTitle.textContent = "EPFO Policy Domain Breakdown";
+                atlasSubtitle.textContent = "Click any colored domain block to zoom into its sub-topics. Click a sub-topic to view matching circulars.";
+                updateBreadcrumbs(null);
+
+                const children = [];
+                for (const [dId, dInfo] of Object.entries(taxonomyData)) {
+                    let count = dInfo.count;
+                    if (selectedFy && summaryData.timeline[selectedFy]) {
+                        count = summaryData.timeline[selectedFy][dId] || 0;
+                    }
+                    if (count > 0) {
+                        children.push({
+                            id: dId,
+                            name: dInfo.name,
+                            count: count,
+                            color: dInfo.color,
+                            isDomain: true
+                        });
+                    }
+                }
+                rootData = { name: "All Topics", children };
+            } else {
+                // Subtopic level for selected domain
+                const dInfo = taxonomyData[currentZoomDomain];
+                atlasTitle.textContent = `${dInfo.name} · Sub-Topic Breakdown`;
+                atlasSubtitle.textContent = `Showing all classified sub-topics in ${dInfo.name}. Click a tile to view circulars.`;
+                updateBreadcrumbs(currentZoomDomain);
+
+                const children = [];
+                for (const [sId, sInfo] of Object.entries(dInfo.subtopics)) {
+                    let count = sInfo.count;
+                    if (selectedFy) {
+                        // Estimate proportional or load assignments
+                        count = sInfo.count;
+                    }
+                    if (count > 0) {
+                        children.push({
+                            id: sId,
+                            domainId: currentZoomDomain,
+                            name: sInfo.name,
+                            count: count,
+                            color: dInfo.color,
+                            isSubtopic: true
+                        });
+                    }
+                }
+                rootData = { name: dInfo.name, children };
+            }
+
+            const svg = d3.select(treemapContainer)
+                .append('svg')
+                .attr('width', width)
+                .attr('height', height)
+                .style('font-family', 'var(--sans)');
+
+            const root = d3.hierarchy(rootData)
+                .sum(d => d.count)
+                .sort((a, b) => b.value - a.value);
+
+            d3.treemap()
+                .size([width, height])
+                .paddingInner(4)
+                .round(true)(root);
+
+            const nodes = svg.selectAll('g')
+                .data(root.leaves())
+                .enter()
+                .append('g')
+                .attr('class', 'treemap-node')
+                .attr('transform', d => `translate(${d.x0},${d.y0})`)
+                .on('click', (event, d) => {
+                    if (d.data.isDomain) {
+                        currentZoomDomain = d.data.id;
+                        domainFilterSelect.value = d.data.id;
+                        renderTreemap();
+                    } else if (d.data.isSubtopic) {
+                        openDrawer(d.data.domainId, d.data.id, d.data.name);
+                    }
+                })
+                .on('mouseenter', (event, d) => {
+                    tooltip.style.opacity = 1;
+                    tooltip.innerHTML = `<strong>${d.data.name}</strong><br/>${d.data.count.toLocaleString()} circulars (${((d.data.count / summaryData.total_documents) * 100).toFixed(1)}%)`;
+                })
+                .on('mousemove', (event) => {
+                    tooltip.style.left = (event.pageX + 14) + 'px';
+                    tooltip.style.top = (event.pageY + 14) + 'px';
+                })
+                .on('mouseleave', () => {
+                    tooltip.style.opacity = 0;
+                });
+
+            // Rectangle
+            nodes.append('rect')
+                .attr('width', d => Math.max(0, d.x1 - d.x0))
+                .attr('height', d => Math.max(0, d.y1 - d.y0))
+                .attr('fill', d => d.data.color || '#2563eb')
+                .attr('rx', 4);
+
+            // Text Labels (Title)
+            nodes.append('text')
+                .attr('class', 'node-title')
+                .attr('x', 10)
+                .attr('y', 22)
+                .text(d => {
+                    const rectW = d.x1 - d.x0;
+                    const rectH = d.y1 - d.y0;
+                    if (rectW < 75 || rectH < 38) return '';
+                    const maxChars = Math.floor(rectW / 8.5);
+                    return d.data.name.length > maxChars ? d.data.name.slice(0, maxChars - 2) + '…' : d.data.name;
+                });
+
+            // Text Labels (Count)
+            nodes.append('text')
+                .attr('class', 'node-count')
+                .attr('x', 10)
+                .attr('y', 40)
+                .text(d => {
+                    const rectW = d.x1 - d.x0;
+                    const rectH = d.y1 - d.y0;
+                    if (rectW < 75 || rectH < 50) return '';
+                    return `${d.data.count.toLocaleString()} circulars`;
+                });
+        }
+
+        function updateBreadcrumbs(domainId) {
+            breadcrumbNav.innerHTML = '';
+            const rootSpan = document.createElement('span');
+            rootSpan.className = domainId ? 'breadcrumb-item' : 'breadcrumb-item current';
+            rootSpan.textContent = `All EPFO Circular Topics (${summaryData.total_documents.toLocaleString()})`;
+            rootSpan.addEventListener('click', () => {
+                if (currentZoomDomain) {
+                    currentZoomDomain = null;
+                    domainFilterSelect.value = '';
+                    renderTreemap();
+                }
+            });
+            breadcrumbNav.appendChild(rootSpan);
+
+            if (domainId) {
+                const sep = document.createElement('span');
+                sep.className = 'breadcrumb-sep';
+                sep.textContent = '›';
+                breadcrumbNav.appendChild(sep);
+
+                const currentSpan = document.createElement('span');
+                currentSpan.className = 'breadcrumb-item current';
+                currentSpan.textContent = taxonomyData[domainId].name;
+                breadcrumbNav.appendChild(currentSpan);
+            }
+        }
+
+        // Render Heatmap Matrix (View 2)
+        function renderHeatmap() {
+            heatmapContainer.innerHTML = '';
+            const fys = summaryData.financial_years || [];
+            const domains = Object.keys(taxonomyData);
+
+            const table = document.createElement('table');
+            table.className = 'heatmap-grid';
+
+            // Header row: Financial Years
+            const thead = document.createElement('thead');
+            const headRow = document.createElement('tr');
+            headRow.innerHTML = `<th class="col-topic-name">Policy Domain</th>`;
+            fys.forEach(fy => {
+                const th = document.createElement('th');
+                th.textContent = fy.replace('20', "'").replace('-20', "-'");
+                headRow.appendChild(th);
+            });
+            thead.appendChild(headRow);
+            table.appendChild(thead);
+
+            // Body rows: Domains
+            const tbody = document.createElement('tbody');
+            domains.forEach(dId => {
+                const dInfo = taxonomyData[dId];
+                const tr = document.createElement('tr');
+
+                // Row header
+                const tdName = document.createElement('td');
+                tdName.innerHTML = `
+                    <div class="heatmap-row-header">
+                        <span class="domain-dot" style="background:${dInfo.color}"></span>
+                        <span>${dInfo.name}</span>
+                    </div>`;
+                tr.appendChild(tdName);
+
+                // Yearly cells
+                fys.forEach(fy => {
+                    const count = (summaryData.timeline[fy] && summaryData.timeline[fy][dId]) || 0;
+                    const tdCell = document.createElement('td');
+                    tdCell.className = count > 0 ? 'heatmap-cell' : 'heatmap-cell empty';
+
+                    if (count > 0) {
+                        // Intensity scale (0 to 300)
+                        const intensity = Math.min(1, Math.max(0.15, count / 150));
+                        tdCell.style.background = dInfo.color;
+                        tdCell.style.opacity = intensity;
+                        tdCell.style.color = intensity > 0.45 ? '#ffffff' : '#0f172a';
+                        tdCell.textContent = count;
+
+                        tdCell.addEventListener('mouseenter', (event) => {
+                            tooltip.style.opacity = 1;
+                            tooltip.innerHTML = `<strong>${dInfo.name}</strong><br/>FY ${fy}: <b>${count}</b> circulars`;
+                        });
+                        tdCell.addEventListener('mousemove', (event) => {
+                            tooltip.style.left = (event.pageX + 12) + 'px';
+                            tooltip.style.top = (event.pageY + 12) + 'px';
+                        });
+                        tdCell.addEventListener('mouseleave', () => {
+                            tooltip.style.opacity = 0;
+                        });
+
+                        tdCell.addEventListener('click', () => {
+                            openDrawer(dId, null, `${dInfo.name} (FY ${fy})`, fy);
+                        });
+                    } else {
+                        tdCell.textContent = '—';
+                    }
+
+                    tr.appendChild(tdCell);
+                });
+
+                tbody.appendChild(tr);
+            });
+
+            table.appendChild(tbody);
+            heatmapContainer.appendChild(table);
+        }
+
+        // Slide-out Drawer Logic
+        async function openDrawer(domainId, subtopicId = null, title = "Matching Circulars", fyFilter = null) {
+            drawerTitle.textContent = title;
+            drawerSubtitle.textContent = "Loading circulars...";
+            drawerList.innerHTML = `<div class="empty-drawer-state">Loading document records...</div>`;
+            drawerOverlay.classList.add('open');
+            documentDrawer.classList.add('open');
+
+            // Load assignments and catalog on demand if not already loaded
+            if (!assignmentsData || !catalogData) {
+                const [assignResp, catResp] = await Promise.all([
+                    assignmentsData ? Promise.resolve(null) : fetch('data/topics/assignments.json').then(r => r.json()),
+                    catalogData ? Promise.resolve(null) : fetch('data/search/catalog.json').then(r => r.json())
+                ]);
+                if (assignResp) assignmentsData = assignResp;
+                if (catResp) catalogData = catResp;
+            }
+
+            // Filter document IDs matching domain, subtopic, fy
+            const matchingRows = [];
+            assignmentsData.rows.forEach(row => {
+                // row = [doc_id, domain, subtopic, conf, fy]
+                if (row[1] !== domainId) return;
+                if (subtopicId && row[2] !== subtopicId) return;
+                if (fyFilter && row[4] !== fyFilter) return;
+                matchingRows.push(row);
+            });
+
+            drawerSubtitle.textContent = `${matchingRows.length.toLocaleString()} circulars found in this category`;
+            renderDrawerItems(matchingRows);
+
+            // Drawer live filter
+            drawerSearchInput.value = '';
+            drawerSearchInput.oninput = (e) => {
+                const q = e.target.value.toLowerCase().trim();
+                if (!q) {
+                    renderDrawerItems(matchingRows);
+                } else {
+                    const filtered = matchingRows.filter(r => {
+                        const doc = catalogData.documents[r[0]];
+                        const title = (doc[1] || '').toLowerCase();
+                        const cno = (doc[2] || '').toLowerCase();
+                        return title.includes(q) || cno.includes(q);
+                    });
+                    renderDrawerItems(filtered);
+                }
+            };
+        }
+
+        function renderDrawerItems(rows) {
+            drawerList.innerHTML = '';
+            if (rows.length === 0) {
+                drawerList.innerHTML = `<div class="empty-drawer-state">No matching circulars in this filter.</div>`;
+                return;
+            }
+
+            rows.slice(0, 100).forEach(row => {
+                const doc = catalogData.documents[row[0]];
+                // doc = [serial_no, title, circular_no, date, hindi_pdf_link, english_pdf_link, year, ocr_source]
+                const title = doc[1] || 'Untitled Circular';
+                const cno = doc[2] || '—';
+                const date = doc[3] || '—';
+                const hindiLink = doc[4];
+                const englishLink = doc[5];
+                const fy = doc[6] || '';
+                const ocrSource = doc[7];
+                const primaryLink = englishLink || hindiLink || '';
+                const filename = primaryLink ? primaryLink.split('/').pop().split('?')[0] : '';
+
+                const card = document.createElement('div');
+                card.className = 'drawer-circular-card';
+                card.innerHTML = `
+                    <div class="card-meta-line">
+                        <span class="card-cno">${escapeHtml(cno)}</span>
+                        <span>${escapeHtml(date)} · FY ${escapeHtml(fy)}</span>
+                    </div>
+                    <div class="card-title">${escapeHtml(title)}</div>
+                    <div class="card-actions">
+                        ${ocrSource > 0 ? `
+                            <a href="index.html?fy=${encodeURIComponent(fy)}&doc=${encodeURIComponent(filename)}" target="_blank" class="card-read-btn" title="Open official legal paper view in circular archive">
+                                📄 Read Paper View
+                            </a>
+                        ` : ''}
+                        ${englishLink ? `<a href="${escapeHtml(englishLink)}" target="_blank" rel="noopener noreferrer" class="card-pdf-link">EN ↗</a>` : ''}
+                        ${hindiLink ? `<a href="${escapeHtml(hindiLink)}" target="_blank" rel="noopener noreferrer" class="card-pdf-link">HI ↗</a>` : ''}
+                    </div>`;
+                drawerList.appendChild(card);
+            });
+
+            if (rows.length > 100) {
+                const moreNote = document.createElement('div');
+                moreNote.style.padding = '12px';
+                moreNote.style.textAlign = 'center';
+                moreNote.style.color = 'var(--muted)';
+                moreNote.style.fontSize = '12px';
+                moreNote.textContent = `Showing first 100 of ${rows.length.toLocaleString()} circulars. Use filter to narrow.`;
+                drawerList.appendChild(moreNote);
+            }
+        }
+
+        function closeDrawer() {
+            drawerOverlay.classList.remove('open');
+            documentDrawer.classList.remove('open');
+        }
+
+        drawerCloseBtn.addEventListener('click', closeDrawer);
+        drawerOverlay.addEventListener('click', closeDrawer);
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && documentDrawer.classList.contains('open')) {
+                closeDrawer();
+            }
+        });
+
+        // Utilities
+        function escapeHtml(str) {
+            return String(str || '').replace(/[&<>"']/g, m => ({
+                '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;'
+            })[m]);
+        }
+
+        window.addEventListener('resize', () => {
+            if (activeTab === 'atlas') renderTreemap();
+        });
+
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+    <script src="explore.js"></script>
+</body>
+</html>
