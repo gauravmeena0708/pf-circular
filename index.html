@@ -1765,7 +1765,7 @@
             [...years].sort().reverse().forEach(year => {
                 const option = document.createElement('option');
                 option.value = year;
-                option.textContent = year;
+                option.textContent = year === 'Unknown' ? 'Old Circulars (Pre-2009)' : year;
                 yearFilter.appendChild(option);
             });
         }
