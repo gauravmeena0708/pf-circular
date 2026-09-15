@@ -1,11 +1,14 @@
 [
   {
     "serial_no": "306",
-    "title": "Clearance of probation and confirmation of Assistant Section Officers recruited against DR Quota \u2013Regarding A-31015/3/2024-HRM-III/2125 dated 28/03/2022",
+    "title": "Clearance of probation and confirmation of Assistant Section Officers recruited against DR Quota –Regarding A-31015/3/2024-HRM-III/2125 dated 28/03/2022",
     "circular_no": "A-31015/3/2024-HRM-III/2125",
-    "date": "28/03/2022",
+    "date": "28/03/2025",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/ASO_ConfirmationOrder28032025.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/ASO_ConfirmationOrder28032025.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Office Order"
   },
   {
     "serial_no": "305",
@@ -13,7 +16,10 @@
     "circular_no": "HO No. Welfare Fund/3(143)/2021-22/BudgetAllotment/6547",
     "date": "31/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Welfare_Budget_RE_6547.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Welfare_Budget_RE_6547.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "304",
@@ -21,7 +27,10 @@
     "circular_no": "HO No. HRD/3/2015/Transfer Policy/584",
     "date": "30/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_TransferPolicy_Comm_584.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_TransferPolicy_Comm_584.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "303",
@@ -29,7 +38,10 @@
     "circular_no": "HO No. HRD/20/2022/SSA-PWD/583",
     "date": "30/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_SSA_PWD_583.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_SSA_PWD_583.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "301",
@@ -37,7 +49,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/329",
     "date": "29/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_JH_329.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_JH_329.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Exam"
   },
   {
     "serial_no": "300",
@@ -45,7 +60,10 @@
     "circular_no": "HO No. Coord./40(1)2013/VIP Reference/6422",
     "date": "28/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Coord_SpCampaign_6422.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Coord_SpCampaign_6422.pdf",
+    "division": "Compliance",
+    "sub_division": "Coordination",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "299",
@@ -53,7 +71,10 @@
     "circular_no": "HO No. MIS-10(1)2021-22/AR/6421",
     "date": "28/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/MIS_AR_CalendarofEvents_6421.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/MIS_AR_CalendarofEvents_6421.pdf",
+    "division": "Compliance",
+    "sub_division": "Mis",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "298",
@@ -61,7 +82,10 @@
     "circular_no": "HO No. HRM-II/T-1(1)2022/E-file 43810/6410",
     "date": "28/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM2_AGT_6410.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM2_AGT_6410.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "297",
@@ -69,7 +93,12 @@
     "circular_no": "HO No. Budget/Budget Control Register/2020/6364",
     "date": "25/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Budget_BCR_6364.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Budget_BCR_6364.pdf",
+    "division": "Finance",
+    "sub_division": "Budget",
+    "doc_type": "Circular",
+    "addl_link": "UserManual_BudgetControlRegister.pdf",
+    "addl_link_title": "Instruction Manual for BCR"
   },
   {
     "serial_no": "296",
@@ -77,15 +106,21 @@
     "circular_no": "HO No. A-34018/2/2022-Exam/389",
     "date": "25/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_PB_389.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_PB_389.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Exam"
   },
   {
     "serial_no": "295",
-    "title": "\u0930\u093e\u091c\u092d\u093e\u0937\u093e \u0939\u093f\u0902\u0926\u0940 \u0915\u0947 \u092a\u094d\u0930\u092f\u094b\u0917 \u0938\u0902\u092c\u0902\u0927\u0940 \u0935\u093f\u0924\u094d\u0924\u0940\u092f \u0935\u0930\u094d\u0937 2021-22 \u0915\u0940 \u0935\u093e\u0930\u094d\u0937\u093f\u0915 \u092e\u0942\u0932\u094d\u092f\u093e\u0902\u0915\u0928 \u0930\u093f\u092a\u094b\u0930\u094d\u091f \u0915\u0947 \u0938\u0902\u092c\u0902\u0927 \u092e\u0947\u0902 \u092e\u0941. \u0915\u093e. \u0938\u0902. \u0939\u093f.\u0905. / \u0935\u093e.\u092e\u0942.\u0930\u093f. /2018-19/ \u092e\u0941\u0916\u094d\u092f\u093e\u0932\u092f /6359 dated 25/03/2022",
-    "circular_no": "\u092e\u0941. \u0915\u093e. \u0938\u0902. \u0939\u093f.\u0905. / \u0935\u093e.\u092e\u0942.\u0930\u093f. /2018-19/ \u092e\u0941\u0916\u094d\u092f\u093e\u0932\u092f /6359",
+    "title": "राजभाषा हिंदी के प्रयोग संबंधी वित्तीय वर्ष 2021-22 की वार्षिक मूल्यांकन रिपोर्ट के संबंध में मु. का. सं. हि.अ. / वा.मू.रि. /2018-19/ मुख्यालय /6359 dated 25/03/2022",
+    "circular_no": "मु. का. सं. हि.अ. / वा.मू.रि. /2018-19/ मुख्यालय /6359",
     "date": "25/03/2022",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_VMR_6359.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "294",
@@ -93,7 +128,10 @@
     "circular_no": "HO No. HRM-IV/28(6)2018/SO Seniority List/6358",
     "date": "25/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_FinalStyList_SO_6358.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_FinalStyList_SO_6358.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Seniority List"
   },
   {
     "serial_no": "293",
@@ -101,7 +139,10 @@
     "circular_no": "HO No. A-34018/2/2022-Exam/387",
     "date": "24/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_BRJH_387.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_BRJH_387.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Exam"
   },
   {
     "serial_no": "292",
@@ -109,7 +150,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/388",
     "date": "24/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_Result_SS_TS_388.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_Result_SS_TS_388.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Exam"
   },
   {
     "serial_no": "291",
@@ -117,7 +161,10 @@
     "circular_no": "HO No. WSU 2022/106/RTI (46870)",
     "date": "23/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_RTI_SD_46870.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_RTI_SD_46870.pdf",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "290",
@@ -125,7 +172,10 @@
     "circular_no": "HO No. A-34018/2/2022-Exam/386",
     "date": "23/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_OR_386.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_OR_386.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Exam"
   },
   {
     "serial_no": "289",
@@ -133,7 +183,10 @@
     "circular_no": "HO No. A-34018/2/2022-Exam/385",
     "date": "23/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_Goa_385.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_Goa_385.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Exam"
   },
   {
     "serial_no": "288",
@@ -141,7 +194,10 @@
     "circular_no": "HO No. A-34018/2/2022-Exam/384",
     "date": "23/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_UP_384.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_UP_384.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Exam"
   },
   {
     "serial_no": "287",
@@ -149,7 +205,10 @@
     "circular_no": "HO No. A-34018/2/2022-Exam/383",
     "date": "23/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_NER_383.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_NER_383.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Exam"
   },
   {
     "serial_no": "286",
@@ -157,7 +216,10 @@
     "circular_no": "HO No. A-34018/2/2022-Exam/382",
     "date": "23/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_GJ_382.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_GJ_382.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Exam"
   },
   {
     "serial_no": "285",
@@ -165,7 +227,10 @@
     "circular_no": "HO No. A-34018/2/2022-Exam/381",
     "date": "23/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_RJ_381.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_RJ_381.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Exam"
   },
   {
     "serial_no": "284",
@@ -173,7 +238,10 @@
     "circular_no": "HO No. A-34018/2/2022-Exam/380",
     "date": "22/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_MPCH_380.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_MPCH_380.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Exam"
   },
   {
     "serial_no": "283",
@@ -181,7 +249,10 @@
     "circular_no": "HO No. A-34018/2/2022-Exam/379",
     "date": "23/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_HR_379.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_HR_379.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Exam"
   },
   {
     "serial_no": "282",
@@ -189,7 +260,10 @@
     "circular_no": "HO No. A-34018/2/2022-Exam/378",
     "date": "23/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_DLUK_378.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_DLUK_378.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Exam"
   },
   {
     "serial_no": "281",
@@ -197,7 +271,10 @@
     "circular_no": "HO No. A-34018/2/2022-Exam/377",
     "date": "23/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_KN_377.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_WL_KN_377.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Exam"
   },
   {
     "serial_no": "280",
@@ -205,7 +282,10 @@
     "circular_no": "HO No. HRM-VIII/5/2020/SHS/6288",
     "date": "23/03/2022",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM8_SwachhataPakhwada2022_6288_Hindi_Sl.280.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM8_SwachhataPakhwada2022_6288.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM8_SwachhataPakhwada2022_6288.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "279",
@@ -213,7 +293,10 @@
     "circular_no": "HO No. LC-2(696)2010/KN",
     "date": "22/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/LC_Judgment_Horticulture_22032022.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/LC_Judgment_Horticulture_22032022.pdf",
+    "division": "Legal",
+    "sub_division": "Legal",
+    "doc_type": "Judgement"
   },
   {
     "serial_no": "278",
@@ -221,7 +304,12 @@
     "circular_no": "HO No. BSC-1(1)2021-22/BalanceSheet/6221",
     "date": "17/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/BSC_AnnualAccounts_6221.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/BSC_AnnualAccounts_6221.pdf",
+    "division": "Finance",
+    "sub_division": "Balance Sheet",
+    "doc_type": "Circular",
+    "addl_link": "2.Final Model Calendar for the Annual Accounts for the year 2021-22.pdf#3.Excel Format of Balance Sheet 2021-22 for all accounting units.xls#4.FAQs for Balance Sheet Preparation 2021-22.pdf#5.Letter Annual Accounts 2021-22 (Annxure).pdf#6.Position of the Cell of Opening Balances in Common Format.pdf#7.Letter dated 14-05-2021 of DGA&amp;#40;CE&amp;#41; for submission of Annual Accounts.pdf",
+    "addl_link_title": "Model Calendar#Excel Format#FAQs#Annexure#Position of OB#Letter DGA (CE)"
   },
   {
     "serial_no": "277",
@@ -229,7 +317,10 @@
     "circular_no": "HO No. LC-5025/WebUpload/Circulars LC/30029/12",
     "date": "17/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/LC_RecoveryAction_12.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/LC_RecoveryAction_12.pdf",
+    "division": "Legal",
+    "sub_division": "Legal",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "276",
@@ -237,7 +328,10 @@
     "circular_no": "HO No. HRM-VI/1(2)2022/Reconstitution-CSWC/6158",
     "date": "16/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM6_CSWC_6158.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM6_CSWC_6158.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "275",
@@ -245,7 +339,10 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc./578",
     "date": "09/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_COVID_Biometric_578.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_COVID_Biometric_578.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "274",
@@ -253,7 +350,10 @@
     "circular_no": "HO No. HRD/1/2021/DelegationofPowers/573",
     "date": "07/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_IntimationProperty_CCS_573.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_IntimationProperty_CCS_573.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "273",
@@ -261,7 +361,10 @@
     "circular_no": "HO No. HRM-VI/9(1)2022/CSWC & CSPB-Meeting/5768",
     "date": "04/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM6_CSWC_CSPB_5768.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM6_CSWC_CSPB_5768.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "272",
@@ -269,7 +372,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/367",
     "date": "02/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_RJ_367.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_RJ_367.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "271",
@@ -277,7 +383,10 @@
     "circular_no": "HO No. HRM-III/1(1)2021/Miscclarification/EO-AO/E-33879/",
     "date": "01/03/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM3_NFG_EOAO_01032022.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM3_NFG_EOAO_01032022.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "270",
@@ -285,7 +394,10 @@
     "circular_no": "HO No. Pension.I/17(3)19/RRB (e-file: 22941)",
     "date": "28/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Pension_RRB_28022022.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Pension_RRB_28022022.pdf",
+    "division": "Pension",
+    "sub_division": "Pension",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "269",
@@ -293,7 +405,10 @@
     "circular_no": "HO No. B-13/1/2020-HRM-VI/5620",
     "date": "25/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM6_FelicitationEmp_5620.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM6_FelicitationEmp_5620.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "268",
@@ -301,7 +416,10 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc./570",
     "date": "25/02/2022",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Pension_570.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Pension_570.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Pension_570.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "267",
@@ -309,7 +427,10 @@
     "circular_no": "HO No. HRD/17/2021/Transfer Policy/Group B/568",
     "date": "24/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_TfrPolicy_GroupB_568.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_TfrPolicy_GroupB_568.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "266",
@@ -317,7 +438,10 @@
     "circular_no": "HO No. HRD/3/2015/Transfer Policy/566",
     "date": "24/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_TfrPolicy_Commissioner_566.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_TfrPolicy_Commissioner_566.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "265",
@@ -325,7 +449,10 @@
     "circular_no": "HO No. Compliance/NEEMscheme/2021",
     "date": "24/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Comp_NEEMTrainee_24022022.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Comp_NEEMTrainee_24022022.pdf",
+    "division": "Compliance",
+    "sub_division": "Compliance",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "264",
@@ -333,7 +460,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/362",
     "date": "22/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_RJ_362.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_RJ_362.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "263",
@@ -341,7 +471,10 @@
     "circular_no": "HO No. 44485/954",
     "date": "21/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/NDC_BandwidthMPLS_954.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/NDC_BandwidthMPLS_954.pdf",
+    "division": "IS",
+    "sub_division": "Ndc",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "262",
@@ -349,7 +482,10 @@
     "circular_no": "HO No. CAIU/RTI/3/2022/5535",
     "date": "21/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/CAIU_RTI_AS_5535.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/CAIU_RTI_AS_5535.pdf",
+    "division": "CAIU",
+    "sub_division": "Caiu",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "261",
@@ -357,7 +493,10 @@
     "circular_no": "HO No. 44611",
     "date": "21/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Pension_ServiceHistoryUpdation_21022022.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Pension_ServiceHistoryUpdation_21022022.pdf",
+    "division": "Pension",
+    "sub_division": "Pension",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "260",
@@ -365,7 +504,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/360",
     "date": "18/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_TN_RevisedResult_360.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_TN_RevisedResult_360.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Exam"
   },
   {
     "serial_no": "259",
@@ -373,7 +515,10 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc./562",
     "date": "17/02/2022",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_AirTravel_562.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_AirTravel_562.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_AirTravel_562.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "258",
@@ -381,7 +526,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/359",
     "date": "16/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_GJ_359.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_GJ_359.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "257",
@@ -389,7 +537,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/358",
     "date": "16/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_MP_358.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_LDCE_SS_MP_358.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "256",
@@ -397,15 +548,21 @@
     "circular_no": "HO No. WSU/2022/62/RTI (45195)/5468",
     "date": "15/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_RTI_VP_5468.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_RTI_VP_5468.pdf",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "255",
-    "title": "\u0939\u093f\u0902\u0926\u0940 \u092a\u0941\u0938\u094d\u0924\u0915\u094b\u0902 \u0915\u0940 \u0916\u0930\u0940\u0926 \u0915\u0947 \u0938\u0902\u092c\u0902\u0927 \u092e\u0947\u0902 \u092e\u0941. \u0915\u093e. \u0938\u0902. \u0939\u093f. \u0905\u0928\u0941. /\u0924\u093f\u092e\u093e\u0939\u0940 \u092a\u094d\u0930\u0917\u0924\u093f \u0930\u093f\u092a\u094b\u0930\u094d\u091f / \u0938\u0902\u0917\u0920\u0928 /245 dated 11/02/2022",
-    "circular_no": "\u092e\u0941. \u0915\u093e. \u0938\u0902. \u0939\u093f. \u0905\u0928\u0941. /\u0924\u093f\u092e\u093e\u0939\u0940 \u092a\u094d\u0930\u0917\u0924\u093f \u0930\u093f\u092a\u094b\u0930\u094d\u091f / \u0938\u0902\u0917\u0920\u0928 /245",
+    "title": "हिंदी पुस्तकों की खरीद के संबंध में मु. का. सं. हि. अनु. /तिमाही प्रगति रिपोर्ट / संगठन /245 dated 11/02/2022",
+    "circular_no": "मु. का. सं. हि. अनु. /तिमाही प्रगति रिपोर्ट / संगठन /245",
     "date": "11/02/2022",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_Books_245.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "254",
@@ -413,15 +570,21 @@
     "circular_no": "HO No. P.1/2022/Auditparas/(e-file: 44372)/5443",
     "date": "14/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Pension_OLR_DLCP_5443.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Pension_OLR_DLCP_5443.pdf",
+    "division": "Pension",
+    "sub_division": "Pension",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "253",
-    "title": "\u0938\u0902\u0938\u0926\u0940\u092f \u0930\u093e\u091c\u092d\u093e\u0937\u093e \u0938\u092e\u093f\u0924\u093f \u0915\u0947 \u0928\u093f\u0930\u093f\u0915\u094d\u0937\u0923 \u0915\u0947 \u0926\u094c\u0930\u093e\u0928 \u0930\u093e\u091c\u092d\u093e\u0937\u093e \u092a\u094d\u0930\u0926\u0930\u094d\u0936\u0928\u0940 \u0906\u092f\u094b\u091c\u093f\u0924 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0938\u092e\u094d\u092c\u0928\u094d\u0927 \u092e\u0947\u0902 \u092e\u0941. \u0915\u093e. \u0938\u0902.\u0930\u093e.\u092d\u093e.\u0938. / \u092e\u093e\u0938\u094d\u091f\u0930 \u092b\u093e\u0907\u0932 / 2016/4167 dated 11/02/2022",
-    "circular_no": "\u092e\u0941. \u0915\u093e. \u0938\u0902.\u0930\u093e.\u092d\u093e.\u0938. / \u092e\u093e\u0938\u094d\u091f\u0930 \u092b\u093e\u0907\u0932 / 2016/4167",
+    "title": "संसदीय राजभाषा समिति के निरिक्षण के दौरान राजभाषा प्रदर्शनी आयोजित करने के सम्बन्ध में मु. का. सं.रा.भा.स. / मास्टर फाइल / 2016/4167 dated 11/02/2022",
+    "circular_no": "मु. का. सं.रा.भा.स. / मास्टर फाइल / 2016/4167",
     "date": "11/02/2022",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_RajbhashaExhibition_4167.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "252",
@@ -429,7 +592,10 @@
     "circular_no": "HO No. RTI-11011/99/2021-HRM-IV/5418",
     "date": "11/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_RTI_PN_5418.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_RTI_PN_5418.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "251",
@@ -437,7 +603,10 @@
     "circular_no": "HO No. RTI-11011/24/2022-HRM-VIII/5415",
     "date": "11/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM8_RTI_RK_5415.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM8_RTI_RK_5415.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "250",
@@ -445,7 +614,10 @@
     "circular_no": "HO No. HRM-IV/4(30)2020/RTI/5410",
     "date": "11/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_RTI_RSA_5410.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_RTI_RSA_5410.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "249",
@@ -453,7 +625,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/355",
     "date": "10/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_Result_SS_MP_355.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_Result_SS_MP_355.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "248",
@@ -461,7 +636,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/354",
     "date": "10/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_Result_SS_GJ_354.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_Result_SS_GJ_354.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "247",
@@ -469,7 +647,10 @@
     "circular_no": "HO No. HRM-IV/4(30)2020/RTI/5390",
     "date": "09/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_RTI_SP_5390.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_RTI_SP_5390.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "246",
@@ -477,7 +658,10 @@
     "circular_no": "HO No. HRM-VI/1(1)2021-24/Reconstitution CSPB/5327",
     "date": "07/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM6_CSPB_5327.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM6_CSPB_5327.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "245",
@@ -485,7 +669,10 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc./Pt./556",
     "date": "07/02/2022",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_COVID_Attendance_556.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_COVID_Attendance_556.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_COVID_Attendance_556.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "244",
@@ -493,7 +680,10 @@
     "circular_no": "HO No. HRM-IV/28(6)2018/SO Seniority List/4012",
     "date": "04/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_StyList_SO_4012.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_StyList_SO_4012.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Seniority List"
   },
   {
     "serial_no": "243",
@@ -501,7 +691,10 @@
     "circular_no": "HO No. HRM-IV 4(30)2020/RTI/5313",
     "date": "04/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM_RTI_PC_5313.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM_RTI_PC_5313.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "242",
@@ -509,7 +702,10 @@
     "circular_no": "HO No. HRD/7/2022/Delegation of Powers/555",
     "date": "04/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Compedium_PowerDelegation_555.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Compedium_PowerDelegation_555.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "241",
@@ -517,7 +713,10 @@
     "circular_no": "HO No. WSU/2022/55/RTI (44902)/5274",
     "date": "04/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_RTI_VED_5274.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_RTI_VED_5274.pdf",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "240",
@@ -525,7 +724,10 @@
     "circular_no": "HO No. HRM-II/R-1(26)2021/RTI-2/5238",
     "date": "02/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM2_RTI_RP_5238.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM2_RTI_RP_5238.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "239",
@@ -533,7 +735,10 @@
     "circular_no": "HO No. HRM-II/R-1928)2021/RTI-2/Pt. I/5232",
     "date": "02/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM2_RTI_RR_5232.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM2_RTI_RR_5232.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "238",
@@ -541,7 +746,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/350",
     "date": "01/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WestBengal_0001.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WestBengal_0001.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "237",
@@ -549,7 +757,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/349",
     "date": "01/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Uttarakhand_0001.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Uttarakhand_0001.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "236",
@@ -557,7 +768,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/348",
     "date": "01/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/UP_0001.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/UP_0001.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "235",
@@ -565,7 +779,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/347",
     "date": "01/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Tamil Nadu_0001.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Tamil Nadu_0001.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "234",
@@ -573,7 +790,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/346",
     "date": "01/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Punjab_0001.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Punjab_0001.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "233",
@@ -581,7 +801,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/345",
     "date": "01/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Odisha_0001.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Odisha_0001.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "232",
@@ -589,7 +812,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/344",
     "date": "01/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/NER_0001.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/NER_0001.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "231",
@@ -597,7 +823,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/343",
     "date": "01/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Maharastra_0001.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Maharastra_0001.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "230",
@@ -605,7 +834,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/342",
     "date": "01/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Kerala_0001.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Kerala_0001.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "229",
@@ -613,7 +845,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/341",
     "date": "01/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Karnataka_0001.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Karnataka_0001.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "228",
@@ -621,7 +856,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/340",
     "date": "01/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Himachal pradesh_0001.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Himachal pradesh_0001.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "227",
@@ -629,7 +867,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/339",
     "date": "01/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Haryana_0001.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Haryana_0001.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "226",
@@ -637,7 +878,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/338",
     "date": "01/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Goa_0001.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Goa_0001.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "225",
@@ -645,7 +889,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/337",
     "date": "01/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Delhi_0001.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Delhi_0001.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "224",
@@ -653,7 +900,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/336",
     "date": "01/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Chhatish garh_0001.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Chhatish garh_0001.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "223",
@@ -661,7 +911,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/335",
     "date": "01/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Bihar_0001.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Bihar_0001.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "222",
@@ -669,7 +922,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/334",
     "date": "01/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Andhra Pradesh_0001.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Andhra Pradesh_0001.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "221",
@@ -677,7 +933,10 @@
     "circular_no": "HO No. HRD/32/2019/554",
     "date": "01/02/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Disability_554.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Disability_554.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "220",
@@ -685,7 +944,10 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc./553",
     "date": "01/02/2022",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_COVID_Biometric_553.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_COVID_Biometric_553.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_COVID_Biometric_553.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "219",
@@ -693,7 +955,10 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc./552",
     "date": "01/02/2022",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Attendance_COVID_552.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Attendance_COVID_552.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Attendance_COVID_552.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "218",
@@ -701,7 +966,10 @@
     "circular_no": "HO No. HRD/4(1)2010/Misc. Circular/pt.-I/550",
     "date": "01/02/2022",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_CTG_550.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_CTG_550.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_CTG_550.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "217",
@@ -709,7 +977,10 @@
     "circular_no": "HO No. A-45011/Misc. Matter/2022/HRM-VIII/5180",
     "date": "29/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM8_DPC_5180.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM8_DPC_5180.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "216",
@@ -717,7 +988,10 @@
     "circular_no": "HO No. HRM-I/A-10(45)2006/Vol.I/3881",
     "date": "28/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM1_Superannuation_GrA_3881.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM1_Superannuation_GrA_3881.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Superannuation"
   },
   {
     "serial_no": "215",
@@ -725,7 +999,10 @@
     "circular_no": "HO No. HRM-V/12(2)2004/3877",
     "date": "28/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM5_delegation_Medical_3877.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM5_delegation_Medical_3877.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "214",
@@ -733,7 +1010,10 @@
     "circular_no": "HO No. Vig./Coord/CVC-Correspondence/2020/232",
     "date": "28/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Vig_Documents_CBI_232.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Vig_Documents_CBI_232.pdf",
+    "division": "Vigilance",
+    "sub_division": "Vigilance",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "213",
@@ -741,7 +1021,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/328",
     "date": "25/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_WB_328.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_WB_328.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "212",
@@ -749,7 +1032,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/327",
     "date": "25/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_UK_327.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_UK_327.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "211",
@@ -757,7 +1043,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/326",
     "date": "25/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_UP_326.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_UP_326.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "210",
@@ -765,7 +1054,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/325",
     "date": "25/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_TN_325.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_TN_325.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "209",
@@ -773,7 +1065,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/324",
     "date": "25/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_PB_324.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_PB_324.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "208",
@@ -781,7 +1076,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/323",
     "date": "25/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_OR_323.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_OR_323.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "207",
@@ -789,7 +1087,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/322",
     "date": "25/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_NER_322.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_NER_322.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "206",
@@ -797,7 +1098,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/321",
     "date": "25/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_MH_321.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_MH_321.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "205",
@@ -805,7 +1109,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/320",
     "date": "25/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_KR_320.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_KR_320.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "204",
@@ -813,7 +1120,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/319",
     "date": "25/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_Karna_319.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_Karna_319.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "203",
@@ -821,7 +1131,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/318",
     "date": "25/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_HP_318.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_HP_318.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "202",
@@ -829,7 +1142,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/317",
     "date": "25/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_HR_317.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_HR_317.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "201",
@@ -837,7 +1153,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/316",
     "date": "25/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_Goa_316.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_Goa_316.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "200",
@@ -845,7 +1164,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/315",
     "date": "25/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_DL_315.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_DL_315.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "199",
@@ -853,7 +1175,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/314",
     "date": "25/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_CG_314.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_CG_314.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "198",
@@ -861,7 +1186,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/313",
     "date": "25/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_BR_313.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_BR_313.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "197",
@@ -869,7 +1197,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/312",
     "date": "25/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_AP_312.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/SS_result_AP_312.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "196",
@@ -877,7 +1208,10 @@
     "circular_no": "HO No. LC-15014(11)/1/2022-LEGAL/1",
     "date": "24/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/LC_TaskForce_1.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/LC_TaskForce_1.pdf",
+    "division": "Legal",
+    "sub_division": "Legal",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "195",
@@ -885,15 +1219,21 @@
     "circular_no": "HO No. HRM-7(1)/ISD/Deputation (5055)2022/3798",
     "date": "24/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM7_Depu_DivnIS_3798.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM7_Depu_DivnIS_3798.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Office Memorandum"
   },
   {
     "serial_no": "194",
-    "title": "30 \u0938\u093f\u0924\u0902\u092c\u0930, 2021 \u0915\u094b \u0938\u092e\u093e\u092a\u094d\u0924 \u0924\u093f\u092e\u093e\u0939\u0940 \u0915\u0947 \u0932\u093f\u090f \u0930\u093e\u091c\u092d\u093e\u0937\u093e \u0938\u0902\u092c\u0902\u0927\u0940 \u0924\u093f\u092e\u093e\u0939\u0940 \u092a\u094d\u0930\u0917\u0924\u093f \u0930\u093f\u092a\u094b\u0930\u094d\u091f \u0915\u0940 \u0938\u092e\u0940\u0915\u094d\u0937\u093e \u0915\u0947 \u0938\u0902\u092c\u0902\u0927 \u092e\u0947\u0902 \u092e\u0941.\u0915\u093e. \u0939\u093f.\u0905./\u0924\u093f.\u092a\u094d\u0930.\u0930\u093f./\u0938\u0902\u0917\u0920\u0928 / 2018/3775 dated 24/01/2022",
-    "circular_no": "\u092e\u0941.\u0915\u093e. \u0939\u093f.\u0905./\u0924\u093f.\u092a\u094d\u0930.\u0930\u093f./\u0938\u0902\u0917\u0920\u0928 / 2018/3775",
+    "title": "30 सितंबर, 2021 को समाप्त तिमाही के लिए राजभाषा संबंधी तिमाही प्रगति रिपोर्ट की समीक्षा के संबंध में मु.का. हि.अ./ति.प्र.रि./संगठन / 2018/3775 dated 24/01/2022",
+    "circular_no": "मु.का. हि.अ./ति.प्र.रि./संगठन / 2018/3775",
     "date": "24/01/2022",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_TPR_3775.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "193",
@@ -901,7 +1241,10 @@
     "circular_no": "HO No. PQ/95/2020/Calendarofsittingsandallotmentofdays/21",
     "date": "04/01/2022",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PQ_Calendar_21_Hindi.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PQ_Calendar_21.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PQ_Calendar_21.pdf",
+    "division": "Coordination",
+    "sub_division": "Pq",
+    "doc_type": "Parliament Question"
   },
   {
     "serial_no": "192",
@@ -909,7 +1252,10 @@
     "circular_no": "HO No. HRD/63/2021/PWD/HINDICADRE/544",
     "date": "24/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Disability_544.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Disability_544.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "191",
@@ -917,7 +1263,10 @@
     "circular_no": "HO No. A-45011/77/2021/HRM-VIII/5079",
     "date": "21/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM8_ServiceChange_5079.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM8_ServiceChange_5079.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "190",
@@ -925,7 +1274,10 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc/540",
     "date": "21/01/2022",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_AirTicket_540.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_AirTicket_540.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_AirTicket_540.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "189",
@@ -933,7 +1285,10 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc.-Part (I)/538",
     "date": "17/01/2022",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_LifeCert_CGP_538.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_LifeCert_CGP_538.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_LifeCert_CGP_538.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "188",
@@ -941,7 +1296,12 @@
     "circular_no": "HO No. A-45011/83/2021/HRM-VIII",
     "date": "14/01/2022",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM8_AKAM_14012022_Hindi.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM8_AKAM_14012022.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM8_AKAM_14012022.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular",
+    "addl_link": "AzadiKaAmritMahotsav.xlsx",
+    "addl_link_title": "Annexures"
   },
   {
     "serial_no": "187",
@@ -949,7 +1309,10 @@
     "circular_no": "HO No. 42761",
     "date": "13/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Pension_42761.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Pension_42761.pdf",
+    "division": "Pension",
+    "sub_division": "Pension",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "186",
@@ -957,7 +1320,10 @@
     "circular_no": "HO NO. avs-18/1/2020-hrm-ix/73",
     "date": "13/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/AVS_AIPR_73.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/AVS_AIPR_73.pdf",
+    "division": "HRM",
+    "sub_division": "Avs",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "185",
@@ -965,15 +1331,21 @@
     "circular_no": "HO No. HRD/3(2)2012/SPF/537",
     "date": "13/01/2022",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_SPR_ROI_537.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_SPR_ROI_537.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_SPR_ROI_537.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "184",
-    "title": "\u0928\u0917\u0930 \u0930\u093e\u091c\u092d\u093e\u0937\u093e \u0915\u093e\u0930\u094d\u092f\u093e\u0928\u094d\u0935\u092f\u0928 \u0938\u092e\u093f\u0924\u093f \u0915\u0940 \u0938\u0926\u0938\u094d\u092f\u0924\u093e \u090f\u0935\u0902 \u0928\u0930\u093e\u0915\u093e\u0938 \u0915\u0940 \u092c\u0948\u0920\u0915\u094b\u0902 \u092e\u0947\u0902 \u0909\u092a\u0938\u094d\u0925\u093f\u0924\u093f \u0915\u0947 \u0938\u0902\u092c\u0902\u0927 \u092e\u0947\u0902 \u092e\u0941.\u0915\u093e.\u0938\u0902. \u0939\u093f.\u0905./\u0928\u0917\u0930 \u0930\u093e.\u092d\u093e.\u0915\u093e.\u0938. /2021/\u0938\u0902\u0917\u0920\u0928 /3685 dated 12/01/2022",
-    "circular_no": "\u092e\u0941.\u0915\u093e.\u0938\u0902. \u0939\u093f.\u0905./\u0928\u0917\u0930 \u0930\u093e.\u092d\u093e.\u0915\u093e.\u0938. /2021/\u0938\u0902\u0917\u0920\u0928 /3685",
+    "title": "नगर राजभाषा कार्यान्वयन समिति की सदस्यता एवं नराकास की बैठकों में उपस्थिति के संबंध में मु.का.सं. हि.अ./नगर रा.भा.का.स. /2021/संगठन /3685 dated 12/01/2022",
+    "circular_no": "मु.का.सं. हि.अ./नगर रा.भा.का.स. /2021/संगठन /3685",
     "date": "12/01/2022",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_MembersNARAKAS_3685.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "183",
@@ -981,7 +1353,10 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc./Pt./536",
     "date": "11/01/2022",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_COVID_Attendance_536.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_COVID_Attendance_536.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_COVID_Attendance_536.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "182",
@@ -989,7 +1364,10 @@
     "circular_no": "HO No. HRM-II/R-1(25)2021/RTI-3/4924",
     "date": "07/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM2_RTI_BH_4924.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM2_RTI_BH_4924.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "181",
@@ -997,7 +1375,10 @@
     "circular_no": "HO No. HR/AVS/NZ/193/56-J2015/Vol-2/E/49",
     "date": "06/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/AVS_FR56j_49.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/AVS_FR56j_49.pdf",
+    "division": "HRM",
+    "sub_division": "Avs",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "180",
@@ -1005,7 +1386,10 @@
     "circular_no": "HO No. PDU/1(6)2019/3",
     "date": "06/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDU_MonthlyReport_3.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDU_MonthlyReport_3.pdf",
+    "division": "ASD",
+    "sub_division": "Asd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "179",
@@ -1013,7 +1397,10 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc./534",
     "date": "05/01/2022",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_COVID_BioMet_534.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_COVID_BioMet_534.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_COVID_BioMet_534.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "178",
@@ -1021,15 +1408,21 @@
     "circular_no": "HO No. HRM-VII/11(1)2016/",
     "date": "03/01/2022",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM7_eOffice_03012022.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM7_eOffice_03012022.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "177",
-    "title": "\u0926\u093f\u0935\u094d\u092f\u093e\u0902\u0917\u091c\u0928 \u0905\u0927\u093f\u0915\u093e\u0930 \u0905\u0927\u093f\u0928\u093f\u092f\u092e, 2016 \u0915\u0947 \u0905\u0902\u0924\u0930\u094d\u0917\u0924 \u0926\u093f\u0935\u094d\u092f\u093e\u0902\u0917\u091c\u0928 \u0938\u0936\u0915\u094d\u0924\u093f\u0915\u0930\u0923 \u0935\u093f\u092d\u093e\u0917 \u0915\u0947 \u092a\u094d\u0930\u0936\u093e\u0938\u0928\u093f\u0915 \u0928\u093f\u092f\u0902\u0924\u094d\u0930\u0923 \u092e\u0947\u0902 \u090f\u0915 \u0938\u094d\u0935\u093e\u092f\u0924\u094d\u0924 \u0928\u093f\u0915\u093e\u092f \u0915\u0947 \u0930\u0942\u092a \u092e\u0947\u0902 \u092d\u093e\u0930\u0924\u0940\u092f \u0938\u093e\u0902\u0915\u0947\u0924\u093f\u0915 \u092d\u093e\u0937\u093e \u0905\u0928\u0941\u0938\u0902\u0927\u093e\u0928 \u090f\u0935\u0902 \u092a\u094d\u0930\u0936\u093f\u0915\u094d\u0937\u0923 \u0915\u0947\u0928\u094d\u0926\u094d\u0930 \u0915\u0947 \u0905\u0928\u0941\u0938\u093e\u0930 \u092e\u0902\u0924\u094d\u0930\u093e\u0932\u092f / \u0935\u093f\u092d\u093e\u0917 \u0915\u0940 \u0938\u092d\u0940 \u0938\u0930\u0915\u093e\u0930\u0940 \u092c\u0948\u0920\u0915\u094b\u0902 / \u0938\u0947\u092e\u093f\u0928\u093e\u0930 / \u0915\u093e\u0930\u094d\u092f\u0936\u093e\u0932\u093e\u0913\u0902 \u092e\u0947\u0902 \u0906\u0908\u090f\u0938\u090f\u0932 \u0926\u0941\u092d\u093e\u0937\u093f\u092f\u094b\u0902 \u0915\u0940 \u0935\u094d\u092f\u0935\u0938\u094d\u0925\u093e \u0915\u0930\u0928\u0947 \u0915\u0947 \u0938\u0902\u092c\u0902\u0927 \u092e\u0947\u0902 \u092e\u0941. \u0915\u093e. \u0938\u0902. \u090f\u091a.\u0906\u0930.\u0921\u0940. /1(71)2020/Misc.-Part.(1)/531 dated 30/12/2021",
-    "circular_no": "\u092e\u0941. \u0915\u093e. \u0938\u0902. \u090f\u091a.\u0906\u0930.\u0921\u0940. /1(71)2020/Misc.-Part.(1)/531",
+    "title": "दिव्यांगजन अधिकार अधिनियम, 2016 के अंतर्गत दिव्यांगजन सशक्तिकरण विभाग के प्रशासनिक नियंत्रण में एक स्वायत्त निकाय के रूप में भारतीय सांकेतिक भाषा अनुसंधान एवं प्रशिक्षण केन्द्र के अनुसार मंत्रालय / विभाग की सभी सरकारी बैठकों / सेमिनार / कार्यशालाओं में आईएसएल दुभाषियों की व्यवस्था करने के संबंध में मु. का. सं. एच.आर.डी. /1(71)2020/Misc.-Part.(1)/531 dated 30/12/2021",
+    "circular_no": "मु. का. सं. एच.आर.डी. /1(71)2020/Misc.-Part.(1)/531",
     "date": "30/12/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Disability_Translator_531.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "176",
@@ -1037,7 +1430,10 @@
     "circular_no": "HO No. Vig./Coord/CVC Correspondence/Part File/2020/2395",
     "date": "22/12/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Vig_DepartmentalInquiry_2395.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Vig_DepartmentalInquiry_2395.pdf",
+    "division": "Vigilance",
+    "sub_division": "Vigilance",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "175",
@@ -1045,7 +1441,10 @@
     "circular_no": "HO No. ASD-I/25(3)2021/1406",
     "date": "21/12/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/ASD_GrievanceOfficer_Hqrs_1406.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/ASD_GrievanceOfficer_Hqrs_1406.pdf",
+    "division": "ASD",
+    "sub_division": "Asd",
+    "doc_type": "Office Order"
   },
   {
     "serial_no": "174",
@@ -1053,7 +1452,10 @@
     "circular_no": "HO No. AVS-18/1/2020-HRM-IX/3487",
     "date": "21/12/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/AVS_AIPR_3487.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/AVS_AIPR_3487.pdf",
+    "division": "HRM",
+    "sub_division": "Avs",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "173",
@@ -1061,15 +1463,21 @@
     "circular_no": "HO No. NDC/IS/SW/72/email/chargeable/2020/873",
     "date": "17/12/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/NDC_KAVACH_873.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/NDC_KAVACH_873.pdf",
+    "division": "IS",
+    "sub_division": "Ndc",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "172",
-    "title": "\u0915\u0947\u0928\u094d\u200d\u0926\u094d\u0930\u0940\u092f \u0928\u094d\u200d\u092f\u093e\u0938\u0940 \u092c\u094b\u0930\u094d\u0921 \u0915\u0947 \u0938\u0926\u0938\u094d\u200d\u092f\u094b\u0902 \u0915\u094b \u0915.\u092d.\u0928\u093f. \u0938\u0902\u0917\u0920\u0928 \u0915\u0947 \u0915\u094d\u0937\u0947\u0924\u094d\u0930\u0940\u092f \u0906\u092f\u094b\u091c\u0928\u094b\u0902 \u092e\u0947\u0902 \u0906\u092e\u0902\u0924\u094d\u0930\u093f\u0924 \u0915\u0930\u0928\u0947 - \u0915\u0947 \u0938\u0902\u092c\u0902\u0927 \u092e\u0947\u0902  \r\n      To invite the CBT Members for attending the EPFO's field functions HO",
+    "title": "केन्‍द्रीय न्‍यासी बोर्ड के सदस्‍यों को क.भ.नि. संगठन के क्षेत्रीय आयोजनों में आमंत्रित करने - के संबंध में  \r\n      To invite the CBT Members for attending the EPFO's field functions HO",
     "circular_no": "HO No. Pension-3/46th PEIC Meeting/2021 (E-39358)/4450",
     "date": "16/12/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Pension_InvitingCBTMembers_4450_Hindi_Sl.172.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Pension_InvitingCBTMembers_4450.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Pension_InvitingCBTMembers_4450.pdf",
+    "division": "Pension",
+    "sub_division": "Pension",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "171",
@@ -1077,7 +1485,10 @@
     "circular_no": "HO No. Audit/18(7)2019/RTI/3254",
     "date": "06/12/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Audit_RTI_AL_3254.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Audit_RTI_AL_3254.pdf",
+    "division": "Audit",
+    "sub_division": "Audit",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "170",
@@ -1085,7 +1496,10 @@
     "circular_no": "HO No. A-12036/1/2020-HRM-V/4391",
     "date": "13/12/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM5_IRT_SSA_4391.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM5_IRT_SSA_4391.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "169",
@@ -1093,7 +1507,10 @@
     "circular_no": "HO No. PDU/4(02)2021/35",
     "date": "10/12/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDU_GenlInstructions_Procurement_35.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDU_GenlInstructions_Procurement_35.pdf",
+    "division": "HRM",
+    "sub_division": "Asd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "168",
@@ -1101,7 +1518,10 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc.-Part(1)/522",
     "date": "07/12/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_LifeCert_CGP_522.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_LifeCert_CGP_522.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_LifeCert_CGP_522.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "167",
@@ -1109,7 +1529,10 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc./521",
     "date": "07/12/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_BiometricAttendance_521.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_BiometricAttendance_521.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_BiometricAttendance_521.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "166",
@@ -1117,7 +1540,10 @@
     "circular_no": "HO No. HR/AVS/II/302/ERO-MISC./2019/559",
     "date": "06/12/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/AVS_InquiryOfficer_559.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/AVS_InquiryOfficer_559.pdf",
+    "division": "HRM",
+    "sub_division": "Avs",
+    "doc_type": "Office Order"
   },
   {
     "serial_no": "165",
@@ -1125,7 +1551,10 @@
     "circular_no": "HO No. Compliance/ContractualEmployees/PolicyMatter/2021/3259",
     "date": "06/12/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Comp_Enroll_ContractEmployee_3259.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Comp_Enroll_ContractEmployee_3259.pdf",
+    "division": "Compliance",
+    "sub_division": "Compliance",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "164",
@@ -1133,7 +1562,10 @@
     "circular_no": "HO No. HRM-IV 4(30)2020/RTI/4166",
     "date": "03/12/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_RTI_GK_4166.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_RTI_GK_4166.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "163",
@@ -1141,7 +1573,10 @@
     "circular_no": "HO No. HRM-IV 4(30)2020/RTI/3242",
     "date": "03/12/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_RTI_VD_3242.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_RTI_VD_3242.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "162",
@@ -1149,7 +1584,10 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc./Pt./518",
     "date": "02/12/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_CrucialDate_518.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_CrucialDate_518.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_CrucialDate_518.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "161",
@@ -1157,7 +1595,10 @@
     "circular_no": "HO No. HRM-II/P-146(11)2018/APFC Confirmation/4131",
     "date": "01/12/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM2_Confirmation_APFC_4131.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM2_Confirmation_APFC_4131.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Office Order"
   },
   {
     "serial_no": "160",
@@ -1165,7 +1606,10 @@
     "circular_no": "HO No. Conf. 4(3)2018/CBT Committee/4015",
     "date": "27/11/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_SubCommittee_Pension_4015_Hindi_Sl.160.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_SubCommittee_Pension_4015.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_SubCommittee_Pension_4015.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "159",
@@ -1173,7 +1617,10 @@
     "circular_no": "HO No. Conf. 4(3)2018/CBT Committee/4014",
     "date": "27/11/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_SubCommittee_Coverage_4014_Hindi_Sl.159.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_SubCommittee_Coverage_4014.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_SubCommittee_Coverage_4014.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "158",
@@ -1181,7 +1628,10 @@
     "circular_no": "HO No. Conf. 4(3)2018/CBT Committee/4013",
     "date": "27/11/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_SubCommittee_IT_4013_HIndi_Sl.158.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_SubCommittee_IT_4013.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_SubCommittee_IT_4013.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "157",
@@ -1189,7 +1639,10 @@
     "circular_no": "HO No. Conf. 4(3)2018/CBT Committee/4012",
     "date": "27/11/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_SubCommittee_HRMatter_4012_Hindi_Sl.157.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_SubCommittee_HRMatter_4012.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_SubCommittee_HRMatter_4012.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "156",
@@ -1197,7 +1650,10 @@
     "circular_no": "HO No. HRD/58/2017/NSDL/PartFile/517",
     "date": "25/11/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_NSDL_517.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_NSDL_517.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "155",
@@ -1205,7 +1661,10 @@
     "circular_no": "HO No. Budget/Misc (4) 2021-22/3943",
     "date": "25/11/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Budget_Guidelines_3943.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Budget_Guidelines_3943.pdf",
+    "division": "Finance",
+    "sub_division": "Budget",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "154",
@@ -1213,7 +1672,10 @@
     "circular_no": "HO No. WSU/2021/47/RotatioalTransferPolicy (E-34083)/3060",
     "date": "24/11/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_InterOfficeTransfer_Corrg_Sl.147_3060.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_InterOfficeTransfer_Corrg_Sl.147_3060.pdf",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "153",
@@ -1221,7 +1683,10 @@
     "circular_no": "HO No. WSU/360/2021/Delegation_of_Financial_Powers/(e-40508)",
     "date": "24/11/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_DelegationFP_SettlementClaims_24112021.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_DelegationFP_SettlementClaims_24112021.pdf",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "152",
@@ -1229,7 +1694,10 @@
     "circular_no": "HO No. HRM-VII/1(22)/Audit/2020/E-26551/3058",
     "date": "24/11/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM7_DepuPost_Audit_DateExtn_3058.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM7_DepuPost_Audit_DateExtn_3058.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Office Memorandum"
   },
   {
     "serial_no": "151",
@@ -1237,7 +1705,10 @@
     "circular_no": "HO No. Budget/2020-21/2021-22/Main/2994",
     "date": "23/11/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Budget_AddlBudget_2994.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Budget_AddlBudget_2994.pdf",
+    "division": "Finance",
+    "sub_division": "Budget",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "150",
@@ -1245,7 +1716,10 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc-Part.(1)/516",
     "date": "23/11/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_FlagDonate_516.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_FlagDonate_516.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_FlagDonate_516.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "149",
@@ -1253,15 +1727,21 @@
     "circular_no": "PDNASS No. 13/14/2021-22/PDNASS/IIM-VizagMBA/433",
     "date": "23/11/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_Trg_MBADGM_433.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_Trg_MBADGM_433.pdf",
+    "division": "PDUNASS",
+    "sub_division": "Zti",
+    "doc_type": "Training"
   },
   {
     "serial_no": "148",
-    "title": "\u0938\u0902\u0938\u0926 \u0915\u0947 \u0936\u0940\u0924\u0915\u093e\u0932\u0940\u0928 \u0938\u0924\u094d\u0930, 2021 \u0939\u0947\u0924\u0941 \u0915\u0948\u0932\u0947\u0902\u0921\u0930 \u0915\u0947 \u0938\u092e\u094d\u092c\u0928\u094d\u0927 \u092e\u0947\u0902        Calendar for Winter Session of Parliament 2021 HO",
+    "title": "संसद के शीतकालीन सत्र, 2021 हेतु कैलेंडर के सम्बन्ध में        Calendar for Winter Session of Parliament 2021 HO",
     "circular_no": "HO No.:PQ/95/2020/Calendarofsittingandallotmentofdays/18",
     "date": "23/11/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Parlia_winter_sesson_18_Hindi_Sl.148.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Parlia_winter_sesson_18.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Parlia_winter_sesson_18.pdf",
+    "division": "Coordination",
+    "sub_division": "Conference",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "147",
@@ -1269,23 +1749,32 @@
     "circular_no": "HO No. WSU/2021/47/RotatioalTransferPolicy (E-34083)/2982",
     "date": "22/11/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_InterOfficeTransfer_2982.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_InterOfficeTransfer_2982.pdf",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "146",
-    "title": "19 -25 \u0928\u0935\u0902\u092c\u0930, 2021 \u0915\u0947 \u0926\u094c\u0930\u093e\u0928 \u0938\u093e\u092e\u094d\u092a\u094d\u0930\u0926\u093e\u092f\u093f\u0915 \u0938\u094c\u0939\u093e\u0930\u094d\u0926 \u0905\u092d\u093f\u092f\u093e\u0928 \u0938\u092a\u094d\u0924\u093e\u0939 \u090f\u0935\u0902 25 \u0928\u0935\u0902\u092c\u0930, 2021 (\u092c\u0943\u0939\u0938\u094d\u092a\u0924\u093f\u0935\u093e\u0930) \u0915\u094b \u091d\u0902\u0921\u093e \u0926\u093f\u0935\u0938 \u092e\u0928\u093e\u0928\u0947 \u0915\u0947 \u0938\u092e\u094d\u092c\u0928\u094d\u0927 \u092e\u0947\u0902          Observance of the Communal Harmony Campaign Week from 19-25 November, 2021 and Flag Day on 25th November, 2021 (Thursday) HO",
+    "title": "19 -25 नवंबर, 2021 के दौरान साम्प्रदायिक सौहार्द अभियान सप्ताह एवं 25 नवंबर, 2021 (बृहस्पतिवार) को झंडा दिवस मनाने के सम्बन्ध में          Observance of the Communal Harmony Campaign Week from 19-25 November, 2021 and Flag Day on 25th November, 2021 (Thursday) HO",
     "circular_no": "HO No. A-45012/26/2021/HRM-VIII/",
     "date": "18/11/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM_CHCW_18112021_Hindi_Sl.146.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM_CHCW_18112021.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM_CHCW_18112021.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "145",
-    "title": "\u0938\u0902\u0938\u0926\u0940\u092f \u0930\u093e\u091c\u092d\u093e\u0937\u093e \u0938\u092e\u093f\u0924\u093f \u0915\u0947 \u0928\u093f\u0930\u0940\u0915\u094d\u0937\u0923 - \u0915\u0947 \u0938\u092e\u094d\u092c\u0928\u094d\u0927 \u092e\u0947\u0902 \u092e\u0941.\u0915\u093e.\u0938\u0902. \u0938\u0902.\u0930\u093e.\u092d\u093e.\u0938. /\u092e\u093e\u0938\u094d\u091f\u0930 \u092b\u093e\u0907\u0932 /2016/2897 dated 18/11/2021",
-    "circular_no": "\u092e\u0941.\u0915\u093e.\u0938\u0902. \u0938\u0902.\u0930\u093e.\u092d\u093e.\u0938. /\u092e\u093e\u0938\u094d\u091f\u0930 \u092b\u093e\u0907\u0932 /2016/2897",
+    "title": "संसदीय राजभाषा समिति के निरीक्षण - के सम्बन्ध में मु.का.सं. सं.रा.भा.स. /मास्टर फाइल /2016/2897 dated 18/11/2021",
+    "circular_no": "मु.का.सं. सं.रा.भा.स. /मास्टर फाइल /2016/2897",
     "date": "18/11/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_Inspection_2897.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "144",
@@ -1293,7 +1782,10 @@
     "circular_no": "HO No. HRD/3(2)2012/SPF/514",
     "date": "17/11/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_ROI_SPF_514.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_ROI_SPF_514.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_ROI_SPF_514.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "143",
@@ -1301,7 +1793,10 @@
     "circular_no": "HO No. BKG-27/7/2020-BKG-Part(1)/E-40100/173",
     "date": "15/11/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Bkg_Aadhaar_UAN_ECR_173.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Bkg_Aadhaar_UAN_ECR_173.pdf",
+    "division": "Finance",
+    "sub_division": "Banking",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "142",
@@ -1309,7 +1804,10 @@
     "circular_no": "HO No. Conf. /1(2)2021/229thCBT(EPF)/3688",
     "date": "16/11/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_MeetingCBT229_3688.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_MeetingCBT229_3688.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Meeting Notice"
   },
   {
     "serial_no": "141",
@@ -1317,7 +1815,10 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/270",
     "date": "12/11/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_Result_LDSE_SS_270.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_Result_LDSE_SS_270.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "140",
@@ -1325,15 +1826,21 @@
     "circular_no": "HO No. HRM-III/4(23)/2019/EO/AO/2669",
     "date": "12/11/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM3_DPC_EOAO_2669.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM3_DPC_EOAO_2669.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "139",
-    "title": "\"\u092a\u093e\u0930\u0902\u0917\u0924\" \u092a\u093e\u0920\u094d\u092f\u0915\u094d\u0930\u092e \u0909\u0924\u094d\u0924\u0940\u0930\u094d\u0923 \u0915\u0930\u0928\u0947 \u092a\u0930 \u092e\u093f\u0932\u0928\u0947 \u0935\u093e\u0932\u0947 \u092e\u093e\u0928\u0926\u0947\u092f (\u092a\u0941\u0930\u0938\u094d\u0915\u093e\u0930) \u0932\u093e\u0917\u0942 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0938\u092e\u094d\u092c\u0928\u094d\u0927 \u092e\u0947\u0902 \u092e\u0941.\u0915\u093e.\u0938\u0902.  \u0939\u093f.\u0905\u0928\u0941. /\u0939\u093f.\u0936\u093f.\u092f\u094b./\u0938\u0902\u0917\u0920\u0928 /2021/ \u0935\u0949\u0932-IV/2668 dated 12/11/2021",
-    "circular_no": "\u092e\u0941.\u0915\u093e.\u0938\u0902.  \u0939\u093f.\u0905\u0928\u0941. /\u0939\u093f.\u0936\u093f.\u092f\u094b./\u0938\u0902\u0917\u0920\u0928 /2021/ \u0935\u0949\u0932-IV/2668",
+    "title": "\"पारंगत\" पाठ्यक्रम उत्तीर्ण करने पर मिलने वाले मानदेय (पुरस्कार) लागू करने के सम्बन्ध में मु.का.सं.  हि.अनु. /हि.शि.यो./संगठन /2021/ वॉल-IV/2668 dated 12/11/2021",
+    "circular_no": "मु.का.सं.  हि.अनु. /हि.शि.यो./संगठन /2021/ वॉल-IV/2668",
     "date": "12/11/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_Parangat_2668.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "138",
@@ -1341,7 +1848,10 @@
     "circular_no": "HO No. HRD/32/2021/Misc./Allowances",
     "date": "11/11/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_LGBTQI_11112021.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_LGBTQI_11112021.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "137",
@@ -1349,15 +1859,21 @@
     "circular_no": "HO No. Conf./1(2)/2021/229thCBT(EPF)/3478",
     "date": "09/11/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_MeetingCBT229_3478.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_MeetingCBT229_3478.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Meeting Notice"
   },
   {
     "serial_no": "136",
-    "title": "\u0906\u0902\u091a\u0932\u093f\u0915 \u0915\u093e\u0930\u094d\u092f\u093e\u0932\u092f\u094b\u0902/\u092a\u0940\u0921\u0940\u0928\u093e\u0938 \u0926\u094d\u0935\u093e\u0930\u093e \u0905\u0927\u0940\u0928\u0938\u094d\u0925\u093e \u0915\u093e\u0930\u094d\u092f\u093e\u0932\u092f\u094b\u0902 \u0915\u0947 \u0930\u093e\u091c\u092d\u093e\u0937\u093e\u092f\u0940 \u0928\u093f\u0930\u0940\u0915\u094d\u0937\u0923 \u0915\u0947 \u0938\u0902\u092c\u0902\u0927 \u092e\u0947\u0902 \u092e\u0941. \u0915\u093e. \u0938\u0902. \u092e\u0941\u0916\u094d\u092f\u093e. /\u0930\u093e. \u092d\u093e. \u0928\u093f\u0930\u0940\u0915\u094d\u0937\u0923 /2021-22/2544 dated 09/11/2021",
-    "circular_no": "\u092e\u0941. \u0915\u093e. \u0938\u0902. \u092e\u0941\u0916\u094d\u092f\u093e. /\u0930\u093e. \u092d\u093e. \u0928\u093f\u0930\u0940\u0915\u094d\u0937\u0923 /2021-22/2544",
+    "title": "आंचलिक कार्यालयों/पीडीनास द्वारा अधीनस्था कार्यालयों के राजभाषायी निरीक्षण के संबंध में मु. का. सं. मुख्या. /रा. भा. निरीक्षण /2021-22/2544 dated 09/11/2021",
+    "circular_no": "मु. का. सं. मुख्या. /रा. भा. निरीक्षण /2021-22/2544",
     "date": "09/11/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_Inspection_2544.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "135",
@@ -1365,7 +1881,10 @@
     "circular_no": "HO No. Vig./Coord/CVC-Correspondence/Part-File/2020/2001",
     "date": "09/11/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Vig_DepartmentalProceedings_CCS_2001.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Vig_DepartmentalProceedings_CCS_2001.pdf",
+    "division": "Vigilance",
+    "sub_division": "Vigilance",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "134",
@@ -1373,7 +1892,10 @@
     "circular_no": "HO No. Pension-3/7(411)2021/Miscellaneous",
     "date": "09/11/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Pension_PhysicalComm_09112021.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Pension_PhysicalComm_09112021.pdf",
+    "division": "Pension",
+    "sub_division": "Pension",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "133",
@@ -1381,15 +1903,21 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc./508",
     "date": "03/11/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_RevisedDA_508.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_RevisedDA_508.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_RevisedDA_508.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "132",
-    "title": "\u0917\u0948\u0930 \u0915\u094b\u0935\u093f\u0921 - 19  (\u0938\u093e\u092e\u093e\u0928\u094d\u092f \u092e\u0943\u0924\u094d\u092f\u0941) \u0915\u0947 \u0915\u093e\u0930\u0923 \u0915\u0947\u0902\u0926\u094d\u0930\u0940\u092f \u092c\u094b\u0930\u094d\u0921 \u0915\u0947 \u0915\u094b\u0908 \u0915\u0930\u094d\u092e\u091a\u093e\u0930\u0940 \u0915\u0940 \u092e\u0943\u0924\u094d\u092f\u0941 \u0915\u0940 \u0938\u094d\u0924\u093f\u0925\u093f \u092e\u0947\u0902 \u0930\u0942. \u0906\u0920 \u0932\u093e\u0916 \u0915\u0940 \u090f\u0915\u094d\u0938\u0917\u094d\u0930\u0947\u0938\u093f\u092f\u093e \u092e\u0943\u0924\u094d\u092f\u0941 \u0930\u093e\u0939\u0924 \u0928\u093f\u0927\u093f \u092e\u0947\u0902 \u0935\u0943\u0926\u094d\u0927\u093f \u0915\u0947 \u0938\u092e\u094d\u092c\u0928\u094d\u0927 \u092e\u0947\u0902       Enhancement of Ex gratia Death Relief Fund of Rs. Eight Lakhs in the event of death of an employee of the Central Board due to Non-Covid-19 (normal death) HO",
+    "title": "गैर कोविड - 19  (सामान्य मृत्यु) के कारण केंद्रीय बोर्ड के कोई कर्मचारी की मृत्यु की स्तिथि में रू. आठ लाख की एक्सग्रेसिया मृत्यु राहत निधि में वृद्धि के सम्बन्ध में       Enhancement of Ex gratia Death Relief Fund of Rs. Eight Lakhs in the event of death of an employee of the Central Board due to Non-Covid-19 (normal death) HO",
     "circular_no": "HO No. B-11/1/2020-HRM-VI/3362",
     "date": "02/11/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM6_DRF_3362_Hindi_Sl.132.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM6_DRF_3362.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM6_DRF_3362.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "131",
@@ -1397,7 +1925,10 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc./Pt./505",
     "date": "02/11/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_COVID_Biometric_505.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_COVID_Biometric_505.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_COVID_Biometric_505.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "130",
@@ -1405,7 +1936,10 @@
     "circular_no": "HO No. INV-11/1/2020-INV",
     "date": "30/10/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/INV_ROI_EPF_30102021_new_Hindi_130.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/INV_ROI_EPF_30102021_new.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/INV_ROI_EPF_30102021_new.pdf",
+    "division": "Finance",
+    "sub_division": "Investment",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "128",
@@ -1413,15 +1947,23 @@
     "circular_no": "HO No. A-34013/1/2021-EXAM/260",
     "date": "29/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_ObjectionManagement_SS_LDCE_260.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Exam_ObjectionManagement_SS_LDCE_260.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Exam",
+    "addl_link": "ObjectionManagementLink.pdf",
+    "addl_link_title": "Objection Management Link"
   },
   {
     "serial_no": "127",
-    "title": "31 \u091c\u0942\u0928, 2021 \u0915\u094b \u0938\u092e\u093e\u092a\u094d\u0924 \u0924\u093f\u092e\u093e\u0939\u0940 \u0915\u0947 \u0932\u093f\u090f \u0930\u093e\u091c\u092d\u093e\u0937\u093e \u0938\u0902\u092c\u0902\u0927\u0940 \u0924\u093f\u092e\u093e\u0939\u0940 \u092a\u094d\u0930\u0917\u0924\u093f \u0930\u093f\u092a\u094b\u0930\u094d\u091f \u0915\u0940 \u0938\u092e\u0940\u0915\u094d\u0937\u093e \u0915\u0947 \u0938\u0902\u092c\u0902\u0927 \u092e\u0947\u0902 \u092e\u0941.\u0915\u093e. \u0939\u093f.\u0905./\u0924\u093f.\u092a\u094d\u0930.\u0930\u093f./\u0938\u0902\u0917\u0920\u0928 / 2018/2439 dated 29/10/2021",
-    "circular_no": "\u092e\u0941.\u0915\u093e. \u0939\u093f.\u0905./\u0924\u093f.\u092a\u094d\u0930.\u0930\u093f./\u0938\u0902\u0917\u0920\u0928 / 2018/2439",
+    "title": "31 जून, 2021 को समाप्त तिमाही के लिए राजभाषा संबंधी तिमाही प्रगति रिपोर्ट की समीक्षा के संबंध में मु.का. हि.अ./ति.प्र.रि./संगठन / 2018/2439 dated 29/10/2021",
+    "circular_no": "मु.का. हि.अ./ति.प्र.रि./संगठन / 2018/2439",
     "date": "29/10/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_TPR_2439.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "126",
@@ -1429,7 +1971,10 @@
     "circular_no": "HO No. Conf./1(2)/2021/229thCBT(EPF)/2378",
     "date": "26/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_MeetingCBT_229_2378.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_MeetingCBT_229_2378.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Meeting Notice"
   },
   {
     "serial_no": "124",
@@ -1437,7 +1982,10 @@
     "circular_no": "HO No. WSU/25(1)/2018/PLB/2411",
     "date": "28/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_PLB_2020-21_2411.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_PLB_2020-21_2411.pdf",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "123",
@@ -1445,7 +1993,10 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc./500",
     "date": "28/10/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_RevsiedDA_500.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_RevsiedDA_500.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_RevsiedDA_500.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "122",
@@ -1453,7 +2004,10 @@
     "circular_no": "HO No. APAR/2020/320/disclosure/2406",
     "date": "27/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/APAR_Disclosure_27102021.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/APAR_Disclosure_27102021.pdf",
+    "division": "Apar",
+    "sub_division": "Apar",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "121",
@@ -1461,15 +2015,21 @@
     "circular_no": "H No: NDC/e-25898",
     "date": "25/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/New_specification_for_PC_Laptop_25838.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/New_specification_for_PC_Laptop_25838.pdf",
+    "division": "CAIU",
+    "sub_division": "Ndc",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "120",
-    "title": "\u0915\u0930\u094d\u092e\u091a\u093e\u0930\u0940 \u092d\u0935\u093f\u0937\u094d\u092f \u0928\u093f\u0927\u093f \u0938\u0902\u0917\u0920\u0928 \u0915\u0947 \u0915\u094b\u0921 / \u092e\u0948\u0928\u0941\u0905\u0932 \u0915\u0947 \u0938\u092e\u094d\u092c\u0926\u094d\u0927 \u092e\u0947\u0902 \u092e\u0941.\u0915\u093e.\u0938\u0902. \u0939\u093f.\u0915\u093e.\u090f. 4(85)/  \u0924\u093f\u092e\u093e\u0939\u0940 \u092c\u0948\u0920\u0915 /\u092e\u0941\u0916\u094d\u092f\u093e\u0932\u092f /2350 dated 25/10/2021",
-    "circular_no": "\u092e\u0941.\u0915\u093e.\u0938\u0902. \u0939\u093f.\u0915\u093e.\u090f. 4(85)/  \u0924\u093f\u092e\u093e\u0939\u0940 \u092c\u0948\u0920\u0915 /\u092e\u0941\u0916\u094d\u092f\u093e\u0932\u092f /2350",
+    "title": "कर्मचारी भविष्य निधि संगठन के कोड / मैनुअल के सम्बद्ध में मु.का.सं. हि.का.ए. 4(85)/  तिमाही बैठक /मुख्यालय /2350 dated 25/10/2021",
+    "circular_no": "मु.का.सं. हि.का.ए. 4(85)/  तिमाही बैठक /मुख्यालय /2350",
     "date": "25/10/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_Manual_Code_2350.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "119",
@@ -1477,7 +2037,10 @@
     "circular_no": "HO No. INV-30/24/2021-INV/2298",
     "date": "22/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/INV_SecurityTransfer_2298.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/INV_SecurityTransfer_2298.pdf",
+    "division": "Finance",
+    "sub_division": "Investment",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "118",
@@ -1485,7 +2048,10 @@
     "circular_no": "HO No. HRM-V/11(7)Compassionate Appointment/Policy Matter/2019/Vol. III/2345",
     "date": "25/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM5_Guidelines_CompassionateApptt_2345.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM5_Guidelines_CompassionateApptt_2345.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "117",
@@ -1493,7 +2059,10 @@
     "circular_no": "HO No. APAR/3/2016/APFC/",
     "date": "22/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/APAR_APFC_22102021.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/APAR_APFC_22102021.pdf",
+    "division": "Apar",
+    "sub_division": "Apar",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "116",
@@ -1501,7 +2070,10 @@
     "circular_no": "HO No. IWU/7(14)2008/Singapore/3130",
     "date": "21/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/IWU_SingaporeNational_3130.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/IWU_SingaporeNational_3130.pdf",
+    "division": "Pension",
+    "sub_division": "Iwu",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "115",
@@ -1509,7 +2081,10 @@
     "circular_no": "HO No. Coord./40/(1)/2013/VIP Reference/",
     "date": "21/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Coord_SpecialCompaign_21102021.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Coord_SpecialCompaign_21102021.pdf",
+    "division": "Compliance",
+    "sub_division": "Coordination",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "114",
@@ -1517,7 +2092,10 @@
     "circular_no": "HO No. RTI-11011/99/2021-HRM-IV/2283",
     "date": "21/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_RTI_DLB_2283.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_RTI_DLB_2283.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "113",
@@ -1525,7 +2103,10 @@
     "circular_no": "HO No. WSU/2021/336/RTI (40103)/3167",
     "date": "21/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_RTI_NM_3167.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_RTI_NM_3167.pdf",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "112",
@@ -1533,7 +2114,10 @@
     "circular_no": "HO No. Conf. 1(1)Ref. CBT Members/2020/2281",
     "date": "21/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_ReferenceCBT_2281.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_ReferenceCBT_2281.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "111",
@@ -1541,7 +2125,10 @@
     "circular_no": "HO No. HRM-IV/4(17)/2018/SSA.Sr.SSA/CAT/Chandigarh/3122",
     "date": "21/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_EligibilitySS_3122.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_EligibilitySS_3122.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "110",
@@ -1549,7 +2136,10 @@
     "circular_no": "HO No. HRM-III/28(21)2018/Court Case/2238",
     "date": "20/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM3_DisputeSettlement_Halba_2238.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM3_DisputeSettlement_Halba_2238.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "109",
@@ -1557,7 +2147,10 @@
     "circular_no": "HO No. Vig/Coord/VAW/2021/1817",
     "date": "14/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Vig_VAW_2021_1817.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Vig_VAW_2021_1817.pdf",
+    "division": "Vigilance",
+    "sub_division": "Vigilance",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "108",
@@ -1565,7 +2158,10 @@
     "circular_no": "HO No. A-45012/22/2021-HRM-VIII/02",
     "date": "14/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM8_Cleanliness_SpCampaign_02.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM8_Cleanliness_SpCampaign_02.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "107",
@@ -1573,7 +2169,10 @@
     "circular_no": "HO No. WSU/2021/278/Discussion_points_of_SOM(E-38693)/2924",
     "date": "13/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_ChangePWD_AppSoft_2924.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_ChangePWD_AppSoft_2924.pdf",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "106",
@@ -1581,7 +2180,10 @@
     "circular_no": "HO No. Coord 40/(1)/2013/VIP Reference/Pt./2779",
     "date": "08/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Coord_VIPReferences_2779.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Coord_VIPReferences_2779.pdf",
+    "division": "Compliance",
+    "sub_division": "Coordination",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "105",
@@ -1589,7 +2191,10 @@
     "circular_no": "HO No. WelfareFund/3(143)/2021-22/Budget Allotment/",
     "date": "07/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Welfare_REBE_SportsWelfare_07102021.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Welfare_REBE_SportsWelfare_07102021.pdf",
+    "division": "HRM",
+    "sub_division": "Welfare",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "104",
@@ -1597,7 +2202,10 @@
     "circular_no": "HO No. A-45012/22/2021-HRM-VIII/01",
     "date": "07/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM8_WeedingOutRecords_01.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM8_WeedingOutRecords_01.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "103",
@@ -1605,7 +2213,10 @@
     "circular_no": "HO No. WSU/25(1)/2018-19/PLB/1938",
     "date": "06/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_PLB_2020-21_1938.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_PLB_2020-21_1938.pdf",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "101",
@@ -1613,7 +2224,10 @@
     "circular_no": "HO No. Conf 16(1)2020/Annual Report/1924",
     "date": "05/10/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_MeetingRC_1924.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_MeetingRC_1924.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "100",
@@ -1621,7 +2235,12 @@
     "circular_no": "HO No. Budget/2021-22/2022-23/Main/1867",
     "date": "30/09/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Budget_RE_2021-22_BE_2022-23.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Budget_RE_2021-22_BE_2022-23.pdf",
+    "division": "Finance",
+    "sub_division": "Budget",
+    "doc_type": "Circular",
+    "addl_link": "RE BE proforma final.pdf#RE BE proforma.xls#RE BE income expenditure.xls",
+    "addl_link_title": "RE BE proforma final#RE BE proforma#RE BE income expenditure"
   },
   {
     "serial_no": "99",
@@ -1629,7 +2248,10 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc./492",
     "date": "28/09/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_FlagCode_492.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_FlagCode_492.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_FlagCode_492.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "98",
@@ -1637,7 +2259,10 @@
     "circular_no": "HO No. Conf. 1(1)Ref. CBT Members/2020/1761",
     "date": "27/09/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_MemberCBTReference_1761.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Conf_MemberCBTReference_1761.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "97",
@@ -1645,7 +2270,10 @@
     "circular_no": "HO No. HRD/RTI/23/2017/Online/Transfer/2335",
     "date": "23/09/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_RTI_SY_2335.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_RTI_SY_2335.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "96",
@@ -1653,7 +2281,10 @@
     "circular_no": "HO No. Coord/40/(1)/2013/VIP Reference/1696",
     "date": "23/09/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Coord_DAPRG_SpCampgn_1696.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Coord_DAPRG_SpCampgn_1696.pdf",
+    "division": "Compliance",
+    "sub_division": "Coordination",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "95",
@@ -1661,7 +2292,10 @@
     "circular_no": "HO No. Coord/40(12)2016/Meeting Notice/Pt.I/1697",
     "date": "23/09/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Coord_NodalOfficer_SantushtCell_1697.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Coord_NodalOfficer_SantushtCell_1697.pdf",
+    "division": "Compliance",
+    "sub_division": "Coordination",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "94",
@@ -1669,7 +2303,10 @@
     "circular_no": "HO No. CSD/SpecialCompaign/2021/1703",
     "date": "23/09/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/CSD_SpecialCompaign_1703.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/CSD_SpecialCompaign_1703.pdf",
+    "division": "CSD",
+    "sub_division": "Csd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "93",
@@ -1677,7 +2314,10 @@
     "circular_no": "HO No. HRM-VIII/5/2020/SHS",
     "date": "23/09/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM8_SwachhataPakhwara_23092021.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM8_SwachhataPakhwara_23092021.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "92",
@@ -1685,7 +2325,10 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc./490",
     "date": "20/09/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_CGL_490.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_CGL_490.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_CGL_490.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "91",
@@ -1693,7 +2336,10 @@
     "circular_no": "HO No. BKG-27/5/2021-BKG/",
     "date": "11/09/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Aadhaar_seeding_UAN_11092021.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Aadhaar_seeding_UAN_11092021.pdf",
+    "division": "Finance",
+    "sub_division": "Banking",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "90",
@@ -1701,7 +2347,10 @@
     "circular_no": "HO No. APAR-12/2015-16/SPARROW/Part-IV/1346",
     "date": "10/09/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/APAR_SPARROW_1346.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/APAR_SPARROW_1346.pdf",
+    "division": "Apar",
+    "sub_division": "Apar",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "89",
@@ -1709,7 +2358,10 @@
     "circular_no": "HO No. HRM-I/A-10(34)91/Vol. II/2014",
     "date": "08/09/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM1_OM_VPS_2014.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM1_OM_VPS_2014.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Office Memorandum"
   },
   {
     "serial_no": "88",
@@ -1717,7 +2369,10 @@
     "circular_no": "HO No. HRM-VII/1(22)/Audit/2020/E-26551/1236",
     "date": "08/09/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM7_Deputation_Audit_1236.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM7_Deputation_Audit_1236.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Office Memorandum"
   },
   {
     "serial_no": "87",
@@ -1725,7 +2380,10 @@
     "circular_no": "HO No. 240779/2021/C&PR/39985",
     "date": "03/09/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/CPR_AKAM_03092021.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/CPR_AKAM_03092021.pdf",
+    "division": "HRM",
+    "sub_division": "Publicity",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "86",
@@ -1733,7 +2391,10 @@
     "circular_no": "HO No. HRM-I/A-10(45)2006/Vol.I/1917",
     "date": "02/09/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM1_Clari_Superannuation_GrA_1917.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM1_Clari_Superannuation_GrA_1917.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Superannuation"
   },
   {
     "serial_no": "85",
@@ -1741,7 +2402,10 @@
     "circular_no": "HO No. C-I/MISC/Pandemic Relief/2021/Vol-I/",
     "date": "31/08/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/C1_PandemicRelief_31082021.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/C1_PandemicRelief_31082021.pdf",
+    "division": "Compliance",
+    "sub_division": "Compliance",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "84",
@@ -1749,31 +2413,43 @@
     "circular_no": "HO No. HRM-V/11(07)CompassionateAppointment/PolicyMatter/2019/Vol.III/1855",
     "date": "31/08/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM5_CompassionateApptt_1855.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM5_CompassionateApptt_1855.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "83",
-    "title": "\u0915\u0930\u094d\u092e\u091a\u093e\u0930\u0940 \u092d\u0935\u093f\u0937\u094d\u092f \u0928\u093f\u0927\u093f \u0938\u0902\u0917\u0920\u0928 \u0915\u0947 \u0938\u092d\u0940 \u0915\u093e\u0930\u094d\u092f\u093e\u0932\u092f\u094b\u0902 \u092e\u0947\u0902 1 \u0938\u093f\u0924\u092e\u094d\u092c\u0930 \u0938\u0947 15 \u0938\u093f\u0924\u092e\u094d\u092c\u0930, 2021 \u0924\u0915 \u0939\u093f\u0902\u0926\u0940 \u092a\u0916\u0935\u093e\u0921\u093c\u093e \u0906\u092f\u094b\u091c\u093f\u0924 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0938\u0902\u092c\u0902\u0927 \u092e\u0947\u0902 \u092e\u0941.\u0915\u093e.\u0938\u0902. \u0939\u093f.\u0905/8(7)2021/\u0939\u093f\u0902\u0926\u0940 \u092a\u0916\u0935\u093e\u0921\u093c\u093e/1138 dated 31/08/2021",
-    "circular_no": "\u092e\u0941.\u0915\u093e.\u0938\u0902. \u0939\u093f.\u0905/8(7)2021/\u0939\u093f\u0902\u0926\u0940 \u092a\u0916\u0935\u093e\u0921\u093c\u093e/1138",
+    "title": "कर्मचारी भविष्य निधि संगठन के सभी कार्यालयों में 1 सितम्बर से 15 सितम्बर, 2021 तक हिंदी पखवाड़ा आयोजित करने के संबंध में मु.का.सं. हि.अ/8(7)2021/हिंदी पखवाड़ा/1138 dated 31/08/2021",
+    "circular_no": "मु.का.सं. हि.अ/8(7)2021/हिंदी पखवाड़ा/1138",
     "date": "31/08/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_HindiPakhwara_1138.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "82",
-    "title": "\u0915.\u092d.\u0928\u093f.\u0938\u0902 \u0915\u0947 \u0915\u093e\u0930\u094d\u092f\u093e\u0932\u092f\u094b\u0902 \u0915\u094b \u0930\u093e\u091c\u092d\u093e\u0937\u093e \u0928\u093f\u092f\u092e, 1976 \u0915\u0947 \u0928\u093f\u092f\u092e 10(4) \u0915\u0947 \u0905\u0902\u0924\u0930\u094d\u0917\u0924 \u0905\u0927\u093f\u0938\u0942\u091a\u093f\u0924 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0938\u0902\u092c\u0902\u0927 \u092e\u0947\u0902 \u092e\u0941.\u0915\u093e. \u0939\u093f.\u0905./4/2/98/2018/1033 dated 25/08/2021",
-    "circular_no": "\u092e\u0941.\u0915\u093e. \u0939\u093f.\u0905./4/2/98/2018/1033",
+    "title": "क.भ.नि.सं के कार्यालयों को राजभाषा नियम, 1976 के नियम 10(4) के अंतर्गत अधिसूचित करने के संबंध में मु.का. हि.अ./4/2/98/2018/1033 dated 25/08/2021",
+    "circular_no": "मु.का. हि.अ./4/2/98/2018/1033",
     "date": "25/08/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_RajbhashaNiyam_1033.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "81",
-    "title": "31 \u092e\u093e\u0930\u094d\u091a, 2021 \u0915\u094b \u0938\u092e\u093e\u092a\u094d\u0924 \u0924\u093f\u092e\u093e\u0939\u0940 \u0915\u0947 \u0932\u093f\u090f \u0930\u093e\u091c\u092d\u093e\u0937\u093e \u0938\u0902\u092c\u0902\u0927\u0940 \u0924\u093f\u092e\u093e\u0939\u0940 \u092a\u094d\u0930\u0917\u0924\u093f \u0930\u093f\u092a\u094b\u0930\u094d\u091f \u0915\u0940 \u0938\u092e\u0940\u0915\u094d\u0937\u093e \u0915\u0947 \u0938\u0902\u092c\u0902\u0927 \u092e\u0947\u0902 \u092e\u0941.\u0915\u093e. \u0939\u093f.\u0905./\u0924\u093f.\u092a\u094d\u0930.\u0930\u093f./\u0938\u0902\u0917\u0920\u0928 / 2018/1022 dated 25/08/2021",
-    "circular_no": "\u092e\u0941.\u0915\u093e. \u0939\u093f.\u0905./\u0924\u093f.\u092a\u094d\u0930.\u0930\u093f./\u0938\u0902\u0917\u0920\u0928 / 2018/1022",
+    "title": "31 मार्च, 2021 को समाप्त तिमाही के लिए राजभाषा संबंधी तिमाही प्रगति रिपोर्ट की समीक्षा के संबंध में मु.का. हि.अ./ति.प्र.रि./संगठन / 2018/1022 dated 25/08/2021",
+    "circular_no": "मु.का. हि.अ./ति.प्र.रि./संगठन / 2018/1022",
     "date": "25/08/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_TPR_1022.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "80",
@@ -1781,7 +2457,10 @@
     "circular_no": "HO No. C-I/(1)/2020-21/14B Cases/1026",
     "date": "25/08/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/C1_Review14B_1026.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/C1_Review14B_1026.pdf",
+    "division": "Compliance",
+    "sub_division": "Compliance",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "79",
@@ -1789,7 +2468,10 @@
     "circular_no": "HO No. Compliance/2020-2021/7-A Cases/1027",
     "date": "25/08/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Comp_Review7A_1027.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Comp_Review7A_1027.pdf",
+    "division": "Compliance",
+    "sub_division": "Compliance",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "78",
@@ -1797,7 +2479,10 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc./482",
     "date": "25/08/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Wages_Outsource_482.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Wages_Outsource_482.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Wages_Outsource_482.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "77",
@@ -1805,7 +2490,12 @@
     "circular_no": "HO No. C-I/(104)/2017/Sahara India/1016",
     "date": "24/08/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/C1_Scrutiny_7A7B14B_1016.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/C1_Scrutiny_7A7B14B_1016.pdf",
+    "division": "Compliance",
+    "sub_division": "Compliance",
+    "doc_type": "Circular",
+    "addl_link": "Copy_QTRLY_REPORT_7A_7B_14B.xlsx",
+    "addl_link_title": "Format_QuarterlyReport"
   },
   {
     "serial_no": "76",
@@ -1813,23 +2503,32 @@
     "circular_no": "HO No. Pension-3/E-nomination Monitoring Cell/Pt. (35734)/1770",
     "date": "23/08/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Pension_eNomination_BKAM_1770.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Pension_eNomination_BKAM_1770.pdf",
+    "division": "Pension",
+    "sub_division": "Pension",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "75",
-    "title": "\u0935\u0930\u094d\u0937 2021-22 \u0938\u0947 2023-24 \u0915\u0947 \u0932\u093f\u090f \u0915.\u092d.\u0928\u093f. \u0915\u0947\u0902\u0926\u094d\u0930\u0940\u092f \u0916\u0947\u0932 \u0938\u0902\u0935\u0930\u094d\u0927\u0928 \u092c\u094b\u0930\u094d\u0921 \u0915\u0947 \u092a\u0941\u0928\u0930\u094d\u0917\u0920\u0928 \u0915\u0947 \u0938\u0902\u092c\u0902\u0927 \u092e\u0947\u0902  \r\n        Reconstitution of EPF Central Sports Promotion Board for the year 2021-2022 to 2023-2024 HO",
+    "title": "वर्ष 2021-22 से 2023-24 के लिए क.भ.नि. केंद्रीय खेल संवर्धन बोर्ड के पुनर्गठन के संबंध में  \r\n        Reconstitution of EPF Central Sports Promotion Board for the year 2021-2022 to 2023-2024 HO",
     "circular_no": "HO No. HRM-VI/1(1)2021-24/Reconstitution CSPB/1776",
     "date": "23/08/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM6_Reconstitution_CSPB_1776_Hindi_Sl.75.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM6_Reconstitution_CSPB_1776.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM6_Reconstitution_CSPB_1776.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "74",
-    "title": "\u0939\u093f\u0902\u0926\u0940 \u092a\u0916\u0935\u093e\u0921\u093c\u093e 2021 - \u0915\u0947\u0902\u0926\u094d\u0930\u0940\u092f \u092d\u0935\u093f\u0937\u094d\u092f \u0928\u093f\u0927\u093f \u0906\u092f\u0941\u0915\u094d\u0924 \u0915\u0940 \u0905\u092a\u0940\u0932 \u092e\u0941.\u0915\u093e.\u0938\u0902. \u0939\u093f.\u0905/8(7)2021/\u0939\u093f\u0902\u0926\u0940 \u092a\u0916\u0935\u093e\u0921\u093c\u093e/1746 dated 23/08/2021",
-    "circular_no": "\u092e\u0941.\u0915\u093e.\u0938\u0902. \u0939\u093f.\u0905/8(7)2021/\u0939\u093f\u0902\u0926\u0940 \u092a\u0916\u0935\u093e\u0921\u093c\u093e/1746",
+    "title": "हिंदी पखवाड़ा 2021 - केंद्रीय भविष्य निधि आयुक्त की अपील मु.का.सं. हि.अ/8(7)2021/हिंदी पखवाड़ा/1746 dated 23/08/2021",
+    "circular_no": "मु.का.सं. हि.अ/8(7)2021/हिंदी पखवाड़ा/1746",
     "date": "23/08/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_HindiPakhwada_AppealCPFC_1746.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "73",
@@ -1837,15 +2536,21 @@
     "circular_no": "HO No. HRM-II/S-1(1)2019/965",
     "date": "18/08/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM2_Clarification_FinalStyList_APFC_965.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM2_Clarification_FinalStyList_APFC_965.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Seniority List"
   },
   {
     "serial_no": "72",
-    "title": "\u0915\u0930\u094d\u092e\u091a\u093e\u0930\u0940 \u092d\u0935\u093f\u0937\u094d\u092f \u0928\u093f\u0927\u093f \u0938\u0902\u0917\u0920\u0928 \u0915\u0947 \u0938\u092d\u0940 \u0915\u093e\u0930\u094d\u092f\u093e\u0932\u092f\u094b\u0902 \u092e\u0947\u0902 01 \u0938\u093f\u0924\u0902\u092c\u0930, 2021 \u0938\u0947 15 \u0938\u093f\u0924\u0902\u092c\u0930, 2021 \u0924\u0915 \u0939\u093f\u0902\u0926\u0940 \u092a\u0916\u0935\u093e\u0921\u093c\u093e \u0906\u092f\u094b\u091c\u093f\u0924 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0938\u0902\u092c\u0902\u0927 \u092e\u0947\u0902 \u092e\u0941.\u0915\u093e.\u0938\u0902. \u0939\u093f\u0905 8(7)/2021//\u0939\u093f\u0902\u0926\u0940 \u092a\u0916\u0935\u093e\u095c\u093e /992 dated 18/08/2021",
-    "circular_no": "\u092e\u0941.\u0915\u093e.\u0938\u0902. \u0939\u093f\u0905 8(7)/2021//\u0939\u093f\u0902\u0926\u0940 \u092a\u0916\u0935\u093e\u095c\u093e /992",
+    "title": "कर्मचारी भविष्य निधि संगठन के सभी कार्यालयों में 01 सितंबर, 2021 से 15 सितंबर, 2021 तक हिंदी पखवाड़ा आयोजित करने के संबंध में मु.का.सं. हिअ 8(7)/2021//हिंदी पखवाड़ा /992 dated 18/08/2021",
+    "circular_no": "मु.का.सं. हिअ 8(7)/2021//हिंदी पखवाड़ा /992",
     "date": "18/08/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_HindiPakhwada_992.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "71",
@@ -1853,7 +2558,10 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc./Pt./480",
     "date": "17/08/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_ChHoliday_Muharram_480.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_ChHoliday_Muharram_480.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_ChHoliday_Muharram_480.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "70",
@@ -1861,15 +2569,21 @@
     "circular_no": "HO No. HRD/32/2021/Misc./Allowances/479",
     "date": "16/08/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Onam_479.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Onam_479.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Onam_479.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "69",
-    "title": "\u0915\u0930\u094d\u092e\u091a\u093e\u0930\u0940 \u092d\u0935\u093f\u0937\u094d\u092f \u0928\u093f\u0927\u093f \u0938\u0902\u0917\u0920\u0928 (\u0939\u093f\u0902\u0926\u0940 \u092a\u094d\u0930\u092f\u094b\u0917 \u092a\u094d\u0930\u094b\u0924\u094d\u0938\u093e\u0939\u0928) - \u2018\u0916\u2019 \u0935 \u2018\u0917\u2019 \u0915\u094d\u0937\u0947\u0924\u094d\u0930\u094b\u0902 \u0915\u0947 \u0932\u093f\u090f \u0928\u0915\u0926 \u092a\u0941\u0930\u0938\u094d\u0915\u093e\u0930 \u092f\u094b\u091c\u0928\u093e \u0915\u0947 \u0938\u0902\u092c\u0902\u0927 \u092e\u0947\u0902 \u092e\u0941.\u0915\u093e.\u0938\u0902. \u0939\u093f.\u0905. /\u0928\u0915\u0926 \u092a\u0941\u0930\u0938\u094d\u0915\u093e\u0930 \u092f\u094b\u091c\u0928\u093e / 2020-21/\u0938\u0902\u0917\u0920\u0928 /902 dated 13/08/2021",
-    "circular_no": "\u092e\u0941.\u0915\u093e.\u0938\u0902. \u0939\u093f.\u0905. /\u0928\u0915\u0926 \u092a\u0941\u0930\u0938\u094d\u0915\u093e\u0930 \u092f\u094b\u091c\u0928\u093e / 2020-21/\u0938\u0902\u0917\u0920\u0928 /902",
+    "title": "कर्मचारी भविष्य निधि संगठन (हिंदी प्रयोग प्रोत्साहन) - ‘ख’ व ‘ग’ क्षेत्रों के लिए नकद पुरस्कार योजना के संबंध में मु.का.सं. हि.अ. /नकद पुरस्कार योजना / 2020-21/संगठन /902 dated 13/08/2021",
+    "circular_no": "मु.का.सं. हि.अ. /नकद पुरस्कार योजना / 2020-21/संगठन /902",
     "date": "13/08/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_CPY_902.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "68",
@@ -1877,7 +2591,10 @@
     "circular_no": "HO No. HRM-I/A-10(45)2006/Vol. I/804",
     "date": "06/08/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM1_Corrg_Superannuation_GrA_804.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM1_Corrg_Superannuation_GrA_804.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Superannuation"
   },
   {
     "serial_no": "67",
@@ -1885,7 +2602,10 @@
     "circular_no": "HO No. HRM-III/RTI(03-04)/2021/786",
     "date": "05/08/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM3_RTI_SK_05082021.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM3_RTI_SK_05082021.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "66",
@@ -1893,15 +2613,21 @@
     "circular_no": "HO No. ASD-I/1(23)2021/Mini-SOW/781",
     "date": "04/08/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/ASD_ServiceBook_RPFC1_781.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/ASD_ServiceBook_RPFC1_781.pdf",
+    "division": "ASD",
+    "sub_division": "Asd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "65",
-    "title": "\u0924\u0924\u094d\u0915\u093e\u0932\u0940\u0928 \u0936\u094d\u0930\u092e \u090f\u0935\u0902 \u0930\u094b\u091c\u0917\u093e\u0930 \u0930\u093e\u091c\u094d\u092f \u092e\u0902\u0924\u094d\u0930\u0940 (\u0938\u094d\u0935\u0924\u0902\u0924\u094d\u0930 \u092a\u094d\u0930\u092d\u093e\u0930) \u092e\u093e\u0928\u0928\u0940\u092f \u0936\u094d\u0930\u0940 \u0938\u0902\u0924\u094b\u0937 \u0915\u0941\u092e\u093e\u0930 \u0917\u0902\u0917\u0935\u093e\u0930\u091c\u0940 \u0915\u0940 \u0905\u0927\u094d\u092f\u0915\u094d\u0937\u0924\u093e \u092e\u0947\u0902 \u0906\u092f\u094b\u091c\u093f\u0924 \u0939\u093f\u0902\u0926\u0940 \u0938\u0932\u093e\u0939\u0915\u093e\u0930 \u0938\u092e\u093f\u0924\u093f \u0915\u0940 40 \u0935\u0940\u0902 \u092c\u0948\u0920\u0915 \u092e\u0947\u0902 \u0932\u093f\u090f \u0917\u090f \u0928\u093f\u0930\u094d\u0923\u092f\u094b\u0902 \u0915\u0947 \u0915\u093e\u0930\u094d\u092f\u093e\u0928\u094d\u0935\u092f\u0928 \u0915\u0947 \u0938\u0902\u092c\u0902\u0927 \u092e\u0947\u0902 \u092e\u0941. \u0915\u093e. \u0938\u0902. \u0939\u093f\u0902\u0926\u0940 \u0938\u0932\u093e\u0939\u0915\u093e\u0930 \u0938\u092e\u093f\u0924\u093f / 2017-18/40\u0935\u0940\u0902 \u092c\u0948\u0920\u0915 /756 dated 03/08/2021",
-    "circular_no": "\u092e\u0941. \u0915\u093e. \u0938\u0902. \u0939\u093f\u0902\u0926\u0940 \u0938\u0932\u093e\u0939\u0915\u093e\u0930 \u0938\u092e\u093f\u0924\u093f / 2017-18/40\u0935\u0940\u0902 \u092c\u0948\u0920\u0915 /756",
+    "title": "तत्कालीन श्रम एवं रोजगार राज्य मंत्री (स्वतंत्र प्रभार) माननीय श्री संतोष कुमार गंगवारजी की अध्यक्षता में आयोजित हिंदी सलाहकार समिति की 40 वीं बैठक में लिए गए निर्णयों के कार्यान्वयन के संबंध में मु. का. सं. हिंदी सलाहकार समिति / 2017-18/40वीं बैठक /756 dated 03/08/2021",
+    "circular_no": "मु. का. सं. हिंदी सलाहकार समिति / 2017-18/40वीं बैठक /756",
     "date": "03/08/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_HSS_Meeting40_756.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "64",
@@ -1909,7 +2635,10 @@
     "circular_no": "HO No. Pension-3/E-nomination/Pt.(35734)/1453",
     "date": "30/07/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Pension_BKAM_1453.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Pension_BKAM_1453.pdf",
+    "division": "Pension",
+    "sub_division": "Pension",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "63",
@@ -1917,7 +2646,10 @@
     "circular_no": "PDNASS No. 13/07/2020-2021/PDNASS/162",
     "date": "29/07/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_HBR_Webinar_162.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_HBR_Webinar_162.pdf",
+    "division": "PDUNASS",
+    "sub_division": "Zti",
+    "doc_type": "Training"
   },
   {
     "serial_no": "62",
@@ -1925,7 +2657,10 @@
     "circular_no": "HO No. HRM-II/S-1(1)2019/1395",
     "date": "28/07/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM2_FinalStyList_APFC_1395.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM2_FinalStyList_APFC_1395.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Seniority List"
   },
   {
     "serial_no": "61",
@@ -1933,7 +2668,10 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc./Pt./472",
     "date": "27/07/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_RevisedDA_Pensioners_472.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_RevisedDA_Pensioners_472.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_RevisedDA_Pensioners_472.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "60",
@@ -1941,15 +2679,21 @@
     "circular_no": "HO No. Vig./Coord/CVC-Correspondence/Part-File-2/2021",
     "date": "26/07/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Vig_Transparency_Contracts_26072021.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Vig_Transparency_Contracts_26072021.pdf",
+    "division": "Vigilance",
+    "sub_division": "Vigilance",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "59",
-    "title": "31 \u0926\u093f\u0938\u0902\u092c\u0930 2020 \u0915\u094b \u0938\u092e\u093e\u092a\u094d\u0924 \u0924\u093f\u092e\u093e\u0939\u0940 \u0915\u0947 \u0932\u093f\u090f \u0930\u093e\u091c\u092d\u093e\u0937\u093e \u0938\u0902\u092c\u0902\u0927\u0940 \u0924\u093f\u092e\u093e\u0939\u0940 \u092a\u094d\u0930\u0917\u0924\u093f \u0930\u093f\u092a\u094b\u0930\u094d\u091f \u0915\u0940 \u0938\u092e\u0940\u0915\u094d\u0937\u093e \u0915\u0947 \u0938\u0902\u092c\u0902\u0927 \u092e\u0947\u0902 \u092e\u0941.\u0915\u093e. \u0939\u093f.\u0905./\u0924\u093f.\u092a\u094d\u0930.\u0930\u093f./\u0938\u0902\u0917\u0920\u0928 / 2018/2173/1248 dated 22/07/2021",
-    "circular_no": "\u092e\u0941.\u0915\u093e. \u0939\u093f.\u0905./\u0924\u093f.\u092a\u094d\u0930.\u0930\u093f./\u0938\u0902\u0917\u0920\u0928 / 2018/2173/1248",
+    "title": "31 दिसंबर 2020 को समाप्त तिमाही के लिए राजभाषा संबंधी तिमाही प्रगति रिपोर्ट की समीक्षा के संबंध में मु.का. हि.अ./ति.प्र.रि./संगठन / 2018/2173/1248 dated 22/07/2021",
+    "circular_no": "मु.का. हि.अ./ति.प्र.रि./संगठन / 2018/2173/1248",
     "date": "22/07/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_TPR_1248.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "58",
@@ -1957,7 +2701,10 @@
     "circular_no": "HO No. WSU/2020/Multi-location settlement of claims",
     "date": "13/07/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_CRO_MLC_13072021.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_CRO_MLC_13072021.pdf",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "57",
@@ -1965,7 +2712,10 @@
     "circular_no": "PDNASS No. 13/07/2020-2021/PDNASS/143",
     "date": "22/07/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_Webinar_143.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_Webinar_143.pdf",
+    "division": "PDUNASS",
+    "sub_division": "Zti",
+    "doc_type": "Training"
   },
   {
     "serial_no": "56",
@@ -1973,7 +2723,10 @@
     "circular_no": "PDNASS No. 13/07/2020-2021/PDNASS/142",
     "date": "22/07/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_ETHRWorld_142.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_ETHRWorld_142.pdf",
+    "division": "PDUNASS",
+    "sub_division": "Zti",
+    "doc_type": "Training"
   },
   {
     "serial_no": "55",
@@ -1981,7 +2734,10 @@
     "circular_no": "HO No. HRD/1(71)2020/Misc./471",
     "date": "22/07/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Treatment_COVID_471.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Treatment_COVID_471.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Treatment_COVID_471.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "54",
@@ -1989,7 +2745,10 @@
     "circular_no": "HO No. HRD/3(2)2012/SPF/470",
     "date": "22/07/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_ROI_SPF_470.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_ROI_SPF_470.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_ROI_SPF_470.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "53",
@@ -1997,7 +2756,10 @@
     "circular_no": "PDNASS No. 13/07/2020-2021/PDNASS/139",
     "date": "20/07/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_ETHRWorld_139.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_ETHRWorld_139.pdf",
+    "division": "PDUNASS",
+    "sub_division": "Zti",
+    "doc_type": "Training"
   },
   {
     "serial_no": "52",
@@ -2005,7 +2767,10 @@
     "circular_no": "PDNASS No. 13/07/2020-2021/PDNASS/138",
     "date": "20/07/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_ISSA_Cybersecurity_138.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_ISSA_Cybersecurity_138.pdf",
+    "division": "PDUNASS",
+    "sub_division": "Zti",
+    "doc_type": "Training"
   },
   {
     "serial_no": "51",
@@ -2013,7 +2778,10 @@
     "circular_no": "PDNASS No. 13/07/2020-2021/PDNASS/137",
     "date": "20/07/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_ETHRWorld_137.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_ETHRWorld_137.pdf",
+    "division": "PDUNASS",
+    "sub_division": "Zti",
+    "doc_type": "Training"
   },
   {
     "serial_no": "50",
@@ -2021,7 +2789,10 @@
     "circular_no": "HO No. HRM-III/Misc./Liaison Officer/OBC/1240",
     "date": "19/07/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM3_LiaisonOfficer_OBC_1240.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM3_LiaisonOfficer_OBC_1240.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "49",
@@ -2029,7 +2800,10 @@
     "circular_no": "HO  NO. HRD/1(71)2020/Misc./Pt./469",
     "date": "20/07/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_DA_RevisedRates_469.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_DA_RevisedRates_469.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_DA_RevisedRates_469.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "48",
@@ -2037,7 +2811,10 @@
     "circular_no": "HO No. HRD/12(1)2011/Holiday/Pt./466",
     "date": "19/07/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Holidays_2022_466.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Holidays_2022_466.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "47",
@@ -2045,15 +2822,21 @@
     "circular_no": "HO NO. HRD/1(71)2020/Misc./Pt./467",
     "date": "19/07/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_NotionalIncrement_467.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_NotionalIncrement_467.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "46",
-    "title": "\u0905\u0927\u0940\u0928\u0938\u094d\u0925 \u0915\u093e\u0930\u094d\u092f\u093e\u0932\u092f\u094b\u0902 \u092e\u0947\u0902 \u0930\u093e\u091c\u092d\u093e\u0937\u093e \u0915\u093e\u0930\u094d\u092f\u093e\u0928\u094d\u0935\u092f\u0928 \u0938\u092e\u093f\u0924\u093f\u092f\u094b\u0902 \u0915\u093e \u0917\u0920\u0928 \u090f\u0935\u0902 \u0907\u0928\u0915\u0940 \u092c\u0948\u0920\u0915\u094b\u0902 \u0915\u0947 \u0928\u093f\u092f\u092e\u093f\u0924 \u0906\u092f\u094b\u091c\u0928 \u0915\u0947 \u0938\u092e\u094d\u092c\u0928\u094d\u0927 \u092e\u0947\u0902 \u092e\u0941.\u0915\u093e.\u0938\u0902. \u0939\u093f.\u0905. / \u0924\u093f\u092e\u093e\u0939\u0940 \u092c\u0948\u0920\u0915 - \u0938\u092e\u0940\u0915\u094d\u0937\u093e / 1206 dated 15/07/2021",
-    "circular_no": "\u092e\u0941.\u0915\u093e.\u0938\u0902. \u0939\u093f.\u0905. / \u0924\u093f\u092e\u093e\u0939\u0940 \u092c\u0948\u0920\u0915 - \u0938\u092e\u0940\u0915\u094d\u0937\u093e / 1206",
+    "title": "अधीनस्थ कार्यालयों में राजभाषा कार्यान्वयन समितियों का गठन एवं इनकी बैठकों के नियमित आयोजन के सम्बन्ध में मु.का.सं. हि.अ. / तिमाही बैठक - समीक्षा / 1206 dated 15/07/2021",
+    "circular_no": "मु.का.सं. हि.अ. / तिमाही बैठक - समीक्षा / 1206",
     "date": "15/07/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_TBS_1206.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "45",
@@ -2061,7 +2844,10 @@
     "circular_no": "HO No. VIG/COORD/INVESTIGATION/2020/1195",
     "date": "14/07/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Vig_ApplicationForwarding_1195.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Vig_ApplicationForwarding_1195.pdf",
+    "division": "Vigilance",
+    "sub_division": "Vigilance",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "44",
@@ -2069,7 +2855,10 @@
     "circular_no": "HO No. PQ/95/2020/Calendarofsittingsandallotmentofdays/4",
     "date": "13/07/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PQ_Calendar_LS_RS_4.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PQ_Calendar_LS_RS_4.pdf",
+    "division": "Coordination",
+    "sub_division": "Pq",
+    "doc_type": "Parliament Question"
   },
   {
     "serial_no": "43",
@@ -2077,7 +2866,10 @@
     "circular_no": "HO No. HRM-8/V/25(9)/Lease Accommodation/658",
     "date": "09/07/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM8_RevEnt_LeaseAcc_658.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM8_RevEnt_LeaseAcc_658.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "42",
@@ -2085,7 +2877,10 @@
     "circular_no": "PDNASS No. 33/1/2019-20/PDNASS/126",
     "date": "09/07/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_Result_EOAO_ProbExam_126.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_Result_EOAO_ProbExam_126.pdf",
+    "division": "PDUNASS",
+    "sub_division": "Zti",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "41",
@@ -2093,7 +2888,10 @@
     "circular_no": "HO No. APAR-12/2015-16/SPARROW/Part-IV/1032",
     "date": "06/07/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/APAR_ExtnTimeline_1032.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/APAR_ExtnTimeline_1032.pdf",
+    "division": "Apar",
+    "sub_division": "Apar",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "40",
@@ -2101,23 +2899,32 @@
     "circular_no": "HO No. HRD/22/2016/RR/OL/Vol.III/Pt./804",
     "date": "28/06/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Redistribution_JTO_STO_804.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Redistribution_JTO_STO_804.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "39",
-    "title": "\u0939\u093f\u0902\u0926\u0940 \u092e\u0947\u0902 \u0935\u093f\u091c\u094d\u091e\u093e\u092a\u0928 \u091c\u093e\u0930\u0940 \u0915\u0930\u0928\u0947 \u0924\u0925\u093e \u0935\u093f\u091c\u094d\u091e\u093e\u092a\u0928 \u092a\u0930 \u0916\u0930\u094d\u091a \u0915\u0930\u0928\u0947 \u0915\u0947 \u0938\u0902\u092c\u0902\u0927 \u092e\u0947\u0902 \u092e\u0941.\u0915\u093e. \u0939\u093f.\u0905./\u0924\u093f.\u092a\u094d\u0930.\u0930\u093f./\u0938\u0902\u0917\u0920\u0928 / \u0935\u093f\u091c\u094d\u091e\u093e\u092a\u0928 \u090f\u0935\u0902 \u092a\u094d\u0930\u091a\u093e\u0930/ \u0935\u0949\u0932-II/2020/1004 dated 05/07/2021",
-    "circular_no": "\u092e\u0941.\u0915\u093e. \u0939\u093f.\u0905./\u0924\u093f.\u092a\u094d\u0930.\u0930\u093f./\u0938\u0902\u0917\u0920\u0928 / \u0935\u093f\u091c\u094d\u091e\u093e\u092a\u0928 \u090f\u0935\u0902 \u092a\u094d\u0930\u091a\u093e\u0930/ \u0935\u0949\u0932-II/2020/1004",
+    "title": "हिंदी में विज्ञापन जारी करने तथा विज्ञापन पर खर्च करने के संबंध में मु.का. हि.अ./ति.प्र.रि./संगठन / विज्ञापन एवं प्रचार/ वॉल-II/2020/1004 dated 05/07/2021",
+    "circular_no": "मु.का. हि.अ./ति.प्र.रि./संगठन / विज्ञापन एवं प्रचार/ वॉल-II/2020/1004",
     "date": "05/07/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_Advt_1004.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "38",
-    "title": "\u0936\u094d\u0930\u0940 \u0935\u093f\u0928\u092f \u091a\u0902\u0926\u094d\u0930 : \u0906\u0930\u091f\u0940\u0906\u0908  \u0905\u0927\u093f\u0928\u093f\u092f\u092e, 2005 \u0915\u0947 \u0924\u0939\u0924 \u0938\u0942\u091a\u0928\u093e HO",
+    "title": "श्री विनय चंद्र : आरटीआई  अधिनियम, 2005 के तहत सूचना HO",
     "circular_no": "HO No. WSU/2021/203/RTI (E-37356)",
     "date": "25/06/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_RTI_VC_25062021.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_RTI_VC_25062021.pdf",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "36",
@@ -2125,7 +2932,10 @@
     "circular_no": "HO No. Compliance/2020-21-7A-Cases/1214",
     "date": "23/06/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Comp_Cases7A_Review_1214.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Comp_Cases7A_Review_1214.pdf",
+    "division": "Compliance",
+    "sub_division": "Compliance",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "35",
@@ -2133,7 +2943,10 @@
     "circular_no": "PDNASS No. 13/07/2020-2021/PDNASS/96",
     "date": "28/06/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_Webinar_Adobe_96.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_Webinar_Adobe_96.pdf",
+    "division": "PDUNASS",
+    "sub_division": "Zti",
+    "doc_type": "Training"
   },
   {
     "serial_no": "34",
@@ -2141,7 +2954,10 @@
     "circular_no": "HO NO. Vig/Coord/CVC-Correspondence/Part-File/2020",
     "date": "23/06/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Vig_PvtTrvAgencies_23062021.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Vig_PvtTrvAgencies_23062021.pdf",
+    "division": "Vigilance",
+    "sub_division": "Vigilance",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "33",
@@ -2149,7 +2965,10 @@
     "circular_no": "HO No. WelfareFund/3(13)/2021-22/BudgetAllotment/751",
     "date": "22/06/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Welfare_Funds_WelfareActivities_751.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Welfare_Funds_WelfareActivities_751.pdf",
+    "division": "HRM",
+    "sub_division": "Welfare",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "32",
@@ -2157,7 +2976,10 @@
     "circular_no": "HO No. HRM-II/T-1(1)2020/Pt.III/634",
     "date": "15/06/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM2_LinkArrange_RO_634.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM2_LinkArrange_RO_634.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "31",
@@ -2165,7 +2987,10 @@
     "circular_no": "HO No. HRM-III/RTI (03-04)/2021/398",
     "date": "14/06/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM3_RTI_AK_398.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM3_RTI_AK_398.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "30",
@@ -2173,7 +2998,10 @@
     "circular_no": "HO No. HRM-III/RTI (03-04)/2021/395",
     "date": "14/06/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM3_RTI_Shivam_395.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM3_RTI_Shivam_395.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "29",
@@ -2181,7 +3009,10 @@
     "circular_no": "HO No. PFD/CS-3(5)/Circular/2019/433",
     "date": "16/06/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PFD_COVID_Guideline_AC_433.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PFD_COVID_Guideline_AC_433.pdf",
+    "division": "PFD",
+    "sub_division": "Pfd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "28",
@@ -2189,7 +3020,10 @@
     "circular_no": "HO No. HRM-II/T-1(2)2020/582",
     "date": "15/06/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM2_TemTfr_APFC_582.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM2_TemTfr_APFC_582.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "27",
@@ -2197,7 +3031,10 @@
     "circular_no": "HO No. WSU/15(1)2019/ATR/529",
     "date": "15/06/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_Aadhar_ECR_529.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/WSU_Aadhar_ECR_529.pdf",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "26",
@@ -2205,7 +3042,10 @@
     "circular_no": "HO No. HRM-I/A-10(45)2006/Vol.I/515",
     "date": "08/06/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM1_Superannuation_GrA_515.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM1_Superannuation_GrA_515.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Superannuation"
   },
   {
     "serial_no": "25",
@@ -2213,7 +3053,10 @@
     "circular_no": "HO No. RTI-11011/169/2020- HRM-IV/490",
     "date": "07/06/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_RTI_SKM_490.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_RTI_SKM_490.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "24",
@@ -2221,7 +3064,10 @@
     "circular_no": "HO No. B-11/1/2020-HRM-VI/333",
     "date": "01/06/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM6_DRF_Covid_333.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM6_DRF_Covid_333.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "23",
@@ -2229,7 +3075,10 @@
     "circular_no": "HO No. HRM-8/V/12(18)2007/UP/Vol-I/470",
     "date": "01/06/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM8_MedicalAdvance_470.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM8_MedicalAdvance_470.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "22",
@@ -2237,7 +3086,10 @@
     "circular_no": "HO No. HRD/3(2)2012/SPF/463",
     "date": "31/05/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_ROI_SPF_463.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_ROI_SPF_463.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "20",
@@ -2245,7 +3097,10 @@
     "circular_no": "HO No. APAR-12/2015-16/SPARROW/565",
     "date": "28/05/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/APAR_Submission_565.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/APAR_Submission_565.pdf",
+    "division": "Apar",
+    "sub_division": "Apar",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "19",
@@ -2253,7 +3108,10 @@
     "circular_no": "HO No. HRD/1(71)202/Misc/Pt/462",
     "date": "19/05/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_misc_pt_anti_terr_462.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_misc_pt_anti_terr_462.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "18",
@@ -2261,7 +3119,10 @@
     "circular_no": "HO No. RTI-11011/169/2020-HRM-IV/182",
     "date": "17/05/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_RTI_SKM_182.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_RTI_SKM_182.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "17",
@@ -2269,7 +3130,10 @@
     "circular_no": "HO No. RTI-11011/169/2020-HRM-IV/180",
     "date": "17/05/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_RTI_SKM_180.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM4_RTI_SKM_180.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "16",
@@ -2277,7 +3141,10 @@
     "circular_no": "HO No. EDLI/Committee-Exem./Extension/2019/27058",
     "date": "29/04/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/EDLI_Notification_27058.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/EDLI_Notification_27058.pdf",
+    "division": "Pension",
+    "sub_division": "Pension",
+    "doc_type": "Notification"
   },
   {
     "serial_no": "15",
@@ -2285,7 +3152,10 @@
     "circular_no": "HO No. HRM-I/A-10(45)2006/Vol.I/277",
     "date": "26/04/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Corrg_HRM1_Retirement_277.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/Corrg_HRM1_Retirement_277.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Superannuation"
   },
   {
     "serial_no": "14",
@@ -2293,7 +3163,10 @@
     "circular_no": "HO No. AVS-18/1/2020-HRM-IX/275",
     "date": "19/04/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/AVS_AIPR_275.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/AVS_AIPR_275.pdf",
+    "division": "HRM",
+    "sub_division": "Avs",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "13",
@@ -2301,15 +3174,21 @@
     "circular_no": "HO No. AVS-18/1/2020-HRM-IX",
     "date": "19/04/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/AVS-18_HRM-ix_aipr.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/AVS-18_HRM-ix_aipr.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "12",
-    "title": "\u0938\u0942\u091a\u0928\u093e \u092a\u094d\u0930\u092c\u0902\u0927\u0928 \u092a\u094d\u0930\u0923\u093e\u0932\u0940 \u092e\u0947\u0902 \u0924\u093f\u092e\u093e\u0939\u0940 \u092a\u094d\u0930\u0917\u0924\u093f \u0930\u093f\u092a\u094b\u0930\u094d\u091f \u0905\u092a\u0932\u094b\u0921 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0938\u092e\u094d\u092c\u0928\u094d\u0927 \u092e\u0947\u0902 \u092e\u0941.\u0915\u093e.\u0938\u0902. \u0939\u093f.\u0905. /\u0924\u093f. \u092a\u094d\u0930. \u0930\u093f./\u0938\u0902\u0917\u0920\u0928 /2018/11/271 dated 19/04/2021",
-    "circular_no": "\u092e\u0941.\u0915\u093e.\u0938\u0902. \u0939\u093f.\u0905. /\u0924\u093f. \u092a\u094d\u0930. \u0930\u093f./\u0938\u0902\u0917\u0920\u0928 /2018/11/271",
+    "title": "सूचना प्रबंधन प्रणाली में तिमाही प्रगति रिपोर्ट अपलोड करने के सम्बन्ध में मु.का.सं. हि.अ. /ति. प्र. रि./संगठन /2018/11/271 dated 19/04/2021",
+    "circular_no": "मु.का.सं. हि.अ. /ति. प्र. रि./संगठन /2018/11/271",
     "date": "19/04/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_TPR_IS_271.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "11",
@@ -2317,7 +3196,10 @@
     "circular_no": "HO No. A-45013/22/2021-HRM-V/260",
     "date": "19/04/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM5_SpecialCell_CA_260.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRM5_SpecialCell_CA_260.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "10",
@@ -2325,7 +3207,10 @@
     "circular_no": "PDNASS No. 13/07/2020-2021/PDNASS/50",
     "date": "15/04/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_ISSA_Webinar_50.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_ISSA_Webinar_50.pdf",
+    "division": "PDUNASS",
+    "sub_division": "Zti",
+    "doc_type": "Training"
   },
   {
     "serial_no": "9",
@@ -2333,23 +3218,32 @@
     "circular_no": "PDNASS No. 13/07/2020-2021/PDNASS/49",
     "date": "15/04/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_ISSA_Webinar_49.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_ISSA_Webinar_49.pdf",
+    "division": "PDUNASS",
+    "sub_division": "Zti",
+    "doc_type": "Training"
   },
   {
     "serial_no": "8",
-    "title": "HBR Webinar: The Secret to Today\u2019s Most Successful Companies PDNASS",
+    "title": "HBR Webinar: The Secret to Today’s Most Successful Companies PDNASS",
     "circular_no": "PDNASS No. 13/07/2020-2021/PDNASS/48",
     "date": "15/04/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_HBR_Webinar_48.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_HBR_Webinar_48.pdf",
+    "division": "PDUNASS",
+    "sub_division": "Zti",
+    "doc_type": "Training"
   },
   {
     "serial_no": "7",
-    "title": "\u0935\u093e\u0930\u094d\u0937\u093f\u0915 \u0915\u093e\u0930\u094d\u092f\u0915\u094d\u0930\u092e 2021-22 \u0915\u093e \u0905\u0928\u0941\u092a\u093e\u0932\u0928 \u092e\u0941. \u0915\u093e. \u0938\u0902. \u0939\u093f.\u0905.-8(2)2015-16 /\u0935\u093e. \u0915\u093e. /218 dated 13/04/2021",
-    "circular_no": "\u092e\u0941. \u0915\u093e. \u0938\u0902. \u0939\u093f.\u0905.-8(2)2015-16 /\u0935\u093e. \u0915\u093e. /218",
+    "title": "वार्षिक कार्यक्रम 2021-22 का अनुपालन मु. का. सं. हि.अ.-8(2)2015-16 /वा. का. /218 dated 13/04/2021",
+    "circular_no": "मु. का. सं. हि.अ.-8(2)2015-16 /वा. का. /218",
     "date": "13/04/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_AP_218.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "6",
@@ -2357,7 +3251,10 @@
     "circular_no": "HO No. HRD/9/2020/CBT_Member/459",
     "date": "13/04/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_9_Covid_vaccine_459.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_9_Covid_vaccine_459.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "5",
@@ -2365,7 +3262,10 @@
     "circular_no": "HO No. HRD/58/2017/NSDL/458",
     "date": "13/04/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_58_nsdl_nps_458.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_58_nsdl_nps_458.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "4",
@@ -2373,23 +3273,32 @@
     "circular_no": "PDNASS No. 13/07/2020-2021/PDNASS/28",
     "date": "09/04/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_IntelEvent_28.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_IntelEvent_28.pdf",
+    "division": "PDUNASS",
+    "sub_division": "Zti",
+    "doc_type": "Training"
   },
   {
     "serial_no": "3",
-    "title": "ISSA Webinar: Digital inclusion \u2013 The skills challenge and good practice solutions PDNASS",
+    "title": "ISSA Webinar: Digital inclusion – The skills challenge and good practice solutions PDNASS",
     "circular_no": "PDNASS No. 13/07/2020-2021/PDNASS/27",
     "date": "09/04/2021",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_ISSA_DigitalInclusion_27.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/PDNASS_ISSA_DigitalInclusion_27.pdf",
+    "division": "PDUNASS",
+    "sub_division": "Zti",
+    "doc_type": "Training"
   },
   {
     "serial_no": "2",
-    "title": "\u0930\u093e\u091c\u092d\u093e\u0937\u093e \u0939\u093f\u0902\u0926\u0940 \u0915\u0947 \u092a\u094d\u0930\u092f\u094b\u0917 \u0938\u0902\u092c\u0902\u0927\u0940 \u0935\u093f\u0924\u094d\u0924\u0940\u092f \u0935\u0930\u094d\u0937 2020-21 \u0915\u0940 \u0935\u093e\u0930\u094d\u0937\u093f\u0915 \u092e\u0942\u0932\u094d\u092f\u093e\u0902\u0915\u0928 \u0930\u093f\u092a\u094b\u0930\u094d\u091f \u0915\u0947 \u0938\u092e\u094d\u092c\u0928\u094d\u0927 \u092e\u0947\u0902 \u092e\u0941. \u0915\u093e. \u0938\u0902. \u0939\u093f.\u0905./\u0935\u093e.\u092e\u0942.\u0930\u093f./2018-19/\u092e\u0941\u0916\u094d\u092f\u093e\u0932\u092f /99 dated 09/04/2021",
-    "circular_no": "\u092e\u0941. \u0915\u093e. \u0938\u0902. \u0939\u093f.\u0905./\u0935\u093e.\u092e\u0942.\u0930\u093f./2018-19/\u092e\u0941\u0916\u094d\u092f\u093e\u0932\u092f /99",
+    "title": "राजभाषा हिंदी के प्रयोग संबंधी वित्तीय वर्ष 2020-21 की वार्षिक मूल्यांकन रिपोर्ट के सम्बन्ध में मु. का. सं. हि.अ./वा.मू.रि./2018-19/मुख्यालय /99 dated 09/04/2021",
+    "circular_no": "मु. का. सं. हि.अ./वा.मू.रि./2018-19/मुख्यालय /99",
     "date": "09/04/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/OL_VMR_99.pdf",
-    "english_pdf_link": null
+    "english_pdf_link": null,
+    "division": "Rajbhasha",
+    "sub_division": "Official Language",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "1",
@@ -2397,6 +3306,9 @@
     "circular_no": "HO No. HRD/12(1)2011/Holiday/Pt./457",
     "date": "09/04/2021",
     "hindi_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Holiday_14April_457.pdf",
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Holiday_14April_457.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2021-2022/HRD_Holiday_14April_457.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Circular"
   }
 ]

@@ -1,0 +1,308 @@
+{
+  "eras": [
+    {
+      "id": "era1",
+      "key": "2009-2013",
+      "title": "Computerization & Centralization",
+      "desc": "Transition from local regional ledgers to core computerized databases."
+    },
+    {
+      "id": "era2",
+      "key": "2014-2017",
+      "title": "UAN & Digital India Leap",
+      "desc": "Launch of the Universal Account Number (UAN) and nationwide Aadhaar seeding."
+    },
+    {
+      "id": "era3",
+      "key": "2018-2020",
+      "title": "Mobile Services & Ease of Business",
+      "desc": "UMANG app services, automated claim settlement, and ECR 2.0 electronic returns."
+    },
+    {
+      "id": "era4",
+      "key": "2020-2022",
+      "title": "COVID-19 Emergency Relief",
+      "desc": "Special non-refundable pandemic advances and PMGKY contribution subsidies."
+    },
+    {
+      "id": "era5",
+      "key": "2022-2024",
+      "title": "Higher Pension Watershed",
+      "desc": "Implementation of Supreme Court judgment on higher pension and online joint options."
+    },
+    {
+      "id": "era6",
+      "key": "2024-2027",
+      "title": "Next-Gen CITES 2.0 & Statutory Reform",
+      "desc": "CITES 2.0 architecture revamp, Code on Social Security 2020, and Amnesty 2026."
+    }
+  ],
+  "milestones": [
+    {
+      "id": "ms_cbs_start",
+      "era": "era1",
+      "date": "15/09/2010",
+      "year": "2010-2011",
+      "title": "National Database & Core Centralization",
+      "category": "Digital Systems",
+      "summary": "Initiation of central electronic data interchange and national subscriber database consolidation.",
+      "impact": "Layed the structural groundwork for portable account numbers across regional offices.",
+      "circular_ids": [
+        255,
+        438,
+        988,
+        989,
+        2186,
+        2317,
+        2504,
+        2843
+      ]
+    },
+    {
+      "id": "ms_interest_2011",
+      "era": "era1",
+      "date": "08/04/2011",
+      "year": "2010-2011",
+      "title": "Declaration of Historic 9.50% Interest Rate",
+      "category": "Finance",
+      "summary": "Central Board approved 9.50% interest rate credited into member accounts for 2010-11.",
+      "impact": "Highest declared interest rate in recent EPFO operational history.",
+      "circular_ids": [
+        8496,
+        8500
+      ]
+    },
+    {
+      "id": "ms_uan_launch",
+      "era": "era2",
+      "date": "01/10/2014",
+      "year": "2014-2015",
+      "title": "Launch of Universal Account Number (UAN)",
+      "category": "Member Services",
+      "summary": "Mandated a single permanent UAN for every contributing employee across job changes.",
+      "impact": "Eliminated repetitive manual PF account transfers during job switches for millions of workers.",
+      "circular_ids": [
+        264,
+        1732,
+        3476,
+        4932,
+        5120,
+        5171,
+        5265,
+        5654
+      ]
+    },
+    {
+      "id": "ms_aadhaar_mandate",
+      "era": "era2",
+      "date": "20/06/2015",
+      "year": "2015-2016",
+      "title": "Aadhaar Seeding & Digital Life Certificates",
+      "category": "Digital Systems",
+      "summary": "Integration of Aadhaar with UAN and Jeevan Pramaan biometric verification for pensioners.",
+      "impact": "Pensioners no longer required physical visits to bank branches for annual life certificates.",
+      "circular_ids": [
+        175,
+        264,
+        314,
+        366,
+        406,
+        420,
+        459,
+        479
+      ]
+    },
+    {
+      "id": "ms_eec_2017",
+      "era": "era2",
+      "date": "02/01/2017",
+      "year": "2016-2017",
+      "title": "Employees' Enrolment Campaign 2017",
+      "category": "Compliance",
+      "summary": "Special amnesty and compliance drive encouraging voluntary declaration of unorganized workers.",
+      "impact": "Over 10 million previously informal workers enrolled into formal social security coverage.",
+      "circular_ids": [
+        20,
+        203,
+        964,
+        1504,
+        3709,
+        3797,
+        4110,
+        4115
+      ]
+    },
+    {
+      "id": "ms_umang_mobile",
+      "era": "era3",
+      "date": "23/11/2017",
+      "year": "2017-2018",
+      "title": "Mobile Passbook & Services on UMANG App",
+      "category": "Member Services",
+      "summary": "Rollout of e-passbook viewing, claim submission, and pension tracking on mobile handsets.",
+      "impact": "Transformed EPFO from counter-based field office queues into a 24x7 smartphone self-service.",
+      "circular_ids": [
+        223,
+        273,
+        355,
+        2325,
+        3502,
+        3507,
+        3528,
+        4751
+      ]
+    },
+    {
+      "id": "ms_exempted_monitoring",
+      "era": "era3",
+      "date": "14/05/2019",
+      "year": "2019-2020",
+      "title": "Standardized Audit of Private Exempted Trusts",
+      "category": "Exemptions",
+      "summary": "Introduced strict computerized compliance and investment guidelines for private PF trusts.",
+      "impact": "Protected retirement savings of millions of employees in large private corporate trusts.",
+      "circular_ids": [
+        638,
+        780,
+        1179,
+        7202
+      ]
+    },
+    {
+      "id": "ms_covid_advance",
+      "era": "era4",
+      "date": "28/03/2020",
+      "year": "2019-2020",
+      "title": "Emergency COVID-19 Non-Refundable Advance",
+      "category": "Relief",
+      "summary": "Notified emergency amendment allowing up to 75% non-refundable advance during national lockdowns.",
+      "impact": "Disbursed tens of thousands of crores in emergency liquidity within 72 hours of application.",
+      "circular_ids": [
+        393,
+        659,
+        1551,
+        1557,
+        1581,
+        1606,
+        1607,
+        1637
+      ]
+    },
+    {
+      "id": "ms_pmgky_subsidy",
+      "era": "era4",
+      "date": "15/04/2020",
+      "year": "2020-2021",
+      "title": "PMGKY Government Contribution Subvention",
+      "category": "Relief",
+      "summary": "Government paid complete 24% employer and employee PF contributions for small businesses.",
+      "impact": "Prevented mass layoffs in micro, small, and medium enterprises during pandemic disruptions.",
+      "circular_ids": [
+        2061,
+        2096
+      ]
+    },
+    {
+      "id": "ms_sc_pension_judgment",
+      "era": "era5",
+      "date": "04/11/2022",
+      "year": "2022-2023",
+      "title": "Supreme Court Higher Pension Landmark Ruling",
+      "category": "Pension",
+      "summary": "Supreme Court upheld validity of 2014 EPS amendments while granting window for higher wage options.",
+      "impact": "Enabled over 1.7 million employees to apply for higher monthly pension calculations.",
+      "circular_ids": [
+        829,
+        1042,
+        1156,
+        1188,
+        1214,
+        1228,
+        2642,
+        3069
+      ]
+    },
+    {
+      "id": "ms_joint_declaration_sop",
+      "era": "era5",
+      "date": "22/08/2023",
+      "year": "2023-2024",
+      "title": "Standard Operating Procedure on Joint Declarations",
+      "category": "Member Services",
+      "summary": "Completely digitized the member profile correction process (name, DOB, father's name, DOJ).",
+      "impact": "Drastically reduced rejection of claim settlements caused by demographic discrepancies.",
+      "circular_ids": [
+        153,
+        444,
+        581,
+        724,
+        737,
+        958,
+        1883
+      ]
+    },
+    {
+      "id": "ms_higher_pension_validation",
+      "era": "era5",
+      "date": "01/06/2023",
+      "year": "2023-2024",
+      "title": "Online Portal for Joint Options Validation",
+      "category": "Pension",
+      "summary": "Deployed automated backend for employers and field offices to validate pension on higher wages.",
+      "impact": "Standardized the wage verification and differential contribution transfer calculations.",
+      "circular_ids": [
+        275,
+        1042,
+        1050,
+        1074,
+        1084,
+        1188
+      ]
+    },
+    {
+      "id": "ms_coss_officers",
+      "era": "era6",
+      "date": "13/07/2026",
+      "year": "2026-2027",
+      "title": "Code on Social Security 2020 Officer Notification",
+      "category": "Compliance",
+      "summary": "Notified authorized officers to initiate proceedings under Section 125 & 128 of the Social Security Code.",
+      "impact": "Operational milestone transitioning statutory compliance to the modern Code on Social Security.",
+      "circular_ids": [
+        1,
+        12,
+        15,
+        1081,
+        1907
+      ]
+    },
+    {
+      "id": "ms_amnesty_2026",
+      "era": "era6",
+      "date": "11/07/2026",
+      "year": "2026-2027",
+      "title": "Launch of AMNESTY 2026 & VISHWAS 2026",
+      "category": "Compliance",
+      "summary": "Dual regularisation schemes for unexempted private trusts and dispute settlement on 14B damages.",
+      "impact": "Fast-tracked resolution of long-standing employer disputes and trust regularizations.",
+      "circular_ids": [
+        15,
+        16
+      ]
+    },
+    {
+      "id": "ms_cites_2026",
+      "era": "era6",
+      "date": "09/07/2026",
+      "year": "2026-2027",
+      "title": "Next-Gen CITES 2.01 & Automated Interest Credit",
+      "category": "Digital Systems",
+      "summary": "Deployment of CITES 2.01 with prompt 8.25% annual interest credit automation across accounts.",
+      "impact": "Significantly shortened account settlement turnarounds and eliminated annual interest credit lags.",
+      "circular_ids": [
+        19,
+        80
+      ]
+    }
+  ]
+}

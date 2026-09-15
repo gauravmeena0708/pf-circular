@@ -4,7 +4,7 @@
     "color": "#059669",
     "icon": "user-check",
     "description": "EPS-95 scheme, higher pension, pension calculations, PPOs, and pensioner welfare",
-    "count": 260,
+    "count": 380,
     "subtopics": {
       "higher_pension": {
         "name": "Higher Pension (SC Judgment)",
@@ -12,15 +12,15 @@
       },
       "digital_life_certificate": {
         "name": "Life Certificate & Jeevan Pramaan",
-        "count": 46
+        "count": 44
       },
       "ppo_and_processing": {
         "name": "PPO & Pension Processing",
-        "count": 113
+        "count": 203
       },
       "general_pension": {
         "name": "General EPS-95 Policies",
-        "count": 86
+        "count": 118
       }
     }
   },
@@ -29,19 +29,19 @@
     "color": "#dc2626",
     "icon": "shield-alert",
     "description": "Establishment coverage, 7A/14B proceedings, default enforcement, inspections and recovery",
-    "count": 496,
+    "count": 509,
     "subtopics": {
       "7a_and_quasi_judicial": {
         "name": "Section 7A, 7Q & 14B Quasi-Judicial",
-        "count": 107
+        "count": 114
       },
       "recovery_and_defaulters": {
         "name": "Recovery & Defaulter Actions",
-        "count": 106
+        "count": 105
       },
       "coverage_and_inspection": {
         "name": "Coverage, Inspection & Compliance",
-        "count": 283
+        "count": 290
       }
     }
   },
@@ -50,11 +50,11 @@
     "color": "#d97706",
     "icon": "building",
     "description": "Section 17 exemptions, private PF trusts, surrender of exemption, and trust compliance",
-    "count": 160,
+    "count": 161,
     "subtopics": {
       "trust_compliance_audit": {
         "name": "Trust Compliance & Audits",
-        "count": 158
+        "count": 159
       },
       "surrender_and_cancellation": {
         "name": "Surrender & Cancellation of Exemption",
@@ -67,19 +67,19 @@
     "color": "#2563eb",
     "icon": "trending-up",
     "description": "Interest rates, budget, investments, banking, balance sheets, and CAG audit",
-    "count": 487,
+    "count": 479,
     "subtopics": {
       "interest_rate": {
         "name": "Interest Rate Declarations",
-        "count": 86
+        "count": 85
       },
       "investment_and_portfolio": {
         "name": "Investments & Banking",
-        "count": 127
+        "count": 131
       },
       "budget_accounts_audit": {
         "name": "Budget, Balance Sheet & Audit",
-        "count": 274
+        "count": 263
       }
     }
   },
@@ -88,15 +88,15 @@
     "color": "#7c3aed",
     "icon": "cpu",
     "description": "Universal Account Number (UAN), member portals, e-office, APIs, software, and cybersecurity",
-    "count": 388,
+    "count": 386,
     "subtopics": {
       "uan_and_kyc": {
         "name": "UAN, KYC & Online Portals",
-        "count": 200
+        "count": 205
       },
       "eoffice_and_software": {
         "name": "Software, E-Office & Downtime",
-        "count": 188
+        "count": 181
       }
     }
   },
@@ -105,31 +105,31 @@
     "color": "#4f46e5",
     "icon": "users",
     "description": "Promotions, DPC, seniority lists, transfers, recruitment, APAR, SPARROW, and vigilance",
-    "count": 2525,
+    "count": 2442,
     "subtopics": {
       "promotions_seniority_dpc": {
-        "name": "Promotions, DPC & Seniority",
-        "count": 668
-      },
-      "transfers_and_postings": {
-        "name": "Transfers & Postings",
-        "count": 411
-      },
-      "apar_sparrow": {
-        "name": "APAR & SPARROW Appraisal",
-        "count": 223
+        "name": "Promotions, Seniority & DPC",
+        "count": 889
       },
       "recruitment_exams": {
         "name": "Recruitment & Departmental Exams",
-        "count": 614
+        "count": 355
       },
-      "vigilance_and_discipline": {
-        "name": "Vigilance & Disciplinary",
-        "count": 309
+      "transfers_and_postings": {
+        "name": "Transfers, Postings & Rotations",
+        "count": 369
+      },
+      "apar_sparrow": {
+        "name": "APAR & SPARROW Portals",
+        "count": 139
       },
       "benefits_allowances_leave": {
-        "name": "Salaries, Allowances & Leave",
-        "count": 300
+        "name": "Leave, Allowance & Medical",
+        "count": 311
+      },
+      "vigilance_and_discipline": {
+        "name": "Vigilance & Disciplinary Matters",
+        "count": 379
       }
     }
   },
@@ -137,16 +137,16 @@
     "name": "Legal & Court Matters",
     "color": "#0284c7",
     "icon": "scale",
-    "description": "Supreme Court, High Court, CAT cases, panel advocates, and legal dispute monitoring",
-    "count": 211,
+    "description": "Supreme Court, High Courts, CAT cases, legal notices, panel advocates, and contempt matters",
+    "count": 217,
     "subtopics": {
       "court_cases_and_orders": {
-        "name": "Court Judgments & Writs",
-        "count": 208
+        "name": "Court Cases & Judgments",
+        "count": 206
       },
-      "advocates_and_legal_fees": {
+      "advocates_and_panels": {
         "name": "Panel Advocates & Legal Fees",
-        "count": 3
+        "count": 11
       }
     }
   },
@@ -155,15 +155,15 @@
     "color": "#ea580c",
     "icon": "message-circle",
     "description": "Right to Information (RTI), CPGRAMS, EPFiGMS grievances, and member assistance",
-    "count": 934,
+    "count": 937,
     "subtopics": {
       "rti_act": {
         "name": "RTI Applications & Appeals",
-        "count": 758
+        "count": 757
       },
       "grievances_epfigms": {
         "name": "Grievance Portals (EPFiGMS / CPGRAMS)",
-        "count": 176
+        "count": 180
       }
     }
   },
@@ -172,11 +172,11 @@
     "color": "#0891b2",
     "icon": "book-open",
     "description": "PDUNASS, NATRSS, ZTI training calendars, workshops, seminars, and capacity building",
-    "count": 1130,
+    "count": 1146,
     "subtopics": {
       "pdunass_natrss": {
         "name": "PDUNASS & ZTI Programs",
-        "count": 1130
+        "count": 1146
       }
     }
   },
@@ -185,11 +185,11 @@
     "color": "#be185d",
     "icon": "globe",
     "description": "Hindi Pakhwada, Rajbhasha inspections, Hindi Diwas, workshops, and quarterly reports",
-    "count": 274,
+    "count": 327,
     "subtopics": {
       "rajbhasha_and_events": {
         "name": "Hindi Pakhwada & Rajbhasha",
-        "count": 274
+        "count": 327
       }
     }
   },
@@ -198,19 +198,19 @@
     "color": "#64748b",
     "icon": "tool",
     "description": "Vehicles, buildings, GeM procurement, office premises, logistics, tenders, and Swachhata",
-    "count": 291,
+    "count": 283,
     "subtopics": {
       "vehicles_and_transport": {
         "name": "Hiring of Vehicles & Transport",
-        "count": 61
+        "count": 37
       },
       "buildings_and_premises": {
         "name": "Buildings, Infrastructure & Leases",
-        "count": 127
+        "count": 135
       },
       "procurement_and_tenders": {
         "name": "GeM, Tenders & General Admin",
-        "count": 103
+        "count": 111
       }
     }
   },
@@ -219,15 +219,15 @@
     "color": "#0d9488",
     "icon": "award",
     "description": "International Workers (SSA), EEC, PMRPY, ABRY schemes, and EDLI insurance",
-    "count": 161,
+    "count": 198,
     "subtopics": {
       "international_workers_ssa": {
         "name": "International Workers & SSA",
-        "count": 78
+        "count": 85
       },
       "special_schemes_campaigns": {
         "name": "EEC, PMRPY, ABRY & Special Relief",
-        "count": 83
+        "count": 113
       }
     }
   },
@@ -236,11 +236,11 @@
     "color": "#854d0e",
     "icon": "landmark",
     "description": "Central Board of Trustees (CBT), Executive Committee, Parliament questions, and annual reports",
-    "count": 323,
+    "count": 335,
     "subtopics": {
       "cbt_and_committees": {
         "name": "CBT & Executive Committee",
-        "count": 323
+        "count": 335
       }
     }
   },
@@ -249,11 +249,11 @@
     "color": "#94a3b8",
     "icon": "help-circle",
     "description": "General circulars, miscellaneous notices, and multi-topic announcements",
-    "count": 1894,
+    "count": 1734,
     "subtopics": {
       "general": {
         "name": "Miscellaneous",
-        "count": 1894
+        "count": 1734
       }
     }
   }

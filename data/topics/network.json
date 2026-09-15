@@ -1,0 +1,1315 @@
+{
+  "nodes": [
+    {
+      "id": "pension_eps",
+      "name": "Pension & EPS-95",
+      "color": "#059669",
+      "tier": "policy"
+    },
+    {
+      "id": "compliance_recovery",
+      "name": "Compliance & Recovery",
+      "color": "#dc2626",
+      "tier": "policy"
+    },
+    {
+      "id": "exempted_establishments",
+      "name": "Exempted Establishments",
+      "color": "#d97706",
+      "tier": "policy"
+    },
+    {
+      "id": "finance_accounts_invest",
+      "name": "Finance, Accounts & Investment",
+      "color": "#2563eb",
+      "tier": "policy"
+    },
+    {
+      "id": "it_digital_services",
+      "name": "IT, UAN & Digital Services",
+      "color": "#7c3aed",
+      "tier": "policy"
+    },
+    {
+      "id": "hr_personnel_cadre",
+      "name": "HR, Personnel & Cadre",
+      "color": "#4f46e5",
+      "tier": "admin"
+    },
+    {
+      "id": "legal_litigation",
+      "name": "Legal & Court Matters",
+      "color": "#0284c7",
+      "tier": "admin"
+    },
+    {
+      "id": "citizen_services_rti",
+      "name": "Citizen Care & RTI",
+      "color": "#ea580c",
+      "tier": "policy"
+    },
+    {
+      "id": "training_research",
+      "name": "Training & Academics",
+      "color": "#0891b2",
+      "tier": "admin"
+    },
+    {
+      "id": "official_language",
+      "name": "Official Language (Rajbhasha)",
+      "color": "#be185d",
+      "tier": "admin"
+    },
+    {
+      "id": "admin_procurement_facilities",
+      "name": "Administration & Procurement",
+      "color": "#64748b",
+      "tier": "admin"
+    },
+    {
+      "id": "social_security_schemes",
+      "name": "Schemes & Campaigns",
+      "color": "#0d9488",
+      "tier": "policy"
+    },
+    {
+      "id": "governance_cbt",
+      "name": "Governance & CBT",
+      "color": "#854d0e",
+      "tier": "admin"
+    },
+    {
+      "id": "hub_higher_pension",
+      "name": "Higher Pension (SC)",
+      "color": "#047857",
+      "is_hub": true,
+      "tier": "policy"
+    },
+    {
+      "id": "hub_7a_14b",
+      "name": "Section 7A & 14B Quasi-Judicial",
+      "color": "#b91c1c",
+      "is_hub": true,
+      "tier": "policy"
+    },
+    {
+      "id": "hub_exemption_trust",
+      "name": "Exempted Trusts & Section 17",
+      "color": "#b45309",
+      "is_hub": true,
+      "tier": "policy"
+    },
+    {
+      "id": "hub_uan_kyc",
+      "name": "UAN, KYC & Unified Portal",
+      "color": "#6d28d9",
+      "is_hub": true,
+      "tier": "policy"
+    },
+    {
+      "id": "hub_coss",
+      "name": "Code on Social Security 2020",
+      "color": "#be123c",
+      "is_hub": true,
+      "tier": "policy"
+    },
+    {
+      "id": "hub_interest_roi",
+      "name": "EPF Interest Rate Declarations",
+      "color": "#1d4ed8",
+      "is_hub": true,
+      "tier": "policy"
+    },
+    {
+      "id": "hub_covid_relief",
+      "name": "COVID-19 Pandemic Advances",
+      "color": "#0f766e",
+      "is_hub": true,
+      "tier": "policy"
+    },
+    {
+      "id": "hub_international_workers",
+      "name": "International Workers & SSA",
+      "color": "#0e7490",
+      "is_hub": true,
+      "tier": "policy"
+    }
+  ],
+  "links": [
+    {
+      "source": "exempted_establishments",
+      "target": "hub_exemption_trust",
+      "value": 133,
+      "example_ids": [
+        15,
+        17,
+        241,
+        306,
+        442
+      ]
+    },
+    {
+      "source": "hr_personnel_cadre",
+      "target": "hub_uan_kyc",
+      "value": 128,
+      "example_ids": [
+        63,
+        2118,
+        2226,
+        2265,
+        2328
+      ]
+    },
+    {
+      "source": "finance_accounts_invest",
+      "target": "hr_personnel_cadre",
+      "value": 111,
+      "example_ids": [
+        61,
+        115,
+        192,
+        204,
+        274
+      ]
+    },
+    {
+      "source": "hub_uan_kyc",
+      "target": "it_digital_services",
+      "value": 106,
+      "example_ids": [
+        78,
+        175,
+        264,
+        273,
+        314
+      ]
+    },
+    {
+      "source": "hr_personnel_cadre",
+      "target": "training_research",
+      "value": 85,
+      "example_ids": [
+        6,
+        21,
+        46,
+        53,
+        56
+      ]
+    },
+    {
+      "source": "hr_personnel_cadre",
+      "target": "hub_international_workers",
+      "value": 84,
+      "example_ids": [
+        28,
+        36,
+        44,
+        96,
+        171
+      ]
+    },
+    {
+      "source": "exempted_establishments",
+      "target": "governance_cbt",
+      "value": 83,
+      "example_ids": [
+        702,
+        964,
+        1442,
+        1504,
+        1684
+      ]
+    },
+    {
+      "source": "hr_personnel_cadre",
+      "target": "official_language",
+      "value": 76,
+      "example_ids": [
+        432,
+        469,
+        1925,
+        2044,
+        2078
+      ]
+    },
+    {
+      "source": "finance_accounts_invest",
+      "target": "hub_interest_roi",
+      "value": 68,
+      "example_ids": [
+        19,
+        26,
+        61,
+        93,
+        204
+      ]
+    },
+    {
+      "source": "compliance_recovery",
+      "target": "training_research",
+      "value": 67,
+      "example_ids": [
+        58,
+        68,
+        70,
+        92,
+        145
+      ]
+    },
+    {
+      "source": "exempted_establishments",
+      "target": "training_research",
+      "value": 67,
+      "example_ids": [
+        599,
+        780,
+        1179,
+        1282,
+        1283
+      ]
+    },
+    {
+      "source": "governance_cbt",
+      "target": "hub_exemption_trust",
+      "value": 66,
+      "example_ids": [
+        702,
+        1442,
+        1684,
+        1689,
+        1712
+      ]
+    },
+    {
+      "source": "hr_personnel_cadre",
+      "target": "social_security_schemes",
+      "value": 65,
+      "example_ids": [
+        44,
+        84,
+        149,
+        174,
+        179
+      ]
+    },
+    {
+      "source": "hub_exemption_trust",
+      "target": "training_research",
+      "value": 65,
+      "example_ids": [
+        110,
+        599,
+        906,
+        1006,
+        1179
+      ]
+    },
+    {
+      "source": "compliance_recovery",
+      "target": "hub_7a_14b",
+      "value": 61,
+      "example_ids": [
+        1,
+        12,
+        16,
+        188,
+        475
+      ]
+    },
+    {
+      "source": "hub_international_workers",
+      "target": "social_security_schemes",
+      "value": 58,
+      "example_ids": [
+        89,
+        97,
+        149,
+        185,
+        257
+      ]
+    },
+    {
+      "source": "compliance_recovery",
+      "target": "hr_personnel_cadre",
+      "value": 57,
+      "example_ids": [
+        159,
+        271,
+        305,
+        380,
+        401
+      ]
+    },
+    {
+      "source": "hub_international_workers",
+      "target": "training_research",
+      "value": 54,
+      "example_ids": [
+        612,
+        835,
+        855,
+        893,
+        940
+      ]
+    },
+    {
+      "source": "compliance_recovery",
+      "target": "official_language",
+      "value": 40,
+      "example_ids": [
+        54,
+        114,
+        322,
+        410,
+        685
+      ]
+    },
+    {
+      "source": "citizen_services_rti",
+      "target": "hub_international_workers",
+      "value": 40,
+      "example_ids": [
+        1294,
+        1904,
+        2269,
+        2415,
+        3179
+      ]
+    },
+    {
+      "source": "admin_procurement_facilities",
+      "target": "hr_personnel_cadre",
+      "value": 35,
+      "example_ids": [
+        434,
+        476,
+        477,
+        578,
+        587
+      ]
+    },
+    {
+      "source": "hr_personnel_cadre",
+      "target": "it_digital_services",
+      "value": 32,
+      "example_ids": [
+        239,
+        751,
+        808,
+        825,
+        1261
+      ]
+    },
+    {
+      "source": "finance_accounts_invest",
+      "target": "pension_eps",
+      "value": 28,
+      "example_ids": [
+        495,
+        929,
+        1342,
+        1723,
+        2000
+      ]
+    },
+    {
+      "source": "compliance_recovery",
+      "target": "social_security_schemes",
+      "value": 27,
+      "example_ids": [
+        20,
+        196,
+        203,
+        2643,
+        3572
+      ]
+    },
+    {
+      "source": "governance_cbt",
+      "target": "hr_personnel_cadre",
+      "value": 27,
+      "example_ids": [
+        83,
+        538,
+        1553,
+        1580,
+        1748
+      ]
+    },
+    {
+      "source": "admin_procurement_facilities",
+      "target": "training_research",
+      "value": 23,
+      "example_ids": [
+        65,
+        1230,
+        2417,
+        2438,
+        2560
+      ]
+    },
+    {
+      "source": "it_digital_services",
+      "target": "training_research",
+      "value": 22,
+      "example_ids": [
+        80,
+        815,
+        896,
+        947,
+        957
+      ]
+    },
+    {
+      "source": "exempted_establishments",
+      "target": "social_security_schemes",
+      "value": 21,
+      "example_ids": [
+        200,
+        964,
+        1477,
+        1504,
+        2771
+      ]
+    },
+    {
+      "source": "pension_eps",
+      "target": "training_research",
+      "value": 20,
+      "example_ids": [
+        894,
+        4970,
+        5309,
+        5715,
+        5766
+      ]
+    },
+    {
+      "source": "compliance_recovery",
+      "target": "exempted_establishments",
+      "value": 20,
+      "example_ids": [
+        3441,
+        3565,
+        3737,
+        4926,
+        5134
+      ]
+    },
+    {
+      "source": "exempted_establishments",
+      "target": "finance_accounts_invest",
+      "value": 18,
+      "example_ids": [
+        241,
+        1910,
+        2432,
+        2593,
+        3104
+      ]
+    },
+    {
+      "source": "finance_accounts_invest",
+      "target": "governance_cbt",
+      "value": 18,
+      "example_ids": [
+        784,
+        1705,
+        2454,
+        2661,
+        3456
+      ]
+    },
+    {
+      "source": "hub_uan_kyc",
+      "target": "pension_eps",
+      "value": 18,
+      "example_ids": [
+        1407,
+        3077,
+        3152,
+        3268,
+        3528
+      ]
+    },
+    {
+      "source": "admin_procurement_facilities",
+      "target": "compliance_recovery",
+      "value": 17,
+      "example_ids": [
+        70,
+        475,
+        1007,
+        1350,
+        2345
+      ]
+    },
+    {
+      "source": "legal_litigation",
+      "target": "pension_eps",
+      "value": 17,
+      "example_ids": [
+        829,
+        1042,
+        1080,
+        1156,
+        1214
+      ]
+    },
+    {
+      "source": "it_digital_services",
+      "target": "pension_eps",
+      "value": 17,
+      "example_ids": [
+        2115,
+        2769,
+        2829,
+        2830,
+        3077
+      ]
+    },
+    {
+      "source": "exempted_establishments",
+      "target": "hr_personnel_cadre",
+      "value": 16,
+      "example_ids": [
+        241,
+        2242,
+        2593,
+        2674,
+        2810
+      ]
+    },
+    {
+      "source": "citizen_services_rti",
+      "target": "training_research",
+      "value": 16,
+      "example_ids": [
+        1029,
+        1147,
+        1226,
+        1412,
+        3123
+      ]
+    },
+    {
+      "source": "hr_personnel_cadre",
+      "target": "pension_eps",
+      "value": 16,
+      "example_ids": [
+        1647,
+        2089,
+        2369,
+        3098,
+        3177
+      ]
+    },
+    {
+      "source": "compliance_recovery",
+      "target": "it_digital_services",
+      "value": 15,
+      "example_ids": [
+        80,
+        219,
+        230,
+        1344,
+        1738
+      ]
+    },
+    {
+      "source": "citizen_services_rti",
+      "target": "hr_personnel_cadre",
+      "value": 15,
+      "example_ids": [
+        96,
+        1076,
+        1372,
+        1382,
+        1952
+      ]
+    },
+    {
+      "source": "compliance_recovery",
+      "target": "governance_cbt",
+      "value": 14,
+      "example_ids": [
+        114,
+        1052,
+        1667,
+        1681,
+        2113
+      ]
+    },
+    {
+      "source": "pension_eps",
+      "target": "social_security_schemes",
+      "value": 14,
+      "example_ids": [
+        1637,
+        1659,
+        3571,
+        3794,
+        3813
+      ]
+    },
+    {
+      "source": "hr_personnel_cadre",
+      "target": "legal_litigation",
+      "value": 14,
+      "example_ids": [
+        2511,
+        3068,
+        3408,
+        3941,
+        4569
+      ]
+    },
+    {
+      "source": "finance_accounts_invest",
+      "target": "it_digital_services",
+      "value": 13,
+      "example_ids": [
+        19,
+        255,
+        2245,
+        2601,
+        3304
+      ]
+    },
+    {
+      "source": "official_language",
+      "target": "training_research",
+      "value": 13,
+      "example_ids": [
+        249,
+        332,
+        3770,
+        5070,
+        5835
+      ]
+    },
+    {
+      "source": "finance_accounts_invest",
+      "target": "training_research",
+      "value": 11,
+      "example_ids": [
+        719,
+        730,
+        894,
+        1335,
+        2291
+      ]
+    },
+    {
+      "source": "finance_accounts_invest",
+      "target": "social_security_schemes",
+      "value": 11,
+      "example_ids": [
+        929,
+        1723,
+        2000,
+        5429,
+        5764
+      ]
+    },
+    {
+      "source": "hr_personnel_cadre",
+      "target": "hub_covid_relief",
+      "value": 10,
+      "example_ids": [
+        393,
+        1694,
+        1768,
+        1798,
+        1799
+      ]
+    },
+    {
+      "source": "compliance_recovery",
+      "target": "hub_uan_kyc",
+      "value": 10,
+      "example_ids": [
+        1738,
+        2481,
+        3791,
+        4815,
+        6786
+      ]
+    },
+    {
+      "source": "citizen_services_rti",
+      "target": "legal_litigation",
+      "value": 10,
+      "example_ids": [
+        2208,
+        2926,
+        3244,
+        3484,
+        4841
+      ]
+    },
+    {
+      "source": "admin_procurement_facilities",
+      "target": "official_language",
+      "value": 9,
+      "example_ids": [
+        101,
+        766,
+        1205,
+        1571,
+        2864
+      ]
+    },
+    {
+      "source": "compliance_recovery",
+      "target": "legal_litigation",
+      "value": 9,
+      "example_ids": [
+        1081,
+        1214,
+        1228,
+        2329,
+        2511
+      ]
+    },
+    {
+      "source": "compliance_recovery",
+      "target": "hub_international_workers",
+      "value": 9,
+      "example_ids": [
+        1812,
+        1854,
+        2624,
+        6301,
+        6305
+      ]
+    },
+    {
+      "source": "admin_procurement_facilities",
+      "target": "governance_cbt",
+      "value": 9,
+      "example_ids": [
+        3267,
+        3480,
+        3615,
+        4072,
+        4212
+      ]
+    },
+    {
+      "source": "hub_higher_pension",
+      "target": "pension_eps",
+      "value": 8,
+      "example_ids": [
+        275,
+        1188,
+        3069,
+        5901,
+        6097
+      ]
+    },
+    {
+      "source": "hub_international_workers",
+      "target": "pension_eps",
+      "value": 8,
+      "example_ids": [
+        646,
+        1417,
+        3969,
+        7444,
+        7520
+      ]
+    },
+    {
+      "source": "admin_procurement_facilities",
+      "target": "finance_accounts_invest",
+      "value": 8,
+      "example_ids": [
+        1060,
+        1671,
+        2531,
+        3134,
+        3456
+      ]
+    },
+    {
+      "source": "it_digital_services",
+      "target": "social_security_schemes",
+      "value": 8,
+      "example_ids": [
+        1901,
+        6274,
+        6434,
+        6853,
+        6903
+      ]
+    },
+    {
+      "source": "hub_international_workers",
+      "target": "legal_litigation",
+      "value": 8,
+      "example_ids": [
+        4186,
+        5012,
+        5032,
+        5741,
+        5871
+      ]
+    },
+    {
+      "source": "citizen_services_rti",
+      "target": "compliance_recovery",
+      "value": 7,
+      "example_ids": [
+        245,
+        292,
+        2828,
+        3088,
+        3595
+      ]
+    },
+    {
+      "source": "admin_procurement_facilities",
+      "target": "social_security_schemes",
+      "value": 7,
+      "example_ids": [
+        930,
+        1361,
+        1709,
+        1947,
+        6757
+      ]
+    },
+    {
+      "source": "social_security_schemes",
+      "target": "training_research",
+      "value": 7,
+      "example_ids": [
+        1001,
+        1069,
+        1225,
+        1265,
+        2869
+      ]
+    },
+    {
+      "source": "hub_covid_relief",
+      "target": "pension_eps",
+      "value": 7,
+      "example_ids": [
+        1551,
+        1606,
+        1637,
+        1647,
+        1659
+      ]
+    },
+    {
+      "source": "hub_covid_relief",
+      "target": "social_security_schemes",
+      "value": 7,
+      "example_ids": [
+        1557,
+        1877,
+        1959,
+        1973,
+        1984
+      ]
+    },
+    {
+      "source": "citizen_services_rti",
+      "target": "pension_eps",
+      "value": 7,
+      "example_ids": [
+        1651,
+        5663,
+        5743,
+        5867,
+        6038
+      ]
+    },
+    {
+      "source": "hr_personnel_cadre",
+      "target": "hub_exemption_trust",
+      "value": 7,
+      "example_ids": [
+        2242,
+        2674,
+        3685,
+        4720,
+        5679
+      ]
+    },
+    {
+      "source": "compliance_recovery",
+      "target": "hub_exemption_trust",
+      "value": 7,
+      "example_ids": [
+        4926,
+        5997,
+        5999,
+        8133,
+        8630
+      ]
+    },
+    {
+      "source": "hub_uan_kyc",
+      "target": "social_security_schemes",
+      "value": 7,
+      "example_ids": [
+        5718,
+        6274,
+        7366,
+        7439,
+        8923
+      ]
+    },
+    {
+      "source": "exempted_establishments",
+      "target": "it_digital_services",
+      "value": 6,
+      "example_ids": [
+        79,
+        86,
+        1368,
+        2952,
+        4152
+      ]
+    },
+    {
+      "source": "compliance_recovery",
+      "target": "finance_accounts_invest",
+      "value": 6,
+      "example_ids": [
+        274,
+        360,
+        2878,
+        3841,
+        4774
+      ]
+    },
+    {
+      "source": "governance_cbt",
+      "target": "official_language",
+      "value": 6,
+      "example_ids": [
+        311,
+        321,
+        1162,
+        1573,
+        2045
+      ]
+    },
+    {
+      "source": "compliance_recovery",
+      "target": "hub_coss",
+      "value": 5,
+      "example_ids": [
+        1,
+        12,
+        58,
+        70,
+        1081
+      ]
+    },
+    {
+      "source": "compliance_recovery",
+      "target": "pension_eps",
+      "value": 5,
+      "example_ids": [
+        105,
+        1156,
+        4116,
+        6233,
+        6636
+      ]
+    },
+    {
+      "source": "hub_exemption_trust",
+      "target": "social_security_schemes",
+      "value": 5,
+      "example_ids": [
+        200,
+        3794,
+        5642,
+        6123,
+        8064
+      ]
+    },
+    {
+      "source": "hub_covid_relief",
+      "target": "training_research",
+      "value": 5,
+      "example_ids": [
+        1842,
+        1868,
+        1928,
+        1958,
+        1967
+      ]
+    },
+    {
+      "source": "exempted_establishments",
+      "target": "pension_eps",
+      "value": 4,
+      "example_ids": [
+        442,
+        2112,
+        7070,
+        7123
+      ]
+    },
+    {
+      "source": "hub_covid_relief",
+      "target": "official_language",
+      "value": 4,
+      "example_ids": [
+        2069,
+        2073,
+        2077,
+        2081
+      ]
+    },
+    {
+      "source": "admin_procurement_facilities",
+      "target": "legal_litigation",
+      "value": 4,
+      "example_ids": [
+        2831,
+        3089,
+        5531,
+        7276
+      ]
+    },
+    {
+      "source": "exempted_establishments",
+      "target": "hub_7a_14b",
+      "value": 4,
+      "example_ids": [
+        4396,
+        6838,
+        8077,
+        9026
+      ]
+    },
+    {
+      "source": "hub_exemption_trust",
+      "target": "it_digital_services",
+      "value": 3,
+      "example_ids": [
+        79,
+        86,
+        5333
+      ]
+    },
+    {
+      "source": "hr_personnel_cadre",
+      "target": "hub_interest_roi",
+      "value": 3,
+      "example_ids": [
+        281,
+        507,
+        2095
+      ]
+    },
+    {
+      "source": "exempted_establishments",
+      "target": "hub_international_workers",
+      "value": 3,
+      "example_ids": [
+        1708,
+        3981,
+        8560
+      ]
+    },
+    {
+      "source": "compliance_recovery",
+      "target": "hub_covid_relief",
+      "value": 3,
+      "example_ids": [
+        1997,
+        2083,
+        2086
+      ]
+    },
+    {
+      "source": "hub_exemption_trust",
+      "target": "pension_eps",
+      "value": 3,
+      "example_ids": [
+        2112,
+        7070,
+        7123
+      ]
+    },
+    {
+      "source": "it_digital_services",
+      "target": "official_language",
+      "value": 3,
+      "example_ids": [
+        2356,
+        3059,
+        5406
+      ]
+    },
+    {
+      "source": "admin_procurement_facilities",
+      "target": "exempted_establishments",
+      "value": 3,
+      "example_ids": [
+        2416,
+        3615,
+        4072
+      ]
+    },
+    {
+      "source": "admin_procurement_facilities",
+      "target": "hub_exemption_trust",
+      "value": 3,
+      "example_ids": [
+        2416,
+        3615,
+        4072
+      ]
+    },
+    {
+      "source": "citizen_services_rti",
+      "target": "social_security_schemes",
+      "value": 3,
+      "example_ids": [
+        3240,
+        4109,
+        5699
+      ]
+    },
+    {
+      "source": "governance_cbt",
+      "target": "pension_eps",
+      "value": 3,
+      "example_ids": [
+        4354,
+        4373,
+        5038
+      ]
+    },
+    {
+      "source": "admin_procurement_facilities",
+      "target": "it_digital_services",
+      "value": 3,
+      "example_ids": [
+        4436,
+        4956,
+        5127
+      ]
+    },
+    {
+      "source": "legal_litigation",
+      "target": "social_security_schemes",
+      "value": 3,
+      "example_ids": [
+        5032,
+        7481,
+        7485
+      ]
+    },
+    {
+      "source": "admin_procurement_facilities",
+      "target": "pension_eps",
+      "value": 2,
+      "example_ids": [
+        965,
+        1753
+      ]
+    },
+    {
+      "source": "hub_uan_kyc",
+      "target": "legal_litigation",
+      "value": 2,
+      "example_ids": [
+        1893,
+        4735
+      ]
+    },
+    {
+      "source": "admin_procurement_facilities",
+      "target": "hub_covid_relief",
+      "value": 2,
+      "example_ids": [
+        1947,
+        2097
+      ]
+    },
+    {
+      "source": "admin_procurement_facilities",
+      "target": "hub_uan_kyc",
+      "value": 2,
+      "example_ids": [
+        1977,
+        5578
+      ]
+    },
+    {
+      "source": "hub_covid_relief",
+      "target": "it_digital_services",
+      "value": 2,
+      "example_ids": [
+        2046,
+        2096
+      ]
+    },
+    {
+      "source": "governance_cbt",
+      "target": "social_security_schemes",
+      "value": 2,
+      "example_ids": [
+        2662,
+        8293
+      ]
+    },
+    {
+      "source": "hub_international_workers",
+      "target": "it_digital_services",
+      "value": 2,
+      "example_ids": [
+        2910,
+        6853
+      ]
+    },
+    {
+      "source": "governance_cbt",
+      "target": "hub_international_workers",
+      "value": 2,
+      "example_ids": [
+        3602,
+        7078
+      ]
+    },
+    {
+      "source": "governance_cbt",
+      "target": "legal_litigation",
+      "value": 2,
+      "example_ids": [
+        4547,
+        7109
+      ]
+    },
+    {
+      "source": "citizen_services_rti",
+      "target": "it_digital_services",
+      "value": 2,
+      "example_ids": [
+        5535,
+        8469
+      ]
+    },
+    {
+      "source": "citizen_services_rti",
+      "target": "exempted_establishments",
+      "value": 2,
+      "example_ids": [
+        6855,
+        9346
+      ]
+    }
+  ]
+}

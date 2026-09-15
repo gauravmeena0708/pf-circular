@@ -5,7 +5,10 @@
     "circular_no": "HO No. CSD-IV/EPFiGMS/38381",
     "date": "31/03/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Reg_EPFiGMS.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Reg_EPFiGMS.pdf",
+    "division": "CSD",
+    "sub_division": "Csd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "255",
@@ -13,7 +16,10 @@
     "circular_no": "HO No. HRM/RTI/350/2009/93523",
     "date": "26/03/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTI92523.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTI92523.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "254",
@@ -21,7 +27,10 @@
     "circular_no": "HO No. Publicity 1(19)2008/",
     "date": "23/03/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CGISE23032010.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CGISE23032010.PDF",
+    "division": "CSD",
+    "sub_division": "Publicity",
+    "doc_type": "Other"
   },
   {
     "serial_no": "253",
@@ -29,7 +38,10 @@
     "circular_no": "HO No. IS-7(25)2008/Project Co-ord with NIC/38146",
     "date": "23/03/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PostTP_NICSI.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PostTP_NICSI.PDF",
+    "division": "IS",
+    "sub_division": "Is",
+    "doc_type": "Other"
   },
   {
     "serial_no": "252",
@@ -37,7 +49,10 @@
     "circular_no": "HO No. HRM-1/T-5(2)/2007/AGT/92344",
     "date": "23/03/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AGTOption.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AGTOption.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "251",
@@ -45,7 +60,10 @@
     "circular_no": "ZTI/NZ/Trg/191/2009-10/2299",
     "date": "21/03/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FacMembZTIFBD.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FacMembZTIFBD.PDF",
+    "division": "PDUNASS",
+    "sub_division": "Zti Nz",
+    "doc_type": "Other"
   },
   {
     "serial_no": "250",
@@ -53,7 +71,10 @@
     "circular_no": "Audit/16(01)2009/Leave/ZAPs/81941-82090",
     "date": "25/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ReguWorkAP.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ReguWorkAP.PDF",
+    "division": "Finance",
+    "sub_division": "Audit",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "249",
@@ -61,7 +82,10 @@
     "circular_no": "HO No. HRM/8/III/50(1)2009/RTI/38037",
     "date": "18/03/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTI38037.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTI38037.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "248",
@@ -69,7 +93,10 @@
     "circular_no": "HO No. HRD/1(2)2008/Imp6CPC/16303",
     "date": "17/03/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/GP42004600New.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/GP42004600New.PDF",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "247",
@@ -77,7 +104,10 @@
     "circular_no": "HO No. Publicity III(1)2010/91366",
     "date": "17/03/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/EPFNewsLtrNIssue.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/EPFNewsLtrNIssue.PDF",
+    "division": "CSD",
+    "sub_division": "Publicity",
+    "doc_type": "Other"
   },
   {
     "serial_no": "246",
@@ -85,7 +115,10 @@
     "circular_no": "HO No. Bkg/1(3)2008-09/R&P/A/c. No. 11/90942",
     "date": "12/03/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Tfr151011.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Tfr151011.PDF",
+    "division": "Finance",
+    "sub_division": "Banking",
+    "doc_type": "Other"
   },
   {
     "serial_no": "245",
@@ -93,7 +126,10 @@
     "circular_no": "HO No. HRM-III/12(1)2009/90732",
     "date": "10/03/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DepuISCadre.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DepuISCadre.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Deputation"
   },
   {
     "serial_no": "244",
@@ -101,7 +137,10 @@
     "circular_no": "HO No. LC/2(623)08/KR/36153",
     "date": "12/09/2008",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FilingSLP.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FilingSLP.PDF",
+    "division": "Compliance",
+    "sub_division": "Legal",
+    "doc_type": "Court Matter"
   },
   {
     "serial_no": "243",
@@ -109,7 +148,10 @@
     "circular_no": "No. LC-3(1)06/PolicyMatter",
     "date": "31/03/2008",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/EmpanelAdv.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/EmpanelAdv.PDF",
+    "division": "Compliance",
+    "sub_division": "Legal",
+    "doc_type": "Other"
   },
   {
     "serial_no": "242",
@@ -117,7 +159,10 @@
     "circular_no": "HO No. Conf.36(1)2010/ MOLE/MPRM/37221",
     "date": "12/03/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RegionLevelReview.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RegionLevelReview.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Other"
   },
   {
     "serial_no": "241",
@@ -125,7 +170,12 @@
     "circular_no": "HO No. BSC.1(1)2009-10/36452",
     "date": "11/03/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CBS200910.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CBS200910.PDF",
+    "division": "Finance",
+    "sub_division": "Balance Sheet",
+    "doc_type": "Other",
+    "addl_link": "ExcelWBs.zip",
+    "addl_link_title": "Excel Formats"
   },
   {
     "serial_no": "240",
@@ -133,7 +183,10 @@
     "circular_no": "HO No. R-I/Training/2009/129",
     "date": "09/03/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/InfoTO.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/InfoTO.PDF",
+    "division": "IS",
+    "sub_division": "Project",
+    "doc_type": "Other"
   },
   {
     "serial_no": "239",
@@ -141,7 +194,12 @@
     "circular_no": "HO No. Actuarial/1(3)06/89548",
     "date": "03/03/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/EPS_CMR.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/EPS_CMR.PDF",
+    "division": "Pension",
+    "sub_division": "Actuarial",
+    "doc_type": "Other",
+    "addl_link": "cmr.xls",
+    "addl_link_title": "Excel Formats"
   },
   {
     "serial_no": "238",
@@ -149,7 +207,10 @@
     "circular_no": "HO No. Conf.RC/Gel/AR/2007/35895",
     "date": "02/03/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RComm35895.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RComm35895.PDF",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Other"
   },
   {
     "serial_no": "237",
@@ -157,7 +218,10 @@
     "circular_no": "HO No. RRC-II/28(26)06/ABR/88712",
     "date": "02/03/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SplRecDrvMar2010.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SplRecDrvMar2010.PDF",
+    "division": "Compliance",
+    "sub_division": "Recovery",
+    "doc_type": "Other"
   },
   {
     "serial_no": "236",
@@ -165,7 +229,10 @@
     "circular_no": "HO No. ACR-2/2009/RPFC/35562",
     "date": "18/02/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CompACR200809.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CompACR200809.PDF",
+    "division": "HRM",
+    "sub_division": "Acr",
+    "doc_type": "Other"
   },
   {
     "serial_no": "235",
@@ -173,7 +240,10 @@
     "circular_no": "HO No. HRM/RTI/VII/1(1) 2010",
     "date": "17/02/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTI17022010.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTI17022010.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "234",
@@ -181,7 +251,10 @@
     "circular_no": "HO No. HRM-I/A-5(1)2005/85340",
     "date": "17/02/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DDADVigDepuAd.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DDADVigDepuAd.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Deputation"
   },
   {
     "serial_no": "233",
@@ -189,7 +262,10 @@
     "circular_no": "HO No. HRM.V/SS-Seniority/Misc./85157",
     "date": "16/02/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FinalSLSSVacancy.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FinalSLSSVacancy.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "232",
@@ -197,7 +273,10 @@
     "circular_no": "HO NO. Conf.5(11) 2004/KN/333960",
     "date": "10/02/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ReconRegCommKN.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ReconRegCommKN.PDF",
+    "division": "Compliance",
+    "sub_division": "Compliance",
+    "doc_type": "Notification"
   },
   {
     "serial_no": "231",
@@ -205,7 +284,10 @@
     "circular_no": "HO No HRM.V/HRM-II/37(1)97/VA/Vol.I/33898-901",
     "date": "09/02/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FilleupVA.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FilleupVA.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "230",
@@ -213,7 +295,10 @@
     "circular_no": "HO No. HRM.V/HRM-II/24(01)09/RA/83940",
     "date": "08/02/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RADepuAd.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RADepuAd.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Office Order"
   },
   {
     "serial_no": "229",
@@ -221,7 +306,10 @@
     "circular_no": "HO No. LC-4/25//09/EPFAT",
     "date": "02/02/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/EPFAT.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/EPFAT.PDF",
+    "division": "Compliance",
+    "sub_division": "Legal",
+    "doc_type": "Other"
   },
   {
     "serial_no": "228",
@@ -229,7 +317,10 @@
     "circular_no": "HO No. LC-3(1)08/HR/33421",
     "date": "03/02/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PanelAdvocates.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PanelAdvocates.PDF",
+    "division": "Compliance",
+    "sub_division": "Legal",
+    "doc_type": "Other"
   },
   {
     "serial_no": "227",
@@ -237,7 +328,10 @@
     "circular_no": "HO No. HRM-III/66(1)2006/RTI/Vol.II/84921",
     "date": "15/02/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTI84921.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTI84921.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "226",
@@ -245,7 +339,10 @@
     "circular_no": "HO No. HRM/RTI/44/2007/84875",
     "date": "15/02/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTI84875.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTI84875.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "225",
@@ -253,7 +350,12 @@
     "circular_no": "",
     "date": "",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CONFIG_HP_THINCLIENTS.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CONFIG_HP_THINCLIENTS.pdf",
+    "division": "IS",
+    "sub_division": "Is",
+    "doc_type": "Technical Matter",
+    "addl_link": "CallLoggingProcess.xls#ESSISSEscalationMatrix.xls",
+    "addl_link_title": "Call Logging#.Escalation Matrix"
   },
   {
     "serial_no": "224",
@@ -261,7 +363,10 @@
     "circular_no": "HO No. R-I/Masters/2009/17/81783",
     "date": "22/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RevRegCodes_10022010.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RevRegCodes_10022010.pdf",
+    "division": "IS",
+    "sub_division": "",
+    "doc_type": "Other"
   },
   {
     "serial_no": "223",
@@ -269,7 +374,10 @@
     "circular_no": "HO No. Invest.I/3(2)/133/2009-10/ROI",
     "date": "10/02/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Rate_of_Interest200910.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Rate_of_Interest200910.pdf",
+    "division": "Finance",
+    "sub_division": "Investment",
+    "doc_type": "Other"
   },
   {
     "serial_no": "222",
@@ -277,7 +385,10 @@
     "circular_no": "HO No. Exam.2(1)/2008/457",
     "date": "04/02/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PromoQuotaSSA.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PromoQuotaSSA.PDF",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Other"
   },
   {
     "serial_no": "221",
@@ -285,7 +396,10 @@
     "circular_no": "HO No. MIS-3(1) ABP Return/2007-08/33472",
     "date": "03/02/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/MISLetDt03022010.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/MISLetDt03022010.pdf",
+    "division": "Compliance",
+    "sub_division": "Mis",
+    "doc_type": "Other"
   },
   {
     "serial_no": "220",
@@ -293,7 +407,10 @@
     "circular_no": "HO No. Conf.4(1)2008/33104",
     "date": "29/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ReconCBT33104.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ReconCBT33104.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Other"
   },
   {
     "serial_no": "219",
@@ -301,7 +418,10 @@
     "circular_no": "HO No. Exam. 11(1)2008/431",
     "date": "22/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AmendDCE2008.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AmendDCE2008.PDF",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Other"
   },
   {
     "serial_no": "218",
@@ -309,7 +429,10 @@
     "circular_no": "HO No. HRD/4(1)2010/Misc./Circular/14374",
     "date": "28/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/HRD_Order.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/HRD_Order.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "217",
@@ -317,7 +440,10 @@
     "circular_no": "HO No. HRM-I/A-10(45)2006/ 14048",
     "date": "28/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/HRM_ModificationOrder.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/HRM_ModificationOrder.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Modification"
   },
   {
     "serial_no": "216",
@@ -325,7 +451,10 @@
     "circular_no": "HO No. HRM.III/1(3)99/DEO/Snty./Pt.II/82550",
     "date": "27/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_16.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_16.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "215",
@@ -333,7 +462,10 @@
     "circular_no": "HO No. HRM.III/1(3)99/DEO/Snty./Pt.II/82548",
     "date": "27/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_15.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_15.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "214",
@@ -341,7 +473,10 @@
     "circular_no": "HO No. HRM.III/1(3)99/DEO/Snty./Pt.II/82546",
     "date": "27/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_14.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_14.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "213",
@@ -349,7 +484,10 @@
     "circular_no": "HO No. HRM.III/1(3)99/DEO/Snty./Pt.II/82544",
     "date": "27/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_13.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_13.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "212",
@@ -357,7 +495,10 @@
     "circular_no": "HO No. HRM.III/1(3)99/DEO/Snty./Pt.II/82542",
     "date": "27/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_12.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_12.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "211",
@@ -365,7 +506,10 @@
     "circular_no": "HO No. HRM.III/1(3)99/DEO/Snty./Pt.II/82540",
     "date": "27/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_11.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_11.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "210",
@@ -373,7 +517,10 @@
     "circular_no": "HO No. HRM.III/1(3)99/DEO/Snty./Pt.II/82538",
     "date": "27/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_10.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_10.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "209",
@@ -381,7 +528,10 @@
     "circular_no": "HO No. HRM.III/1(3)99/DEO/Snty./Pt.II/82536",
     "date": "27/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_09.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_09.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "208",
@@ -389,7 +539,10 @@
     "circular_no": "HO No. HRM.III/1(3)99/DEO/Snty./Pt.II/82534",
     "date": "27/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_08.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_08.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "207",
@@ -397,7 +550,10 @@
     "circular_no": "HO No. HRM.III/1(3)99/DEO/Snty./Pt.II/82532",
     "date": "27/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_07.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_07.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "206",
@@ -405,7 +561,10 @@
     "circular_no": "HO No. HRM.III/1(3)99/DEO/Snty./Pt.II/82530",
     "date": "27/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_06.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_06.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "205",
@@ -413,7 +572,10 @@
     "circular_no": "HO No. HRM.III/1(3)99/DEO/Snty./Pt.II/82529",
     "date": "27/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_05.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_05.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "204",
@@ -421,7 +583,10 @@
     "circular_no": "HO No. HRM.III/1(3)99/DEO/Snty./Pt.II/82526",
     "date": "27/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_04.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_04.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "203",
@@ -429,7 +594,10 @@
     "circular_no": "HO No HRM.III/1(3)2009/DPA/82524",
     "date": "27/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_03.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_03.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "202",
@@ -437,7 +605,10 @@
     "circular_no": "HO No. HRM.III/1(3)99/DEO/Snty./Pt.II/82520",
     "date": "27/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_02.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_02.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "201",
@@ -445,7 +616,10 @@
     "circular_no": "HO No HRM.III/1(3)2009/DPA/82518",
     "date": "27/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_01.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_01.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "200",
@@ -453,7 +627,10 @@
     "circular_no": "HO No. HRM/RTI/64/2007",
     "date": "22/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTI_25012010_01.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTI_25012010_01.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "199",
@@ -461,7 +638,10 @@
     "circular_no": "HO No. HRM/RTI/307/2009",
     "date": "21/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTI_25012010.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTI_25012010.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "198",
@@ -469,7 +649,10 @@
     "circular_no": "HO No. MIS 3(1) Cons. ABP Return/2007-08/32308",
     "date": "20/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/NewABP_IW.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/NewABP_IW.PDF",
+    "division": "Compliance",
+    "sub_division": "Mis",
+    "doc_type": "Other"
   },
   {
     "serial_no": "197",
@@ -477,7 +660,10 @@
     "circular_no": "Ho.No.ZTI(SZ)/2(26)/2009-10/",
     "date": "19/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/zti_sz.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/zti_sz.pdf",
+    "division": "PDUNASS",
+    "sub_division": "Zti Sz",
+    "doc_type": "Deputation"
   },
   {
     "serial_no": "196",
@@ -485,7 +671,10 @@
     "circular_no": "HO No. HRD/4(1)2010/Misc./ Circular/12998",
     "date": "14/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/APAR.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/APAR.PDF",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "195",
@@ -493,7 +682,10 @@
     "circular_no": "HRM-I/T-4(1)2000/80424",
     "date": "13/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AmendTFRPlcyGrA.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AmendTFRPlcyGrA.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "194",
@@ -501,7 +693,10 @@
     "circular_no": "HO No. HRM/RTI/276/2009",
     "date": "12/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTI2762009.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTI2762009.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "193",
@@ -509,7 +704,10 @@
     "circular_no": "HO No. HRM/RTI/22/2008",
     "date": "12/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTI222008.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTI222008.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "192",
@@ -517,7 +715,10 @@
     "circular_no": "HO No. HRM-V/25(9)/LA/Pt. 79836",
     "date": "11/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/LeaseIncrease2010.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/LeaseIncrease2010.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "191",
@@ -525,7 +726,10 @@
     "circular_no": "HO No. HRM-V/12(1)2003/FMA/Vol-II/71801",
     "date": "11/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FMA1200.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FMA1200.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "190",
@@ -533,7 +737,10 @@
     "circular_no": "HO No. C-Ex/Misc/Comp.Audit 2009/77462",
     "date": "18/12/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CompAuditEE.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CompAuditEE.PDF",
+    "division": "Compliance",
+    "sub_division": "Compliance",
+    "doc_type": "Other"
   },
   {
     "serial_no": "189",
@@ -541,7 +748,10 @@
     "circular_no": "HO No. HRM-II/53(02)2000/EO-AO/ Reg.Prom/30707",
     "date": "01/01/2010",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PromoEOAOSenior.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PromoEOAOSenior.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "188",
@@ -549,7 +759,10 @@
     "circular_no": "HO No. Actuarial/18(1)2008/78977",
     "date": "31/12/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ActVal31122009.exe"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ActVal31122009.exe",
+    "division": "Pension",
+    "sub_division": "Actuarial",
+    "doc_type": "Instructions"
   },
   {
     "serial_no": "187",
@@ -557,7 +770,10 @@
     "circular_no": "HO No. Audit/17(1)09/ IAP/Cir/30198",
     "date": "31/12/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ClariConveyance.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ClariConveyance.PDF",
+    "division": "Finance",
+    "sub_division": "Audit",
+    "doc_type": "Office Order"
   },
   {
     "serial_no": "186",
@@ -565,7 +781,12 @@
     "circular_no": "HO No. HRM-II/17(01) 2009/ EO-AO/STY.LIST/03/2005/30058",
     "date": "30/12/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Final_SL_EOAO.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Final_SL_EOAO.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Seniority List",
+    "addl_link": "Support1.PDF#Support2.PDF#Support3.PDF",
+    "addl_link_title": "HRM Order dated 23/03/2005#HRM Order dated 08/03/2007#RO Bangalore letter with CAT Order dated 02/03/2006n"
   },
   {
     "serial_no": "185",
@@ -573,7 +794,10 @@
     "circular_no": "HO No. HRM-II/28(5)84/PN/Vol.II/ 12146",
     "date": "29/12/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PromoEOAOAdhoc.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PromoEOAOAdhoc.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "184",
@@ -581,7 +805,10 @@
     "circular_no": "HO No. HRM-I/A-9(1)93/DDA/ 77638",
     "date": "22/12/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DDAuditDepu.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DDAuditDepu.PDF",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Deputation"
   },
   {
     "serial_no": "183",
@@ -589,7 +816,10 @@
     "circular_no": "HO No. RRC-II/28(26)06/ABR/25762",
     "date": "22/12/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RecMonthJan2010.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RecMonthJan2010.PDF",
+    "division": "Compliance",
+    "sub_division": "Recovery",
+    "doc_type": "Other"
   },
   {
     "serial_no": "182",
@@ -597,7 +827,10 @@
     "circular_no": "HO No. IS-6(1)2009/MP IT Requirement/ 25376",
     "date": "16/12/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/InforforITInfra.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/InforforITInfra.PDF",
+    "division": "IS",
+    "sub_division": "Is",
+    "doc_type": "Other"
   },
   {
     "serial_no": "181",
@@ -605,7 +838,10 @@
     "circular_no": "HO No. Conf.4(1)/2008/25086",
     "date": "15/12/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ReConSCExeEstt.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ReConSCExeEstt.PDF",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Other"
   },
   {
     "serial_no": "180",
@@ -613,7 +849,10 @@
     "circular_no": "HO No. HRD/4(1)2009/Misc./Circular/ Pt.I/ 10643",
     "date": "15/12/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SixthPayCreches.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SixthPayCreches.PDF",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "179",
@@ -621,7 +860,10 @@
     "circular_no": "HO No. HRD/4(1)2009/Misc./Circular/Pt.I/10442",
     "date": "15/12/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SixthPayDAtoPensioners.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SixthPayDAtoPensioners.PDF",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "178",
@@ -629,7 +871,10 @@
     "circular_no": "HO No. Coord/2(2)07/ Amend./u/s 13/24783",
     "date": "18/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/NotifiUS131.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/NotifiUS131.PDF",
+    "division": "Compliance",
+    "sub_division": "Coordination",
+    "doc_type": "Other"
   },
   {
     "serial_no": "177",
@@ -637,7 +882,10 @@
     "circular_no": "HO No. Actuarial/18(1)2008/75983",
     "date": "10/12/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ActValu10122009.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ActValu10122009.PDF",
+    "division": "Pension",
+    "sub_division": "Actuarial",
+    "doc_type": "Other"
   },
   {
     "serial_no": "176",
@@ -645,7 +893,10 @@
     "circular_no": "HO No. HRM-V/12(2)2004/Vol-II/75791",
     "date": "09/12/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/NonSettleOIC.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/NonSettleOIC.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "175",
@@ -653,7 +904,10 @@
     "circular_no": "HO No. ACC(IS) Tour Report/M7B",
     "date": "",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/MoMWorkshop.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/MoMWorkshop.PDF",
+    "division": "IS",
+    "sub_division": "Is",
+    "doc_type": "Other"
   },
   {
     "serial_no": "174",
@@ -661,7 +915,10 @@
     "circular_no": "HO No. HRM-I/A-10(45)2006/ 9705",
     "date": "07/12/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SuperAnnGrA.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SuperAnnGrA.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Superannuation"
   },
   {
     "serial_no": "173",
@@ -669,7 +926,10 @@
     "circular_no": "HO No. HRM-I/S-3(2)91/AC/SL/Vol.IV/75100",
     "date": "04/12/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FinalRevisedSLAPFC.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FinalRevisedSLAPFC.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Seniority List"
   },
   {
     "serial_no": "172",
@@ -677,7 +937,10 @@
     "circular_no": "HO No. HRM/RTI/289/2009",
     "date": "04/12/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTIInfoGLN.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTIInfoGLN.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "171",
@@ -685,7 +948,10 @@
     "circular_no": "HO No. HRM-II/10(2)09/MACP/ Steno/73002",
     "date": "02/12/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FwdMACPDS.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FwdMACPDS.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "170",
@@ -693,7 +959,10 @@
     "circular_no": "Ho No. HRM-II/10(5)2009/ACPS/2nd Fin/72132",
     "date": "30/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FwdGntFinUpACP.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FwdGntFinUpACP.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "169",
@@ -701,7 +970,10 @@
     "circular_no": "HO No. HRM.III/60(1)2007/TBBP/72226",
     "date": "30/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/TimeBoundPromoEPF.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/TimeBoundPromoEPF.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "168",
@@ -709,7 +981,10 @@
     "circular_no": "HO No. RRC/13(61)05/MH/71590",
     "date": "23/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AssessPD71590.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AssessPD71590.PDF",
+    "division": "Compliance",
+    "sub_division": "Recovery",
+    "doc_type": "Other"
   },
   {
     "serial_no": "167",
@@ -717,7 +992,10 @@
     "circular_no": "HO No. HRD/4(1)2009/Misc./Circular/Pt.I/7666",
     "date": "11/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CabSecttNote.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CabSecttNote.PDF",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "166",
@@ -725,7 +1003,10 @@
     "circular_no": "HO No. HRD/4(1)2009/Misc./Circular/7415",
     "date": "11/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/EmpanelHospDC.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/EmpanelHospDC.PDF",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "165",
@@ -733,7 +1014,10 @@
     "circular_no": "HO No. HRM-I/S-1(1)2007/72968",
     "date": "27/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FinalSLRCI.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FinalSLRCI.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Seniority List"
   },
   {
     "serial_no": "164",
@@ -741,7 +1025,10 @@
     "circular_no": "HO No. HRM-III/1(3)2009/DPA/24096",
     "date": "27/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ConvertDEODPA24096.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ConvertDEODPA24096.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "163",
@@ -749,7 +1036,10 @@
     "circular_no": "HO No. CSD-IV/DPG/Review Meeting/2009/6263",
     "date": "27/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PendancyCPGrams.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PendancyCPGrams.PDF",
+    "division": "CSD",
+    "sub_division": "Csd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "162",
@@ -757,7 +1047,10 @@
     "circular_no": "HO No. HRM/RTI/133/2008",
     "date": "",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTIRamchander.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTIRamchander.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "161",
@@ -765,7 +1058,10 @@
     "circular_no": "HO No. HRM.III/1(1)2009/SSA/Pt.22636",
     "date": "10/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RedistSancStren.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RedistSancStren.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "160",
@@ -773,7 +1069,10 @@
     "circular_no": "HO No. HRD/ 4(1)2009/Misc./Circular/8885",
     "date": "23/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/GP42004600.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/GP42004600.PDF",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "159",
@@ -781,7 +1080,10 @@
     "circular_no": "HO No. HRD/ 4(1)2009/Misc./Circular/Pt.I/8684",
     "date": "23/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CHCandQEWeek.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CHCandQEWeek.PDF",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "158",
@@ -789,7 +1091,10 @@
     "circular_no": "HO No. Audit/17(1)09/ IAP/ Cir/8310",
     "date": "18/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FormatReplyARs.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FormatReplyARs.PDF",
+    "division": "Finance",
+    "sub_division": "Audit",
+    "doc_type": "Other"
   },
   {
     "serial_no": "157",
@@ -797,7 +1102,10 @@
     "circular_no": "HO No. HRM-V/12(2)2004/Vol-II",
     "date": "19/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/NonIssueOIC.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/NonIssueOIC.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "156",
@@ -805,7 +1113,10 @@
     "circular_no": "HO No. WSU/ 4(2)91/Man/Amdt/23290",
     "date": "18/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ClariPmtMode.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ClariPmtMode.PDF",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "Other"
   },
   {
     "serial_no": "155",
@@ -813,7 +1124,10 @@
     "circular_no": "HO No. Actuarial/18(1)2008/71203",
     "date": "18/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ActVal18112009.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ActVal18112009.PDF",
+    "division": "Pension",
+    "sub_division": "Actuarial",
+    "doc_type": "Other"
   },
   {
     "serial_no": "154",
@@ -821,7 +1135,10 @@
     "circular_no": "HO No. H.S/Rajbhasha Sammelan 12/ 2009",
     "date": "17/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RajbhashaSamm2009.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RajbhashaSamm2009.PDF",
+    "division": "Rajbhasha",
+    "sub_division": "",
+    "doc_type": "Other"
   },
   {
     "serial_no": "153",
@@ -829,7 +1146,10 @@
     "circular_no": "HO No. HRM.III/ 1(3)2009/DPA/22729",
     "date": "12/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DPAsDecline.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DPAsDecline.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "152",
@@ -837,7 +1157,10 @@
     "circular_no": "HO No.HRD/4(1)2009/Misc./Circular/Pt.I/6913",
     "date": "11/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RestorCommut.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RestorCommut.PDF",
+    "division": "Pension",
+    "sub_division": "Pension",
+    "doc_type": "Other"
   },
   {
     "serial_no": "151",
@@ -845,7 +1168,10 @@
     "circular_no": "HO No. WSU/4(2)91/Man/Admt/21440",
     "date": "04/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AddColPmtMode.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AddColPmtMode.PDF",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "Office Order"
   },
   {
     "serial_no": "150",
@@ -853,7 +1179,10 @@
     "circular_no": "HO No CEPS/NDC/2008/70666",
     "date": "11/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ActVal11112009.exe"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ActVal11112009.exe",
+    "division": "Pension",
+    "sub_division": "Actuarial",
+    "doc_type": "Other"
   },
   {
     "serial_no": "149",
@@ -861,7 +1190,10 @@
     "circular_no": "HO No. HRM/RTI/276/2009",
     "date": "09/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/InfoRTI09112009.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/InfoRTI09112009.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "148",
@@ -869,7 +1201,10 @@
     "circular_no": "HO No. Pen/A&C/1/2000/PIC/Vol.VI/69268",
     "date": "05/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DetESPara9.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DetESPara9.PDF",
+    "division": "Pension",
+    "sub_division": "Pension",
+    "doc_type": "Other"
   },
   {
     "serial_no": "147",
@@ -877,7 +1212,10 @@
     "circular_no": "HO No. Conf.7(3)2009/RPFCsCONF/22601",
     "date": "09/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AmendMoMRCCon12131009.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AmendMoMRCCon12131009.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Other"
   },
   {
     "serial_no": "146",
@@ -885,7 +1223,10 @@
     "circular_no": "HO No. CPFC/Exemp. /SZ/2005/Vol.ii/22588",
     "date": "09/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RevPropoExempEDLI.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RevPropoExempEDLI.PDF",
+    "division": "Compliance",
+    "sub_division": "Exemption",
+    "doc_type": "Other"
   },
   {
     "serial_no": "145",
@@ -893,7 +1234,10 @@
     "circular_no": "HO No. HRM-I/S-3(2)/91/AC/SL/Vol IV/22314",
     "date": "06/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FinalSL_APFC.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FinalSL_APFC.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Seniority List"
   },
   {
     "serial_no": "144",
@@ -901,7 +1245,10 @@
     "circular_no": "HO No. HRM-I/S-1(1)2007/21814",
     "date": "05/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DraftSLRCI.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DraftSLRCI.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "143",
@@ -909,7 +1256,10 @@
     "circular_no": "HO No. Pension5(2)2005/Para 6/69041",
     "date": "04/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ClariGrantNP.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ClariGrantNP.PDF",
+    "division": "Pension",
+    "sub_division": "Pension",
+    "doc_type": "Other"
   },
   {
     "serial_no": "142",
@@ -917,7 +1267,10 @@
     "circular_no": "HO No. ESC 14(1)2009-10/ Bifur/21439",
     "date": "04/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/BifurAsstsLiabl.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/BifurAsstsLiabl.PDF",
+    "division": "Finance",
+    "sub_division": "Balance Sheet",
+    "doc_type": "Other"
   },
   {
     "serial_no": "141",
@@ -925,7 +1278,10 @@
     "circular_no": "HO No. CS-3/(13)/2008/MF/Vol.II/68658",
     "date": "03/11/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/BudgetMF.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/BudgetMF.PDF",
+    "division": "PFD",
+    "sub_division": "Pfd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "140",
@@ -933,7 +1289,10 @@
     "circular_no": "HO No. HRM.III/1(3)2009/ DPA/21320",
     "date": "30/10/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEOtoDPA.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEOtoDPA.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "139",
@@ -941,7 +1300,10 @@
     "circular_no": "HO No. Coord/5(16)2009/Misc/ 3380-3630",
     "date": "29/10/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Powers7A7B7C.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Powers7A7B7C.PDF",
+    "division": "Compliance",
+    "sub_division": "Coordination",
+    "doc_type": "Other"
   },
   {
     "serial_no": "138",
@@ -949,7 +1311,10 @@
     "circular_no": "HO No. Vig.XXV(35)2004/Vol-II/11736",
     "date": "28/10/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/VigAwareWeek11736.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/VigAwareWeek11736.PDF",
+    "division": "Vigilance",
+    "sub_division": "Vigilance",
+    "doc_type": "Other"
   },
   {
     "serial_no": "137",
@@ -957,7 +1322,10 @@
     "circular_no": "HO No. HRM . III/ 1(3)2009/DPA/21193",
     "date": "28/10/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FurDetailsDEO.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FurDetailsDEO.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "136",
@@ -965,7 +1333,10 @@
     "circular_no": "HO No. Vig.XXV(35)2004/Vol-II/11644",
     "date": "16/10/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/VigAwareWeek11644.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/VigAwareWeek11644.PDF",
+    "division": "Vigilance",
+    "sub_division": "Vigilance",
+    "doc_type": "Other"
   },
   {
     "serial_no": "135",
@@ -973,7 +1344,10 @@
     "circular_no": "HO No. HRD/1(1)2006/XLRI/Pt-III/63854",
     "date": "23/10/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SROGUL_ROGUL.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SROGUL_ROGUL.PDF",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Office Order"
   },
   {
     "serial_no": "134",
@@ -981,7 +1355,10 @@
     "circular_no": "HO No. Conf. RC/Gel/AR/2007/20785",
     "date": "27/10/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RegCommMeetings.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RegCommMeetings.PDF",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Other"
   },
   {
     "serial_no": "133",
@@ -989,7 +1366,10 @@
     "circular_no": "HO No. HRM/RTI/11/2007",
     "date": "22/10/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTIInfoReqd.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTIInfoReqd.PDF",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "132",
@@ -997,7 +1377,10 @@
     "circular_no": "HO No. Actuarial 1(3) 2006/CMR/52988",
     "date": "22/10/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CMRsbyROs.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CMRsbyROs.PDF",
+    "division": "Pension",
+    "sub_division": "Actuarial",
+    "doc_type": "Other"
   },
   {
     "serial_no": "131",
@@ -1005,7 +1388,10 @@
     "circular_no": "HO No. WSU/4(2)91/Man/Amdt/20007",
     "date": "20/10/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AddModePay.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AddModePay.PDF",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "Office Order"
   },
   {
     "serial_no": "130",
@@ -1013,7 +1399,10 @@
     "circular_no": "HO No. Actuarial/18(1)2008/19809",
     "date": "19/10/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ActValu19102009.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ActValu19102009.PDF",
+    "division": "Pension",
+    "sub_division": "Actuarial",
+    "doc_type": "Other"
   },
   {
     "serial_no": "129",
@@ -1021,7 +1410,10 @@
     "circular_no": "HO No. CS-3/(7)/2009/Gen.Maint/BNE & BNB/Vol.I/50643",
     "date": "14/10/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AddAltAccmn.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AddAltAccmn.PDF",
+    "division": "PFD",
+    "sub_division": "Pfd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "128",
@@ -1029,7 +1421,10 @@
     "circular_no": "HO No. C.IV/15(8)09/Misc./NZ/52699",
     "date": "20/10/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CovEnfDrive.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CovEnfDrive.PDF",
+    "division": "Compliance",
+    "sub_division": "Compliance",
+    "doc_type": "Other"
   },
   {
     "serial_no": "127",
@@ -1037,7 +1432,10 @@
     "circular_no": "HO No. C-Ex/Misc/Comp.Audit 2009/52163",
     "date": "15/10/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CompAudExempEst.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CompAudExempEst.PDF",
+    "division": "Compliance",
+    "sub_division": "Exemption",
+    "doc_type": "Other"
   },
   {
     "serial_no": "126",
@@ -1045,7 +1443,10 @@
     "circular_no": "HO No. CPFC/Exemp./SZ/ 2005 /Vol.II/19766-78",
     "date": "16/10/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/EDLILet_Dt16102009.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/EDLILet_Dt16102009.pdf",
+    "division": "Compliance",
+    "sub_division": "Exemption",
+    "doc_type": "Other"
   },
   {
     "serial_no": "125",
@@ -1053,7 +1454,10 @@
     "circular_no": "HO No. Bkg/45(1)/Ac.4 to 2/09/48525",
     "date": "30/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Guidelines4to2.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Guidelines4to2.pdf",
+    "division": "Finance",
+    "sub_division": "Banking",
+    "doc_type": "Other"
   },
   {
     "serial_no": "124",
@@ -1061,7 +1465,10 @@
     "circular_no": "HO No. IS-3(2)2003/Budget Dele/18929",
     "date": "07/10/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DelePowerComp.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DelePowerComp.PDF",
+    "division": "IS",
+    "sub_division": "Is",
+    "doc_type": "Other"
   },
   {
     "serial_no": "123",
@@ -1069,7 +1476,10 @@
     "circular_no": "HO No. IS-1(3)/2003/Norms/18728",
     "date": "07/10/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SuppliNorms.PDF"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SuppliNorms.PDF",
+    "division": "IS",
+    "sub_division": "Is",
+    "doc_type": "Other"
   },
   {
     "serial_no": "122",
@@ -1077,15 +1487,21 @@
     "circular_no": "HO No. Conf.7(3)2009/RPFCs Conf/18588",
     "date": "07/10/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ConfLetDt7102009.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ConfLetDt7102009.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Other"
   },
   {
     "serial_no": "121",
     "title": "Notification regarding investment pattern to be followed by Exempted Trusts- Note-Exemption division dated 01/10/2009",
     "circular_no": "dated 01/10/2009",
-    "date": "",
+    "date": "01/10/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Notification_ExempTrusts_01102009.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Notification_ExempTrusts_01102009.pdf",
+    "division": "Finance",
+    "sub_division": "",
+    "doc_type": "Notification"
   },
   {
     "serial_no": "120",
@@ -1093,7 +1509,10 @@
     "circular_no": "HO No. HRM.III/60(1)2007/TBP/18342",
     "date": "01/10/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Prom_Sch_01102009.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Prom_Sch_01102009.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "119",
@@ -1101,7 +1520,10 @@
     "circular_no": "HO No. HRM.III/8(1)2005/Pt.-1/48674",
     "date": "30/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_ContractBasis_01102009.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DEO_ContractBasis_01102009.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "118",
@@ -1109,7 +1531,10 @@
     "circular_no": "HO No.:Adm.(S-II)/ARM/BNE/08-09/46753",
     "date": "24/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/NRPO_01102009.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/NRPO_01102009.pdf",
+    "division": "HRM",
+    "sub_division": "Asd",
+    "doc_type": "Office Order"
   },
   {
     "serial_no": "117",
@@ -1117,7 +1542,10 @@
     "circular_no": "HO No. HRD/4(1)2009/Misc./ Circular/ 2840",
     "date": "25/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PayDA072009.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PayDA072009.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "116",
@@ -1125,7 +1553,10 @@
     "circular_no": "HO No. Pension-14/Invst./1(2)95/MP/46192",
     "date": "23/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PayPenJtAcc.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PayPenJtAcc.pdf",
+    "division": "Pension",
+    "sub_division": "Pension",
+    "doc_type": "Other"
   },
   {
     "serial_no": "115",
@@ -1133,7 +1564,10 @@
     "circular_no": "HO No. Bkg/1(2)06/NFMS/Vol.III/46980",
     "date": "24/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/NFMSRtns.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/NFMSRtns.pdf",
+    "division": "Finance",
+    "sub_division": "Banking",
+    "doc_type": "Instructions"
   },
   {
     "serial_no": "114",
@@ -1141,7 +1575,10 @@
     "circular_no": "HO No. Bkg/1(21)Disbl-S/2008/Vol-II/46879",
     "date": "24/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/QtrlyRtnPart1and2.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/QtrlyRtnPart1and2.pdf",
+    "division": "Finance",
+    "sub_division": "Banking",
+    "doc_type": "Other"
   },
   {
     "serial_no": "113",
@@ -1149,7 +1586,10 @@
     "circular_no": "HO No. Conf.7(2)2009/RPFCs Conf/17827",
     "date": "23/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ConfLetDt23092009.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ConfLetDt23092009.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Other"
   },
   {
     "serial_no": "112",
@@ -1157,7 +1597,10 @@
     "circular_no": "HO No. WSU/11(1)09/RC/Conf/44800",
     "date": "22/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/MaintainBasicReco.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/MaintainBasicReco.pdf",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "Office Order"
   },
   {
     "serial_no": "111",
@@ -1165,7 +1608,10 @@
     "circular_no": "HO No. Budget 105(43)2009-10/2010-11/Main/17571",
     "date": "22/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RE200910BE201011.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RE200910BE201011.pdf",
+    "division": "Finance",
+    "sub_division": "Budget",
+    "doc_type": "Office Order"
   },
   {
     "serial_no": "110",
@@ -1173,7 +1619,10 @@
     "circular_no": "HO No. IWU/7(13)2001/Vol.II/44474",
     "date": "17/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CovProformaBelgium.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CovProformaBelgium.pdf",
+    "division": "Pension",
+    "sub_division": "Iwu",
+    "doc_type": "Other"
   },
   {
     "serial_no": "109",
@@ -1181,7 +1630,10 @@
     "circular_no": "Ho No. HRD/P-IV/3(100)97/Pt/2622-2822",
     "date": "17/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SixthPaySecInstalNewEnt.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SixthPaySecInstalNewEnt.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "108",
@@ -1189,7 +1641,10 @@
     "circular_no": "HO No. Pension-I/30/Para-6/Amend/OR/2005/17184",
     "date": "16/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AmendPara9EPS95.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AmendPara9EPS95.pdf",
+    "division": "Pension",
+    "sub_division": "Pension",
+    "doc_type": "Other"
   },
   {
     "serial_no": "107",
@@ -1197,7 +1652,10 @@
     "circular_no": "HO No. HRM-II/37(1)97/VA/42556",
     "date": "14/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FillVigAsst.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FillVigAsst.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "106",
@@ -1205,7 +1663,10 @@
     "circular_no": "HO UO No. HRD/P-IV/1(4)91/S.Regulations/Pt.I/42299",
     "date": "11/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/GazNoteEPFRegu2008.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/GazNoteEPFRegu2008.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Notification"
   },
   {
     "serial_no": "105",
@@ -1213,7 +1674,10 @@
     "circular_no": "HO No. CEPS/NDC/2008/43289",
     "date": "16/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RevisedUploadCEPS.exe"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RevisedUploadCEPS.exe",
+    "division": "IS",
+    "sub_division": "Ndc",
+    "doc_type": "Technical Matter"
   },
   {
     "serial_no": "104",
@@ -1221,7 +1685,10 @@
     "circular_no": "HO No. WSU/25(1)/2009/17143",
     "date": "16/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PLB2009.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PLB2009.pdf",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "Other"
   },
   {
     "serial_no": "103",
@@ -1229,7 +1696,10 @@
     "circular_no": "HO No. Conf.4(1)2008/17045",
     "date": "15/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ReconCBT15092009.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ReconCBT15092009.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Other"
   },
   {
     "serial_no": "102",
@@ -1237,7 +1707,10 @@
     "circular_no": "HO No. HRD/4(1)2009/Misc./Circular/18137",
     "date": "15/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Pay2ndInstArrePensioners.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Pay2ndInstArrePensioners.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "101",
@@ -1245,7 +1718,10 @@
     "circular_no": "HO No. Actuarial/18(1)2008/DBCC/16505",
     "date": "09/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/\u00a0ActEvalu092009.exe"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ ActEvalu092009.exe",
+    "division": "Head Office",
+    "sub_division": "",
+    "doc_type": "Circular"
   },
   {
     "serial_no": "100",
@@ -1253,7 +1729,10 @@
     "circular_no": "HO No. CSD-IV/CPFC/Cir./2494",
     "date": "07/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/GrievRedriveFollow.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/GrievRedriveFollow.pdf",
+    "division": "CSD",
+    "sub_division": "Csd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "99",
@@ -1261,7 +1740,10 @@
     "circular_no": "HO No. LC/4(5)09/Misc./Circular",
     "date": "04/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/StatPendCrtCases.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/StatPendCrtCases.pdf",
+    "division": "Compliance",
+    "sub_division": "Legal",
+    "doc_type": "Court Matter"
   },
   {
     "serial_no": "98",
@@ -1269,7 +1751,10 @@
     "circular_no": "HO No. Conf.6(2)/2009/O&M/15975",
     "date": "03/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ConfLtr04092009.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ConfLtr04092009.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Other"
   },
   {
     "serial_no": "97",
@@ -1277,7 +1762,10 @@
     "circular_no": "HO No. BSC 14(1)2009-10/Bifur/15211",
     "date": "01/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/BifurRegionsAssets.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/BifurRegionsAssets.pdf",
+    "division": "Finance",
+    "sub_division": "Balance Sheet",
+    "doc_type": "Other"
   },
   {
     "serial_no": "96",
@@ -1285,7 +1773,10 @@
     "circular_no": "HO No. Bkg/45(2)A/c No.04 to 02/2009-10",
     "date": "03/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Pay2ndInstallArrear.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Pay2ndInstallArrear.pdf",
+    "division": "Finance",
+    "sub_division": "Banking",
+    "doc_type": "Other"
   },
   {
     "serial_no": "95",
@@ -1293,7 +1784,10 @@
     "circular_no": "HO No. C.IV/7(24)09/HR/NZ/40735",
     "date": "02/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CoverLodgeSAppts.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CoverLodgeSAppts.pdf",
+    "division": "Compliance",
+    "sub_division": "Compliance",
+    "doc_type": "Other"
   },
   {
     "serial_no": "94",
@@ -1301,7 +1795,10 @@
     "circular_no": "HO No. MIS-1(1) AR/2008-09/15833-15893",
     "date": "02/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PrepareAnnualAccts.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PrepareAnnualAccts.pdf",
+    "division": "Compliance",
+    "sub_division": "Mis",
+    "doc_type": "Other"
   },
   {
     "serial_no": "93",
@@ -1309,7 +1806,10 @@
     "circular_no": "HO No. Exams.5(1)/2009/189",
     "date": "01/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/LDCE_EOAO.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/LDCE_EOAO.pdf",
+    "division": "HRM",
+    "sub_division": "Exam",
+    "doc_type": "Exam"
   },
   {
     "serial_no": "92",
@@ -1317,7 +1817,10 @@
     "circular_no": "HO No. C.I/18(Misc.)08/TN/SZ/38527",
     "date": "27/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CovPigmyDepo.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CovPigmyDepo.pdf",
+    "division": "Compliance",
+    "sub_division": "Compliance",
+    "doc_type": "Other"
   },
   {
     "serial_no": "91",
@@ -1325,7 +1828,10 @@
     "circular_no": "HO No. Bkg.45(2)97/SDA/cA/cNo.4/2009-10",
     "date": "27/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PayArrear6thCPCFund.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PayArrear6thCPCFund.pdf",
+    "division": "Finance",
+    "sub_division": "Banking",
+    "doc_type": "Other"
   },
   {
     "serial_no": "90",
@@ -1333,7 +1839,10 @@
     "circular_no": "HO No. WSU/12(1)08-09/PLB",
     "date": "27/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FurnishInfoPLB0809.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FurnishInfoPLB0809.pdf",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "Other"
   },
   {
     "serial_no": "89",
@@ -1341,7 +1850,10 @@
     "circular_no": "HO No. HRM-II/10(4)2001/ACP/14433",
     "date": "26/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ACPSteno.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ACPSteno.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Office Order"
   },
   {
     "serial_no": "88",
@@ -1349,7 +1861,10 @@
     "circular_no": "HO No. HRD/4(1)2009/Misc/Circ./16674",
     "date": "26/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SixthPaySecoInstal.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SixthPaySecoInstal.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "87",
@@ -1357,7 +1872,10 @@
     "circular_no": "HO No. HRM-II/14(7)09/Guide.Clari/EO/AO/14361",
     "date": "26/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PromoSStoAOGuide.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PromoSStoAOGuide.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "86",
@@ -1365,7 +1883,10 @@
     "circular_no": "HO No. HRM-V/12(17)2007/PTI/Vol.III/38230",
     "date": "26/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CashlessMedFac.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CashlessMedFac.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "85",
@@ -1373,7 +1894,10 @@
     "circular_no": "H.S.8(7)/09/Hindi Pakwada/15981",
     "date": "21/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/HindiPakoda.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/HindiPakoda.pdf",
+    "division": "Rajbhasha",
+    "sub_division": "",
+    "doc_type": "Other"
   },
   {
     "serial_no": "84",
@@ -1381,7 +1905,10 @@
     "circular_no": "HO No. HRM-I/G-15(1)2005/37790",
     "date": "25/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTIInfoMPSri.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTIInfoMPSri.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "83",
@@ -1389,7 +1916,10 @@
     "circular_no": "HO No. HRD/1(2) 2008/6th CPC/13844",
     "date": "24/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RepGrieve6thCPC.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RepGrieve6thCPC.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "82",
@@ -1397,7 +1927,10 @@
     "circular_no": "HO No. MIS-3(1) ABP Return/2007-08/13761",
     "date": "24/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ConsolQMIStns.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ConsolQMIStns.pdf",
+    "division": "Compliance",
+    "sub_division": "Mis",
+    "doc_type": "Other"
   },
   {
     "serial_no": "81",
@@ -1405,7 +1938,10 @@
     "circular_no": "HO No. Conf.4(1)2008/13435",
     "date": "19/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ReconCBTEPF19082009.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ReconCBTEPF19082009.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Other"
   },
   {
     "serial_no": "80",
@@ -1413,7 +1949,10 @@
     "circular_no": "HO No. HRM.III/2(2)2005/Misc.Rep./Vol.II/Pt/37223",
     "date": "21/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ClariImpleDOPTOM.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ClariImpleDOPTOM.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "79",
@@ -1421,7 +1960,10 @@
     "circular_no": "HO No. HRM.III/60(1)2007/TBP/37022",
     "date": "21/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ClariTimeBoundPromo.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ClariTimeBoundPromo.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "78",
@@ -1429,7 +1971,10 @@
     "circular_no": "HO No. HRD/1(2)2008/ Imp6thCPC/13024",
     "date": "18/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AnamolyPayCBTEPF.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AnamolyPayCBTEPF.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Office Order"
   },
   {
     "serial_no": "77",
@@ -1437,7 +1982,10 @@
     "circular_no": "HO No. HRM-V/12(2)2004/35849",
     "date": "17/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DeleFAPFMTRetiree.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DeleFAPFMTRetiree.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "76",
@@ -1445,7 +1993,10 @@
     "circular_no": "HO No. Coor./2(27)05/Amend/Scheme/Part/35581",
     "date": "17/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AmendRateDamage.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AmendRateDamage.pdf",
+    "division": "Compliance",
+    "sub_division": "Coordination",
+    "doc_type": "Other"
   },
   {
     "serial_no": "75",
@@ -1453,7 +2004,10 @@
     "circular_no": "HO No. Conf.7(2)/RPFCcConf/ 2009/12564",
     "date": "13/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/MoMRC13082009.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/MoMRC13082009.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Other"
   },
   {
     "serial_no": "74",
@@ -1461,7 +2015,10 @@
     "circular_no": "HO. No. HRD/4(1)2009/Misc/Circular/14876",
     "date": "18/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SBDivas2009.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SBDivas2009.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "73",
@@ -1469,7 +2026,10 @@
     "circular_no": "HO No. Exem/6(20)08/DL/NZ/Vol.I/30327-477",
     "date": "30/07/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CancelExepmt.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CancelExepmt.pdf",
+    "division": "HRM",
+    "sub_division": "Exemption",
+    "doc_type": "Other"
   },
   {
     "serial_no": "72",
@@ -1477,7 +2037,10 @@
     "circular_no": "HO No. C-II/Misc./ 02/06/Exem/Vol.I/5314-5464",
     "date": "27/04/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/GrantExempt2.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/GrantExempt2.pdf",
+    "division": "Compliance",
+    "sub_division": "Exemption",
+    "doc_type": "Other"
   },
   {
     "serial_no": "71",
@@ -1485,7 +2048,10 @@
     "circular_no": "HO No. CSD-IV/CPFC/Cir/35396",
     "date": "13/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CPFCCir.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CPFCCir.pdf",
+    "division": "CSD",
+    "sub_division": "Csd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "70",
@@ -1493,7 +2059,10 @@
     "circular_no": "HO No. WSU/28(1)03/AO/Del/Vol.II/11958",
     "date": "11/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RevisedPenFlow.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RevisedPenFlow.pdf",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "Office Order"
   },
   {
     "serial_no": "69",
@@ -1501,7 +2070,10 @@
     "circular_no": "HO No. Coord./13(1)05/AllotCodeNo./34334",
     "date": "12/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AllotCodeNo.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AllotCodeNo.pdf",
+    "division": "Compliance",
+    "sub_division": "Coordination",
+    "doc_type": "Other"
   },
   {
     "serial_no": "68",
@@ -1509,7 +2081,10 @@
     "circular_no": "HO No. Coord./11(61)2005/Adm.Ins/Cir./Part",
     "date": "10/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/GuideComp.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/GuideComp.pdf",
+    "division": "Compliance",
+    "sub_division": "Coordination",
+    "doc_type": "Other"
   },
   {
     "serial_no": "67",
@@ -1517,7 +2092,10 @@
     "circular_no": "HO No. HRM-V/12(2)2004/32917",
     "date": "06/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DeleFP_RetEE.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DeleFP_RetEE.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "66",
@@ -1525,7 +2103,10 @@
     "circular_no": "HO No. CPFC/Exemp./SZ/2005/Vol.III/11764",
     "date": "07/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/EDLICirc.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/EDLICirc.pdf",
+    "division": "Compliance",
+    "sub_division": "Exemption",
+    "doc_type": "Other"
   },
   {
     "serial_no": "65",
@@ -1533,7 +2114,10 @@
     "circular_no": "HO No. C.IV/Misc./1(4)09/NZ/33130",
     "date": "07/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/NotiSec14.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/NotiSec14.pdf",
+    "division": "Compliance",
+    "sub_division": "Compliance",
+    "doc_type": "Notification"
   },
   {
     "serial_no": "64",
@@ -1541,7 +2125,10 @@
     "circular_no": "HO No. C.IV/15(8)09/Misc./32608",
     "date": "04/08/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CompDrive.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CompDrive.pdf",
+    "division": "Compliance",
+    "sub_division": "Compliance",
+    "doc_type": "Other"
   },
   {
     "serial_no": "63",
@@ -1549,7 +2136,10 @@
     "circular_no": "HO No. CSD-IV/CPFC/Cir./2469",
     "date": "21/07/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PGHS_KiosksDPs.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PGHS_KiosksDPs.pdf",
+    "division": "CSD",
+    "sub_division": "Csd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "62",
@@ -1557,7 +2147,10 @@
     "circular_no": "HO No. CEPS/NDC/2008",
     "date": "16/07/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CEPS_0309.exe"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CEPS_0309.exe",
+    "division": "IS",
+    "sub_division": "Ndc",
+    "doc_type": "Technical Matter"
   },
   {
     "serial_no": "61",
@@ -1565,7 +2158,10 @@
     "circular_no": "No. 13/25/2009/Pt.II/NATRSS/1336",
     "date": "23/07/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/NATRSS_APPSW_Trg.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/NATRSS_APPSW_Trg.pdf",
+    "division": "PDUNASS",
+    "sub_division": "",
+    "doc_type": "Training"
   },
   {
     "serial_no": "60",
@@ -1573,7 +2169,10 @@
     "circular_no": "HO No. HRM-V/20(4)2004/HBA/PolicyFile/26350",
     "date": "16/07/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DelePowerHBA.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DelePowerHBA.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "59",
@@ -1581,7 +2180,10 @@
     "circular_no": "HO No. Conf.4(1)2008/10144",
     "date": "16/07/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ReconCBT.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ReconCBT.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Other"
   },
   {
     "serial_no": "58",
@@ -1589,7 +2191,10 @@
     "circular_no": "HO No. WSU/12(1)/2008-09/PLB/8791",
     "date": "09/07/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AssessPLB0809.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AssessPLB0809.pdf",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "Other"
   },
   {
     "serial_no": "57",
@@ -1597,7 +2202,10 @@
     "circular_no": "HO No. Coord/PQ No. 4353/Def Units",
     "date": "15/07/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PQ_DefaultEstt.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PQ_DefaultEstt.pdf",
+    "division": "Compliance",
+    "sub_division": "Coordination",
+    "doc_type": "Other"
   },
   {
     "serial_no": "56",
@@ -1605,7 +2213,10 @@
     "circular_no": "HO No. R.B.S/08/1944",
     "date": "08/07/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/OL_Formats.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/OL_Formats.pdf",
+    "division": "Rajbhasha",
+    "sub_division": "",
+    "doc_type": "Other"
   },
   {
     "serial_no": "55",
@@ -1613,7 +2224,10 @@
     "circular_no": "HO No. HRM.III/73(1)2009/PQ/22422",
     "date": "07/07/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PQ_S2866.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PQ_S2866.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "54",
@@ -1621,7 +2235,10 @@
     "circular_no": "HO No. CSD-IV/CPFC/Cir./8434",
     "date": "02/07/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PGHS_SC.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PGHS_SC.pdf",
+    "division": "CSD",
+    "sub_division": "Csd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "53",
@@ -1629,7 +2246,10 @@
     "circular_no": "HO No. LC-4/22/07/Sewa Intnl/18512",
     "date": "23/06/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Relax7A.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Relax7A.pdf",
+    "division": "Compliance",
+    "sub_division": "Legal",
+    "doc_type": "Other"
   },
   {
     "serial_no": "52",
@@ -1637,7 +2257,10 @@
     "circular_no": "HO No. Conf. RC/Ge/AR/2007/8026",
     "date": "25/06/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RegionalComm.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RegionalComm.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Other"
   },
   {
     "serial_no": "51",
@@ -1645,7 +2268,10 @@
     "circular_no": "HO No. HRM.III/1(3)2009/DPA/18838",
     "date": "24/09/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RR_DPA.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RR_DPA.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "50",
@@ -1653,7 +2279,10 @@
     "circular_no": "HO No. Bkg/12(1)2007-08/R&P/",
     "date": "17/06/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ConfirmRemitt.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ConfirmRemitt.pdf",
+    "division": "Finance",
+    "sub_division": "Banking",
+    "doc_type": "Other"
   },
   {
     "serial_no": "49",
@@ -1661,7 +2290,10 @@
     "circular_no": "HO No. Bkg/1(3)2007-08/R&P/AC.No. 11/09",
     "date": "17/06/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SubmitRevisedBS.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SubmitRevisedBS.pdf",
+    "division": "Finance",
+    "sub_division": "Banking",
+    "doc_type": "Other"
   },
   {
     "serial_no": "48",
@@ -1669,7 +2301,10 @@
     "circular_no": "HO No. Finance/Misc./2006/15062",
     "date": "17/06/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/StationMoreMRP.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/StationMoreMRP.pdf",
+    "division": "Finance",
+    "sub_division": "",
+    "doc_type": "Other"
   },
   {
     "serial_no": "47",
@@ -1677,7 +2312,10 @@
     "circular_no": "HO No. Bkg/200809/Recon/A/c % & 11/09",
     "date": "11/06/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ReconCA_FinalBS.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ReconCA_FinalBS.pdf",
+    "division": "Finance",
+    "sub_division": "Banking",
+    "doc_type": "Other"
   },
   {
     "serial_no": "46",
@@ -1685,7 +2323,10 @@
     "circular_no": "HO No. WSU/25(1)07/PLB",
     "date": "11/06/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PLBPaid.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PLBPaid.pdf",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "Other"
   },
   {
     "serial_no": "45",
@@ -1693,7 +2334,10 @@
     "circular_no": "HO No. HRM-II/17(01)2009/EO-AAO/STY-LIST-03/2005/5998",
     "date": "11/06/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DraftSL_EOAO_5.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DraftSL_EOAO_5.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Seniority List"
   },
   {
     "serial_no": "44",
@@ -1701,7 +2345,10 @@
     "circular_no": "HO No. HRM-II/17(01)2009/EO-AAO/STY-LIST-03/2005/5997",
     "date": "11/06/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DraftSL_EOAO_4.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DraftSL_EOAO_4.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Seniority List"
   },
   {
     "serial_no": "43",
@@ -1709,7 +2356,10 @@
     "circular_no": "HO No. HRM-II/17(01)2009/EO-AAO/STY-LIST-03/2005/5996",
     "date": "11/06/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DraftSL_EOAO_3.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DraftSL_EOAO_3.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Seniority List"
   },
   {
     "serial_no": "42",
@@ -1717,7 +2367,10 @@
     "circular_no": "HO No. HRM-II/17(01)2009/EO-AAO/STY-LIST-03/2005/5995",
     "date": "11/06/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DraftSL_EOAO_2.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DraftSL_EOAO_2.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Seniority List"
   },
   {
     "serial_no": "41",
@@ -1725,7 +2378,10 @@
     "circular_no": "HO No. HRM-II/17(01)2009/EO-AAO/STY-LIST-03/2005/5994",
     "date": "11/06/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DraftSL_EOAO_1.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DraftSL_EOAO_1.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Seniority List"
   },
   {
     "serial_no": "40",
@@ -1733,7 +2389,10 @@
     "circular_no": "HO No. HRM-II/17(01)2009/EO-AAO/STY-LIST-03/2005/13533-72",
     "date": "10/10/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RevisedSL_AOEO.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RevisedSL_AOEO.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Seniority List"
   },
   {
     "serial_no": "39",
@@ -1741,7 +2400,10 @@
     "circular_no": "HO No. HRM-II/17(01)2009/EO-AAO/STY-LIST-03/2005/13573-78",
     "date": "10/06/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RevisedSL_AOEP902005.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RevisedSL_AOEP902005.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Seniority List"
   },
   {
     "serial_no": "38",
@@ -1749,7 +2411,10 @@
     "circular_no": "HO No. Invest.II/3(2)/133/08-09/ROI/",
     "date": "09/06/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/IntDec2009.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/IntDec2009.pdf",
+    "division": "Finance",
+    "sub_division": "Investment",
+    "doc_type": "Other"
   },
   {
     "serial_no": "37",
@@ -1757,7 +2422,10 @@
     "circular_no": "HO No. HRD/1(12)99/RR/Pt.II/12313",
     "date": "08/06/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PayFixHindiTrans.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PayFixHindiTrans.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "36",
@@ -1765,7 +2433,10 @@
     "circular_no": "HO No. Bkg/2008-09/Recon/A/c No. 5 & 11/09",
     "date": "05/06/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Reconcile_CA.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Reconcile_CA.pdf",
+    "division": "Finance",
+    "sub_division": "Banking",
+    "doc_type": "Other"
   },
   {
     "serial_no": "35",
@@ -1773,7 +2444,10 @@
     "circular_no": "HO No. HRM-V/6(3)2000/Vehicle/12223",
     "date": "05/06/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/VehPosition.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/VehPosition.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "34",
@@ -1781,7 +2455,10 @@
     "circular_no": "HO No. HRM-V/17(1)2006/TA/11343",
     "date": "04/06/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Tpt_Effects.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Tpt_Effects.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "33",
@@ -1789,7 +2466,10 @@
     "circular_no": "HO No. HRM-I/A.10(66)2008/Vol.III/10705",
     "date": "02/06/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CR_Reminder.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CR_Reminder.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "32",
@@ -1797,7 +2477,10 @@
     "circular_no": "HO No. Conf. 7(2)2009/RPFCs Rev.Meet/4474",
     "date": "26/05/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Conf_Letter_Dt._26.05.2009.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Conf_Letter_Dt._26.05.2009.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Other"
   },
   {
     "serial_no": "31",
@@ -1805,7 +2488,10 @@
     "circular_no": "HO No. CEPS/NDC/2008/4257",
     "date": "22/05/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DataEntry-Form5-9-2.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DataEntry-Form5-9-2.pdf",
+    "division": "IS",
+    "sub_division": "Ndc",
+    "doc_type": "Other"
   },
   {
     "serial_no": "30",
@@ -1813,7 +2499,10 @@
     "circular_no": "HO No. HRM-V/52/2/97/SQ/PB/7643-7843",
     "date": "18/05/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/HRM_delegation_of_power_ACC.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/HRM_delegation_of_power_ACC.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "29",
@@ -1821,7 +2510,10 @@
     "circular_no": "HO No. HRM-V/9(46)2005/M.Reimb.Policy/5992",
     "date": "08/05/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/HRM_delegation_of_power.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/HRM_delegation_of_power.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "28",
@@ -1829,7 +2521,10 @@
     "circular_no": "HO No. HRM-I/A.10(66)2008/Vol.III/7587",
     "date": "15/05/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FurnishACR_grading_EO.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FurnishACR_grading_EO.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "27",
@@ -1837,7 +2532,10 @@
     "circular_no": "HO No. Conf.7(2)2009/RPFCsRev.Meet/3521",
     "date": "13/05/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Confletter13052009.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/Confletter13052009.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Other"
   },
   {
     "serial_no": "26",
@@ -1845,7 +2543,10 @@
     "circular_no": "HO No. MIS 1(1)AR/2008-09/3357",
     "date": "13/05/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/MISletter13052009.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/MISletter13052009.pdf",
+    "division": "Compliance",
+    "sub_division": "Mis",
+    "doc_type": "Other"
   },
   {
     "serial_no": "25",
@@ -1853,7 +2554,10 @@
     "circular_no": "HO No. HRM-I/A.10(66)2008/Vol.III/6258",
     "date": "08/05/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FurnishACR.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FurnishACR.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "24",
@@ -1861,7 +2565,10 @@
     "circular_no": "HO No. Coord./11(61)2005/Adm.Ins./Cir./Part/2163",
     "date": "30/04/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/GuideImpComp.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/GuideImpComp.pdf",
+    "division": "Compliance",
+    "sub_division": "Coordination",
+    "doc_type": "Other"
   },
   {
     "serial_no": "23",
@@ -1869,7 +2576,10 @@
     "circular_no": "HO No. C.IV/Genl.Target/09/78718-78968",
     "date": "16/01/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CondBusiFixTar.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/CondBusiFixTar.pdf",
+    "division": "Compliance",
+    "sub_division": "Compliance",
+    "doc_type": "Other"
   },
   {
     "serial_no": "22",
@@ -1877,7 +2587,10 @@
     "circular_no": "HO No. HRM-II/17(01)2009/EOAAO/SL-03/2005/4942",
     "date": "24/04/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FinalDraftSL_EOAAO24042009.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FinalDraftSL_EOAAO24042009.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Seniority List"
   },
   {
     "serial_no": "21",
@@ -1885,7 +2598,10 @@
     "circular_no": "HO No. Conf.7(2)2009/RPFCsRM/2074",
     "date": "24/04/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RC_Conf.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RC_Conf.pdf",
+    "division": "Compliance",
+    "sub_division": "Conference",
+    "doc_type": "Other"
   },
   {
     "serial_no": "20",
@@ -1893,7 +2609,10 @@
     "circular_no": "HO No. HRM-I/S.1(1)2004/4571",
     "date": "24/04/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SeniorityRC2.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SeniorityRC2.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Seniority List"
   },
   {
     "serial_no": "19",
@@ -1901,7 +2620,10 @@
     "circular_no": "WSU/28(1)03/Del/Vol-II/4943",
     "date": "24/04/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/APFC_DCB.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/APFC_DCB.pdf",
+    "division": "Finance",
+    "sub_division": "Wsu",
+    "doc_type": "Office Order"
   },
   {
     "serial_no": "18",
@@ -1909,7 +2631,10 @@
     "circular_no": "HO No. HRM-V/17(1)2006/TA/4186",
     "date": "23/04/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/TPT_PersEffect.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/TPT_PersEffect.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "17",
@@ -1917,7 +2642,10 @@
     "circular_no": "HO No. MIS-3(1) ABP Return/2007-08/1779",
     "date": "23/04/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AddABPProforma.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/AddABPProforma.pdf",
+    "division": "Compliance",
+    "sub_division": "Mis",
+    "doc_type": "Other"
   },
   {
     "serial_no": "16",
@@ -1925,7 +2653,10 @@
     "circular_no": "HO No. HRM I/A-8(1)/2006/3316",
     "date": "17/04/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ReviewDPC_RCI.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ReviewDPC_RCI.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Office Order"
   },
   {
     "serial_no": "15",
@@ -1933,7 +2664,10 @@
     "circular_no": "HO No. Actuarial/18(1)/2008/Pt./2544",
     "date": "16/04/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DataEntryPresRet.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/DataEntryPresRet.pdf",
+    "division": "Pension",
+    "sub_division": "Actuarial",
+    "doc_type": "Other"
   },
   {
     "serial_no": "14",
@@ -1941,7 +2675,10 @@
     "circular_no": "North Zone - No. 8/5/2003/NATRSS/NZ/Pt./4020",
     "date": "15/04/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FillDepuGrB.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/FillDepuGrB.pdf",
+    "division": "PDUNASS",
+    "sub_division": "",
+    "doc_type": "Deputation"
   },
   {
     "serial_no": "13",
@@ -1949,7 +2686,10 @@
     "circular_no": "HO No. CS-3(13)/2008/MF/Vol-II/428",
     "date": "09/04/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ModuFurni.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ModuFurni.pdf",
+    "division": "PFD",
+    "sub_division": "Pfd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "12",
@@ -1957,7 +2697,10 @@
     "circular_no": "HO No. Budget105(36)2008-09/2009-10/Main/111",
     "date": "08/04/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/BE200910.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/BE200910.pdf",
+    "division": "Finance",
+    "sub_division": "Budget",
+    "doc_type": "Other"
   },
   {
     "serial_no": "11",
@@ -1965,7 +2708,10 @@
     "circular_no": "HO No. SC-ST/23(1)05/Fedn/Griev./818",
     "date": "02/04/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PostBasedRoster.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/PostBasedRoster.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "10",
@@ -1973,7 +2719,10 @@
     "circular_no": "HO No. PID/HQ/Return/06/2043",
     "date": "13/04/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ReminCIC_Q.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ReminCIC_Q.pdf",
+    "division": "PID",
+    "sub_division": "Pid",
+    "doc_type": "RTI"
   },
   {
     "serial_no": "9",
@@ -1981,7 +2730,10 @@
     "circular_no": "HO No. Pension/3/SC/2007/108072",
     "date": "25/03/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SchemeCert.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/SchemeCert.pdf",
+    "division": "Pension",
+    "sub_division": "Pension",
+    "doc_type": "Other"
   },
   {
     "serial_no": "8",
@@ -1989,7 +2741,10 @@
     "circular_no": "HO No. HRD/4(1)2009/Misc./Circular/775",
     "date": "13/04/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/GH_Ambed.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/GH_Ambed.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Other"
   },
   {
     "serial_no": "7",
@@ -1997,7 +2752,10 @@
     "circular_no": "HO No. HRM I/D-16(1)/2006/1504",
     "date": "09/04/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RoleResACC.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RoleResACC.pdf",
+    "division": "HRM",
+    "sub_division": "Hrm",
+    "doc_type": "Other"
   },
   {
     "serial_no": "6",
@@ -2005,7 +2763,10 @@
     "circular_no": "HO No. MIS-3(1) ABP Return/2007-08/365",
     "date": "08/04/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ConsABPMIS.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/ConsABPMIS.pdf",
+    "division": "Compliance",
+    "sub_division": "Mis",
+    "doc_type": "Other"
   },
   {
     "serial_no": "5",
@@ -2013,7 +2774,10 @@
     "circular_no": "HO No. HRD/1(1)/2006/XLRI/Pt. III/107757",
     "date": "20/03/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/NewRegJuris.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/NewRegJuris.pdf",
+    "division": "HRM",
+    "sub_division": "Hrd",
+    "doc_type": "Office Order"
   },
   {
     "serial_no": "4",
@@ -2021,7 +2785,10 @@
     "circular_no": "Ho.No.13/51/2008-NATRSS",
     "date": "02/04/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/NATRSS_TRGCLR.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/NATRSS_TRGCLR.pdf",
+    "division": "PDUNASS",
+    "sub_division": "",
+    "doc_type": "Training"
   },
   {
     "serial_no": "3",
@@ -2029,7 +2796,10 @@
     "circular_no": "HO No. CPFC/Exemp./SZ/2005/Vol.I.II/42860",
     "date": "26/03/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/EDLI_let2026032009.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/EDLI_let2026032009.pdf",
+    "division": "Compliance",
+    "sub_division": "Exemption",
+    "doc_type": "Other"
   },
   {
     "serial_no": "2",
@@ -2037,7 +2807,10 @@
     "circular_no": "Ho.No.Invst.1/6/Conf/Accpt.with/46/2006-2007/59569-59719",
     "date": "07/11/2007",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/transfer_of_securities.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/transfer_of_securities.pdf",
+    "division": "Finance",
+    "sub_division": "Investment",
+    "doc_type": "Other"
   },
   {
     "serial_no": "1",
@@ -2045,6 +2818,9 @@
     "circular_no": "HO No. PID/HQ/Return/06/774",
     "date": "01/04/2009",
     "hindi_pdf_link": null,
-    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTIQuestionnaire.pdf"
+    "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/RTIQuestionnaire.pdf",
+    "division": "PID",
+    "sub_division": "Pid",
+    "doc_type": "RTI"
   }
 ]
