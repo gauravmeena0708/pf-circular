@@ -1843,12 +1843,27 @@
                 documentPill(item.english_pdf_link, "EN", "English") +
                 documentPill(item.hindi_pdf_link, "HI", "Hindi");
 
+            if (item.addl_link) {
+                const addlTitle = item.addl_link_title || 'Attachment';
+                docs += `<a class="doc doc-attachment" href="${escapeHtml(item.addl_link)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(addlTitle)}">📎 ${escapeHtml(addlTitle.length > 15 ? addlTitle.slice(0, 13) + '…' : addlTitle)}<span class="doc-arrow" aria-hidden="true">↗</span></a>`;
+            }
+
             const snippet = ocrSnippet(item, currentTerms);
             const titleHtml = highlightText(escapeHtml(item.title || "Untitled circular"), currentTerms);
             const circularHtml = highlightText(escapeHtml(item.circular_no || "—"), currentTerms);
             const matchKind = approximateMatchIds.has(item._id)
                 ? '<span class="match-kind">Approximate title match</span>'
                 : '';
+
+            const tags = [];
+            if (item.doc_type && item.doc_type !== 'Circular' && item.doc_type !== 'Other') {
+                tags.push(`<span class="badge-doctype">${escapeHtml(item.doc_type)}</span>`);
+            }
+            if (item.division && item.division !== 'Head Office') {
+                const sub = item.sub_division ? ` · ${escapeHtml(item.sub_division)}` : '';
+                tags.push(`<span class="badge-division">${escapeHtml(item.division)}${sub}</span>`);
+            }
+            const tagHtml = tags.length ? `<div style="margin:4px 0 2px;">${tags.join('')}</div>` : '';
 
             let subjectExtra = "";
             if (snippet) {
@@ -1866,6 +1881,7 @@
                     <td class="cell-sr" data-label="Sr. No"><span class="mono">${escapeHtml(item.serial_no || "—")}</span></td>
                     <td class="cell-subject" data-label="Title">
                         <p class="subject-title">${titleHtml}</p>
+                        ${tagHtml}
                         ${matchKind}
                         ${subjectExtra}
                     </td>
