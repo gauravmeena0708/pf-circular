@@ -923,7 +923,9 @@
 
         .tag-policy { background: #ecfdf5; color: #047857; }
         .tag-admin { background: #eef2ff; color: #4338ca; }
-        .tag-division { background: #f1f5f9; color: var(--ink-2); }
+        .tag-doctype { background: #fff1f2; color: #be123c; border: 1px solid #fecdd3; }
+        .tag-division { background: #f1f5f9; color: var(--ink-2); font-weight: 600; }
+        .tag-domain { background: #f8fafc; color: var(--muted); border: 1px solid var(--line); }
         .tag-lang-both { background: #fef3c7; color: #92400e; }
         .tag-lang-single { background: #f8fafc; color: var(--muted); border: 1px solid var(--line); }
 
@@ -1083,6 +1085,11 @@
             <!-- Division Dropdown -->
             <select id="divisionFilterSelect" class="filter-select" aria-label="Filter by originating division">
                 <option value="">All Divisions / Wings</option>
+            </select>
+
+            <!-- Document Type Dropdown -->
+            <select id="docTypeFilterSelect" class="filter-select" aria-label="Filter by document type">
+                <option value="">All Document Types</option>
             </select>
         </div>
 

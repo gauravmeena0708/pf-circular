@@ -17,6 +17,7 @@
         activeTier: 'policy',       // 'all' | 'policy' | 'admin'
         selectedFY: '',             // '' or 'YYYY-YYYY'
         selectedDivision: '',       // '' or division name
+        selectedDocType: '',        // '' or document type
         zoomDomain: null,           // for Treemap drilldown
         networkThreshold: 4,        // min link strength
         networkFocus: '',           // focused node ID
@@ -42,6 +43,7 @@
         signalButtons: document.querySelectorAll('.signal-btn'),
         yearSelect: document.getElementById('yearFilterSelect'),
         divisionSelect: document.getElementById('divisionFilterSelect'),
+        docTypeSelect: document.getElementById('docTypeFilterSelect'),
         statVisibleDocs: document.getElementById('statVisibleDocs'),
         statVisibleDomains: document.getElementById('statVisibleDomains'),
         statBilingualPct: document.getElementById('statBilingualPct'),
@@ -148,6 +150,18 @@
             });
         }
 
+        // Document Types
+        if (elements.docTypeSelect) {
+            const dts = Object.keys(state.summary.doc_types || {}).sort((a, b) => (state.summary.doc_types[b] || 0) - (state.summary.doc_types[a] || 0));
+            elements.docTypeSelect.innerHTML = '<option value="">All Document Types</option>';
+            dts.forEach(dt => {
+                const opt = document.createElement('option');
+                opt.value = dt;
+                opt.textContent = `${dt} (${state.summary.doc_types[dt].toLocaleString()})`;
+                elements.docTypeSelect.appendChild(opt);
+            });
+        }
+
         // Network Focus Select
         if (elements.networkFocusSelect) {
             const nodes = state.network?.nodes || [];
@@ -191,6 +205,15 @@
         if (elements.divisionSelect) {
             elements.divisionSelect.addEventListener('change', (e) => {
                 state.selectedDivision = e.target.value;
+                updateMetrics();
+                renderActiveView();
+            });
+        }
+
+        // Document Type Select
+        if (elements.docTypeSelect) {
+            elements.docTypeSelect.addEventListener('change', (e) => {
+                state.selectedDocType = e.target.value;
                 updateMetrics();
                 renderActiveView();
             });
@@ -295,6 +318,10 @@
 
         if (selectedDivision) {
             total = summary.divisions?.[selectedDivision] || total;
+        }
+
+        if (state.selectedDocType) {
+            total = summary.doc_types?.[state.selectedDocType] || total;
         }
 
         elements.statVisibleDocs.textContent = total.toLocaleString('en-IN');
@@ -952,12 +979,13 @@
             matchingRows = rows.filter(r => idSet.has(r[0]));
         } else {
             matchingRows = rows.filter(r => {
-                // r = [id, domain, subtopic, conf, fy, secondaries, tier, division]
+                // r = [id, domain, subtopic, conf, fy, secondaries, tier, division, sub_division, doc_type]
                 if (domain && r[1] !== domain) return false;
                 if (subtopic && r[2] !== subtopic) return false;
                 if (division && r[7] !== division) return false;
                 if (fy && r[4] !== fy) return false;
                 if (state.activeTier !== 'all' && r[6] !== state.activeTier) return false;
+                if (state.selectedDocType && r[9] !== state.selectedDocType) return false;
                 return true;
             });
         }
@@ -1004,7 +1032,7 @@
             const doc = state.catalog.documents[r[0]];
             if (!doc) return;
 
-            // doc: [serial_no, title, circular_no, date, hindi_pdf_link, english_pdf_link, year, ocr_source]
+            // doc: [serial_no, title, circular_no, date, hindi_pdf_link, english_pdf_link, year, ocr_source, division, sub_division, doc_type, addl_link, addl_link_title]
             const title = doc[1] || 'Untitled Circular';
             const cno = doc[2] || '—';
             const date = doc[3] || '—';
@@ -1016,8 +1044,12 @@
             const filename = primaryLink ? primaryLink.split('/').pop().split('?')[0] : '';
 
             const tier = r[6] || 'policy';
-            const division = r[7] || 'Head Office';
+            const division = r[7] || (doc[8] || 'Head Office');
+            const subDivision = r[8] || (doc[9] || '');
+            const docType = r[9] || (doc[10] || 'Circular');
             const domainName = state.taxonomy[r[1]]?.name || r[1];
+            const addlLink = doc[11] || null;
+            const addlTitle = doc[12] || 'Attachment';
 
             const card = document.createElement('article');
             card.className = 'circular-card';
@@ -1029,8 +1061,9 @@
                 <h4 class="card-title">${escapeHtml(title)}</h4>
                 <div class="card-tags">
                     <span class="tag-pill ${tier === 'policy' ? 'tag-policy' : 'tag-admin'}">${escapeHtml(tier)}</span>
-                    <span class="tag-pill tag-division">${escapeHtml(domainName)}</span>
-                    <span class="tag-pill tag-division">${escapeHtml(division)}</span>
+                    <span class="tag-pill tag-doctype">${escapeHtml(docType)}</span>
+                    <span class="tag-pill tag-division">${escapeHtml(division)}${subDivision ? ' · ' + escapeHtml(subDivision) : ''}</span>
+                    <span class="tag-pill tag-domain">${escapeHtml(domainName)}</span>
                     ${hindiLink && englishLink ? '<span class="tag-pill tag-lang-both">EN + HI</span>' : (englishLink ? '<span class="tag-pill tag-lang-single">EN</span>' : '<span class="tag-pill tag-lang-single">HI</span>')}
                 </div>
                 <div class="card-actions">
@@ -1041,6 +1074,7 @@
                     ` : ''}
                     ${englishLink ? `<a href="${escapeHtml(englishLink)}" target="_blank" rel="noopener noreferrer" class="card-pdf-link">PDF (EN) ↗</a>` : ''}
                     ${hindiLink ? `<a href="${escapeHtml(hindiLink)}" target="_blank" rel="noopener noreferrer" class="card-pdf-link">PDF (HI) ↗</a>` : ''}
+                    ${addlLink ? `<a href="${escapeHtml(addlLink)}" target="_blank" rel="noopener noreferrer" class="card-pdf-link" title="${escapeHtml(addlTitle)}">📎 ${escapeHtml(addlTitle.length > 22 ? addlTitle.slice(0, 20) + '…' : addlTitle)}</a>` : ''}
                 </div>
             `;
             list.appendChild(card);

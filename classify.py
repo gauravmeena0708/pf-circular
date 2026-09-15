@@ -466,12 +466,21 @@ def extract_division(circular_no, title):
     return "Head Office"
 
 
-def determine_tier(domain, subtopic, title):
+def determine_tier(domain, subtopic, title, doc_type=None):
     """
     Tag every circular as:
     - 'policy': Public policy, welfare, schemes, member/employer rules
     - 'admin': Internal personnel, staff exams, cadre, transfers, routine bureaucracy
     """
+    if doc_type:
+        dt_upper = doc_type.upper()
+        if dt_upper in ('SENIORITY LIST', 'EXAM', 'DEPUTATION', 'SUPERANNUATION', 'APPOINTMENT', 'VRS', 'PROMOTION'):
+            return "admin"
+        if dt_upper in ('OFFICE ORDER', 'OFFICE MEMORANDUM') and domain in ('hr_personnel_cadre', 'admin_procurement_facilities', 'training_research'):
+            return "admin"
+        if dt_upper in ('NOTIFICATION', 'JUDGEMENT'):
+            return "policy"
+
     title_norm = (title or "").lower()
     
     # Domains that are predominantly public policy
@@ -966,11 +975,14 @@ def run_classification():
     division_counts = defaultdict(int)
     fy_division_counts = defaultdict(lambda: defaultdict(int))
     division_domain_counts = defaultdict(lambda: defaultdict(int))
+    doc_type_counts = defaultdict(int)
+    fy_doc_type_counts = defaultdict(lambda: defaultdict(int))
+    sub_division_counts = defaultdict(int)
 
     review_list = []
 
     for doc_id, doc in enumerate(documents):
-        # [serial_no, title, circular_no, date, hindi_pdf_link, english_pdf_link, year, ocr_source]
+        # [serial_no, title, circular_no, date, hindi_pdf_link, english_pdf_link, year, ocr_source, division, sub_division, doc_type, ...]
         title = doc[1] or ''
         circular_no = doc[2] or ''
         date = doc[3] or ''
@@ -978,6 +990,11 @@ def run_classification():
         english_link = doc[5]
         fy = doc[6] or 'Unknown'
         ocr_source = doc[7]
+
+        # Extract enriched official metadata if present
+        doc_division = doc[8] if len(doc) > 8 and doc[8] else None
+        doc_subdivision = doc[9] if len(doc) > 9 and doc[9] else ''
+        doc_type = doc[10] if len(doc) > 10 and doc[10] else 'Circular'
 
         # Determine OCR link and text
         primary_link = english_link if ocr_source == 1 else (hindi_link if ocr_source == 2 else (english_link or hindi_link))
@@ -1006,10 +1023,11 @@ def run_classification():
             )
 
         conf_code = {"high": 3, "medium": 2, "low": 1, "none": 0, "override": 9}.get(confidence, 1)
-        tier = determine_tier(domain, subtopic, title)
-        division = extract_division(circular_no, title)
+        tier = determine_tier(domain, subtopic, title, doc_type)
+        division = doc_division or extract_division(circular_no, title)
+        sub_division = doc_subdivision
 
-        assignments.append([doc_id, domain, subtopic, conf_code, fy, secondaries, tier, division])
+        assignments.append([doc_id, domain, subtopic, conf_code, fy, secondaries, tier, division, sub_division, doc_type])
 
         domain_counts[domain] += 1
         subtopic_counts[domain][subtopic] += 1
@@ -1023,7 +1041,10 @@ def run_classification():
         division_counts[division] += 1
         fy_division_counts[fy][division] += 1
         division_domain_counts[division][domain] += 1
-
+        doc_type_counts[doc_type] += 1
+        fy_doc_type_counts[fy][doc_type] += 1
+        if sub_division:
+            sub_division_counts[sub_division] += 1
         if hindi_link and english_link:
             language = "both"
         elif english_link:
@@ -1095,7 +1116,7 @@ def run_classification():
         json.dump({
             "version": 3,
             "total_documents": len(assignments),
-            "columns": ["id", "domain", "subtopic", "conf", "fy", "secondary_domains", "tier", "division"],
+            "columns": ["id", "domain", "subtopic", "conf", "fy", "secondary_domains", "tier", "division", "sub_division", "doc_type"],
             "rows": assignments
         }, f, ensure_ascii=False, separators=(',', ':'))
 
@@ -1109,6 +1130,9 @@ def run_classification():
         "divisions": dict(division_counts),
         "fy_divisions": {fy: dict(fy_division_counts[fy]) for fy in all_fys},
         "division_domains": {div: dict(division_domain_counts[div]) for div in division_counts},
+        "doc_types": dict(doc_type_counts),
+        "fy_doc_types": {fy: dict(fy_doc_type_counts[fy]) for fy in all_fys},
+        "sub_divisions": dict(sub_division_counts),
         "domains": {
             d_id: {
                 "name": TAXONOMY[d_id]["name"],
