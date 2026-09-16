@@ -155,9 +155,15 @@
 
         .search-controls {
             display: grid;
-            grid-template-columns: minmax(220px, 2fr) auto minmax(150px, 1fr) minmax(150px, 1fr);
+            grid-template-columns: minmax(220px, 2fr) auto minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr) minmax(150px, 1fr);
             gap: 12px;
             align-items: end;
+        }
+
+        @media (max-width: 1024px) {
+            .search-controls {
+                grid-template-columns: 1fr 1fr;
+            }
         }
 
         .search-wrap {
@@ -495,6 +501,12 @@
             background: #eff6ff !important;
             color: #2563eb !important;
             border-color: #bfdbfe !important;
+        }
+
+        .doc-broken {
+            background: #fff7ed !important;
+            color: #c2410c !important;
+            border-color: #fed7aa !important;
         }
 
         .docs {
@@ -1324,6 +1336,18 @@
                         <option value="bilingual">Both available</option>
                     </select>
                 </div>
+                <div class="field">
+                    <label for="divisionFilter">Division</label>
+                    <select id="divisionFilter" class="filter-select">
+                        <option value="">All divisions</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="docTypeFilter">Document type</label>
+                    <select id="docTypeFilter" class="filter-select">
+                        <option value="">All types</option>
+                    </select>
+                </div>
             </div>
             <p class="search-hint">
                 all words required<span class="sep">·</span>
@@ -1497,6 +1521,8 @@
         const paginationControlsContainer = document.getElementById('paginationControls');
         const yearFilter = document.getElementById('yearFilter');
         const langFilter = document.getElementById('langFilter');
+        const divisionFilter = document.getElementById('divisionFilter');
+        const docTypeFilter = document.getElementById('docTypeFilter');
 
         let sortColumn = 'relevance';
         let sortAscending = false;
@@ -1516,6 +1542,7 @@
             return 'sortable ' + (sortAscending ? 'asc' : 'desc');
         }
 
+        let brokenLinkUrls = new Set();
         let allCircularData = [];
         let allIndexData = {};
         let textMatched = [];
@@ -1748,6 +1775,14 @@
                 availableYears = searchManifest.years || [];
                 allCircularData = (catalog.documents || []).map(circularFromCatalogRow);
 
+                fetch('data/search/broken-links.json')
+                    .then(response => response.ok ? response.json() : [])
+                    .then(list => {
+                        brokenLinkUrls = new Set(list);
+                        if (brokenLinkUrls.size && currentFilteredData.length) displayResultsPage();
+                    })
+                    .catch(() => { /* file may not exist yet; badges just stay off */ });
+
                 const urlParams = new URLSearchParams(window.location.search);
                 const queryFromUrl = urlParams.get('query');
                 let targetFy = urlParams.get('fy');
@@ -1793,9 +1828,13 @@
 
         function populateFilters() {
             const years = new Set();
+            const divisions = new Set();
+            const docTypes = new Set();
             allCircularData.forEach(item => {
                 const fy = fyFromUrl(item);
                 if (fy) years.add(fy);
+                if (item.division) divisions.add(item.division);
+                if (item.doc_type) docTypes.add(item.doc_type);
             });
             [...years].sort().reverse().forEach(year => {
                 const option = document.createElement('option');
@@ -1803,20 +1842,37 @@
                 option.textContent = year === 'Unknown' ? 'Old Circulars (Pre-2009)' : year;
                 yearFilter.appendChild(option);
             });
+            [...divisions].sort((a, b) => a.localeCompare(b)).forEach(division => {
+                const option = document.createElement('option');
+                option.value = division;
+                option.textContent = division;
+                divisionFilter.appendChild(option);
+            });
+            [...docTypes].sort((a, b) => a.localeCompare(b)).forEach(docType => {
+                const option = document.createElement('option');
+                option.value = docType;
+                option.textContent = docType;
+                docTypeFilter.appendChild(option);
+            });
         }
 
         function hasActiveFilters() {
-            return searchInput.value.trim() !== '' || yearFilter.value !== '' || langFilter.value !== '';
+            return searchInput.value.trim() !== '' || yearFilter.value !== '' || langFilter.value !== ''
+                || divisionFilter.value !== '' || docTypeFilter.value !== '';
         }
 
         function applyFilters() {
             const fy = yearFilter.value;
             const lang = langFilter.value;
+            const division = divisionFilter.value;
+            const docType = docTypeFilter.value;
             currentFilteredData = textMatched.filter(item => {
                 if (fy && fyFromUrl(item) !== fy) return false;
                 if (lang === 'english' && !item.english_pdf_link) return false;
                 if (lang === 'hindi' && !item.hindi_pdf_link) return false;
                 if (lang === 'bilingual' && !(item.english_pdf_link && item.hindi_pdf_link)) return false;
+                if (division && item.division !== division) return false;
+                if (docType && item.doc_type !== docType) return false;
                 return true;
             });
             filteredApproximateCount = currentFilteredData.filter(item => approximateMatchIds.has(item._id)).length;
@@ -1863,7 +1919,13 @@
 
         function documentPill(url, code, label) {
             if (!url) return "";
-            return `<a class="doc" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" title="Official ${escapeHtml(label)} PDF (external epfindia/epfo link - may be intermittently unavailable)">${code}<span class="doc-arrow" aria-hidden="true">↗</span></a>`;
+            const isBroken = brokenLinkUrls.has(url);
+            const cls = isBroken ? 'doc doc-broken' : 'doc';
+            const title = isBroken
+                ? `Official ${label} PDF — a recent automated check found this link unreachable. Try the Reproduced text button, or search epfindia.gov.in directly.`
+                : `Official ${label} PDF (external epfindia/epfo link - may be intermittently unavailable)`;
+            const warn = isBroken ? ' ⚠' : '';
+            return `<a class="${cls}" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(title)}">${escapeHtml(code)}${warn}<span class="doc-arrow" aria-hidden="true">↗</span></a>`;
         }
 
         function renderRow(item) {
@@ -2241,6 +2303,8 @@
         });
         yearFilter.addEventListener('change', applyFilters);
         langFilter.addEventListener('change', applyFilters);
+        divisionFilter.addEventListener('change', applyFilters);
+        docTypeFilter.addEventListener('change', applyFilters);
         window.addEventListener('popstate', () => {
             const urlParams = new URLSearchParams(window.location.search);
             const query = urlParams.get('query');
