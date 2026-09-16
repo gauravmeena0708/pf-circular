@@ -497,6 +497,12 @@
             border-color: #bfdbfe !important;
         }
 
+        .doc-broken {
+            background: #fff7ed !important;
+            color: #c2410c !important;
+            border-color: #fed7aa !important;
+        }
+
         .docs {
             display: flex;
             flex-wrap: wrap;
@@ -1530,6 +1536,7 @@
             return 'sortable ' + (sortAscending ? 'asc' : 'desc');
         }
 
+        let brokenLinkUrls = new Set();
         let allCircularData = [];
         let allIndexData = {};
         let textMatched = [];
@@ -1762,6 +1769,11 @@
                 availableYears = searchManifest.years || [];
                 allCircularData = (catalog.documents || []).map(circularFromCatalogRow);
 
+                fetch('data/search/broken-links.json')
+                    .then(response => response.ok ? response.json() : [])
+                    .then(list => { brokenLinkUrls = new Set(list); })
+                    .catch(() => { /* file may not exist yet; badges just stay off */ });
+
                 const urlParams = new URLSearchParams(window.location.search);
                 const queryFromUrl = urlParams.get('query');
                 let targetFy = urlParams.get('fy');
@@ -1898,7 +1910,13 @@
 
         function documentPill(url, code, label) {
             if (!url) return "";
-            return `<a class="doc" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" title="Official ${escapeHtml(label)} PDF (external epfindia/epfo link - may be intermittently unavailable)">${code}<span class="doc-arrow" aria-hidden="true">↗</span></a>`;
+            const isBroken = brokenLinkUrls.has(url);
+            const cls = isBroken ? 'doc doc-broken' : 'doc';
+            const title = isBroken
+                ? `Official ${label} PDF — a recent automated check found this link unreachable. Try the Reproduced text button, or search epfindia.gov.in directly.`
+                : `Official ${label} PDF (external epfindia/epfo link - may be intermittently unavailable)`;
+            const warn = isBroken ? ' ⚠' : '';
+            return `<a class="${cls}" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" title="${escapeHtml(title)}">${escapeHtml(code)}${warn}<span class="doc-arrow" aria-hidden="true">↗</span></a>`;
         }
 
         function renderRow(item) {
