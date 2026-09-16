@@ -4,9 +4,13 @@ import re
 import time
 import unicodedata
 from collections import defaultdict
-from bs4 import BeautifulSoup as bs, NavigableString
-import requests
-from urllib.parse import urljoin
+SCRAPE_DEPENDENCIES_AVAILABLE = True
+try:
+    from bs4 import BeautifulSoup as bs, NavigableString
+    import requests
+    from urllib.parse import urljoin
+except ImportError as e:
+    SCRAPE_DEPENDENCIES_AVAILABLE = False
 import json
 OCR_DEPENDENCIES_AVAILABLE = True
 try:
@@ -480,12 +484,19 @@ def build_static_search_index():
                 english_link,
                 year,
                 ocr_source,
+                circular.get('division') or 'Head Office',
+                circular.get('sub_division') or '',
+                circular.get('doc_type') or 'Circular',
+                circular.get('addl_link') or None,
+                circular.get('addl_link_title') or None,
             ])
 
             searchable_parts = [
                 circular.get('title'),
                 circular.get('circular_no'),
                 circular.get('date'),
+                circular.get('division'),
+                circular.get('doc_type'),
                 ocr_content,
             ]
             document_tokens = set()

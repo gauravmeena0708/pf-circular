@@ -333,6 +333,31 @@
             font-weight: 500;
         }
 
+        .combined-download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            border: 1px solid var(--accent);
+            border-radius: 7px;
+            background: #fff;
+            color: var(--accent);
+            font: 600 12.5px/1 var(--sans);
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 130ms ease;
+        }
+
+        .combined-download-btn:hover {
+            background: var(--accent);
+            color: #ffffff;
+        }
+
+        .combined-download-btn:disabled {
+            opacity: 0.6;
+            cursor: wait;
+        }
+
         .table-card {
             border: 1px solid var(--line);
             border-radius: 10px;
@@ -1314,6 +1339,14 @@
             <p class="trust-note">Document links open the original PDFs on <strong>epfindia.gov.in</strong> — always verify against the official source. Use the <strong>Reproduced</strong> button to view archived circular text.</p>
             <div class="results-head">
                 <p class="results-count" id="resultsCount" role="status" aria-live="polite"></p>
+                <button type="button" id="downloadCombinedBtn" class="combined-download-btn" style="display:none;" title="Download the reproduced text of every circular in the current results as one file">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span id="downloadCombinedBtnText">Download combined text</span>
+                </button>
             </div>
 
             <div class="table-card" id="resultsContainer">
@@ -1459,6 +1492,8 @@
         const searchButton = document.getElementById('searchButton');
         const resultsContainer = document.getElementById('resultsContainer');
         const resultsCount = document.getElementById('resultsCount');
+        const downloadCombinedBtn = document.getElementById('downloadCombinedBtn');
+        const downloadCombinedBtnText = document.getElementById('downloadCombinedBtnText');
         const paginationControlsContainer = document.getElementById('paginationControls');
         const yearFilter = document.getElementById('yearFilter');
         const langFilter = document.getElementById('langFilter');
@@ -1906,7 +1941,14 @@
                         <p>${filtering ? 'Try a broader term, a different year, or clear the language filter.' : 'The dataset could not be loaded.'}</p>
                     </div>`;
                 resultsCount.innerHTML = filtering ? 'Found <b>0</b> circulars.' : '';
+                if (downloadCombinedBtn) downloadCombinedBtn.style.display = 'none';
                 return;
+            }
+
+            if (downloadCombinedBtn) {
+                downloadCombinedBtn.style.display = 'inline-flex';
+                downloadCombinedBtnText.textContent =
+                    `Download combined text (${currentFilteredData.length.toLocaleString("en-IN")})`;
             }
 
             const rows = paginatedItems.map(renderRow).join("");
@@ -2542,6 +2584,88 @@
                 a.click();
                 document.body.removeChild(a);
                 URL.revokeObjectURL(downloadUrl);
+            });
+        }
+
+        if (downloadCombinedBtn) {
+            downloadCombinedBtn.addEventListener('click', async () => {
+                const items = currentFilteredData;
+                if (!items.length) return;
+
+                if (!hasActiveFilters() && items.length > 500) {
+                    const proceed = confirm(
+                        `You're about to combine the reproduced text of all ${items.length.toLocaleString("en-IN")} circulars in the dataset. ` +
+                        `This will fetch every year's index and may take a while. Continue?`
+                    );
+                    if (!proceed) return;
+                }
+
+                const originalLabel = downloadCombinedBtnText.textContent;
+                downloadCombinedBtn.disabled = true;
+                downloadCombinedBtnText.textContent = 'Preparing…';
+
+                try {
+                    const yearsNeeded = new Set();
+                    items.forEach(item => {
+                        if (item._ocr_link) yearsNeeded.add(fyFromUrl(item));
+                    });
+                    await Promise.all([...yearsNeeded].filter(Boolean).map(loadYearOcr));
+
+                    const sections = items.map((item, index) => {
+                        const ocrText = item._ocr_link && allIndexData[item._ocr_link]
+                            ? (allIndexData[item._ocr_link].ocr_content || '').trim()
+                            : '';
+                        const body = ocrText
+                            ? ocrText
+                            : '[Reproduced text not available for this circular. See the official PDF link below.]';
+
+                        return [
+                            `----------------------------------------------------------------------`,
+                            `[${index + 1}/${items.length}]`,
+                            `Title:          ${item.title || 'Untitled'}`,
+                            `Circular No:    ${item.circular_no || '—'}`,
+                            `Date of Issue:  ${item.date ? displayDate(item.date) : '—'}`,
+                            `Financial Year: ${fyFromUrl(item) || '—'}`,
+                            `Official PDF:   ${item.english_pdf_link || item.hindi_pdf_link || '—'}`,
+                            `----------------------------------------------------------------------`,
+                            '',
+                            body,
+                            '',
+                        ].join('\n');
+                    });
+
+                    const queryLabel = currentQuery ? currentQuery.trim() : 'all-circulars';
+                    const safeLabel = queryLabel.replace(/[/\\?%*:|"<>]/g, '_').slice(0, 60);
+                    const filename = `EPFO_Circulars_Combined_${safeLabel}_${items.length}.txt`;
+
+                    const header = [
+                        "=======================================================================",
+                        "EMPLOYEES' PROVIDENT FUND ORGANISATION - COMBINED REPRODUCED CIRCULARS",
+                        "=======================================================================",
+                        `Search query:   ${currentQuery || '(none)'}`,
+                        `Circulars:      ${items.length}`,
+                        `Generated:      ${new Date().toISOString()}`,
+                        "Disclaimer:     Automated OCR reproduction for reference only.",
+                        "                Official and updated details: https://www.epfo.gov.in",
+                        "=======================================================================\n\n",
+                    ].join('\n');
+
+                    const blob = new Blob([header + sections.join('\n')], { type: 'text/plain;charset=utf-8' });
+                    const downloadUrl = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = downloadUrl;
+                    a.download = filename;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(downloadUrl);
+                } catch (error) {
+                    console.error('Unable to build combined text export:', error);
+                    alert('Could not prepare the combined text file. Please try again.');
+                } finally {
+                    downloadCombinedBtn.disabled = false;
+                    downloadCombinedBtnText.textContent = originalLabel;
+                }
             });
         }
 
