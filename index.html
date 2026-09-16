@@ -1324,6 +1324,18 @@
                         <option value="bilingual">Both available</option>
                     </select>
                 </div>
+                <div class="field">
+                    <label for="divisionFilter">Division</label>
+                    <select id="divisionFilter" class="filter-select">
+                        <option value="">All divisions</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="docTypeFilter">Document type</label>
+                    <select id="docTypeFilter" class="filter-select">
+                        <option value="">All types</option>
+                    </select>
+                </div>
             </div>
             <p class="search-hint">
                 all words required<span class="sep">·</span>
@@ -1497,6 +1509,8 @@
         const paginationControlsContainer = document.getElementById('paginationControls');
         const yearFilter = document.getElementById('yearFilter');
         const langFilter = document.getElementById('langFilter');
+        const divisionFilter = document.getElementById('divisionFilter');
+        const docTypeFilter = document.getElementById('docTypeFilter');
 
         let sortColumn = 'relevance';
         let sortAscending = false;
@@ -1793,9 +1807,13 @@
 
         function populateFilters() {
             const years = new Set();
+            const divisions = new Set();
+            const docTypes = new Set();
             allCircularData.forEach(item => {
                 const fy = fyFromUrl(item);
                 if (fy) years.add(fy);
+                if (item.division) divisions.add(item.division);
+                if (item.doc_type) docTypes.add(item.doc_type);
             });
             [...years].sort().reverse().forEach(year => {
                 const option = document.createElement('option');
@@ -1803,20 +1821,37 @@
                 option.textContent = year === 'Unknown' ? 'Old Circulars (Pre-2009)' : year;
                 yearFilter.appendChild(option);
             });
+            [...divisions].sort((a, b) => a.localeCompare(b)).forEach(division => {
+                const option = document.createElement('option');
+                option.value = division;
+                option.textContent = division;
+                divisionFilter.appendChild(option);
+            });
+            [...docTypes].sort((a, b) => a.localeCompare(b)).forEach(docType => {
+                const option = document.createElement('option');
+                option.value = docType;
+                option.textContent = docType;
+                docTypeFilter.appendChild(option);
+            });
         }
 
         function hasActiveFilters() {
-            return searchInput.value.trim() !== '' || yearFilter.value !== '' || langFilter.value !== '';
+            return searchInput.value.trim() !== '' || yearFilter.value !== '' || langFilter.value !== ''
+                || divisionFilter.value !== '' || docTypeFilter.value !== '';
         }
 
         function applyFilters() {
             const fy = yearFilter.value;
             const lang = langFilter.value;
+            const division = divisionFilter.value;
+            const docType = docTypeFilter.value;
             currentFilteredData = textMatched.filter(item => {
                 if (fy && fyFromUrl(item) !== fy) return false;
                 if (lang === 'english' && !item.english_pdf_link) return false;
                 if (lang === 'hindi' && !item.hindi_pdf_link) return false;
                 if (lang === 'bilingual' && !(item.english_pdf_link && item.hindi_pdf_link)) return false;
+                if (division && item.division !== division) return false;
+                if (docType && item.doc_type !== docType) return false;
                 return true;
             });
             filteredApproximateCount = currentFilteredData.filter(item => approximateMatchIds.has(item._id)).length;
@@ -2241,6 +2276,8 @@
         });
         yearFilter.addEventListener('change', applyFilters);
         langFilter.addEventListener('change', applyFilters);
+        divisionFilter.addEventListener('change', applyFilters);
+        docTypeFilter.addEventListener('change', applyFilters);
         window.addEventListener('popstate', () => {
             const urlParams = new URLSearchParams(window.location.search);
             const query = urlParams.get('query');
