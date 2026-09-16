@@ -27,6 +27,32 @@ class TestCircularDedupeKey(unittest.TestCase):
         c = {"circular_no": "", "date": "01/01/2020", "title": "A different notice"}
         self.assertNotEqual(circular_dedupe_key(a), circular_dedupe_key(c))
 
+    def test_same_circular_no_and_date_but_different_pdf_are_distinct(self):
+        a = {
+            "circular_no": "HO No. EPFO/WELFUND/FLOOD/UKD/2013",
+            "date": "08/08/2013",
+            "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2013-2014/WELFARE_UKD_NATRSS.pdf",
+        }
+        b = {
+            "circular_no": "HO No. EPFO/WELFUND/FLOOD/UKD/2013",
+            "date": "08/08/2013",
+            "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2013-2014/WELFARE_UKD_UP.pdf",
+        }
+        self.assertNotEqual(circular_dedupe_key(a), circular_dedupe_key(b))
+
+    def test_same_circular_no_date_and_pdf_basename_are_duplicates_even_in_different_folders(self):
+        a = {
+            "circular_no": "Ho.No.13/51/2008-NATRSS",
+            "date": "02/04/2009",
+            "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/Y2009-2010/NATRSS_TRGCLR.pdf",
+        }
+        b = {
+            "circular_no": "Ho.No.13/51/2008-NATRSS",
+            "date": "02/04/2009",
+            "english_pdf_link": "https://www.epfindia.gov.in/site_docs/PDFs/Circulars/YOld Circulars/NATRSS_TRGCLR.pdf",
+        }
+        self.assertEqual(circular_dedupe_key(a), circular_dedupe_key(b))
+
 
 class TestLinkHealth(unittest.TestCase):
     def test_404_and_410_are_broken(self):

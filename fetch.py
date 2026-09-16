@@ -34,7 +34,7 @@ if OCR_DEPENDENCIES_AVAILABLE and os.name == 'nt' and os.path.exists(WINDOWS_TES
 CIRCULAR_DATA_FILE = "circular-data.json" # Not used directly anymore for output
 INDEX_DATA_FILE = "index-data.json" # Not used directly anymore for output
 MAX_URLS_TO_INDEX_PER_RUN = 50
-SEARCH_INDEX_VERSION = 1
+SEARCH_INDEX_VERSION = 2
 
 LINK_HEALTH_FILE = os.path.join('data', 'link-health.json')
 BROKEN_LINKS_FILE = os.path.join('data', 'search', 'broken-links.json')
@@ -438,17 +438,23 @@ def update_pdf_index(max_urls=50):
 
 def circular_dedupe_key(circular):
     """
-    Returns a stable identity key for a circular so the same document
+    Returns a stable identity key for a circular so the same underlying PDF
     scraped into two year buckets (e.g. a dated financial year and the
-    'Old Circulars' fallback bucket, which the EPFO site both return for
-    circulars near the cutoff) is only indexed once.
+    'Old Circulars' fallback bucket) is only indexed once. Includes the PDF
+    basename because EPFO issues batches of genuinely distinct circulars
+    sharing one file number and date (e.g. one flood-relief circular number
+    sent as 9 different zonal-office PDFs on the same day) — (circular_no,
+    date) alone is not a safe identity key; only an identical file should
+    collapse two rows.
     """
     circular_no = re.sub(r'\s+', ' ', (circular.get('circular_no') or '').strip().lower())
     date = (circular.get('date') or '').strip()
+    url = circular.get('english_pdf_link') or circular.get('hindi_pdf_link') or ''
+    basename = url.rsplit('/', 1)[-1].lower() if url else ''
     if circular_no:
-        return (circular_no, date)
+        return (circular_no, date, basename)
     title = re.sub(r'\s+', ' ', (circular.get('title') or '').strip().lower())
-    return (title, date)
+    return (title, date, basename)
 
 
 def classify_link_status(http_status):
@@ -541,7 +547,8 @@ def check_dead_links(max_links=MAX_LINKS_TO_CHECK_PER_RUN):
             print(f"  Checked {checked_count}/{len(batch)} links...")
         time.sleep(0.2)
 
-    save_json_file(health, LINK_HEALTH_FILE)
+    health = {url: record for url, record in health.items() if url in seen}
+    save_compact_json_file(health, LINK_HEALTH_FILE)
 
     broken = sorted(url for url, record in health.items() if record.get('status') == 'broken')
     os.makedirs(os.path.join('data', 'search'), exist_ok=True)
@@ -628,8 +635,8 @@ def build_static_search_index():
                 circular.get('title'),
                 circular.get('circular_no'),
                 circular.get('date'),
-                circular.get('division'),
-                circular.get('doc_type'),
+                circular.get('division') or 'Head Office',
+                circular.get('doc_type') or 'Circular',
                 ocr_content,
             ]
             document_tokens = set()

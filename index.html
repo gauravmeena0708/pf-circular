@@ -1771,7 +1771,10 @@
 
                 fetch('data/search/broken-links.json')
                     .then(response => response.ok ? response.json() : [])
-                    .then(list => { brokenLinkUrls = new Set(list); })
+                    .then(list => {
+                        brokenLinkUrls = new Set(list);
+                        if (brokenLinkUrls.size && currentFilteredData.length) displayResultsPage();
+                    })
                     .catch(() => { /* file may not exist yet; badges just stay off */ });
 
                 const urlParams = new URLSearchParams(window.location.search);
