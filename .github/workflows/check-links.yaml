@@ -1,0 +1,40 @@
+name: Check EPF Circular PDF Link Health
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 5 1 * *' # First of the month, 5 AM UTC
+
+jobs:
+  check_links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4
+
+      - name: Check PDF link health
+        run: python ./fetch.py --action checklinks --max-links 1500
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git pull --ff-only
+          git add data/link-health.json data/search/broken-links.json
+          if git diff --staged --quiet; then
+            echo "No link health changes."
+          else
+            git commit -m "Update PDF link health data"
+            git push
+          fi
