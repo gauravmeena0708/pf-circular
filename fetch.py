@@ -36,6 +36,11 @@ INDEX_DATA_FILE = "index-data.json" # Not used directly anymore for output
 MAX_URLS_TO_INDEX_PER_RUN = 50
 SEARCH_INDEX_VERSION = 1
 
+LINK_HEALTH_FILE = os.path.join('data', 'link-health.json')
+BROKEN_LINKS_FILE = os.path.join('data', 'search', 'broken-links.json')
+RECHECK_INTERVAL_DAYS = 20
+MAX_LINKS_TO_CHECK_PER_RUN = 300
+
 HEADERS = {
     'Host': 'www.epfindia.gov.in',
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:55.0) Gecko/20100101 Firefox/55.0',
@@ -446,6 +451,105 @@ def circular_dedupe_key(circular):
     return (title, date)
 
 
+def classify_link_status(http_status):
+    """
+    Maps an HTTP status to a link-health verdict. Only 404/410 are treated
+    as confidently broken — EPFO's server returns 403 for some bot-like
+    requests and occasional 5xx under load, neither of which means the PDF
+    is actually gone, so both are reported as 'unknown' rather than shown
+    to users as a dead link.
+    """
+    if http_status in (404, 410):
+        return 'broken'
+    if http_status is not None and 200 <= http_status < 400:
+        return 'ok'
+    return 'unknown'
+
+
+def check_pdf_link(url, timeout=15):
+    """
+    Checks whether a PDF URL is still reachable without downloading it.
+    Returns (status_label, http_status_or_None). Falls back to a GET
+    (closed immediately after the headers arrive) when the server rejects
+    HEAD requests.
+    """
+    try:
+        response = requests.head(url, headers=HEADERS, timeout=timeout, allow_redirects=True)
+        if response.status_code == 405:
+            response = requests.get(url, headers=HEADERS, timeout=timeout, stream=True)
+            response.close()
+        return classify_link_status(response.status_code), response.status_code
+    except Exception:
+        return 'unknown', None
+
+
+def check_dead_links(max_links=MAX_LINKS_TO_CHECK_PER_RUN):
+    """
+    Periodically re-verifies that circular PDF links on epfindia.gov.in are
+    still reachable, without downloading or storing the PDFs. Limited per
+    run (like update_pdf_index) so scheduled CI doesn't hammer the source
+    site; a link checked within RECHECK_INTERVAL_DAYS is skipped until it
+    ages out, and never-checked links are prioritized first.
+    """
+    print("\nStarting PDF link health check...")
+    metadata = load_json_file('data/metadata.json')
+    if not metadata:
+        print("No metadata found. Run fetch first.")
+        return
+
+    health = load_json_file(LINK_HEALTH_FILE) or {}
+    now = datetime.now(timezone.utc)
+
+    all_urls = []
+    seen = set()
+    for year in metadata.get('years', []):
+        for circular in load_json_file(f'data/circulars-{year}.json') or []:
+            for url in (circular.get('english_pdf_link'), circular.get('hindi_pdf_link')):
+                if url and url not in seen:
+                    seen.add(url)
+                    all_urls.append(url)
+
+    def last_checked(url):
+        record = health.get(url)
+        if not record:
+            return None
+        try:
+            return datetime.fromisoformat(record['checked_at'])
+        except (KeyError, ValueError):
+            return None
+
+    def is_due(url):
+        checked = last_checked(url)
+        return checked is None or (now - checked).days >= RECHECK_INTERVAL_DAYS
+
+    due_urls = [u for u in all_urls if is_due(u)]
+    due_urls.sort(key=lambda u: last_checked(u) or datetime.min.replace(tzinfo=timezone.utc))
+
+    limit = max_links if max_links and max_links > 0 else len(due_urls)
+    batch = due_urls[:limit]
+
+    checked_count = 0
+    for url in batch:
+        status, http_status = check_pdf_link(url)
+        health[url] = {
+            'status': status,
+            'http_status': http_status,
+            'checked_at': now.isoformat(),
+        }
+        checked_count += 1
+        if checked_count % 25 == 0:
+            print(f"  Checked {checked_count}/{len(batch)} links...")
+        time.sleep(0.2)
+
+    save_json_file(health, LINK_HEALTH_FILE)
+
+    broken = sorted(url for url, record in health.items() if record.get('status') == 'broken')
+    os.makedirs(os.path.join('data', 'search'), exist_ok=True)
+    save_compact_json_file(broken, BROKEN_LINKS_FILE)
+
+    print(f"Link check finished. Checked {checked_count} link(s) this run, {len(broken)} currently marked broken out of {len(health)} known.")
+
+
 def build_static_search_index():
     """
     Builds the compact, all-years search assets used by the GitHub Pages UI.
@@ -581,15 +685,21 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Fetch EPFO circular data, update PDF text, and build static search assets.")
     parser.add_argument(
         "--action",
-        choices=['fetch', 'index', 'search', 'topics', 'all'],
+        choices=['fetch', 'index', 'search', 'topics', 'checklinks', 'all'],
         default='all',
-        help="Specify action: 'fetch' metadata, 'index' PDFs, 'search' static assets, 'topics' explorer assets, or 'all' (default)."
+        help="Specify action: 'fetch' metadata, 'index' PDFs, 'search' static assets, 'topics' explorer assets, 'checklinks' PDF link health, or 'all' (default)."
     )
     parser.add_argument(
         "--max-urls",
         type=int,
         default=50,
         help="Maximum number of new PDFs to process for indexing in this run (0 for unlimited)."
+    )
+    parser.add_argument(
+        "--max-links",
+        type=int,
+        default=MAX_LINKS_TO_CHECK_PER_RUN,
+        help="Maximum number of PDF links to re-check for reachability in this run (0 for unlimited)."
     )
     args = parser.parse_args()
 
@@ -598,6 +708,9 @@ if __name__ == "__main__":
 
     if args.action == 'index' or args.action == 'all':
         update_pdf_index(max_urls=args.max_urls)
+
+    if args.action == 'checklinks':
+        check_dead_links(max_links=args.max_links)
 
     if args.action in {'fetch', 'index', 'search', 'all'}:
         build_static_search_index()
