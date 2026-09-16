@@ -431,6 +431,21 @@ def update_pdf_index(max_urls=50):
     print(f"Finished PDF indexing process. Successfully indexed {newly_indexed_count} new PDFs across processed batches.")
 
 
+def circular_dedupe_key(circular):
+    """
+    Returns a stable identity key for a circular so the same document
+    scraped into two year buckets (e.g. a dated financial year and the
+    'Old Circulars' fallback bucket, which the EPFO site both return for
+    circulars near the cutoff) is only indexed once.
+    """
+    circular_no = re.sub(r'\s+', ' ', (circular.get('circular_no') or '').strip().lower())
+    date = (circular.get('date') or '').strip()
+    if circular_no:
+        return (circular_no, date)
+    title = re.sub(r'\s+', ' ', (circular.get('title') or '').strip().lower())
+    return (title, date)
+
+
 def build_static_search_index():
     """
     Builds the compact, all-years search assets used by the GitHub Pages UI.
@@ -448,12 +463,26 @@ def build_static_search_index():
     documents = []
     postings = defaultdict(list)
     documents_with_text = 0
+    seen_keys = {}
+    duplicates = []
 
     for year in years:
         circulars = load_json_file(f'data/circulars-{year}.json') or []
         indexed_data = load_json_file(f'data/index-{year}.json') or {}
 
         for circular in circulars:
+            dedupe_key = circular_dedupe_key(circular)
+            if dedupe_key in seen_keys:
+                duplicates.append({
+                    'title': circular.get('title'),
+                    'circular_no': circular.get('circular_no'),
+                    'kept_year': seen_keys[dedupe_key],
+                    'dropped_year': year,
+                    'dropped_url': circular.get('english_pdf_link') or circular.get('hindi_pdf_link'),
+                })
+                continue
+            seen_keys[dedupe_key] = year
+
             english_link = circular.get('english_pdf_link')
             hindi_link = circular.get('hindi_pdf_link')
             ocr_link = None
@@ -536,6 +565,10 @@ def build_static_search_index():
             bucket_contents[bucket],
             os.path.join(output_directory, f'postings-{bucket}.json'),
         )
+
+    if duplicates:
+        save_compact_json_file(duplicates, os.path.join(output_directory, 'duplicates.json'))
+        print(f"Removed {len(duplicates)} duplicate circular(s) also listed under another year bucket.")
 
     print(
         f"Built static search index for {len(documents)} documents "
