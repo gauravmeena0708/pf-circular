@@ -1,9 +1,9 @@
 {
   "version": 3,
-  "total_documents": 9534,
+  "total_documents": 9511,
   "tiers": {
-    "policy": 3617,
-    "admin": 5917
+    "policy": 3611,
+    "admin": 5900
   },
   "fy_tiers": {
     "2009-2010": {
@@ -11,28 +11,28 @@
       "admin": 149
     },
     "2010-2011": {
-      "admin": 341,
+      "admin": 340,
       "policy": 226
     },
     "2011-2012": {
       "policy": 246,
-      "admin": 401
+      "admin": 395
     },
     "2012-2013": {
       "policy": 220,
-      "admin": 462
+      "admin": 459
     },
     "2013-2014": {
       "policy": 270,
       "admin": 570
     },
     "2014-2015": {
-      "admin": 473,
+      "admin": 472,
       "policy": 387
     },
     "2015-2016": {
       "admin": 435,
-      "policy": 345
+      "policy": 344
     },
     "2016-2017": {
       "policy": 300,
@@ -51,15 +51,15 @@
       "admin": 325
     },
     "2020-2021": {
-      "admin": 193,
+      "admin": 192,
       "policy": 85
     },
     "2021-2022": {
-      "admin": 201,
+      "admin": 200,
       "policy": 99
     },
     "2022-2023": {
-      "admin": 267,
+      "admin": 266,
       "policy": 142
     },
     "2023-2024": {
@@ -67,11 +67,11 @@
       "admin": 243
     },
     "2024-2025": {
-      "admin": 277,
+      "admin": 276,
       "policy": 80
     },
     "2025-2026": {
-      "policy": 79,
+      "policy": 78,
       "admin": 199
     },
     "2026-2027": {
@@ -79,37 +79,37 @@
       "admin": 54
     },
     "Unknown": {
-      "policy": 110,
-      "admin": 128
+      "policy": 106,
+      "admin": 126
     }
   },
   "divisions": {
-    "IS": 514,
-    "Compliance": 1115,
+    "IS": 513,
+    "Compliance": 1108,
     "Legal": 69,
-    "HRM": 3878,
+    "HRM": 3871,
     "Rajbhasha": 466,
-    "PDUNASS": 1065,
+    "PDUNASS": 1059,
     "International Workers": 53,
-    "Audit": 28,
-    "Finance": 811,
-    "Coordination": 61,
+    "Audit": 27,
+    "Finance": 808,
+    "Coordination": 60,
     "Budget": 8,
     "C & Pr": 9,
     "WSU": 39,
     "Vigilance": 105,
-    "Pension": 414,
+    "Pension": 411,
     "Ifd": 2,
     "CSD": 207,
     "Rti": 17,
     "ASD": 150,
-    "CAIU": 82,
+    "CAIU": 81,
     "Apar": 30,
+    "Head Office": 91,
     "PFD": 163,
     "Manual": 12,
     "Mol & E": 8,
-    "PID": 144,
-    "Head Office": 83,
+    "PID": 143,
     "Epfat": 1
   },
   "fy_divisions": {
@@ -120,15 +120,16 @@
       "PDUNASS": 5,
       "Finance": 33,
       "Compliance": 54,
-      "Pension": 16,
+      "Pension": 15,
       "Rajbhasha": 3,
       "PFD": 3,
       "Vigilance": 2,
+      "Head Office": 1,
       "PID": 2
     },
     "2010-2011": {
-      "PDUNASS": 32,
-      "Finance": 88,
+      "PDUNASS": 31,
+      "Finance": 87,
       "IS": 66,
       "HRM": 164,
       "Compliance": 145,
@@ -140,14 +141,14 @@
       "Rajbhasha": 6,
       "Epfat": 1,
       "Pension": 6,
-      "Head Office": 3,
+      "Head Office": 4,
       "Vigilance": 5
     },
     "2011-2012": {
       "IS": 25,
-      "PDUNASS": 71,
+      "PDUNASS": 69,
       "HRM": 228,
-      "Compliance": 137,
+      "Compliance": 133,
       "Finance": 100,
       "Vigilance": 4,
       "Rajbhasha": 29,
@@ -162,12 +163,12 @@
     },
     "2012-2013": {
       "IS": 41,
-      "HRM": 254,
+      "HRM": 252,
       "Finance": 73,
       "Compliance": 108,
       "PDUNASS": 109,
       "Pension": 24,
-      "Audit": 2,
+      "Audit": 1,
       "CSD": 11,
       "Vigilance": 14,
       "Coordination": 6,
@@ -198,21 +199,21 @@
       "Audit": 3
     },
     "2014-2015": {
-      "HRM": 294,
       "PDUNASS": 87,
       "PID": 14,
+      "HRM": 292,
       "CSD": 45,
-      "IS": 74,
-      "Finance": 83,
-      "Compliance": 124,
+      "IS": 73,
+      "Finance": 82,
+      "Compliance": 123,
       "PFD": 19,
       "Vigilance": 11,
       "International Workers": 16,
       "Coordination": 6,
       "Rajbhasha": 44,
-      "Head Office": 1,
+      "Head Office": 6,
       "ASD": 1,
-      "Pension": 40,
+      "Pension": 39,
       "CAIU": 1
     },
     "2015-2016": {
@@ -222,7 +223,7 @@
       "HRM": 266,
       "Audit": 1,
       "Compliance": 139,
-      "CAIU": 7,
+      "CAIU": 6,
       "Rajbhasha": 24,
       "International Workers": 5,
       "Legal": 15,
@@ -232,9 +233,9 @@
       "PFD": 7,
       "ASD": 5,
       "Vigilance": 8,
-      "Coordination": 3,
+      "Coordination": 2,
       "Apar": 1,
-      "Head Office": 1,
+      "Head Office": 2,
       "Manual": 1
     },
     "2016-2017": {
@@ -321,7 +322,7 @@
       "CSD": 1
     },
     "2020-2021": {
-      "PDUNASS": 85,
+      "PDUNASS": 84,
       "Finance": 19,
       "HRM": 96,
       "Rajbhasha": 12,
@@ -340,7 +341,7 @@
       "Manual": 1
     },
     "2021-2022": {
-      "HRM": 180,
+      "HRM": 179,
       "Compliance": 23,
       "Finance": 22,
       "Rajbhasha": 23,
@@ -360,7 +361,7 @@
     "2022-2023": {
       "HRM": 226,
       "Rajbhasha": 17,
-      "PDUNASS": 71,
+      "PDUNASS": 70,
       "CAIU": 6,
       "Pension": 17,
       "Finance": 10,
@@ -378,7 +379,7 @@
     },
     "2023-2024": {
       "C & Pr": 3,
-      "HRM": 201,
+      "HRM": 200,
       "WSU": 8,
       "Rti": 14,
       "PDUNASS": 84,
@@ -389,6 +390,7 @@
       "International Workers": 1,
       "Budget": 1,
       "Pension": 16,
+      "Head Office": 1,
       "Coordination": 3,
       "CAIU": 6,
       "Compliance": 6,
@@ -398,7 +400,7 @@
       "CSD": 1
     },
     "2024-2025": {
-      "HRM": 230,
+      "HRM": 229,
       "Compliance": 13,
       "Finance": 5,
       "WSU": 15,
@@ -429,7 +431,7 @@
       "Legal": 2,
       "Vigilance": 3,
       "Coordination": 4,
-      "Compliance": 17,
+      "Compliance": 16,
       "Pension": 1,
       "WSU": 15,
       "IS": 3,
@@ -453,16 +455,16 @@
       "WSU": 1
     },
     "Unknown": {
-      "Head Office": 70,
-      "PDUNASS": 2,
-      "Compliance": 28,
-      "Finance": 33,
-      "PID": 3,
+      "Head Office": 69,
       "IS": 20,
+      "Compliance": 27,
       "HRM": 53,
+      "Finance": 32,
       "CSD": 6,
-      "Pension": 22,
-      "Vigilance": 1
+      "Pension": 21,
+      "PID": 2,
+      "Vigilance": 1,
+      "PDUNASS": 1
     }
   },
   "division_domains": {
@@ -477,21 +479,21 @@
       "finance_accounts_invest": 46,
       "governance_cbt": 1,
       "training_research": 32,
-      "hr_personnel_cadre": 44,
+      "hr_personnel_cadre": 43,
       "social_security_schemes": 2
     },
     "Compliance": {
-      "compliance_recovery": 247,
-      "exempted_establishments": 99,
+      "compliance_recovery": 246,
+      "exempted_establishments": 98,
       "it_digital_services": 38,
       "social_security_schemes": 21,
       "training_research": 6,
-      "unclassified": 287,
+      "unclassified": 283,
       "hr_personnel_cadre": 36,
       "admin_procurement_facilities": 9,
       "governance_cbt": 205,
       "citizen_services_rti": 62,
-      "legal_litigation": 81,
+      "legal_litigation": 80,
       "finance_accounts_invest": 8,
       "official_language": 6,
       "pension_eps": 10
@@ -508,7 +510,7 @@
       "governance_cbt": 2
     },
     "HRM": {
-      "hr_personnel_cadre": 2013,
+      "hr_personnel_cadre": 2009,
       "finance_accounts_invest": 75,
       "pension_eps": 129,
       "citizen_services_rti": 348,
@@ -518,7 +520,7 @@
       "it_digital_services": 37,
       "governance_cbt": 61,
       "legal_litigation": 79,
-      "unclassified": 764,
+      "unclassified": 761,
       "training_research": 110,
       "exempted_establishments": 5,
       "official_language": 42
@@ -536,7 +538,7 @@
     },
     "PDUNASS": {
       "hr_personnel_cadre": 52,
-      "training_research": 919,
+      "training_research": 913,
       "compliance_recovery": 13,
       "admin_procurement_facilities": 8,
       "it_digital_services": 8,
@@ -565,17 +567,17 @@
       "it_digital_services": 3,
       "pension_eps": 1,
       "citizen_services_rti": 2,
-      "unclassified": 7,
+      "unclassified": 6,
       "training_research": 1,
       "hr_personnel_cadre": 1
     },
     "Finance": {
-      "finance_accounts_invest": 302,
+      "finance_accounts_invest": 301,
       "it_digital_services": 57,
       "hr_personnel_cadre": 88,
       "admin_procurement_facilities": 17,
       "citizen_services_rti": 24,
-      "unclassified": 211,
+      "unclassified": 209,
       "exempted_establishments": 14,
       "social_security_schemes": 35,
       "compliance_recovery": 19,
@@ -584,7 +586,7 @@
       "governance_cbt": 2
     },
     "Coordination": {
-      "governance_cbt": 55,
+      "governance_cbt": 54,
       "finance_accounts_invest": 4,
       "unclassified": 2
     },
@@ -618,9 +620,9 @@
       "finance_accounts_invest": 1
     },
     "Pension": {
-      "pension_eps": 168,
+      "pension_eps": 166,
       "official_language": 1,
-      "unclassified": 29,
+      "unclassified": 28,
       "social_security_schemes": 30,
       "it_digital_services": 5,
       "legal_litigation": 16,
@@ -676,11 +678,26 @@
       "admin_procurement_facilities": 1,
       "it_digital_services": 8,
       "social_security_schemes": 8,
-      "exempted_establishments": 2,
+      "exempted_establishments": 1,
       "legal_litigation": 1
     },
     "Apar": {
       "hr_personnel_cadre": 30
+    },
+    "Head Office": {
+      "unclassified": 53,
+      "hr_personnel_cadre": 12,
+      "governance_cbt": 1,
+      "training_research": 3,
+      "legal_litigation": 1,
+      "pension_eps": 5,
+      "social_security_schemes": 4,
+      "citizen_services_rti": 4,
+      "compliance_recovery": 1,
+      "official_language": 3,
+      "finance_accounts_invest": 1,
+      "it_digital_services": 2,
+      "exempted_establishments": 1
     },
     "PFD": {
       "admin_procurement_facilities": 97,
@@ -711,7 +728,7 @@
       "finance_accounts_invest": 1
     },
     "PID": {
-      "citizen_services_rti": 131,
+      "citizen_services_rti": 130,
       "finance_accounts_invest": 2,
       "unclassified": 3,
       "admin_procurement_facilities": 1,
@@ -719,40 +736,27 @@
       "legal_litigation": 2,
       "hr_personnel_cadre": 2
     },
-    "Head Office": {
-      "hr_personnel_cadre": 11,
-      "training_research": 3,
-      "social_security_schemes": 4,
-      "unclassified": 49,
-      "citizen_services_rti": 4,
-      "compliance_recovery": 1,
-      "official_language": 3,
-      "finance_accounts_invest": 1,
-      "pension_eps": 4,
-      "it_digital_services": 2,
-      "exempted_establishments": 1
-    },
     "Epfat": {
       "unclassified": 1
     }
   },
   "doc_types": {
-    "Circular": 4095,
+    "Circular": 4098,
     "Appointment": 21,
-    "Office Order": 358,
+    "Office Order": 355,
     "Modification": 13,
     "Instructions": 55,
     "Notification": 102,
     "Exam": 196,
-    "Other": 2676,
-    "RTI": 609,
-    "Training": 650,
+    "Other": 2661,
+    "RTI": 607,
+    "Training": 646,
     "Seniority List": 181,
     "Meeting Notice": 74,
     "Corrigendum": 50,
     "Office Memorandum": 49,
     "VRS": 12,
-    "Parliament Question": 72,
+    "Parliament Question": 71,
     "Asd": 5,
     "Technical Matter": 14,
     "Judgement": 64,
@@ -763,15 +767,15 @@
     "Additional Charge": 5,
     "Superannuation": 75,
     "Deputation": 100,
-    "Court Matter": 25,
+    "Court Matter": 24,
     "Confidential": 1,
     "Grant Of Nfsg": 1
   },
   "fy_doc_types": {
     "2009-2010": {
-      "Other": 190,
+      "Other": 189,
       "RTI": 16,
-      "Circular": 2,
+      "Circular": 3,
       "Deputation": 5,
       "Court Matter": 2,
       "Notification": 4,
@@ -785,9 +789,9 @@
       "Training": 2
     },
     "2010-2011": {
-      "Training": 42,
-      "Other": 338,
-      "Circular": 10,
+      "Training": 41,
+      "Other": 337,
+      "Circular": 11,
       "Office Order": 42,
       "Deputation": 10,
       "Parliament Question": 6,
@@ -804,8 +808,8 @@
     },
     "2011-2012": {
       "Circular": 12,
-      "Other": 388,
-      "Training": 59,
+      "Other": 384,
+      "Training": 57,
       "Exam": 13,
       "RTI": 57,
       "Office Order": 31,
@@ -826,8 +830,8 @@
       "Notification": 2
     },
     "2012-2013": {
-      "Other": 385,
-      "Office Order": 31,
+      "Other": 383,
+      "Office Order": 29,
       "Seniority List": 11,
       "Superannuation": 3,
       "Deputation": 28,
@@ -839,7 +843,7 @@
       "Corrigendum": 4,
       "Notification": 13,
       "Exam": 13,
-      "Circular": 12,
+      "Circular": 13,
       "Meeting Notice": 13,
       "Court Matter": 5,
       "Additional Charge": 2,
@@ -875,14 +879,14 @@
       "Court Matter": 2
     },
     "2014-2015": {
-      "Circular": 12,
       "Training": 76,
       "RTI": 29,
       "Superannuation": 26,
-      "Other": 560,
+      "Other": 556,
       "Appointment": 6,
       "Meeting Notice": 14,
       "Office Order": 20,
+      "Circular": 16,
       "Deputation": 8,
       "Seniority List": 13,
       "Exam": 37,
@@ -895,7 +899,7 @@
       "Asd": 1,
       "Instructions": 13,
       "On All India Sports": 1,
-      "Court Matter": 4,
+      "Court Matter": 3,
       "Transfer": 1,
       "Modification": 1
     },
@@ -910,11 +914,11 @@
       "Meeting Notice": 2,
       "Other": 166,
       "Corrigendum": 2,
-      "Parliament Question": 2,
       "Superannuation": 11,
       "Modification": 6,
       "Exam": 2,
       "Deputation": 2,
+      "Parliament Question": 1,
       "Court Matter": 1
     },
     "2016-2017": {
@@ -990,7 +994,7 @@
       "Training": 67,
       "RTI": 22,
       "Seniority List": 6,
-      "Circular": 158,
+      "Circular": 157,
       "Office Memorandum": 4,
       "Meeting Notice": 2,
       "Exam": 2,
@@ -1002,7 +1006,6 @@
       "Asd": 1
     },
     "2021-2022": {
-      "Office Order": 4,
       "Circular": 222,
       "Exam": 16,
       "Seniority List": 4,
@@ -1011,12 +1014,13 @@
       "Superannuation": 5,
       "Office Memorandum": 4,
       "Parliament Question": 2,
+      "Office Order": 3,
       "Training": 13,
       "Meeting Notice": 3,
       "Notification": 1
     },
     "2022-2023": {
-      "Circular": 334,
+      "Circular": 333,
       "RTI": 39,
       "Exam": 17,
       "Training": 10,
@@ -1040,8 +1044,8 @@
       "Additional Charge": 1
     },
     "2024-2025": {
-      "Circular": 258,
       "Office Order": 27,
+      "Circular": 257,
       "RTI": 20,
       "Corrigendum": 5,
       "Seniority List": 15,
@@ -1068,7 +1072,7 @@
       "Corrigendum": 4,
       "Notification": 3,
       "Asd": 1,
-      "RTI": 2,
+      "RTI": 1,
       "Technical Matter": 1,
       "Other": 1
     },
@@ -1089,10 +1093,8 @@
       "Office Memorandum": 1
     },
     "Unknown": {
-      "Circular": 74,
-      "Training": 2,
-      "Other": 124,
-      "RTI": 2,
+      "Circular": 73,
+      "Other": 121,
       "Office Order": 15,
       "Seniority List": 3,
       "Instructions": 4,
@@ -1100,26 +1102,28 @@
       "Corrigendum": 4,
       "Court Matter": 1,
       "Meeting Notice": 1,
-      "Notification": 3
+      "Notification": 3,
+      "RTI": 1,
+      "Training": 1
     }
   },
   "sub_divisions": {
     "Ndc": 102,
-    "Compliance": 259,
-    "Legal": 208,
-    "Hrm": 2341,
+    "Compliance": 258,
+    "Legal": 207,
+    "Hrm": 2337,
     "Official Language": 328,
-    "Is": 305,
+    "Is": 304,
     "Natrss": 145,
     "Iwu": 72,
-    "Hrd": 941,
-    "Audit": 83,
+    "Hrd": 939,
+    "Audit": 82,
     "Budget": 91,
-    "Exemption": 96,
+    "Exemption": 95,
     "Pq": 58,
     "Wsu": 273,
-    "Banking": 286,
-    "Investment": 54,
+    "Banking": 284,
+    "Investment": 52,
     "Exam": 363,
     "Coordination": 115,
     "Caiu": 81,
@@ -1127,7 +1131,7 @@
     "Balance Sheet": 79,
     "Recovery": 64,
     "Avs": 52,
-    "Pension": 356,
+    "Pension": 354,
     "Sports": 28,
     "Welfare": 50,
     "Vigilance": 100,
@@ -1137,62 +1141,61 @@
     "Ifd": 2,
     "Conference": 324,
     "Acr": 22,
-    "Zti": 428,
+    "Zti": 426,
     "Pfd": 164,
-    "Apar": 55,
+    "Apar": 54,
     "Zti Sz": 32,
-    "Mis": 170,
-    "Pid": 143,
+    "Mis": 166,
+    "Pid": 142,
     "Ir": 28,
     "Project": 79,
     "Manual": 37,
     "Zti Nz": 29,
     "Zti Wz": 30,
     "Zti Ez": 7,
-    "Actuarial": 41,
+    "Actuarial": 40,
     "Cat": 24,
-    "Gis": 6,
-    "Pqrn": 1
+    "Gis": 6
   },
   "domains": {
     "pension_eps": {
       "name": "Pension & EPS-95",
       "color": "#059669",
-      "total": 380,
+      "total": 379,
       "subtopics": {
         "ppo_and_processing": 203,
         "digital_life_certificate": 44,
-        "general_pension": 118,
+        "general_pension": 117,
         "higher_pension": 15
       }
     },
     "compliance_recovery": {
       "name": "Compliance & Recovery",
       "color": "#dc2626",
-      "total": 509,
+      "total": 508,
       "subtopics": {
         "7a_and_quasi_judicial": 114,
-        "coverage_and_inspection": 290,
+        "coverage_and_inspection": 289,
         "recovery_and_defaulters": 105
       }
     },
     "exempted_establishments": {
       "name": "Exempted Establishments",
       "color": "#d97706",
-      "total": 161,
+      "total": 159,
       "subtopics": {
-        "trust_compliance_audit": 159,
+        "trust_compliance_audit": 157,
         "surrender_and_cancellation": 2
       }
     },
     "finance_accounts_invest": {
       "name": "Finance, Accounts & Investment",
       "color": "#2563eb",
-      "total": 479,
+      "total": 478,
       "subtopics": {
         "budget_accounts_audit": 263,
         "interest_rate": 85,
-        "investment_and_portfolio": 131
+        "investment_and_portfolio": 130
       }
     },
     "it_digital_services": {
@@ -1207,11 +1210,11 @@
     "hr_personnel_cadre": {
       "name": "HR, Personnel & Cadre",
       "color": "#4f46e5",
-      "total": 2442,
+      "total": 2438,
       "subtopics": {
-        "promotions_seniority_dpc": 889,
+        "promotions_seniority_dpc": 887,
         "recruitment_exams": 355,
-        "apar_sparrow": 139,
+        "apar_sparrow": 137,
         "transfers_and_postings": 369,
         "vigilance_and_discipline": 379,
         "benefits_allowances_leave": 311
@@ -1229,18 +1232,18 @@
     "citizen_services_rti": {
       "name": "Citizen Care & RTI",
       "color": "#ea580c",
-      "total": 937,
+      "total": 936,
       "subtopics": {
-        "rti_act": 757,
+        "rti_act": 756,
         "grievances_epfigms": 180
       }
     },
     "training_research": {
       "name": "Training & Academics",
       "color": "#0891b2",
-      "total": 1146,
+      "total": 1140,
       "subtopics": {
-        "pdunass_natrss": 1146
+        "pdunass_natrss": 1140
       }
     },
     "official_language": {
@@ -1281,9 +1284,9 @@
     "unclassified": {
       "name": "Other / Unclassified",
       "color": "#94a3b8",
-      "total": 1734,
+      "total": 1727,
       "subtopics": {
-        "general": 1734
+        "general": 1727
       }
     }
   },
@@ -1310,24 +1313,24 @@
   ],
   "year_totals": {
     "2009-2010": 256,
-    "2010-2011": 567,
-    "2011-2012": 647,
-    "2012-2013": 682,
+    "2010-2011": 566,
+    "2011-2012": 641,
+    "2012-2013": 679,
     "2013-2014": 840,
-    "2014-2015": 860,
-    "2015-2016": 780,
+    "2014-2015": 859,
+    "2015-2016": 779,
     "2016-2017": 707,
     "2017-2018": 742,
     "2018-2019": 642,
     "2019-2020": 474,
-    "2020-2021": 278,
-    "2021-2022": 300,
-    "2022-2023": 409,
+    "2020-2021": 277,
+    "2021-2022": 299,
+    "2022-2023": 408,
     "2023-2024": 391,
-    "2024-2025": 357,
-    "2025-2026": 278,
+    "2024-2025": 356,
+    "2025-2026": 277,
     "2026-2027": 86,
-    "Unknown": 238
+    "Unknown": 232
   },
   "timeline": {
     "2009-2010": {
@@ -1355,7 +1358,7 @@
       "hr_personnel_cadre": 87,
       "legal_litigation": 6,
       "citizen_services_rti": 71,
-      "training_research": 56,
+      "training_research": 55,
       "official_language": 12,
       "admin_procurement_facilities": 23,
       "social_security_schemes": 11,
@@ -1371,12 +1374,12 @@
       "hr_personnel_cadre": 110,
       "legal_litigation": 16,
       "citizen_services_rti": 69,
-      "training_research": 92,
+      "training_research": 90,
       "official_language": 31,
       "admin_procurement_facilities": 14,
       "social_security_schemes": 22,
       "governance_cbt": 42,
-      "unclassified": 153
+      "unclassified": 149
     },
     "2012-2013": {
       "pension_eps": 29,
@@ -1384,7 +1387,7 @@
       "exempted_establishments": 5,
       "finance_accounts_invest": 24,
       "it_digital_services": 20,
-      "hr_personnel_cadre": 162,
+      "hr_personnel_cadre": 160,
       "legal_litigation": 15,
       "citizen_services_rti": 33,
       "training_research": 137,
@@ -1392,7 +1395,7 @@
       "admin_procurement_facilities": 13,
       "social_security_schemes": 12,
       "governance_cbt": 40,
-      "unclassified": 138
+      "unclassified": 137
     },
     "2013-2014": {
       "pension_eps": 43,
@@ -1424,12 +1427,12 @@
       "admin_procurement_facilities": 30,
       "social_security_schemes": 23,
       "governance_cbt": 31,
-      "unclassified": 147
+      "unclassified": 146
     },
     "2015-2016": {
       "pension_eps": 17,
       "compliance_recovery": 48,
-      "exempted_establishments": 12,
+      "exempted_establishments": 11,
       "finance_accounts_invest": 55,
       "it_digital_services": 52,
       "hr_personnel_cadre": 179,
@@ -1515,7 +1518,7 @@
       "hr_personnel_cadre": 64,
       "legal_litigation": 7,
       "citizen_services_rti": 23,
-      "training_research": 55,
+      "training_research": 54,
       "official_language": 13,
       "admin_procurement_facilities": 14,
       "social_security_schemes": 8,
@@ -1528,7 +1531,7 @@
       "exempted_establishments": 2,
       "finance_accounts_invest": 12,
       "it_digital_services": 8,
-      "hr_personnel_cadre": 112,
+      "hr_personnel_cadre": 111,
       "legal_litigation": 1,
       "citizen_services_rti": 27,
       "training_research": 11,
@@ -1547,7 +1550,7 @@
       "hr_personnel_cadre": 111,
       "legal_litigation": 4,
       "citizen_services_rti": 62,
-      "training_research": 66,
+      "training_research": 65,
       "official_language": 13,
       "admin_procurement_facilities": 11,
       "social_security_schemes": 11,
@@ -1576,7 +1579,7 @@
       "exempted_establishments": 4,
       "finance_accounts_invest": 8,
       "it_digital_services": 16,
-      "hr_personnel_cadre": 181,
+      "hr_personnel_cadre": 180,
       "legal_litigation": 1,
       "citizen_services_rti": 22,
       "training_research": 27,
@@ -1588,7 +1591,7 @@
     },
     "2025-2026": {
       "pension_eps": 7,
-      "compliance_recovery": 14,
+      "compliance_recovery": 13,
       "exempted_establishments": 2,
       "finance_accounts_invest": 17,
       "it_digital_services": 19,
@@ -1618,20 +1621,20 @@
       "unclassified": 1
     },
     "Unknown": {
-      "pension_eps": 23,
+      "pension_eps": 22,
       "compliance_recovery": 10,
-      "exempted_establishments": 8,
-      "finance_accounts_invest": 30,
+      "exempted_establishments": 7,
+      "finance_accounts_invest": 29,
       "it_digital_services": 6,
       "hr_personnel_cadre": 45,
       "legal_litigation": 5,
-      "citizen_services_rti": 9,
-      "training_research": 10,
+      "citizen_services_rti": 8,
+      "training_research": 9,
       "official_language": 3,
       "admin_procurement_facilities": 3,
       "social_security_schemes": 3,
       "governance_cbt": 15,
-      "unclassified": 68
+      "unclassified": 67
     }
   },
   "subtopic_timeline": {
@@ -1733,7 +1736,7 @@
         "grievances_epfigms": 4
       },
       "training_research": {
-        "pdunass_natrss": 56
+        "pdunass_natrss": 55
       },
       "official_language": {
         "rajbhasha_and_events": 12
@@ -1793,7 +1796,7 @@
         "grievances_epfigms": 3
       },
       "training_research": {
-        "pdunass_natrss": 92
+        "pdunass_natrss": 90
       },
       "official_language": {
         "rajbhasha_and_events": 31
@@ -1811,7 +1814,7 @@
         "cbt_and_committees": 42
       },
       "unclassified": {
-        "general": 153
+        "general": 149
       }
     },
     "2012-2013": {
@@ -1837,11 +1840,11 @@
         "eoffice_and_software": 11
       },
       "hr_personnel_cadre": {
-        "promotions_seniority_dpc": 70,
+        "promotions_seniority_dpc": 69,
         "transfers_and_postings": 23,
         "vigilance_and_discipline": 32,
         "benefits_allowances_leave": 20,
-        "apar_sparrow": 6,
+        "apar_sparrow": 5,
         "recruitment_exams": 11
       },
       "legal_litigation": {
@@ -1870,7 +1873,7 @@
         "cbt_and_committees": 40
       },
       "unclassified": {
-        "general": 138
+        "general": 137
       }
     },
     "2013-2014": {
@@ -1993,7 +1996,7 @@
         "cbt_and_committees": 31
       },
       "unclassified": {
-        "general": 147
+        "general": 146
       }
     },
     "2015-2016": {
@@ -2008,7 +2011,7 @@
         "7a_and_quasi_judicial": 9
       },
       "exempted_establishments": {
-        "trust_compliance_audit": 12
+        "trust_compliance_audit": 11
       },
       "finance_accounts_invest": {
         "budget_accounts_audit": 23,
@@ -2339,7 +2342,7 @@
         "grievances_epfigms": 1
       },
       "training_research": {
-        "pdunass_natrss": 55
+        "pdunass_natrss": 54
       },
       "official_language": {
         "rajbhasha_and_events": 13
@@ -2382,10 +2385,10 @@
         "uan_and_kyc": 3
       },
       "hr_personnel_cadre": {
-        "promotions_seniority_dpc": 25,
         "benefits_allowances_leave": 13,
         "transfers_and_postings": 11,
         "recruitment_exams": 50,
+        "promotions_seniority_dpc": 24,
         "vigilance_and_discipline": 8,
         "apar_sparrow": 5
       },
@@ -2455,7 +2458,7 @@
         "grievances_epfigms": 12
       },
       "training_research": {
-        "pdunass_natrss": 66
+        "pdunass_natrss": 65
       },
       "official_language": {
         "rajbhasha_and_events": 13
@@ -2557,9 +2560,9 @@
         "eoffice_and_software": 3
       },
       "hr_personnel_cadre": {
-        "apar_sparrow": 12,
         "promotions_seniority_dpc": 69,
         "benefits_allowances_leave": 16,
+        "apar_sparrow": 11,
         "recruitment_exams": 41,
         "transfers_and_postings": 29,
         "vigilance_and_discipline": 14
@@ -2601,7 +2604,7 @@
       },
       "compliance_recovery": {
         "recovery_and_defaulters": 1,
-        "coverage_and_inspection": 12,
+        "coverage_and_inspection": 11,
         "7a_and_quasi_judicial": 1
       },
       "exempted_establishments": {
@@ -2702,7 +2705,7 @@
     },
     "Unknown": {
       "pension_eps": {
-        "general_pension": 13,
+        "general_pension": 12,
         "ppo_and_processing": 7,
         "digital_life_certificate": 2,
         "higher_pension": 1
@@ -2712,11 +2715,11 @@
         "7a_and_quasi_judicial": 5
       },
       "exempted_establishments": {
-        "trust_compliance_audit": 8
+        "trust_compliance_audit": 7
       },
       "finance_accounts_invest": {
         "interest_rate": 5,
-        "investment_and_portfolio": 16,
+        "investment_and_portfolio": 15,
         "budget_accounts_audit": 9
       },
       "it_digital_services": {
@@ -2734,11 +2737,11 @@
         "court_cases_and_orders": 5
       },
       "citizen_services_rti": {
-        "rti_act": 5,
+        "rti_act": 4,
         "grievances_epfigms": 4
       },
       "training_research": {
-        "pdunass_natrss": 10
+        "pdunass_natrss": 9
       },
       "official_language": {
         "rajbhasha_and_events": 3
@@ -2755,15 +2758,15 @@
         "cbt_and_committees": 15
       },
       "unclassified": {
-        "general": 68
+        "general": 67
       }
     }
   },
   "confidence_counts": {
-    "0": 527,
-    "1": 2112,
-    "2": 1029,
-    "3": 5866
+    "0": 523,
+    "1": 2107,
+    "2": 1027,
+    "3": 5854
   },
   "confidence_timeline": {
     "2009-2010": {
@@ -2776,19 +2779,19 @@
       "0": 35,
       "1": 191,
       "2": 61,
-      "3": 280
+      "3": 279
     },
     "2011-2012": {
-      "0": 27,
-      "1": 193,
+      "0": 25,
+      "1": 191,
       "2": 61,
-      "3": 366
+      "3": 364
     },
     "2012-2013": {
       "0": 29,
-      "1": 186,
+      "1": 185,
       "2": 64,
-      "3": 403
+      "3": 401
     },
     "2013-2014": {
       "0": 56,
@@ -2797,7 +2800,7 @@
       "3": 542
     },
     "2014-2015": {
-      "0": 50,
+      "0": 49,
       "1": 165,
       "2": 133,
       "3": 512
@@ -2805,7 +2808,7 @@
     "2015-2016": {
       "0": 31,
       "1": 171,
-      "2": 96,
+      "2": 95,
       "3": 482
     },
     "2016-2017": {
@@ -2834,7 +2837,7 @@
     },
     "2020-2021": {
       "0": 15,
-      "1": 101,
+      "1": 100,
       "2": 28,
       "3": 134
     },
@@ -2842,13 +2845,13 @@
       "0": 18,
       "1": 63,
       "2": 24,
-      "3": 195
+      "3": 194
     },
     "2022-2023": {
       "0": 14,
       "1": 90,
       "2": 26,
-      "3": 279
+      "3": 278
     },
     "2023-2024": {
       "0": 15,
@@ -2860,12 +2863,12 @@
       "0": 17,
       "1": 54,
       "2": 33,
-      "3": 253
+      "3": 252
     },
     "2025-2026": {
       "0": 3,
       "1": 39,
-      "2": 38,
+      "2": 37,
       "3": 198
     },
     "2026-2027": {
@@ -2875,33 +2878,33 @@
       "3": 70
     },
     "Unknown": {
-      "0": 50,
-      "1": 47,
+      "0": 49,
+      "1": 46,
       "2": 39,
-      "3": 102
+      "3": 98
     }
   },
   "language_counts": {
-    "english": 7354,
+    "english": 7332,
     "hindi": 547,
     "both": 1578,
-    "none": 55
+    "none": 54
   },
   "language_timeline": {
     "2009-2010": {
       "english": 256
     },
     "2010-2011": {
-      "english": 550,
+      "english": 549,
       "both": 17
     },
     "2011-2012": {
-      "english": 606,
+      "english": 600,
       "both": 40,
       "hindi": 1
     },
     "2012-2013": {
-      "english": 661,
+      "english": 658,
       "hindi": 2,
       "both": 19
     },
@@ -2911,13 +2914,13 @@
       "hindi": 75
     },
     "2014-2015": {
-      "english": 547,
       "hindi": 100,
+      "english": 546,
       "both": 213
     },
     "2015-2016": {
       "both": 177,
-      "english": 575,
+      "english": 574,
       "hindi": 28
     },
     "2016-2017": {
@@ -2941,17 +2944,17 @@
       "hindi": 51
     },
     "2020-2021": {
-      "english": 246,
+      "english": 245,
       "hindi": 11,
       "both": 21
     },
     "2021-2022": {
-      "english": 234,
+      "english": 233,
       "hindi": 24,
       "both": 42
     },
     "2022-2023": {
-      "english": 382,
+      "english": 381,
       "hindi": 14,
       "both": 13
     },
@@ -2961,12 +2964,12 @@
       "both": 11
     },
     "2024-2025": {
-      "english": 333,
+      "english": 332,
       "hindi": 22,
       "both": 2
     },
     "2025-2026": {
-      "english": 183,
+      "english": 182,
       "hindi": 35,
       "both": 60
     },
@@ -2976,8 +2979,8 @@
       "both": 31
     },
     "Unknown": {
-      "none": 55,
-      "english": 183
+      "none": 54,
+      "english": 178
     }
   },
   "month_timeline": {
@@ -3001,41 +3004,41 @@
       "12": 56,
       "01": 45,
       "11": 49,
-      "04": 32,
       "10": 49,
       "09": 49,
       "08": 49,
       "07": 51,
       "06": 39,
-      "05": 39
+      "05": 39,
+      "04": 31
     },
     "2011-2012": {
       "09": 57,
       "03": 67,
       "02": 47,
       "01": 51,
-      "04": 59,
-      "06": 57,
       "12": 63,
       "11": 43,
-      "05": 64,
       "10": 42,
       "08": 41,
-      "07": 50
+      "07": 49,
+      "06": 56,
+      "05": 62,
+      "04": 57
     },
     "2012-2013": {
       "03": 60,
-      "04": 58,
       "02": 53,
       "01": 69,
       "12": 47,
       "11": 41,
       "10": 55,
-      "05": 89,
       "09": 47,
       "08": 47,
       "07": 63,
-      "06": 51
+      "06": 51,
+      "05": 88,
+      "04": 56
     },
     "2013-2014": {
       "03": 62,
@@ -3052,9 +3055,9 @@
       "04": 73
     },
     "2014-2015": {
-      "01": 63,
       "03": 62,
       "02": 60,
+      "01": 62,
       "12": 57,
       "00": 1,
       "11": 54,
@@ -3076,7 +3079,7 @@
       "10": 57,
       "08": 58,
       "07": 71,
-      "06": 77,
+      "06": 76,
       "05": 60,
       "04": 74
     },
@@ -3140,7 +3143,7 @@
       "03": 41,
       "02": 42,
       "01": 41,
-      "12": 22,
+      "12": 21,
       "11": 18,
       "10": 21,
       "09": 22,
@@ -3151,7 +3154,7 @@
       "04": 13
     },
     "2021-2022": {
-      "03": 35,
+      "03": 34,
       "02": 53,
       "01": 40,
       "12": 17,
@@ -3166,7 +3169,7 @@
     },
     "2022-2023": {
       "03": 30,
-      "02": 37,
+      "02": 36,
       "01": 39,
       "12": 49,
       "10": 39,
@@ -3193,8 +3196,8 @@
       "04": 25
     },
     "2024-2025": {
-      "03": 29,
       "01": 30,
+      "03": 28,
       "02": 29,
       "12": 30,
       "11": 23,
@@ -3214,7 +3217,7 @@
       "12": 21,
       "11": 24,
       "10": 24,
-      "09": 27,
+      "09": 26,
       "08": 21,
       "07": 26,
       "06": 13,
@@ -3228,14 +3231,14 @@
       "04": 24
     },
     "Unknown": {
-      "04": 3,
+      "04": 1,
       "02": 30,
-      "03": 28,
+      "03": 27,
       "07": 9,
       "10": 18,
-      "06": 13,
+      "06": 12,
       "05": 10,
-      "11": 13,
+      "11": 12,
       "01": 22,
       "09": 17,
       "08": 10,

@@ -4,7 +4,7 @@
     "color": "#059669",
     "icon": "user-check",
     "description": "EPS-95 scheme, higher pension, pension calculations, PPOs, and pensioner welfare",
-    "count": 380,
+    "count": 379,
     "subtopics": {
       "higher_pension": {
         "name": "Higher Pension (SC Judgment)",
@@ -20,7 +20,7 @@
       },
       "general_pension": {
         "name": "General EPS-95 Policies",
-        "count": 118
+        "count": 117
       }
     }
   },
@@ -29,7 +29,7 @@
     "color": "#dc2626",
     "icon": "shield-alert",
     "description": "Establishment coverage, 7A/14B proceedings, default enforcement, inspections and recovery",
-    "count": 509,
+    "count": 508,
     "subtopics": {
       "7a_and_quasi_judicial": {
         "name": "Section 7A, 7Q & 14B Quasi-Judicial",
@@ -41,7 +41,7 @@
       },
       "coverage_and_inspection": {
         "name": "Coverage, Inspection & Compliance",
-        "count": 290
+        "count": 289
       }
     }
   },
@@ -50,11 +50,11 @@
     "color": "#d97706",
     "icon": "building",
     "description": "Section 17 exemptions, private PF trusts, surrender of exemption, and trust compliance",
-    "count": 161,
+    "count": 159,
     "subtopics": {
       "trust_compliance_audit": {
         "name": "Trust Compliance & Audits",
-        "count": 159
+        "count": 157
       },
       "surrender_and_cancellation": {
         "name": "Surrender & Cancellation of Exemption",
@@ -67,7 +67,7 @@
     "color": "#2563eb",
     "icon": "trending-up",
     "description": "Interest rates, budget, investments, banking, balance sheets, and CAG audit",
-    "count": 479,
+    "count": 478,
     "subtopics": {
       "interest_rate": {
         "name": "Interest Rate Declarations",
@@ -75,7 +75,7 @@
       },
       "investment_and_portfolio": {
         "name": "Investments & Banking",
-        "count": 131
+        "count": 130
       },
       "budget_accounts_audit": {
         "name": "Budget, Balance Sheet & Audit",
@@ -105,11 +105,11 @@
     "color": "#4f46e5",
     "icon": "users",
     "description": "Promotions, DPC, seniority lists, transfers, recruitment, APAR, SPARROW, and vigilance",
-    "count": 2442,
+    "count": 2438,
     "subtopics": {
       "promotions_seniority_dpc": {
         "name": "Promotions, Seniority & DPC",
-        "count": 889
+        "count": 887
       },
       "recruitment_exams": {
         "name": "Recruitment & Departmental Exams",
@@ -121,7 +121,7 @@
       },
       "apar_sparrow": {
         "name": "APAR & SPARROW Portals",
-        "count": 139
+        "count": 137
       },
       "benefits_allowances_leave": {
         "name": "Leave, Allowance & Medical",
@@ -155,11 +155,11 @@
     "color": "#ea580c",
     "icon": "message-circle",
     "description": "Right to Information (RTI), CPGRAMS, EPFiGMS grievances, and member assistance",
-    "count": 937,
+    "count": 936,
     "subtopics": {
       "rti_act": {
         "name": "RTI Applications & Appeals",
-        "count": 757
+        "count": 756
       },
       "grievances_epfigms": {
         "name": "Grievance Portals (EPFiGMS / CPGRAMS)",
@@ -172,11 +172,11 @@
     "color": "#0891b2",
     "icon": "book-open",
     "description": "PDUNASS, NATRSS, ZTI training calendars, workshops, seminars, and capacity building",
-    "count": 1146,
+    "count": 1140,
     "subtopics": {
       "pdunass_natrss": {
         "name": "PDUNASS & ZTI Programs",
-        "count": 1146
+        "count": 1140
       }
     }
   },
@@ -249,11 +249,11 @@
     "color": "#94a3b8",
     "icon": "help-circle",
     "description": "General circulars, miscellaneous notices, and multi-topic announcements",
-    "count": 1734,
+    "count": 1727,
     "subtopics": {
       "general": {
         "name": "Miscellaneous",
-        "count": 1734
+        "count": 1727
       }
     }
   }
